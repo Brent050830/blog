@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Brent_blog</title>
-        <link>https://Brent050830.github.io/blog/</link>
+        <link>https://Brent050830.site/</link>
         <description>Recent content on Brent_blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Tue, 28 Jan 2025 18:50:40 +0800</lastBuildDate><atom:link href="https://Brent050830.github.io/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Jan 2025 18:50:40 +0800</lastBuildDate><atom:link href="https://Brent050830.site/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python学习</title>
-        <link>https://Brent050830.github.io/blog/p/python%E5%AD%A6%E4%B9%A0/</link>
+        <link>https://Brent050830.site/p/python%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Tue, 28 Jan 2025 18:50:40 +0800</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/p/python%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://Brent050830.site/p/python%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;img src="https://img0.baidu.com/it/u=4178333864,3313587158&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=666" alt="Featured image of post Python学习" /&gt;&lt;p&gt;&lt;strong&gt;使用pycharm&lt;/strong&gt;
 &lt;strong&gt;Python有6种数据类型&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -3891,10 +3891,10 @@ a:打开文件用于追加，已存在则写入原有的内容之后！不存在
         </item>
         <item>
         <title>Markdown使用</title>
-        <link>https://Brent050830.github.io/blog/p/markdown/</link>
+        <link>https://Brent050830.site/p/markdown/</link>
         <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/p/markdown/</guid>
+        <guid>https://Brent050830.site/p/markdown/</guid>
         <description>&lt;img src="https://s2.loli.net/2025/01/26/BRNqmU2PMOWHf4g.jpg" alt="Featured image of post Markdown使用" /&gt;&lt;h1 id=&#34;font-face仿宋-font-colororangemarkdown入门教程font&#34;&gt;&lt;font face=&#34;仿宋&#34; font color=orange&gt;Markdown入门教程&lt;/font&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;ordered-list&#34;&gt;Ordered List
 &lt;/h2&gt;&lt;ol&gt;
@@ -4094,7 +4094,7 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Brent050830.github.io/blog/blog/image-3-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/image-3-1.png&#34;
 	
 	
 	
@@ -4313,35 +4313,35 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
         </item>
         <item>
         <title>归档</title>
-        <link>https://Brent050830.github.io/blog/archives/</link>
+        <link>https://Brent050830.site/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/archives/</guid>
+        <guid>https://Brent050830.site/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>关于</title>
-        <link>https://Brent050830.github.io/blog/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://Brent050830.site/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/%E5%85%B3%E4%BA%8E/</guid>
+        <guid>https://Brent050830.site/%E5%85%B3%E4%BA%8E/</guid>
         <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://Brent050830.github.io/blog/search/</link>
+        <link>https://Brent050830.site/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/search/</guid>
+        <guid>https://Brent050830.site/search/</guid>
         <description></description>
         </item>
         <item>
         <title>友情链接</title>
-        <link>https://Brent050830.github.io/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
+        <link>https://Brent050830.site/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
+        <guid>https://Brent050830.site/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

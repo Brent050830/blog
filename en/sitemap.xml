@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://Brent050830.github.io/blog/en/categories/</loc>
+    <loc>https://Brent050830.site/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Brent050830.github.io/blog/categories/"
+                href="https://Brent050830.site/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Brent050830.github.io/blog/en/categories/"
+                href="https://Brent050830.site/en/categories/"
                 />
   </url><url>
-    <loc>https://Brent050830.github.io/blog/en/</loc>
+    <loc>https://Brent050830.site/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Brent050830.github.io/blog/"
+                href="https://Brent050830.site/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Brent050830.github.io/blog/en/"
+                href="https://Brent050830.site/en/"
                 />
   </url><url>
-    <loc>https://Brent050830.github.io/blog/en/tags/</loc>
+    <loc>https://Brent050830.site/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://Brent050830.github.io/blog/tags/"
+                href="https://Brent050830.site/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://Brent050830.github.io/blog/en/tags/"
+                href="https://Brent050830.site/en/tags/"
                 />
   </url>
 </urlset>

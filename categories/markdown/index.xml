@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Markdown on Brent_blog</title>
-        <link>https://Brent050830.github.io/blog/categories/markdown/</link>
+        <link>https://Brent050830.site/categories/markdown/</link>
         <description>Recent content in Markdown on Brent_blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Brent050830.github.io/blog/categories/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Brent050830.site/categories/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown使用</title>
-        <link>https://Brent050830.github.io/blog/p/markdown/</link>
+        <link>https://Brent050830.site/p/markdown/</link>
         <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/p/markdown/</guid>
+        <guid>https://Brent050830.site/p/markdown/</guid>
         <description>&lt;img src="https://s2.loli.net/2025/01/26/BRNqmU2PMOWHf4g.jpg" alt="Featured image of post Markdown使用" /&gt;&lt;h1 id=&#34;font-face仿宋-font-colororangemarkdown入门教程font&#34;&gt;&lt;font face=&#34;仿宋&#34; font color=orange&gt;Markdown入门教程&lt;/font&gt;
 &lt;/h1&gt;&lt;h2 id=&#34;ordered-list&#34;&gt;Ordered List
 &lt;/h2&gt;&lt;ol&gt;
@@ -212,7 +212,7 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Brent050830.github.io/blog/blog/image-3-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/image-3-1.png&#34;
 	
 	
 	

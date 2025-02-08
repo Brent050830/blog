@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Python on Brent_blog</title>
-        <link>https://Brent050830.github.io/blog/categories/python/</link>
+        <link>https://Brent050830.site/categories/python/</link>
         <description>Recent content in Python on Brent_blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Tue, 28 Jan 2025 18:50:40 +0800</lastBuildDate><atom:link href="https://Brent050830.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 Jan 2025 18:50:40 +0800</lastBuildDate><atom:link href="https://Brent050830.site/categories/python/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python学习</title>
-        <link>https://Brent050830.github.io/blog/p/python%E5%AD%A6%E4%B9%A0/</link>
+        <link>https://Brent050830.site/p/python%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Tue, 28 Jan 2025 18:50:40 +0800</pubDate>
         
-        <guid>https://Brent050830.github.io/blog/p/python%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://Brent050830.site/p/python%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;img src="https://img0.baidu.com/it/u=4178333864,3313587158&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=500&amp;h=666" alt="Featured image of post Python学习" /&gt;&lt;p&gt;&lt;strong&gt;使用pycharm&lt;/strong&gt;
 &lt;strong&gt;Python有6种数据类型&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
