@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://Brent050830.github.io/blog/</loc>
-    <lastmod>2025-02-08T16:34:50+08:00</lastmod>
+    <lastmod>2025-01-28T18:50:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,15 +14,6 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/blog/"
                 />
-  </url><url>
-    <loc>https://Brent050830.github.io/blog/p/newnew/</loc>
-    <lastmod>2025-02-08T16:34:50+08:00</lastmod>
-  </url><url>
-    <loc>https://Brent050830.github.io/blog/post/</loc>
-    <lastmod>2025-02-08T16:34:50+08:00</lastmod>
-  </url><url>
-    <loc>https://Brent050830.github.io/blog/p/new/</loc>
-    <lastmod>2025-02-08T16:12:23+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.github.io/blog/categories/</loc>
     <lastmod>2025-01-28T18:50:40+08:00</lastmod>
@@ -36,6 +27,9 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/blog/categories/"
                 />
+  </url><url>
+    <loc>https://Brent050830.github.io/blog/post/</loc>
+    <lastmod>2025-01-28T18:50:40+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.github.io/blog/categories/python/</loc>
     <lastmod>2025-01-28T18:50:40+08:00</lastmod>
