@@ -23,7 +23,8 @@
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;应引用
-&amp;raquo;二级嵌套&lt;/p&gt;&lt;/blockquote&gt;
+&amp;raquo;二级嵌套&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/p&gt;
@@ -211,7 +212,7 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Brent050830.github.io/blog/image-3-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.github.io/blog/blog/image-3-1.png&#34;
 	
 	
 	
