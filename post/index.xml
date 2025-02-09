@@ -25,7 +25,11 @@ f(x,y)=x^2+y_2,x \epsilon[1,10],y \epsilon\{1,2,3\}
 $$&lt;ul&gt;
 &lt;li&gt;对大括号进行转义
 $$
-\left.(\sqrt {1 \over 2}\right)
+\left.(\sqrt {1 \over 2}\right)\\
+$$
+$$
+\{ \}\\
+\lbrace 
 $$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;省略号&#34;&gt;省略号
@@ -300,6 +304,9 @@ $$&lt;table&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;使用katex&lt;/strong&gt;  &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KATEX&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;随机&#34;&gt;随机
 &lt;/h2&gt;&lt;h3 id=&#34;随机过程的基本概念&#34;&gt;随机过程的基本概念
 &lt;/h3&gt;&lt;ul&gt;
@@ -324,11 +331,11 @@ $$&lt;table&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;①一维分布函数&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;$F(t,x)=P{X(t)&amp;lt;x}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$F(t,x)=P \lbrace X(t)&amp;lt;x\rbrace$&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;②二维分布函数&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;$F(s,t;x,y)=P{X(s)&amp;lt;x,X(t)&amp;lt;y}$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$F(s,t;x,y)=P \lbrace X(s)&amp;lt;x,X(t)&amp;lt;y\rbrace $&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -342,7 +349,7 @@ $$&lt;table&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;①均值函数&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;$m(t)=E(X(t))$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$$m(t)=E(X(t))$$&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td style=&#34;text-align: center&#34;&gt;②方差函数&lt;/td&gt;
@@ -366,6 +373,8 @@ $$&lt;table&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://maipdf.cn/est/a67a8868c80e51/pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;pdf&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
