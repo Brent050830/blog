@@ -19,7 +19,7 @@
 &lt;/h2&gt;&lt;p&gt;在腾讯云购买域名，将服务器地址修改为cloudflare后在github修改域名，进行加速&lt;/p&gt;
 &lt;h2 id=&#34;相关的网址&#34;&gt;相关的网址
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo&lt;/a&gt;&lt;/p&gt;
+    &gt; &lt;font face=&#34;仿宋&#34; font color=orange&gt;hugo&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stack&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack-docs.netlify.app/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
