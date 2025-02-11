@@ -425,7 +425,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -803,10 +803,29 @@ $$<div class="table-wrapper"><table>
 <blockquote>
 <p>随机过程的数字特征都与数学期望有关</p>
 </blockquote>
-<p>-互协方差函数与两个</p>
+<p>-互协方差函数、与两个分布有关</p>
 <h4 id="题型一随机过程的数字特征">题型一：随机过程的数字特征
-</h4><p>$X(t)=α\cos(\beta t+\theta)$</p>
-
+</h4><p>$①X(t)=α\cos(\beta t+\theta),\theta在[0,2\pi]上均匀分布，求X(t)的均值函数，方差，相关、协方差$</p>
+<p>解：</p>
+$$
+E(X(t))=\int^{+\infty}_{-\infty}X(t)f(\theta)d\theta=\int^{2\pi}_0\alpha\cos(\beta+\theta)\frac{1}{2\pi}d\theta=0\\
+期望是对随机变量求的\\
+R(s,t)=E(X(s)X(t))=\int^{+\infty}_{-\infty}X(t)X(s)f(\theta)d\theta \\
+=\frac{\alpha^2}{2}\cos\beta(t-s)\\
+使用积化和差公式\\
+C(s,t)=E(X(s)X(t))-m(s)m(t)=R(s,t)\\
+D(t)=C(t,t)=\frac{\alpha^2}{2}
+$$$$
+②设随机过程的X(t)=Vt，其中V是(0.1)上均匀分布的随机变量，求过程X(t)的均值和自相关函数\\
+解：\\
+V的概率密度函数为\\
+f(v)= \begin{cases}
+   1,v\epsilon(0,1) \\
+   0,其他 
+\end{cases}\\
+E(X(t))=\int^{+\infty}_{-\infty}x(t)f(v)dv=\int^1_0vtdt=\frac{t}{2}\\
+R_x(t_1,t_2)=E(X(t_1)Y(t_2))=E(Vt_1Vt_2)=\int_0^1v^2t_1t_2dv=\frac{t_1t_2}{3}\\
+$$
 </section>
 
 
