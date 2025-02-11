@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on Brent_blog</title>
+        <link>https://Brent050830.site/categories/hugo/</link>
+        <description>Recent content in Hugo on Brent_blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Brent</copyright>
+        <lastBuildDate>Tue, 11 Feb 2025 19:23:30 +0800</lastBuildDate><atom:link href="https://Brent050830.site/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>个人博客搭建</title>
+        <link>https://Brent050830.site/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Tue, 11 Feb 2025 19:23:30 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;img src="https://pic1.imgdb.cn/item/67ab3f34d0e0a243d4fe62ab.png" alt="Featured image of post 个人博客搭建" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
