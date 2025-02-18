@@ -793,45 +793,6 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 </script>
 
 
-...
-<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
-<script>
-	var pjax = new Pjax({
-	  selectors: [
-	    ".main-container"
-	  ]
-	})
-</script>
-
-
-...
-<script>
-    ...
-    pjax._handleResponse = pjax.handleResponse;
-    pjax.handleResponse = function(responseText, request, href, options) {
-        if (request.responseText.match("<html")) {
-            
-            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
-            
-            let bodyClass = newDom.body.className;
-            document.body.setAttribute("class", bodyClass)
-            
-            pjax._handleResponse(responseText, request, href, options);
-        } else {
-            
-        }
-    }
-</script>
-
-
-...
-<script>
-    ...
-    document.addEventListener('pjax:complete', () => {
-        
-        window.Stack.init();
-    })
-</script>
 
 
     </body>
