@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Brent050830.site/page/'>
 
-<link rel="stylesheet" href="/scss/style.min.f8eefe6a9b2959bfedf7907c06209963bf6635cd7e732e77c88cfcc8c4b2cb6a.css"><meta property='og:title' content="Pages">
+<link rel="stylesheet" href="/scss/style.min.c9cdf07dcf296aecc5c976dee27ac711d6e024ce36ddbcab95d9363858a92f8a.css"><meta property='og:title' content="Pages">
 <meta property='og:description' content="欢迎来到我的网站">
 <meta property='og:url' content='https://Brent050830.site/page/'>
 <meta property='og:site_name' content='Brent_blog'>
@@ -791,7 +791,46 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
     initScrollTop();
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+...
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+<script>
+	var pjax = new Pjax({
+	  selectors: [
+	    ".main-container"
+	  ]
+	})
+</script>
+
+
+...
+<script>
+    ...
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = function(responseText, request, href, options) {
+        if (request.responseText.match("<html")) {
+            
+            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+            
+            let bodyClass = newDom.body.className;
+            document.body.setAttribute("class", bodyClass)
+            
+            pjax._handleResponse(responseText, request, href, options);
+        } else {
+            
+        }
+    }
+</script>
+
+
+...
+<script>
+    ...
+    document.addEventListener('pjax:complete', () => {
+        
+        window.Stack.init();
+    })
+</script>
 
 
     </body>
