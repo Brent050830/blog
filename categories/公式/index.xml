@@ -398,7 +398,8 @@ f(v)= \begin{cases}
 \end{cases}\\
 E(X(t))=\int^{+\infty}_{-\infty}x(t)f(v)dv=\int^1_0vtdt=\frac{t}{2}\\
 R_x(t_1,t_2)=E(X(t_1)Y(t_2))=E(Vt_1Vt_2)=\int_0^1v^2t_1t_2dv=\frac{t_1t_2}{3}\\
-$$</description>
+$$&lt;h2 id=&#34;我们&#34;&gt;我们
+&lt;/h2&gt;</description>
         </item>
         
     </channel>
