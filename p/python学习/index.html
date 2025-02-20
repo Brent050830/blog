@@ -4452,8 +4452,8 @@ a:打开文件用于追加，已存在则写入原有的内容之后！不存在
         renderMathInElement(mainArticleElement, {
             delimiters: [
                 { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: false },
-                { left: "\\(", right: "\\)", display: false },
+                { left: "$", right: "$", display: true },
+                { left: "\\(", right: "\\)", display: true },
                 { left: "\\[", right: "\\]", display: true }
             ],
             ignoredClasses: ["gist"]
@@ -4919,7 +4919,7 @@ topbar.config({
 
 	var pjax = new Pjax({
   	elements: "a", 
-  	selectors: [".main-container",".main-article",".highlight",".article-content",".katex"]
+  	selectors: [".main-container"]
 	})
 	pjax._handleResponse = pjax.handleResponse;
 
