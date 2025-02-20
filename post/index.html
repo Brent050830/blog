@@ -460,12 +460,6 @@
                 <time datetime='2025-02-11T19:23:30&#43;08:00'>2025-02-11</time>
             </footer>
         </div>
-            <div class="article-image">
-                
-                    <img src="https://pic1.imgdb.cn/item/67ab3f34d0e0a243d4fe62ab.png" loading="lazy" alt="Featured image of post 个人博客搭建" />
-                
-            </div>
-        
     </a>
 </article>
         
@@ -820,7 +814,7 @@ topbar.config({
 
 	var pjax = new Pjax({
   	elements: "a", 
-  	selectors: [".main-container"]
+  	selectors: [".main-container",".main-article",".highlight",".article-content",".katex"]
 	})
 	pjax._handleResponse = pjax.handleResponse;
 
