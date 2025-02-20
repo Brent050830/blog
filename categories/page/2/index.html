@@ -14,10 +14,6 @@
 <meta name="twitter:title" content="Categories">
 <meta name="twitter:description" content="欢迎来到我的网站"><link rel="alternate" type="application/rss&#43;xml" href="https://Brent050830.site/categories/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
 
     </head>
     <body class="">
@@ -523,7 +519,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.99ce1801c4bad426a42fc436add4721e149159dbb598636e9578fd59cf778c83.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
@@ -535,6 +531,7 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
 <script>
   const cdnPath = 'https://cdn.jsdelivr.net/gh/letere-gzj/live2d-widget-v3@main';
 const cssPath = "https://Brent050830.site/waifu/waifu.css"
@@ -799,6 +796,55 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 
     initScrollTop();
 </script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.js"></script>
+
+    
+    <script src=https://Brent050830.site/js/topbar.min.js></script>
+
+<script>
+topbar.config({
+        barColors: {
+            '0': 'rgba(255,  255, 255, 1)', 
+            '1.0': 'rgba(0, 149, 234,  1)' 
+        }
+    })
+
+	var pjax = new Pjax({
+  	elements: "a", 
+  	selectors: [".main-container"]
+	})
+	pjax._handleResponse = pjax.handleResponse;
+
+pjax.handleResponse = function(responseText, request, href, options) {
+  if (request.responseText.match("<html")) {
+
+            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+            
+            let bodyClass = newDom.body.className;
+            document.body.setAttribute("class", bodyClass)
+	    setTimeout(() => {
+    pjax._handleResponse(responseText, request, href, options);
+  } , 0)
+} else {
+    
+  }
+}
+document.addEventListener('pjax:send', () => {
+	topbar.show();
+})
+document.addEventListener('pjax:complete', () => {
+        
+        window.Stack.init();
+	topbar.hide();
+})
+</script>
+
 
 
 
