@@ -841,6 +841,7 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
     }
 
     initScrollTop();
+    window.initCodeMoreBox = initCodeMoreBox;
 </script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -851,45 +852,97 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
 
 
-    
-    <script src=https://Brent050830.site/js/topbar.min.js></script>
+
+<script src=https://Brent050830.site/js/topbar.min.js></script>
 
 <script>
-topbar.config({
-        barColors: {
-            '0': 'rgba(255,  255, 255, 1)', 
-            '1.0': 'rgba(0, 149, 234,  1)' 
-        }
-    })
-
 	var pjax = new Pjax({
-  	elements: "a", 
-  	selectors: [".main-container"]
+		elements: "a, form",
+		
+		selectors: [
+			"title",
+			".main-container",
+			".js-Pjax"
+		],
+		cacheBust: false
 	})
+
+	
 	pjax._handleResponse = pjax.handleResponse;
+	pjax.handleResponse = function(responseText, request, href, options) {
+		if (request.responseText.match("<html")) {
+			let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
+			
+			let bodyClass = newDoc.body.className;
+			document.body.setAttribute("class", bodyClass)
+			
+			pjax._handleResponse(responseText, request, href, options);
+		} else {
+			window.open(href)
+			topbar.hide();
+		}
+	}
 
-pjax.handleResponse = function(responseText, request, href, options) {
-  if (request.responseText.match("<html")) {
+	
+	topbar.config({
+		barColors: {
+			'0': 'rgba(255,  255, 255, 1)',
+			'1.0': 'rgba(0, 149, 234,  1)'
+		}
+	})
 
-            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
-            
-            let bodyClass = newDom.body.className;
-            document.body.setAttribute("class", bodyClass)
-	    setTimeout(() => {
-    pjax._handleResponse(responseText, request, href, options);
-  } , 0)
-} else {
-    
-  }
-}
-document.addEventListener('pjax:send', () => {
-	topbar.show();
-})
-document.addEventListener('pjax:complete', () => {
-        
-        window.Stack.init();
-	topbar.hide();
-})
+	
+	document.addEventListener('pjax:send', () => {
+		
+		topbar.show();
+	})
+
+	
+	document.addEventListener('pjax:complete', () => {
+		
+		window.Stack.init();
+		
+		topbar.hide();
+		
+
+		
+		initTocHide();
+		
+		initScrollTop();
+
+		
+		initCodeMoreBox();
+		
+		showWelcomeMessage();
+		document.addEventListener("DOMContentLoaded", function() {
+  renderMathInElement(document.body);
+});
+
+	})
+</script>
+<link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+	const mainArticleElement = document.querySelector(".main-article");
+        renderMathInElement(mainArticleElement, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: true },
+                { left: "\\(", right: "\\)", display: true },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
 </script>
 
 
