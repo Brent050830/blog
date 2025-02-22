@@ -794,9 +794,7 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
-
 
 
 <script src=https://Brent050830.site/js/topbar.min.js></script>
@@ -828,8 +826,7 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 			topbar.hide();
 		}
 	}
-
-	
+		
 	topbar.config({
 		barColors: {
 			'0': 'rgba(255,  255, 255, 1)',
@@ -865,8 +862,7 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
 });
 
 	})
-</script>
-<link 
+</script><link 
                 rel="stylesheet" 
                 href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
             ><script 
@@ -878,18 +874,45 @@ const waifuTipsJsonPath = "https://Brent050830.site/waifu/waifu-tips.json"
                 defer
                 >
             </script><script>
-    window.addEventListener("DOMContentLoaded", () => {
-	const mainArticleElement = document.querySelector(".main-article");
-        renderMathInElement(mainArticleElement, {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: true },
-                { left: "\\(", right: "\\)", display: true },
-                { left: "\\[", right: "\\]", display: true }
-            ],
-            ignoredClasses: ["gist"]
-        });})
+    document.addEventListener('DOMContentLoaded', function() {
+        const mainArticleElement = document.querySelector(".main-article");
+        if (mainArticleElement) {
+            renderMathInElement(mainArticleElement, {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false },
+                    { left: "\\(", right: "\\)", display: false },
+                    { left: "\\[", right: "\\]", display: true }
+                ],
+                ignoredClasses: ["gist"]
+            });
+        }
+    });
+
+    document.addEventListener('pjax:complete', function() {
+        const mainArticleElement = document.querySelector(".main-article");
+        if (mainArticleElement) {
+            renderMathInElement(mainArticleElement, {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false },
+                    { left: "\\(", right: "\\)", display: false },
+                    { left: "\\[", right: "\\]", display: true }
+                ],
+                ignoredClasses: ["gist"]
+            });
+        }
+    });
+
+
+    function renderMathInElement(el, options) {
+        const mathElements = el.querySelectorAll('.math, .inline-math, .display-math');
+        mathElements.forEach(function(el) {
+            katex.render(el.textContent, el, options);
+        });
+    }
 </script>
+
 
 
 
