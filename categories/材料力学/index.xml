@@ -13,8 +13,87 @@
         <pubDate>Mon, 17 Feb 2025 10:18:46 +0800</pubDate>
         
         <guid>https://Brent050830.site/p/%E5%85%AC%E5%BC%8F/</guid>
-        <description>&lt;h2 id=&#34;引入&#34;&gt;引入
-&lt;/h2&gt;</description>
+        <description>&lt;h2 id=&#34;导入&#34;&gt;导入
+&lt;/h2&gt;&lt;h3 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;构件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;杆件：
+&lt;ol&gt;
+&lt;li&gt;横截面：等截面和变截面&lt;/li&gt;
+&lt;li&gt;轴线：直杆和曲杆&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;板壳&lt;/li&gt;
+&lt;li&gt;块体&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变形：弹性变形，塑性变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;失效：失去原有设计所规定的功能&lt;/p&gt;
+&lt;p&gt;杆件与力：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉压杆，拉压力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;转轴，扭转&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柱子，两端受压&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;梁，弯曲&lt;/p&gt;
+&lt;h3 id=&#34;性质&#34;&gt;性质
+&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;强度：抵抗破坏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刚度：抵抗变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稳定性：保持原有平衡状态的能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本假设&#34;&gt;基本假设
+&lt;/h3&gt;&lt;p&gt;定义：由固体构成，外力作用下将发生变形，称为变形固体&lt;/p&gt;
+&lt;p&gt;基本假设：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;连续性假设：变形前后无空隙&lt;/li&gt;
+&lt;li&gt;均匀性假设：任何部分力学性能相同&lt;/li&gt;
+&lt;li&gt;各向同性假设：物体沿着不同方向力学性能相同&lt;/li&gt;
+&lt;li&gt;构体变形微小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;外力&#34;&gt;外力
+&lt;/h3&gt;&lt;h4 id=&#34;作用方式&#34;&gt;作用方式
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;体积力&lt;/li&gt;
+&lt;li&gt;表面力：分布力和集中力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时间&#34;&gt;时间
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;静载荷&lt;/li&gt;
+&lt;li&gt;动载荷：交变和冲击
+静强度，动强度和疲劳强度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;内力&#34;&gt;内力
+&lt;/h3&gt;&lt;h4 id=&#34;内力和内力矩&#34;&gt;内力和内力矩
+&lt;/h4&gt;&lt;p&gt;内力：轴力和剪力&lt;/p&gt;
+&lt;p&gt;力矩：扭矩和弯矩&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;求内力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;截面法，截取代平&lt;/p&gt;
+&lt;h4 id=&#34;内力集度&#34;&gt;内力集度
+&lt;/h4&gt;&lt;p&gt;应力：正应力，切（剪）应力&lt;/p&gt;
+</description>
         </item>
         
     </channel>
