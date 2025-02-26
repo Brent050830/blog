@@ -10,7 +10,7 @@
 <meta property='og:description' content="欢迎来到我的网站">
 <meta property='og:url' content='https://Brent050830.site/categories/markdown/'>
 <meta property='og:site_name' content='Brent_blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-02-17T10:18:46&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-02-25T17:07:17&#43;08:00 '/>
 <meta name="twitter:title" content="Category: Markdown - Brent_blog">
 <meta name="twitter:description" content="欢迎来到我的网站"><link rel="alternate" type="application/rss&#43;xml" href="https://Brent050830.site/categories/markdown/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -493,7 +493,7 @@
                     <a href="/archives/#2025">
                         
                             <span class="year">2025</span>
-                            <span class="count">5</span>
+                            <span class="count">8</span>
                         
                     </a> 
                 </div>
@@ -911,81 +911,109 @@
     window.initCodeMoreBox = initCodeMoreBox;
 </script>
 
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"  crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"  crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="window.renderKaTeX = renderMathInElement;"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="window.renderKaTeX = renderMathInElement;"></script>
 ...
 
     
     <script src=https://Brent050830.site/js/topbar.min.js></script>
 
 
-
-
 <script>
-	var pjax = new Pjax({
-		elements: "a, form",
-		
-		selectors: [
-			"title",
-			".main-container",
-			".js-Pjax"
-		],
-		cacheBust: false
-	})
+    var pjax = new Pjax({
+        elements: "a, form",
+        selectors: [
+            "title",
+            ".main-container",
+            ".js-Pjax"
+        ],
+        cacheBust: false
+    });
 
-	
-	pjax._handleResponse = pjax.handleResponse;
-	pjax.handleResponse = function(responseText, request, href, options) {
-		if (request.responseText.match("<html")) {
-			let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
-			
-			let bodyClass = newDoc.body.className;
-			document.body.setAttribute("class", bodyClass)
-			
-			pjax._handleResponse(responseText, request, href, options);
-		} else {
-			window.open(href)
-			topbar.hide();
-		}
-	}
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = function (responseText, request, href, options) {
+        if (request.responseText.match("<html")) {
+            let newDoc = new DOMParser().parseFromString(responseText, 'text/html');
+            let bodyClass = newDoc.body.className;
+            document.body.setAttribute("class", bodyClass);
+            pjax._handleResponse(responseText, request, href, options);
+        } else {
+            window.open(href);
+            topbar.hide();
+        }
+    };
 
-	
-	topbar.config({
-		barColors: {
-			'0': 'rgba(255,  255, 255, 1)',
-			'1.0': 'rgba(0, 149, 234,  1)'
-		}
-	})
+    function insertNewContentWithKatex() {
+        
+        let newContentDiv = document.createElement('div');
+        newContentDiv.classList.add('new-content');
+        newContentDiv.innerHTML = '这是一个公式：\\(E = mc^{2}\\)';
+        document.body.appendChild(newContentDiv);
 
-	
-	document.addEventListener('pjax:send', () => {
-		
-		topbar.show();
-	})
+        
+        var newContent = document.querySelector(".new-content");
+        pjax.refresh(newContent);
 
-	
-	document.addEventListener('pjax:complete', () => {
-		
-		window.Stack.init();
-		
-		topbar.hide();
-		
-		
-		
-		initTocHide();
-		
-		initScrollTop();
-		
-		initCodeMoreBox()
-		
-		showWelcomeMessage();
-		initKaTeX();
-	})
+        
+        if (typeof window.renderKaTeX === 'function') {
+            window.renderKaTeX(newContent);
+        } else {
+            console.error('renderKaTeX 函数未定义，请检查脚本加载顺序');
+        }
+    }
+
+    
+    setTimeout(insertNewContentWithKatex, 2000);
+
+    topbar.config({
+        barColors: {
+            '0': 'rgba(255,  255, 255, 1)',
+            '1.0': 'rgba(0, 149, 234,  1)'
+        }
+    });
+
+    document.addEventListener('pjax:send', () => {
+        topbar.show();
+    });
+
+    document.addEventListener('pjax:complete', () => {
+        if (typeof window.renderKaTeX === 'function') {
+            
+            try {
+                window.renderKaTeX(document.body, {
+                    delimiters: [
+                        {left: "$$", right: "$$", display: true},
+                        {left: "$", right: "$", display: false}
+                    ]
+                });
+            } catch (error) {
+                console.error('KaTeX 渲染出错:', error);
+            }
+        } else {
+            console.error('renderKaTeX 函数未定义，请检查脚本加载顺序');
+        }
+        window.Stack.init();
+        topbar.hide();
+        initTocHide();
+        initScrollTop();
+        initCodeMoreBox();
+        showWelcomeMessage();
+    }, 500);
+
 </script>
-
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -1040,6 +1068,34 @@ const ap = new APlayer({
         }, 500);
     };
 </script>
+
+<div class="js-Pjax">
+    <script>
+        (function () {
+            let katex = document.querySelector(".article-content");
+            let scriptEle;
+            if (katex) {
+                scriptEle = document.createElement("script");
+                scriptEle.src = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js";
+                scriptEle.crossOrigin = "anonymous";
+                scriptEle.defer = true;
+                katex.appendChild(scriptEle);
+
+                scriptEle = document.createElement("script");
+                scriptEle.src = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js";
+                scriptEle.crossOrigin = "anonymous";
+                scriptEle.defer = true;
+                katex.appendChild(scriptEle);
+
+                setTimeout(() => {
+                    renderKaTeX();
+                }, 500);
+            }
+        })(document)
+
+            </script>
+</div>
+
 
 
 

@@ -33,11 +33,11 @@
 &lt;p&gt;变形：弹性变形，塑性变形&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;内力&lt;/p&gt;
+&lt;p&gt;内力：&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;失效：失去原有设计所规定的功能&lt;/p&gt;
-&lt;p&gt;杆件与力：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;杆件与力：&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;拉压杆，拉压力&lt;/p&gt;
@@ -81,7 +81,7 @@
 &lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;静载荷&lt;/li&gt;
 &lt;li&gt;动载荷：交变和冲击
-静强度，动强度和疲劳强度&lt;/li&gt;
+从而产生，静强度，动强度和疲劳强度的概念&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;内力&#34;&gt;内力
 &lt;/h3&gt;&lt;h4 id=&#34;内力和内力矩&#34;&gt;内力和内力矩
