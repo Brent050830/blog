@@ -913,14 +913,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"  crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"  crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-    onload="window.renderKaTeX = renderMathInElement;"></script>
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-    onload="window.renderKaTeX = renderMathInElement;"></script>
 ...
 
     
@@ -932,8 +924,8 @@
         elements: "a, form",
         selectors: [
             "title",
-            ".main-container",
-            ".js-Pjax"
+            ".main-container"
+
         ],
         cacheBust: false
     });
@@ -951,28 +943,7 @@
         }
     };
 
-    function insertNewContentWithKatex() {
-        
-        let newContentDiv = document.createElement('div');
-        newContentDiv.classList.add('new-content');
-        newContentDiv.innerHTML = '这是一个公式：\\(E = mc^{2}\\)';
-        document.body.appendChild(newContentDiv);
-
-        
-        var newContent = document.querySelector(".new-content");
-        pjax.refresh(newContent);
-
-        
-        if (typeof window.renderKaTeX === 'function') {
-            window.renderKaTeX(newContent);
-        } else {
-            console.error('renderKaTeX 函数未定义，请检查脚本加载顺序');
-        }
-    }
-
-    
-    setTimeout(insertNewContentWithKatex, 2000);
-
+   
     topbar.config({
         barColors: {
             '0': 'rgba(255,  255, 255, 1)',
@@ -985,28 +956,26 @@
     });
 
     document.addEventListener('pjax:complete', () => {
-        if (typeof window.renderKaTeX === 'function') {
-            
-            try {
-                window.renderKaTeX(document.body, {
-                    delimiters: [
-                        {left: "$$", right: "$$", display: true},
-                        {left: "$", right: "$", display: false}
-                    ]
-                });
-            } catch (error) {
-                console.error('KaTeX 渲染出错:', error);
-            }
-        } else {
-            console.error('renderKaTeX 函数未定义，请检查脚本加载顺序');
-        }
-        window.Stack.init();
-        topbar.hide();
-        initTocHide();
-        initScrollTop();
-        initCodeMoreBox();
-        showWelcomeMessage();
-    }, 500);
+		
+		window.Stack.init();
+		
+		topbar.hide();
+		
+		
+		
+		initTocHide();
+		
+		initScrollTop();
+		
+		initCodeMoreBox()
+		
+		showWelcomeMessage();
+		
+		setTimeout(() => {
+        renderKaTeX();
+      }, 500)
+
+	})
 
 </script>
 
@@ -1064,33 +1033,52 @@ const ap = new APlayer({
     };
 </script>
 
-<div class="js-Pjax">
-    <script>
-        (function () {
-            let katex = document.querySelector(".article-content");
-            let scriptEle;
-            if (katex) {
-                scriptEle = document.createElement("script");
-                scriptEle.src = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js";
-                scriptEle.crossOrigin = "anonymous";
-                scriptEle.defer = true;
-                katex.appendChild(scriptEle);
+<script>
+    function renderKaTeX() {
+        
+        let katex = document.querySelector(".math-katex");
+        if (!katex) {
+            return;
+        }
+        
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });
+    }
 
-                scriptEle = document.createElement("script");
-                scriptEle.src = "https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js";
-                scriptEle.crossOrigin = "anonymous";
-                scriptEle.defer = true;
-                katex.appendChild(scriptEle);
+    document.addEventListener('pjax:complete', () => {
+      
+      setTimeout(() => {
+        renderKaTeX();
+      }, 500)
+    })
+</script>
 
-                setTimeout(() => {
-                    renderKaTeX();
-                }, 500);
-            }
-        })(document)
+<script>
+    function renderKaTeX() {
+        let katex = document.querySelector(".math-katex");
+        if (!katex) {
+            return;
+        }
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });
+    }
 
-            </script>
-</div>
-
+    window.renderKaTeX = renderKaTeX;
+</script>
 
 
 
