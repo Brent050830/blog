@@ -118,7 +118,15 @@ $$</description>
 &lt;/ul&gt;
 &lt;p&gt;截面法，截取代平&lt;/p&gt;
 &lt;h4 id=&#34;内力集度&#34;&gt;内力集度
-&lt;/h4&gt;&lt;p&gt;应力：正应力，切（剪）应力&lt;/p&gt;
+&lt;/h4&gt;&lt;p&gt;内力集度——应力：正应力，切（剪）应力&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;正应力：垂直截面，$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_A}{dA} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切（剪）应力：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
