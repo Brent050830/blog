@@ -21,7 +21,52 @@
         <pubDate>Tue, 25 Feb 2025 17:06:39 +0800</pubDate>
         
         <guid>https://Brent050830.site/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/</guid>
-        <description></description>
+        <description>&lt;h2 id=&#34;平面运动结构分析&#34;&gt;平面运动结构分析
+&lt;/h2&gt;&lt;h3 id=&#34;副的分类&#34;&gt;副的分类
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;运动副：&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;按约束的数目空间&#34;&gt;按约束的数目（空间）
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;1级副：&lt;/p&gt;
+&lt;p&gt;引入一个几何约束，不能沿着z轴平移&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2级副：&lt;/p&gt;
+&lt;p&gt;4自由度（一个空间自由运动的物体有6个自由度。3动量+3角动量），俩个集合约束&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三（罗马数字）级副：&lt;/p&gt;
+&lt;p&gt;只能旋转，3自由度&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;平面分类&#34;&gt;平面分类：
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;平面低副：约束=2,1自由度（名字中的低是低自由度的意思）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;回转副（旋转副）&lt;/li&gt;
+&lt;li&gt;移动副&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面高副：自由度为2，线接触（线约束），常见的为&lt;strong&gt;连滚带滑&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;运动简图和运动示意图&#34;&gt;运动简图和运动示意图：
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;运动简图：有长度的比例关系&lt;/li&gt;
+&lt;li&gt;运动示意图：没有表示几何长度，，只说明怎么运动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;运动简图的画法&#34;&gt;运动简图的画法：
+&lt;/h5&gt;&lt;p&gt;顺序：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;$机架\to主动件\to从动件$&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;机构自由度的计算&#34;&gt;机构自由度的计算
+&lt;/h3&gt;&lt;h4 id=&#34;简单结构的公式&#34;&gt;简单结构的公式：
+&lt;/h4&gt;$$
+F=3n-2P_L-P_H
+$$&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;公式解释&lt;/p&gt;&lt;/blockquote&gt;
+</description>
         </item>
         <item>
         <title>工流</title>
@@ -784,6 +829,8 @@ type有返回值（目前的第一个有返回值的）&lt;/p&gt;
 &lt;li&gt;float&lt;/li&gt;
 &lt;li&gt;str&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;三者是有返回值的&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -824,8 +871,6 @@ type有返回值（目前的第一个有返回值的）&lt;/p&gt;
 &lt;p&gt;标识符和变量的关系 &lt;br&gt;
 标识符包括&lt;strong&gt;变量、类、方法&lt;/strong&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;三个规则&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
