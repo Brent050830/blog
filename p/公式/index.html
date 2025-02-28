@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="导入 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="绪论 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
 <title>公式</title>
 
 <link rel='canonical' href='https://Brent050830.site/p/%E5%85%AC%E5%BC%8F/'>
 
 <link rel="stylesheet" href="/scss/style.min.a11b12fd3db97df0ce389e840ce6b0a1490adde49ab3913b7ed9a977342f84b0.css"><meta property='og:title' content="公式">
-<meta property='og:description' content="导入 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
+<meta property='og:description' content="绪论 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
 <meta property='og:url' content='https://Brent050830.site/p/%E5%85%AC%E5%BC%8F/'>
 <meta property='og:site_name' content='Brent_blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-17T10:18:46&#43;08:00'/><meta property='article:modified_time' content='2025-02-17T10:18:46&#43;08:00'/>
 <meta name="twitter:title" content="公式">
-<meta name="twitter:description" content="导入 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
+<meta name="twitter:description" content="绪论 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 <div class="loading">
     <div class="sharingon">
@@ -472,7 +472,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#导入">导入</a>
+    <li><a href="#绪论">绪论</a>
       <ol>
         <li><a href="#基本概念">基本概念</a></li>
         <li><a href="#性质">性质</a></li>
@@ -486,7 +486,21 @@
         <li><a href="#内力">内力</a>
           <ol>
             <li><a href="#内力和内力矩">内力和内力矩</a></li>
-            <li><a href="#内力集度">内力集度</a></li>
+            <li><a href="#内力集度应力">内力集度（应力）</a></li>
+          </ol>
+        </li>
+        <li><a href="#变形">变形</a>
+          <ol>
+            <li><a href="#变形的基本形式">变形的基本形式</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#轴向">轴向</a>
+      <ol>
+        <li><a href="#轴向拉伸与压缩">轴向拉伸与压缩</a>
+          <ol>
+            <li><a href="#横截面上的内力与应力">横截面上的内力与应力</a></li>
           </ol>
         </li>
       </ol>
@@ -555,7 +569,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -570,7 +584,7 @@
     <section class="article-content">
     
     
-    <h2 id="导入">导入
+    <h2 id="绪论">绪论
 </h2><h3 id="基本概念">基本概念
 </h3><ul>
 <li>
@@ -608,7 +622,8 @@
 <li>
 <p>梁，弯曲</p>
 <h3 id="性质">性质
-</h3></li>
+</h3><p>材料力学研究三个主要的性质</p>
+</li>
 <li>
 <p>强度：抵抗破坏</p>
 </li>
@@ -648,16 +663,66 @@
 <li>求内力</li>
 </ul>
 <p>截面法，截取代平</p>
-<h4 id="内力集度">内力集度
+<h4 id="内力集度应力">内力集度（应力）
 </h4><p>内力集度——应力：正应力，切（剪）应力</p>
 <ol>
 <li>
 <p>正应力：垂直截面，$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_A}{dA} $</p>
 </li>
 <li>
-<p>切（剪）应力：</p>
+<p>切（剪）应力：$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_S}{dA} $</p>
 </li>
 </ol>
+<h3 id="变形">变形
+</h3><ul>
+<li>线变形：长度变化</li>
+<li>角变形：线段的夹角变化</li>
+</ul>
+<p><strong>应变</strong>：度量构件一点处的变形程度</p>
+<ol>
+<li>
+$$
+   \epsilon _{\Delta x}=\lim_{\Delta x \to 0} \frac{\Delta s}{\Delta x}
+   $$</li>
+<li>
+<p>切应变（角应变）：对应的是切应力</p>
+<ul>
+<li>M点在xy平面内的切应变</li>
+<li>$\gamma =\alpha +\beta $</li>
+</ul>
+</li>
+</ol>
+<h4 id="变形的基本形式">变形的基本形式
+</h4><ol>
+<li>拉伸与压缩：受力（正应力）</li>
+<li>弯曲：受到弯矩</li>
+<li>扭转：受扭矩：作用线垂直于轴线。</li>
+<li>剪切：受到大小相等，方向相反，靠的很近的力</li>
+</ol>
+<h2 id="轴向">轴向
+</h2><h3 id="轴向拉伸与压缩">轴向拉伸与压缩
+</h3><p><strong>轴力：截面上的内力，与杆件的轴线重合</strong></p>
+<ul>
+<li>拉为正，压为负</li>
+<li>画图时，正值在上方，负值在下方</li>
+</ul>
+<h4 id="横截面上的内力与应力">横截面上的内力与应力
+</h4><ul>
+<li>假设：轴向拉伸后仍为平面</li>
+</ul>
+<ol>
+<li>纵向纤维，伸长量相等</li>
+<li>受力相等</li>
+<li>各点应力相等</li>
+</ol>
+$$
+\sigma=\frac{F_N}{A}
+$$<blockquote>
+<p>![tip]</p>
+<p>其中的$F_N=F$为拉、压力</p>
+<p>改公式假设横截面上的每一点的正应力相等，但是，当以集中力的方式作用时，正应力分布不均匀</p>
+<p>所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）</p>
+</blockquote>
 
 </section>
 
@@ -1144,8 +1209,6 @@
 <link rel="manifest" href="/site.webmanifest">
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"  crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"  crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
     onload="window.renderKaTeX = renderMathInElement;"></script>
 
@@ -1295,7 +1358,6 @@ const ap = new APlayer({
         }, 500);
     };
 </script>
-
 
 
 
