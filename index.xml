@@ -334,12 +334,10 @@ $$
 &lt;/ol&gt;
 $$
 \sigma=\frac{F_N}{A}
-$$&lt;blockquote&gt;
-&lt;p&gt;![tip]&lt;/p&gt;
-&lt;p&gt;其中的$F_N=F$为拉、压力&lt;/p&gt;
+$$&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;其中的$F_N=F$为拉、压力&lt;/p&gt;
 &lt;p&gt;改公式假设横截面上的每一点的正应力相等，但是，当以集中力的方式作用时，正应力分布不均匀&lt;/p&gt;
-&lt;p&gt;所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）&lt;/p&gt;&lt;/blockquote&gt;
 </description>
         </item>
         <item>
@@ -5251,6 +5249,14 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
         <guid>https://Brent050830.site/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://Brent050830.site/ct/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://Brent050830.site/ct/</guid>
         <description></description>
         </item>
         <item>
