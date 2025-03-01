@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Tue, 25 Feb 2025 17:07:17 +0800</lastBuildDate><atom:link href="https://Brent050830.site/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Mar 2025 18:51:10 +0800</lastBuildDate><atom:link href="https://Brent050830.site/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>工程流体力学</title>
+        <link>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Sat, 01 Mar 2025 18:51:10 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>工程热力学</title>
         <link>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/</link>
         <pubDate>Tue, 25 Feb 2025 17:07:17 +0800</pubDate>
@@ -184,16 +192,6 @@ $$&lt;h5 id=&#34;易错的模型&#34;&gt;易错的模型：
 &lt;li&gt;三角架$\Delta$可以看成一个杆组，因为相对位置已经由几何位置完全确定&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 </description>
-        </item>
-        <item>
-        <title>工流</title>
-        <link>https://Brent050830.site/p/%E5%B7%A5%E6%B5%81/</link>
-        <pubDate>Tue, 25 Feb 2025 17:06:09 +0800</pubDate>
-        
-        <guid>https://Brent050830.site/p/%E5%B7%A5%E6%B5%81/</guid>
-        <description>$$
-x^2
-$$</description>
         </item>
         <item>
         <title>公式</title>
