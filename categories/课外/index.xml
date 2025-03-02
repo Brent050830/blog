@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>课外 on Brent_blog</title>
+        <link>https://Brent050830.site/categories/%E8%AF%BE%E5%A4%96/</link>
+        <description>Recent content in 课外 on Brent_blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Brent</copyright>
+        <lastBuildDate>Tue, 11 Feb 2025 19:23:30 +0800</lastBuildDate><atom:link href="https://Brent050830.site/categories/%E8%AF%BE%E5%A4%96/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>个人博客搭建</title>
+        <link>https://Brent050830.site/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Tue, 11 Feb 2025 19:23:30 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;h2 id=&#34;hugo&#34;&gt;hugo
+&lt;/h2&gt;&lt;p&gt;下载git、hugo，进行环境配置，在hugo中下载stack主题，部署到github上，之后进行自动部署&lt;/p&gt;
+&lt;h2 id=&#34;cloudflare&#34;&gt;cloudflare
+&lt;/h2&gt;&lt;p&gt;在腾讯云购买域名，将服务器地址修改为cloudflare后在github修改域名，进行加速&lt;/p&gt;
+&lt;h2 id=&#34;相关的网址&#34;&gt;相关的网址
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt; &lt;font face=&#34;仿宋&#34; font color=orange&gt;hugo&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack-docs.netlify.app/zh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack中文网址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;b站up主个人网页&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>数学物理公式</title>
+        <link>https://Brent050830.site/p/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E5%85%AC%E5%BC%8F/</link>
+        <pubDate>Sat, 08 Feb 2025 18:07:37 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E5%85%AC%E5%BC%8F/</guid>
+        <description>&lt;img src="https://pic1.imgdb.cn/item/67a798d5d0e0a243d4fd27cd.webp" alt="Featured image of post 数学物理公式" /&gt;&lt;h2 id=&#34;基本公式写法&#34;&gt;基本公式写法
+&lt;/h2&gt;&lt;h3 id=&#34;行内式与独立式&#34;&gt;行内式与独立式
+&lt;/h3&gt;$$x-y=1$$&lt;h3 id=&#34;上下标&#34;&gt;上下标
+&lt;/h3&gt;$$
+x^2=y_1=x^{x_1+y}\\
+x^2+y_1=2
+$$&lt;h3 id=&#34;括号&#34;&gt;括号
+&lt;/h3&gt;$$
+f(x,y)=x^2+y_2,x \epsilon[1,10],y \epsilon\{1,2,3\}
+$$&lt;ul&gt;
+&lt;li&gt;对大括号进行转义
+$$
+\left.(\sqrt {1 \over 2}\right)\\
+$$
+$$
+\{ \}\\
+\lbrace 
+$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;省略号&#34;&gt;省略号
+&lt;/h3&gt;&lt;h3 id=&#34;分数&#34;&gt;分数
+&lt;/h3&gt;$$
+\frac{1-x}{y+1}
+$$$$
+x\over{x+1}
+$$&lt;h3 id=&#34;开方&#34;&gt;开方
+&lt;/h3&gt;$$
+\sqrt[3]{9}
+$$&lt;h3 id=&#34;向量&#34;&gt;向量
+&lt;/h3&gt;$$
+\vec a\\
+\vec {ab}
+$$&lt;h3 id=&#34;极限&#34;&gt;极限
+&lt;/h3&gt;$$
+\lim_{n\rightarrow+\infty}\frac{1}{n}
+$$&lt;h3 id=&#34;求导&#34;&gt;求导
+&lt;/h3&gt;$$
+y\prime=nx^{n-1}
+$$&lt;h3 id=&#34;方程组&#34;&gt;方程组
+&lt;/h3&gt;$$
+y:\begin{cases}
+    x+y=1\\
+    x-y=0\\
+    x^{y+1}=1
+\end{cases}
+$$&lt;h3 id=&#34;矩阵&#34;&gt;矩阵
+&lt;/h3&gt;$$
+A= \left[\begin{matrix}
+1&amp;2&amp;3\\
+4&amp;5&amp;6\\
+7&amp;8&amp;9\\
+\end{matrix}\right]
+$$&lt;h3 id=&#34;对数&#34;&gt;对数
+&lt;/h3&gt;$$
+\log\\
+\lg\\
+\ln
+$$&lt;h3 id=&#34;数学符号&#34;&gt;数学符号
+&lt;/h3&gt;$$
+\not=\\
+\approx\\
+\leq\\
+\geq\\
+\times\\
+\cdot\\
+\pm\\
+\div\\
+\infty\\
+\sum\\
+\prod\\
+\coprod\\
+\uparrow\\
+\downarrow\\
+\leftarrow\\
+\rightarrow\\
+\overline{a+b+c}\\
+$$&lt;h3 id=&#34;定积分&#34;&gt;定积分
+&lt;/h3&gt;$$
+\int\\
+\iint\\
+\iiint\\
+\oint\\
+$$&lt;h3 id=&#34;三角函数&#34;&gt;三角函数
+&lt;/h3&gt;$$
+\bot\\
+\angle\\
+30^\circ\\
+\sin\\
+\cos\\
+\tan\\
+\cot\\
+\sec\\
+\csc
+$$&lt;h3 id=&#34;集合&#34;&gt;集合
+&lt;/h3&gt;$$
+\emptyset\\
+\in\\
+\notin\\
+\supset\\
+\supseteq\\
+\bigcap\\
+\bigcup\\
+\bigvee\\
+\bigwedge\\
+$$&lt;h3 id=&#34;希腊字母&#34;&gt;希腊字母
+&lt;/h3&gt;$$
+\alpha\\
+\beta\\
+\gamma\\
+\pi\\
+$$&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;No.&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Lowercase&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Uppercase&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;English&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;IPA&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$1$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\alpha$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$A$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$alpha$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;ælfə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$2$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\beta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$B$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$beta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;bi:tə/or/&amp;lsquo;beɪtə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$3$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\gamma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Gamma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$gamma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;gæmə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$4$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\delta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Delta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$delta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;deltə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$5$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\epsilon$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$E$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$epsilon$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;rsquo;epsɪlɒn/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$6$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\zeta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$Z$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$zeta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;zi:tə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$7$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\eta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$H$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$eta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;i:tə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$8$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\theta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Theta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$theta$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;θi:tə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$9$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\iota$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$I$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$iota$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/aɪ&amp;rsquo;əʊtə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$10$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\kappa$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$K$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$kappa$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;kæpə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$11$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lambda$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\lambda$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$lambda$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;rsquo;læmdə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$12$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\mu$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$M$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$mu$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/mju:/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$13$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\nu$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$N$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$nu$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/nju:/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$14$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\xi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Xi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$xi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/ksi/or/&amp;lsquo;zaɪ/or/&amp;lsquo;ksaɪ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$15$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\omicron$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$O$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$omicron$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/əu&amp;rsquo;maikrən/or/&amp;lsquo;ɑmɪ,krɑn/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$16$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$pi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/paɪ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$17$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\rho$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$P$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$rho$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/rəʊ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$18$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\sigma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Sigma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$sigma$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;sɪɡmə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$19$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\tau$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$T$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$tau$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/tɔ:/or/taʊ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$20$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\upsilon$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Upsilon$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$upsilon$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;ipsilon/or/&amp;lsquo;ʌpsilɒn/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$21$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$phi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/faɪ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$22$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\chi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$X$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$chi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/kaɪ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$23$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\psi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Psi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$psi$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/psaɪ/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$24$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$\Omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$omega$&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;/&amp;lsquo;əʊmɪɡə/or/oʊ&amp;rsquo;meɡə/&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;使用katex&lt;/strong&gt;  &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KATEX&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;随机&#34;&gt;随机
+&lt;/h2&gt;&lt;h3 id=&#34;随机过程的基本概念&#34;&gt;随机过程的基本概念
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;分为三大类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;随机过程——参数集和状态空间是连续的（每时每刻的温度变化）&lt;/li&gt;
+&lt;li&gt;随机序列——离散的&lt;/li&gt;
+&lt;li&gt;链——既不是随机过程，也不是随机序列（马尔科夫链）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;状态空间：温度取值  &lt;br&gt;
+参数集：时间&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;随机过程的分布函数&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;①一维分布函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$F(t,x)=P \lbrace X(t)&amp;lt;x\rbrace$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;②二维分布函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$F(s,t;x,y)=P \lbrace X(s)&amp;lt;x,X(t)&amp;lt;y\rbrace $&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;随机过程的数字特征&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;①均值函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$$m(t)=E(X(t))$$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;②方差函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$D(t)=E(X^2(t))-m^2(t)=C(t,t)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;③协方差函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$C(s,t)=E(X(s)X(t))-m(s)m(t)$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;④相关函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R(s,t)=E(X(s)X(t))$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⑤互协方差函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$C_{XY}(s,t)=R_{XY}(s,t)-E(X(s))E(Y(Y(t)))$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;⑥互相关函数&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;$R_{XY}(s,t)=E(X(s)Y(t))$&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;随机过程的数字特征都与数学期望有关&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;-互协方差函数、与两个分布有关&lt;/p&gt;
+&lt;h4 id=&#34;题型一随机过程的数字特征&#34;&gt;题型一：随机过程的数字特征
+&lt;/h4&gt;&lt;p&gt;$①X(t)=α\cos(\beta t+\theta),\theta在[0,2\pi]上均匀分布，求X(t)的均值函数，方差，相关、协方差$&lt;/p&gt;
+&lt;p&gt;解：&lt;/p&gt;
+$$
+E(X(t))=\int^{+\infty}_{-\infty}X(t)f(\theta)d\theta=\int^{2\pi}_0\alpha\cos(\beta+\theta)\frac{1}{2\pi}d\theta=0\\
+期望是对随机变量求的\\
+R(s,t)=E(X(s)X(t))=\int^{+\infty}_{-\infty}X(t)X(s)f(\theta)d\theta \\
+=\frac{\alpha^2}{2}\cos\beta(t-s)\\
+使用积化和差公式\\
+C(s,t)=E(X(s)X(t))-m(s)m(t)=R(s,t)\\
+D(t)=C(t,t)=\frac{\alpha^2}{2}
+$$$$
+②设随机过程的X(t)=Vt，其中V是(0.1)上均匀分布的随机变量，求过程X(t)的均值和自相关函数\\
+解：\\
+V的概率密度函数为\\
+f(v)= \begin{cases}
+   1,v\epsilon(0,1) \\
+   0,其他 
+\end{cases}\\
+E(X(t))=\int^{+\infty}_{-\infty}x(t)f(v)dv=\int^1_0vtdt=\frac{t}{2}\\
+R_x(t_1,t_2)=E(X(t_1)Y(t_2))=E(Vt_1Vt_2)=\int_0^1v^2t_1t_2dv=\frac{t_1t_2}{3}\\
+$$&lt;h2 id=&#34;我们&#34;&gt;我们
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Markdown使用</title>
+        <link>https://Brent050830.site/p/markdown/</link>
+        <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://Brent050830.site/p/markdown/</guid>
+        <description>&lt;img src="https://pic1.imgdb.cn/item/67c03ef6d0e0a243d4073f65.jpg" alt="Featured image of post Markdown使用" /&gt;&lt;h1 id=&#34;font-face仿宋-font-colororangemarkdown入门教程font&#34;&gt;&lt;font face=&#34;仿宋&#34; font color=orange&gt;Markdown入门教程&lt;/font&gt;
+&lt;/h1&gt;&lt;h2 id=&#34;ordered-list&#34;&gt;Ordered List
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Step1&lt;/li&gt;
+&lt;li&gt;Step2&lt;/li&gt;
+&lt;li&gt;Step3
+&lt;strong&gt;引用&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;应引用&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二级嵌套&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我们是&lt;/li&gt;
+&lt;li&gt;嘿嘿&lt;/li&gt;
+&lt;li&gt;我们&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;无序列表&lt;/li&gt;
+&lt;li&gt;嵌套&lt;/li&gt;
+&lt;li&gt;有序&lt;/li&gt;
+&lt;li&gt;to do list&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; b&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; c&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;表格&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;左对齐&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;居中对齐&lt;/th&gt;
+          &lt;th style=&#34;text-align: right&#34;&gt;右对齐&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;a&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;b&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;c&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;谁&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;是&lt;/td&gt;
+          &lt;td style=&#34;text-align: right&#34;&gt;是&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;段落&#34;&gt;段落
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;换行——两个以上空格后回车或者空一行&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;朵朵&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;字体&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;代码&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;斜体&lt;/em&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;**&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;==高亮==&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;== ==&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;粗体&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;** **&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;&lt;strong&gt;斜粗体&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;*** ***&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;del&gt;删除&lt;/del&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;~~ ~~&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;u&gt;下划线&lt;/u&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;u&gt; &lt;/u&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;脚注&#34;&gt;脚注
+&lt;/h2&gt;&lt;p&gt;大物&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+朵朵&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;代码&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;cp&#34;&gt;#include&amp;lt;iostream&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;；&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;n&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;超链接&#34;&gt;超链接
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://brent050830.github.io/hugo-dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的个人网站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;图片的插入操作&#34;&gt;图片的插入操作：
+&lt;/h3&gt;&lt;p&gt;使用图床：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://imgse.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图床软件的链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;或者使用html语言来实现：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;其他操作&#34;&gt;其他操作
+&lt;/h3&gt;&lt;p&gt;==&lt;strong&gt;插入latex语法：&lt;/strong&gt;==&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单行显示的语法：$f(x)=ax+b$&lt;/li&gt;
+&lt;li&gt;块显示的语法：
+$$
+    \begin{Bmatrix}
+    a &amp; b \\
+    c&amp;d
+    \end{Bmatrix}
+   $$
+Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;进阶的样式&#34;&gt;进阶的样式：
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;进一步美化
+css语法：ctrl+shift+p 搜索&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;center&gt;
+&lt;p&gt;&lt;strong&gt;插入图片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/o1TMIwRtC9JcNuK.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/Wb2CpBfh9tLoMSI.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/I2fgH9XxWBro3OA.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/aqiTOoVRhK7k6eb.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;对照的相应代码&#34;&gt;对照的相应代码：
+&lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Markdown&#34; data-lang=&#34;Markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# &amp;lt;font face=&amp;#34;仿宋&amp;#34; font color=orange&amp;gt;Markdown入门教程&amp;lt;/font&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;## Ordered List
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; Step1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; Step2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; Step3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**引用**
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;应引用
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;gt;&amp;gt;二级嵌套
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;gs&#34;&gt;**列表**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 我们是
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 嘿嘿
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 我们
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 无序列表 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 嵌套
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; 有序
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; to do list
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; c
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;gs&#34;&gt;**表格**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   | 左对齐 | 居中对齐 | 右对齐 |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   | :- | :----: | ----: |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   |a|b|c|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   |谁|是|是|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; ## 段落
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 换行——两个以上空格后回车或者空一行     
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     朵朵
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |字体|代码|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |:-:|:-:|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |*斜体*|**|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |==高亮==|== ==|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |**粗体**|** &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |***斜粗体***|*** &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |~~删除~~|~~ ~~|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;下划线&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;|&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; ## 脚注    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    大物[^1]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    朵朵
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;5.&lt;/span&gt; &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*代码***
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ```c++
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;ni&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iostream&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    using namespace std；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    int main(){
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        print(&amp;#34;hello world&amp;#34;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        return 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;超链接-1&#34;&gt;超链接
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://brent050830.github.io/hugo-dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的个人网站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;图片的插入操作-1&#34;&gt;图片的插入操作：
+&lt;/h3&gt;&lt;p&gt;使用图床：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://imgse.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图床软件的链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;或者使用html语言来实现：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;其他操作-1&#34;&gt;其他操作
+&lt;/h3&gt;&lt;p&gt;==&lt;strong&gt;插入latex语法：&lt;/strong&gt;==&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单行显示的语法：$f(x)=ax+b$&lt;/li&gt;
+&lt;li&gt;块显示的语法：
+$$
+    \begin{Bmatrix}
+    a &amp; b \\
+    c&amp;d
+    \end{Bmatrix}
+   $$
+Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;进阶的样式-1&#34;&gt;进阶的样式：
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;进一步美化
+css语法：ctrl+shift+p 搜索&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;center&gt;
+&lt;p&gt;&lt;strong&gt;插入图片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/o1TMIwRtC9JcNuK.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/Wb2CpBfh9tLoMSI.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/I2fgH9XxWBro3OA.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/aqiTOoVRhK7k6eb.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# &amp;lt;font face=&amp;#34;仿宋&amp;#34; font color=orange&amp;gt;Markdown入门教程&amp;lt;/font&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;## Ordered List
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; Step1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; Step2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; Step3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**引用**
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;应引用
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;gt;&amp;gt;二级嵌套
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; &lt;span class=&#34;gs&#34;&gt;**列表**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 我们是
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 嘿嘿
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 我们
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 无序列表 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 嵌套
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; 有序
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; to do list
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; a
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; c
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; &lt;span class=&#34;gs&#34;&gt;**表格**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   | 左对齐 | 居中对齐 | 右对齐 |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   | :- | :----: | ----: |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   |a|b|c|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   |谁|是|是|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; ## 段落
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 换行——两个以上空格后回车或者空一行     
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     朵朵
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |字体|代码|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |:-:|:-:|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |*斜体*|**|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |==高亮==|== ==|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |**粗体**|** &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |***斜粗体***|*** &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |~~删除~~|~~ ~~|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     |&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;下划线&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;|&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;       
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;4.&lt;/span&gt; ## 脚注    
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    大物[^1]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    朵朵
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;5.&lt;/span&gt; &lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*代码***
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    ```c++
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;ni&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;iostream&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    using namespace std；
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    int main(){
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        print(&amp;#34;hello world&amp;#34;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        return 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;超链接-2&#34;&gt;超链接
+&lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://brent050830.github.io/hugo-dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;我的个人网站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;图片的插入操作-2&#34;&gt;图片的插入操作：
+&lt;/h3&gt;&lt;p&gt;使用图床：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://imgse.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;图床软件的链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;或者使用html语言来实现：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;其他操作-2&#34;&gt;其他操作
+&lt;/h3&gt;&lt;p&gt;==&lt;strong&gt;插入latex语法：&lt;/strong&gt;==&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单行显示的语法：$f(x)=ax+b$&lt;/li&gt;
+&lt;li&gt;块显示的语法：
+$$
+    \begin{Bmatrix}
+    a &amp; b \\
+    c&amp;d
+    \end{Bmatrix}
+   $$
+Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;ol start=&#34;9&#34;&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;进阶的样式-2&#34;&gt;进阶的样式：
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;进一步美化
+css语法：ctrl+shift+p 搜索&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;center&gt;
+&lt;p&gt;&lt;strong&gt;插入图片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/o1TMIwRtC9JcNuK.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/Wb2CpBfh9tLoMSI.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/I2fgH9XxWBro3OA.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s2.loli.net/2025/01/26/aqiTOoVRhK7k6eb.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;这是脚注的内容&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

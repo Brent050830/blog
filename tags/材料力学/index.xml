@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>材料力学 on Brent_blog</title>
+        <link>https://Brent050830.site/tags/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/</link>
+        <description>Recent content in 材料力学 on Brent_blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Brent</copyright>
+        <lastBuildDate>Mon, 17 Feb 2025 10:18:46 +0800</lastBuildDate><atom:link href="https://Brent050830.site/tags/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>材料力学</title>
+        <link>https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Mon, 17 Feb 2025 10:18:46 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy" alt="Featured image of post 材料力学" /&gt;&lt;h2 id=&#34;绪论&#34;&gt;绪论
+&lt;/h2&gt;&lt;h3 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;构件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;杆件：
+&lt;ol&gt;
+&lt;li&gt;横截面：等截面和变截面&lt;/li&gt;
+&lt;li&gt;轴线：直杆和曲杆&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;板壳&lt;/li&gt;
+&lt;li&gt;块体&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变形：弹性变形，塑性变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内力：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;失效：失去原有设计所规定的功能&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;杆件与力：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉压杆，拉压力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;转轴，扭转&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柱子，两端受压&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;梁，弯曲&lt;/p&gt;
+&lt;h3 id=&#34;性质&#34;&gt;性质
+&lt;/h3&gt;&lt;p&gt;材料力学研究三个主要的性质&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;强度：抵抗破坏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刚度：抵抗变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稳定性：保持原有平衡状态的能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本假设&#34;&gt;基本假设
+&lt;/h3&gt;&lt;p&gt;定义：由固体构成，外力作用下将发生变形，称为变形固体&lt;/p&gt;
+&lt;p&gt;基本假设：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;连续性假设：变形前后无空隙&lt;/li&gt;
+&lt;li&gt;均匀性假设：任何部分力学性能相同&lt;/li&gt;
+&lt;li&gt;各向同性假设：物体沿着不同方向力学性能相同&lt;/li&gt;
+&lt;li&gt;构体变形微小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;外力&#34;&gt;外力
+&lt;/h3&gt;&lt;h4 id=&#34;作用方式&#34;&gt;作用方式
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;体积力&lt;/li&gt;
+&lt;li&gt;表面力：分布力和集中力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时间&#34;&gt;时间
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;静载荷&lt;/li&gt;
+&lt;li&gt;动载荷：交变和冲击
+从而产生，静强度，动强度和疲劳强度的概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;内力&#34;&gt;内力
+&lt;/h3&gt;&lt;h4 id=&#34;内力和内力矩&#34;&gt;内力和内力矩
+&lt;/h4&gt;&lt;p&gt;内力：轴力和剪力&lt;/p&gt;
+&lt;p&gt;力矩：扭矩和弯矩&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;求内力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;截面法，截取代平&lt;/p&gt;
+&lt;h4 id=&#34;内力集度应力&#34;&gt;内力集度（应力）
+&lt;/h4&gt;&lt;p&gt;内力集度——应力：正应力，切（剪）应力&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;正应力：垂直截面，$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_A}{dA} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切（剪）应力：$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_S}{dA} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;变形&#34;&gt;变形
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;线变形：长度变化&lt;/li&gt;
+&lt;li&gt;角变形：线段的夹角变化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;应变&lt;/strong&gt;：度量构件一点处的变形程度&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+$$
+   \epsilon _{\Delta x}=\lim_{\Delta x \to 0} \frac{\Delta s}{\Delta x}
+   $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切应变（角应变）：对应的是切应力&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;M点在xy平面内的切应变&lt;/li&gt;
+&lt;li&gt;$\gamma =\alpha +\beta $&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;变形的基本形式&#34;&gt;变形的基本形式
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;拉伸与压缩：受力（正应力）&lt;/li&gt;
+&lt;li&gt;弯曲：受到弯矩&lt;/li&gt;
+&lt;li&gt;扭转：受扭矩：作用线垂直于轴线。&lt;/li&gt;
+&lt;li&gt;剪切：受到大小相等，方向相反，靠的很近的力&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;轴向&#34;&gt;轴向
+&lt;/h2&gt;&lt;h3 id=&#34;轴向拉伸与压缩&#34;&gt;轴向拉伸与压缩
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;轴力：截面上的内力，与杆件的轴线重合&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拉为正，压为负&lt;/li&gt;
+&lt;li&gt;画图时，正值在上方，负值在下方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;横截面上的内力与应力&#34;&gt;横截面上的内力与应力
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;假设：轴向拉伸后仍为平面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;纵向纤维，伸长量相等&lt;/li&gt;
+&lt;li&gt;受力相等&lt;/li&gt;
+&lt;li&gt;各点应力相等&lt;/li&gt;
+&lt;/ol&gt;
+$$
+\sigma=\frac{F_N}{A}
+$$&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;其中的$F_N=F$为拉、压力&lt;/p&gt;
+&lt;p&gt;改公式假设横截面上的每一点的正应力相等，但是，当以集中力的方式作用时，正应力分布不均匀&lt;/p&gt;
+&lt;p&gt;所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

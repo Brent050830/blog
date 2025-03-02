@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>大二春夏 on Brent_blog</title>
+        <link>https://Brent050830.site/categories/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/</link>
+        <description>Recent content in 大二春夏 on Brent_blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Brent</copyright>
+        <lastBuildDate>Sat, 01 Mar 2025 18:51:10 +0800</lastBuildDate><atom:link href="https://Brent050830.site/categories/%E5%A4%A7%E4%BA%8C%E6%98%A5%E5%A4%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>工程流体力学</title>
+        <link>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Sat, 01 Mar 2025 18:51:10 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051a" alt="Featured image of post 工程流体力学" /&gt;</description>
+        </item>
+        <item>
+        <title>工程热力学</title>
+        <link>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Tue, 25 Feb 2025 17:07:17 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051b" alt="Featured image of post 工程热力学" /&gt;&lt;h2 id=&#34;绪论&#34;&gt;绪论
+&lt;/h2&gt;&lt;h3 id=&#34;研究的问题&#34;&gt;研究的问题
+&lt;/h3&gt;&lt;p&gt;热力学是研究有序能和无序能之间的相互转换（热与功）&lt;/p&gt;
+&lt;h4 id=&#34;能量在信息领域的应用&#34;&gt;能量在信息领域的应用：
+&lt;/h4&gt;$$
+H(X)=-\Sigma ^n_{i=1}p_i\log_2 p_i
+$$&lt;p&gt;
+相同的体积，薄片的表面积大，传热效率高，在此角度上，薄片小，优先使用&lt;/p&gt;
+&lt;h2 id=&#34;热力系&#34;&gt;热力系
+&lt;/h2&gt;&lt;h3 id=&#34;热力系的平衡&#34;&gt;热力系的平衡
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;平衡的条件：&lt;/p&gt;
+&lt;p&gt;温差，力差消失，处于平衡状态的热力系有着均匀一致的温度（T），压力(P)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;状态参数：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;状态的单值函数&lt;/li&gt;
+&lt;li&gt;变化量与过程无关&lt;/li&gt;
+&lt;li&gt;原来平衡的系统经过一系列的封闭过程，状态参数的变化为0&lt;/li&gt;
+&lt;li&gt;状态参数的微分是全微分&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;热力学第0定理&#34;&gt;热力学第0定理：
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;两个热力系都与第三个热力系平衡，则两个系统彼此之间也处于热平衡。&lt;/li&gt;
+&lt;li&gt;对于组成一定的闭系：用n+1的独立状态参数确定（n为准静功的数目，1为考虑与外界的热交换）&lt;/li&gt;
+&lt;li&gt;研究准平衡过程：活塞的移动非常缓慢，远大于弛豫时间（由不平衡到平衡的时间）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;热力循环&#34;&gt;热力循环：
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+$$
+   \epsilon=\frac{}{}
+   $$&lt;/li&gt;
+&lt;li&gt;
+$$
+   \epsilon=\frac{}{}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;热力学&#34;&gt;热力学
+&lt;/h2&gt;&lt;h3 id=&#34;热力学第一定理&#34;&gt;热力学第一定理
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;热力学中功的定义：对外界的作用可以用在外界举起重物的单一效果来代替&lt;/li&gt;
+&lt;/ul&gt;
+$$
+W=\int^2_1P_idV
+$$&lt;p&gt;
+由状态1变化到状态2时的容积变化功&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;热：热力系与外界考温差传递能量称为热&lt;/strong&gt;——是一个过程量，不是状态量&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>设计与制造</title>
+        <link>https://Brent050830.site/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/</link>
+        <pubDate>Tue, 25 Feb 2025 17:06:39 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051c" alt="Featured image of post 设计与制造" /&gt;&lt;h2 id=&#34;平面运动结构分析&#34;&gt;平面运动结构分析
+&lt;/h2&gt;&lt;h3 id=&#34;副的分类&#34;&gt;副的分类
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;运动副的分类：&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;按约束的数目空间&#34;&gt;按约束的数目（空间）
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;1级副：&lt;/p&gt;
+&lt;p&gt;引入一个几何约束，不能沿着z轴平移&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2级副：&lt;/p&gt;
+&lt;p&gt;4自由度（一个空间自由运动的物体有6个自由度。3动量+3角动量），俩个集合约束&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;三（罗马数字）级副：&lt;/p&gt;
+&lt;p&gt;只能旋转，3自由度&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;平面分类&#34;&gt;平面分类：
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;平面低副：约束=2,1自由度（名字中的低是低自由度的意思）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;回转副（旋转副）&lt;/li&gt;
+&lt;li&gt;移动副&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面高副：自由度为2，线接触（线约束），常见的为&lt;strong&gt;连滚带滑&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;运动简图和运动示意图&#34;&gt;运动简图和运动示意图：
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;运动简图：有长度的比例关系&lt;/li&gt;
+&lt;li&gt;运动示意图：没有表示几何长度，，只说明怎么运动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;运动简图的画法&#34;&gt;运动简图的画法：
+&lt;/h5&gt;&lt;p&gt;顺序：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;$机架\to主动件\to从动件$&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;机构自由度的计算&#34;&gt;机构自由度的计算
+&lt;/h3&gt;&lt;h4 id=&#34;简单结构的公式&#34;&gt;简单结构的公式：
+&lt;/h4&gt;$$
+F=3n-2P_L-P_H
+$$&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;公式解释：n为运动部件的数目，不包括机架，机架已经完全限制了&lt;/p&gt;
+&lt;p&gt;$P_L为低副的数目（回转副和移动副）$&lt;/p&gt;
+&lt;p&gt;$P_H为高副的数目（线接触）$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;特殊的情况&#34;&gt;特殊的情况：
+&lt;/h4&gt;&lt;h5 id=&#34;复合铰链&#34;&gt;复合铰链：
+&lt;/h5&gt;&lt;p&gt;一点处有多个回转副时，回转副数目=构件数-1&lt;/p&gt;
+&lt;h5 id=&#34;局部自由度&#34;&gt;局部自由度：
+&lt;/h5&gt;&lt;p&gt;凸轮轴顶针的形式&lt;/p&gt;
+&lt;h5 id=&#34;虚约束&#34;&gt;虚约束：
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;多为三角形和平行四边形&lt;/li&gt;
+&lt;li&gt;去掉某一个杆不影响其他的平衡和位置&lt;/li&gt;
+&lt;li&gt;由于几何关系，使得位置已经确定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;公共约束&#34;&gt;公共约束：
+&lt;/h5&gt;&lt;p&gt;全是移动副，且至少有三个移动副，失去了一个旋转的自由度&lt;/p&gt;
+$$
+F=2n-P_L
+$$&lt;h5 id=&#34;易错的模型&#34;&gt;易错的模型：
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;多接触点的滚滑副&lt;/li&gt;
+&lt;li&gt;有限接触点的回转副和移动副&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;关键是看实际进行什么样子的约束！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;平面机构的高副低代&#34;&gt;平面机构的高副低代：
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;圆与圆之间线接触用两个回转副来代替&lt;/li&gt;
+&lt;li&gt;杆与圆线接触用一个回转副和一个移动副来代替&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;原则：&lt;/li&gt;
+&lt;li&gt;
+&lt;ol&gt;
+&lt;li&gt;自由度不变&lt;/li&gt;
+&lt;li&gt;运动形式不变&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;从而实现将所有的高副都转变为低副&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;拆杆组&#34;&gt;拆杆组
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;机构=机架+主动件+从动件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;原则：将从动件拆分出来&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;步骤&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;高副低代，计算自由度&lt;/li&gt;
+&lt;li&gt;将机架，主动件去除（去除时将副留给从动件）&lt;/li&gt;
+&lt;li&gt;从远离主动件的地方开始拆，直到$3n=2P_L$&lt;/li&gt;
+&lt;li&gt;拆成最简的形式&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-warn&#34;&gt;
+    &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;复合铰链有2副，拆走一个还剩一个&lt;/p&gt;
+&lt;p&gt;移动副画出移动虚线&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;三角架$\Delta$可以看成一个杆组，因为相对位置已经由几何位置完全确定&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>材料力学</title>
+        <link>https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/</link>
+        <pubDate>Mon, 17 Feb 2025 10:18:46 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy" alt="Featured image of post 材料力学" /&gt;&lt;h2 id=&#34;绪论&#34;&gt;绪论
+&lt;/h2&gt;&lt;h3 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;构件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;杆件：
+&lt;ol&gt;
+&lt;li&gt;横截面：等截面和变截面&lt;/li&gt;
+&lt;li&gt;轴线：直杆和曲杆&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;板壳&lt;/li&gt;
+&lt;li&gt;块体&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;变形：弹性变形，塑性变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;内力：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;失效：失去原有设计所规定的功能&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;杆件与力：&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;拉压杆，拉压力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;转轴，扭转&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;柱子，两端受压&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;梁，弯曲&lt;/p&gt;
+&lt;h3 id=&#34;性质&#34;&gt;性质
+&lt;/h3&gt;&lt;p&gt;材料力学研究三个主要的性质&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;强度：抵抗破坏&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;刚度：抵抗变形&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;稳定性：保持原有平衡状态的能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;基本假设&#34;&gt;基本假设
+&lt;/h3&gt;&lt;p&gt;定义：由固体构成，外力作用下将发生变形，称为变形固体&lt;/p&gt;
+&lt;p&gt;基本假设：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;连续性假设：变形前后无空隙&lt;/li&gt;
+&lt;li&gt;均匀性假设：任何部分力学性能相同&lt;/li&gt;
+&lt;li&gt;各向同性假设：物体沿着不同方向力学性能相同&lt;/li&gt;
+&lt;li&gt;构体变形微小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;外力&#34;&gt;外力
+&lt;/h3&gt;&lt;h4 id=&#34;作用方式&#34;&gt;作用方式
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;体积力&lt;/li&gt;
+&lt;li&gt;表面力：分布力和集中力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;时间&#34;&gt;时间
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;静载荷&lt;/li&gt;
+&lt;li&gt;动载荷：交变和冲击
+从而产生，静强度，动强度和疲劳强度的概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;内力&#34;&gt;内力
+&lt;/h3&gt;&lt;h4 id=&#34;内力和内力矩&#34;&gt;内力和内力矩
+&lt;/h4&gt;&lt;p&gt;内力：轴力和剪力&lt;/p&gt;
+&lt;p&gt;力矩：扭矩和弯矩&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;求内力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;截面法，截取代平&lt;/p&gt;
+&lt;h4 id=&#34;内力集度应力&#34;&gt;内力集度（应力）
+&lt;/h4&gt;&lt;p&gt;内力集度——应力：正应力，切（剪）应力&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;正应力：垂直截面，$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_A}{dA} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切（剪）应力：$\sigma =\lim_{\bigtriangleup A  \to 0} \frac{dF_S}{dA} $&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;变形&#34;&gt;变形
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;线变形：长度变化&lt;/li&gt;
+&lt;li&gt;角变形：线段的夹角变化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;应变&lt;/strong&gt;：度量构件一点处的变形程度&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+$$
+   \epsilon _{\Delta x}=\lim_{\Delta x \to 0} \frac{\Delta s}{\Delta x}
+   $$&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;切应变（角应变）：对应的是切应力&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;M点在xy平面内的切应变&lt;/li&gt;
+&lt;li&gt;$\gamma =\alpha +\beta $&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;变形的基本形式&#34;&gt;变形的基本形式
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;拉伸与压缩：受力（正应力）&lt;/li&gt;
+&lt;li&gt;弯曲：受到弯矩&lt;/li&gt;
+&lt;li&gt;扭转：受扭矩：作用线垂直于轴线。&lt;/li&gt;
+&lt;li&gt;剪切：受到大小相等，方向相反，靠的很近的力&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;轴向&#34;&gt;轴向
+&lt;/h2&gt;&lt;h3 id=&#34;轴向拉伸与压缩&#34;&gt;轴向拉伸与压缩
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;轴力：截面上的内力，与杆件的轴线重合&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拉为正，压为负&lt;/li&gt;
+&lt;li&gt;画图时，正值在上方，负值在下方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;横截面上的内力与应力&#34;&gt;横截面上的内力与应力
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;假设：轴向拉伸后仍为平面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;纵向纤维，伸长量相等&lt;/li&gt;
+&lt;li&gt;受力相等&lt;/li&gt;
+&lt;li&gt;各点应力相等&lt;/li&gt;
+&lt;/ol&gt;
+$$
+\sigma=\frac{F_N}{A}
+$$&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;其中的$F_N=F$为拉、压力&lt;/p&gt;
+&lt;p&gt;改公式假设横截面上的每一点的正应力相等，但是，当以集中力的方式作用时，正应力分布不均匀&lt;/p&gt;
+&lt;p&gt;所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）&lt;/p&gt;&lt;/blockquote&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
