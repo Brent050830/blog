@@ -7,68 +7,6 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Tue, 25 Feb 2025 17:07:17 +0800</lastBuildDate><atom:link href="https://Brent050830.site/tags/%E5%B7%A5%E7%83%AD/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>工程热力学</title>
-        <link>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/</link>
-        <pubDate>Tue, 25 Feb 2025 17:07:17 +0800</pubDate>
-        
-        <guid>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/</guid>
-        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051b" alt="Featured image of post 工程热力学" /&gt;&lt;h2 id=&#34;绪论&#34;&gt;绪论
-&lt;/h2&gt;&lt;h3 id=&#34;研究的问题&#34;&gt;研究的问题
-&lt;/h3&gt;&lt;p&gt;热力学是研究有序能和无序能之间的相互转换（热与功）&lt;/p&gt;
-&lt;h4 id=&#34;能量在信息领域的应用&#34;&gt;能量在信息领域的应用：
-&lt;/h4&gt;$$
-H(X)=-\Sigma ^n_{i=1}p_i\log_2 p_i
-$$&lt;p&gt;
-相同的体积，薄片的表面积大，传热效率高，在此角度上，薄片小，优先使用&lt;/p&gt;
-&lt;h2 id=&#34;热力系&#34;&gt;热力系
-&lt;/h2&gt;&lt;h3 id=&#34;热力系的平衡&#34;&gt;热力系的平衡
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;平衡的条件：&lt;/p&gt;
-&lt;p&gt;温差，力差消失，处于平衡状态的热力系有着均匀一致的温度（T），压力(P)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;状态参数：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;状态的单值函数&lt;/li&gt;
-&lt;li&gt;变化量与过程无关&lt;/li&gt;
-&lt;li&gt;原来平衡的系统经过一系列的封闭过程，状态参数的变化为0&lt;/li&gt;
-&lt;li&gt;状态参数的微分是全微分&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;热力学第0定理&#34;&gt;热力学第0定理：
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;两个热力系都与第三个热力系平衡，则两个系统彼此之间也处于热平衡。&lt;/li&gt;
-&lt;li&gt;对于组成一定的闭系：用n+1的独立状态参数确定（n为准静功的数目，1为考虑与外界的热交换）&lt;/li&gt;
-&lt;li&gt;研究准平衡过程：活塞的移动非常缓慢，远大于弛豫时间（由不平衡到平衡的时间）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;热力循环&#34;&gt;热力循环：
-&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;
-$$
-   \epsilon=\frac{}{}
-   $$&lt;/li&gt;
-&lt;li&gt;
-$$
-   \epsilon=\frac{}{}
-   $$&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;热力学&#34;&gt;热力学
-&lt;/h2&gt;&lt;h3 id=&#34;热力学第一定理&#34;&gt;热力学第一定理
-&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;热力学中功的定义：对外界的作用可以用在外界举起重物的单一效果来代替&lt;/li&gt;
-&lt;/ul&gt;
-$$
-W=\int^2_1P_idV
-$$&lt;p&gt;
-由状态1变化到状态2时的容积变化功&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;热：热力系与外界考温差传递能量称为热&lt;/strong&gt;——是一个过程量，不是状态量&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        
+        <lastBuildDate></lastBuildDate><atom:link href="https://Brent050830.site/tags/%E5%B7%A5%E7%83%AD/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
