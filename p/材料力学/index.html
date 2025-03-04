@@ -502,6 +502,21 @@
         <li><a href="#轴向拉伸与压缩">轴向拉伸与压缩</a>
           <ol>
             <li><a href="#横截面上的内力与应力">横截面上的内力与应力</a></li>
+            <li><a href="#斜截面的应力">斜截面的应力</a></li>
+          </ol>
+        </li>
+        <li><a href="#拉伸时的力学性能">拉伸时的力学性能</a>
+          <ol>
+            <li><a href="#拉伸低碳钢的应力-应变图">拉伸低碳钢的应力-应变图</a></li>
+            <li><a href="#低碳钢的力学性能">低碳钢的力学性能</a></li>
+            <li><a href="#卸载定理及冷作硬化">卸载定理及冷作硬化</a></li>
+            <li><a href="#脆性材料">脆性材料</a></li>
+          </ol>
+        </li>
+        <li><a href="#压缩">压缩</a>
+          <ol>
+            <li><a href="#塑性材料">塑性材料</a></li>
+            <li><a href="#脆性材料-1">脆性材料</a></li>
           </ol>
         </li>
       </ol>
@@ -578,7 +593,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -712,7 +727,7 @@ $$
 </h2><h3 id="轴向拉伸与压缩">轴向拉伸与压缩
 </h3><p><strong>轴力：截面上的内力，与杆件的轴线重合</strong></p>
 <ul>
-<li>拉为正，压为负</li>
+<li>拉为正，压为负（像弹簧一样，给对方拉力为正，给压力为负）</li>
 <li>画图时，正值在上方，负值在下方</li>
 </ul>
 <h4 id="横截面上的内力与应力">横截面上的内力与应力
@@ -730,6 +745,131 @@ $$<blockquote class="alert alert-tip">
     <p>其中的$F_N=F$为拉、压力</p>
 <p>改公式假设横截面上的每一点的正应力相等，但是，当以集中力的方式作用时，正应力分布不均匀</p>
 <p>所以引入圣维南定理：在距离外力区域较远的区域，集中力造成的影响可以忽略（离外力一个宽度的距离）</p></blockquote>
+<h4 id="斜截面的应力">斜截面的应力
+</h4>$$
+\left\{\begin{matrix}
+  \sigma _\alpha=\sigma_0\cos^2\alpha\\
+   \tau_\alpha =\frac{\sigma_0}{2}\sin2\alpha
+\end{matrix}\right.
+$$<blockquote class="alert alert-tip">
+    <p><strong>符号规定</strong></p>
+<ul>
+<li>
+<p>其中的$\alpha$为斜面的法向量与x轴正方向的夹角（顺时针为正，逆时针为负）</p>
+</li>
+<li>
+$$正应力\left\{\begin{matrix}  拉伸为正\\压缩为负\\\end{matrix}\right.$$</li>
+<li>
+$$切应力\left\{\begin{matrix}  顺时针为正\\逆时针为负\\\end{matrix}\right.$$<p>        此处的顺逆时针为切应力对内部的一点取矩</p>
+</li>
+<li>
+<p>也可以通过图像来判断正负</p>
+</li>
+</ul></blockquote>
+<h3 id="拉伸时的力学性能">拉伸时的力学性能
+</h3><ul>
+<li>力学性能：在外力作用下材料在变形和破坏方面表现出的力学性能</li>
+</ul>
+<h4 id="拉伸低碳钢的应力-应变图">拉伸低碳钢的应力-应变图
+</h4><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250303200342552.png"
+	width="685"
+	height="470"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
+<blockquote class="alert alert-note">
+    <ul>
+<li>oa:线弹性阶段：</li>
+</ul>
+<p>$\sigma=E\varepsilon $</p>
+<p>E为弹性模量（GPa）=$\tan\alpha$</p>
+<p>$\sigma_P$：比例极限</p>
+<ul>
+<li>ob：非线弹性阶段：b为弹性阶段的最高点</li>
+</ul>
+<p>$\sigma_e$：弹性极限</p>
+<ul>
+<li>bc：屈服阶段：失去抵抗变形的能力</li>
+</ul>
+<p>$\sigma_s$：屈服极限：波动的最低点</p>
+<ul>
+<li>
+<p>ce：强化阶段，恢复了抵抗变形的能力</p>
+</li>
+<li>
+<p>ef：局部变形阶段：出现颈缩现象，f之后断开</p>
+</li>
+</ul></blockquote>
+<h4 id="低碳钢的力学性能">低碳钢的力学性能
+</h4><p>试样拉断后，弹性变形消失，塑性变形保留，试样的长度由 $l_0$ 变为</p>
+<p>$l_1$，横截面积原为 $A_0$，断口处的最小横截面积为 $A_1$。我们定义两个</p>
+$$
+断后伸长率\delta =\frac{l_1-l_0}{l_0}\\
+断面收缩率\Psi  =\frac{A_1-A_0}{A_0}\\
+$$<p>
+$\delta&gt;5%为塑性材料，反之为脆性材料$</p>
+<h4 id="卸载定理及冷作硬化">卸载定理及冷作硬化
+</h4><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250303200457759.png"
+	width="548"
+	height="385"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="142"
+		data-flex-basis="341px"
+	
+></p>
+<ul>
+<li>材料在卸载过程中应力和应变是线性关系，这就是卸载定律。</li>
+<li>材料的比例极限增高，延伸率降低，称之为冷作硬化或加工硬化。</li>
+</ul>
+<p>对于没有明显屈服阶段的塑性材料，用名义屈服极限$\sigma_{p0.2}$来表示。在$\varepsilon =0.2%$的位置做弹性线的平行线，与原来曲线的交点的纵坐标。</p>
+<h4 id="脆性材料">脆性材料
+</h4><p>$\sigma_{bt}$：拉伸强度极限（约为140MPa）。它是衡量脆性材（铸铁）拉伸的唯一强度指标。</p>
+<h3 id="压缩">压缩
+</h3><h4 id="塑性材料">塑性材料
+</h4><ol>
+<li>低碳钢压缩时的直线斜率和屈服极限$\sigma_s$与拉伸时相同。</li>
+<li>屈服阶段后，试件越压越扁，横截面面积不断增大，试件不可能被压断，因此得不到压缩时的强度极限。</li>
+</ol>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250303201143246.png"
+	width="720"
+	height="569"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="303px"
+	
+></p>
+<h4 id="脆性材料-1">脆性材料
+</h4><ol>
+<li>脆性材料的抗拉与抗压性质不完全相同；</li>
+<li>压缩时的强度极限远大于拉伸时的强度极限。</li>
+<li>铸铁压缩时破坏端面与横截面大致成45º到 55º倾角，表明这类试件主要因剪切而破坏。</li>
+</ol>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250303201346682.png"
+	width="988"
+	height="408"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="242"
+		data-flex-basis="581px"
+	
+></p>
 
 </section>
 
