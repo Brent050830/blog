@@ -519,6 +519,19 @@
             <li><a href="#脆性材料-1">脆性材料</a></li>
           </ol>
         </li>
+        <li><a href="#失效安全系数和强度计算">失效、安全系数和强度计算</a>
+          <ol>
+            <li><a href="#安全因数和许用应力">安全因数和许用应力</a></li>
+            <li><a href="#强度条件">强度条件</a></li>
+          </ol>
+        </li>
+        <li><a href="#胡克定理">胡克定理</a>
+          <ol>
+            <li><a href="#弹性模量">弹性模量</a></li>
+            <li><a href="#泊松比">泊松比</a></li>
+            <li><a href="#例题">例题：</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -593,7 +606,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 4 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -813,7 +826,7 @@ $$
 断后伸长率\delta =\frac{l_1-l_0}{l_0}\\
 断面收缩率\Psi  =\frac{A_1-A_0}{A_0}\\
 $$<p>
-$\delta&gt;5%为塑性材料，反之为脆性材料$</p>
+$\delta&gt;5$%为塑性材料，反之为脆性材料$</p>
 <h4 id="卸载定理及冷作硬化">卸载定理及冷作硬化
 </h4><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250303200457759.png"
 	width="548"
@@ -870,6 +883,98 @@ $\delta&gt;5%为塑性材料，反之为脆性材料$</p>
 		data-flex-basis="581px"
 	
 ></p>
+<h3 id="失效安全系数和强度计算">失效、安全系数和强度计算
+</h3><h4 id="安全因数和许用应力">安全因数和许用应力
+</h4><ul>
+<li>
+$$
+  \sigma=\frac{F_N}{A}
+  $$</li>
+<li>
+<p>两个强度指标$\sigma_s$和$\sigma_b$称作<strong>极限应力</strong>或危险应力，并用$\sigma_u$表示</p>
+</li>
+</ul>
+$$
+极限应力\left\{\begin{matrix}  塑性材料                         \sigma_u=\sigma_s(\sigma_{p0.2})\\脆性材料\sigma_u=\sigma_{bt}(\sigma_{bc})\\\end{matrix}\right.
+$$<ul>
+<li>许用应力：</li>
+</ul>
+$$
+[\sigma]=\frac{\sigma_u}{n}
+$$<blockquote class="alert alert-note">
+    <p>工作应力必须小于等于许用应力</p>
+<p>$n:安全因数$</p>
+<p>$[\sigma]：许用应力$</p></blockquote>
+<ul>
+<li>塑性材料的许用应力：$[\sigma]=\frac{\sigma_s}{n_s}$</li>
+<li>脆性材料的许用应力：$[\sigma]=\frac{\sigma_{bt}}{n_b}$</li>
+</ul>
+<h4 id="强度条件">强度条件
+</h4><ul>
+<li>
+<p>杆内的最大工作应力不超过材料的许用应力</p>
+</li>
+<li>
+<p>应用：根据强度条件，可以解决三类强度计算问题</p>
+</li>
+</ul>
+<ol>
+<li>强度校核：$\sigma_{max}=\frac{F_N}{A}\leqslant[\sigma]$</li>
+<li>设计截面：$A\geqslant\frac{F_N}{\sigma}$</li>
+<li>确定许可载荷：$F_N \leqslant A[\sigma]$</li>
+</ol>
+<h3 id="胡克定理">胡克定理
+</h3><ul>
+<li>现代表述：实验表明，当杆内应力不超过材料的某一极限值（比例极限）时，有</li>
+</ul>
+$$
+\Delta l\propto\frac{Fl}{A}
+$$$$
+\Delta l=\frac{Fl}{EA}
+$$<ul>
+<li>推论：</li>
+</ul>
+$$
+\sigma=E\varepsilon
+$$<h4 id="弹性模量">弹性模量
+</h4><p><strong>EA</strong>称为杆的抗拉（抗压）刚度，比例常数E称为弹性模量（杨氏模量）</p>
+<p>常用单位：<strong>MPa</strong>或<strong>GPa</strong></p>
+<p>橡胶的弹性模量：<strong>8 MPa</strong>；钢的弹性模量：<strong>210 GPa</strong>；钻石的弹性模量：<strong>1100 GPa</strong></p>
+<p>描述固体材料抵抗变形能力的物理量</p>
+<blockquote class="alert alert-warn">
+    <p>E是一个形容刚度的物理量，学到现在的第一个</p></blockquote>
+<h4 id="泊松比">泊松比
+</h4><p>纵向：$\varepsilon=\frac{\Delta l}{l}$</p>
+<p>横向：$\varepsilon&rsquo;=\frac{\Delta l}{l}$</p>
+$$
+\mu=\left | \frac{\varepsilon'}{\varepsilon} \right |
+$$<p>
+钢材的<em>μ</em>约为0.25到0.33</p>
+<ul>
+<li>
+<p>对于传统材料：</p>
+<p>杆件拉伸，纵向线应变为正，而横向线应变为负；</p>
+<p>杆件压缩，纵向线应变为负，而横向线应变为正；</p>
+<p>纵向线应变和横向线应变的正负号通常恰好相反。</p>
+</li>
+<li>
+<p>泊松比的范围在-1~0.5（存在负泊松比材料）</p>
+</li>
+</ul>
+<h4 id="例题">例题：
+</h4><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250305173319123.png"
+	width="998"
+	height="645"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="154"
+		data-flex-basis="371px"
+	
+></p>
+<p><strong>以切代弧</strong></p>
 
 </section>
 
