@@ -492,6 +492,22 @@
         <li><a href="#拆杆组">拆杆组</a></li>
       </ol>
     </li>
+    <li><a href="#平面机构运动分析">平面机构运动分析</a>
+      <ol>
+        <li><a href="#速度瞬心法">速度瞬心法</a>
+          <ol>
+            <li><a href="#俩构件之间的速度瞬心">俩构件之间的速度瞬心</a></li>
+            <li><a href="#多个构件的速度瞬心">多个构件的速度瞬心：</a></li>
+          </ol>
+        </li>
+        <li><a href="#相对运动图解法">相对运动图解法</a>
+          <ol>
+            <li><a href="#同一构件上两点之间的关系">同一构件上两点之间的关系</a></li>
+            <li><a href="#移动副两构件上瞬时重合点间的运动关系"><strong>移动副两构件上瞬时重合点间的运动关系：</strong></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -564,7 +580,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -687,6 +703,132 @@ $$<h5 id="易错的模型">易错的模型：
 <ul>
 <li>三角架$\Delta$可以看成一个杆组，因为相对位置已经由几何位置完全确定</li>
 </ul></blockquote>
+<h2 id="平面机构运动分析">平面机构运动分析
+</h2><h3 id="速度瞬心法">速度瞬心法
+</h3><ul>
+<li>
+<p><strong>绝对（相对）瞬心：</strong></p>
+<p><strong>瞬时速度为零（相等）的点。</strong></p>
+</li>
+<li>
+<p><strong>三心定理：</strong></p>
+<p><strong>相互作平面运动的三构件间的三个相对瞬心必共线。</strong></p>
+</li>
+</ul>
+<h4 id="俩构件之间的速度瞬心">俩构件之间的速度瞬心
+</h4><ol>
+<li>回转副：在两个构件的接触点（回转轴上）</li>
+<li>移动副：在垂直于移动线的无穷远处</li>
+<li>纯滚动：接触点</li>
+<li>滚滑副：在垂直于公切线的直线上的某一点</li>
+</ol>
+<blockquote class="alert alert-tip">
+    <p>特点：</p>
+<p>相对速度瞬心绕各自的绝对速度瞬心的$v$相等</p></blockquote>
+<h4 id="多个构件的速度瞬心">多个构件的速度瞬心：
+</h4><ul>
+<li>
+<p>对于直接接触（直接形成副的构件）：</p>
+<p>直接利用上述的俩构件之间的速度瞬心确定速度瞬心</p>
+</li>
+<li>
+<p>对于非直接接触的构件，使用三心定理：</p>
+<p>在两个不同的三心中确定速度瞬心在的直线，直线的交点为速度瞬心</p>
+</li>
+<li>
+<p>对于杆件数目非常多的机构，使梅花桩的方法：</p>
+<ul>
+<li>将所有的构件编号画在圆上（包括机架），先将直接接触的瞬心找到，将圆上对应的两个点连起来；</li>
+<li>再在圆上找一条线（这条线必须为至少两个三角形的公共边），通两个三角形找到速度瞬心</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250306192529461.png"
+	width="1037"
+	height="601"
+	
+	loading="lazy"
+	
+		alt="梅花桩"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="414px"
+	
+></p>
+<blockquote class="alert alert-tip">
+    <p>对于移动副的速度瞬心，垂线过的点一般选在杆件（或机架）所在的回转副上</p></blockquote>
+<h3 id="相对运动图解法">相对运动图解法
+</h3><h4 id="同一构件上两点之间的关系">同一构件上两点之间的关系
+</h4><ul>
+<li>速度：</li>
+</ul>
+$$
+\begin{array}{c}
+矢量式：\quad \boldsymbol{v}_{B}=\boldsymbol{v}_{A}+\boldsymbol{v}_{B A} \\
+方向：\quad\perp B P \quad \perp A P \quad\perp A B \\
+大小：\quad\omega l_{B P} \quad \omega l_{A P}\quad \omega l_{A B}
+\end{array}\\
+其中P为此构件的绝对速度瞬心点。
+$$<ul>
+<li>加速度：</li>
+</ul>
+$$
+矢量方程：  \boldsymbol{a}_{B}{ }^{n}+\boldsymbol{a}_{B}{ }^{t}=\boldsymbol{a}_{A}{ }^{n}+\boldsymbol{a}_{A}{ }^{t}+\boldsymbol{a}_{B A}{ }^{n}+\boldsymbol{a}_{B A}{ }^{t} \\
+方向： \quad / / B P \quad \perp B P \quad / / A P \quad \perp A P \quad B \rightarrow A \quad \perp A B \\
+大小： \quad v_{B}^{2} / r_{B}\quad d v_{B} / d t \quad v_{A}^{2} / r_{A} \quad d v_{A} / d t \quad \omega^{2} l_{A B} \quad \alpha l_{A B} \\
+其中  r_{A}=A P_{A}, ~ r_{B}=B P_{B}  为  A, ~ B  在各自轨迹上的曲率半径。
+$$<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250306193434265.png"
+	width="429"
+	height="415"
+	
+	loading="lazy"
+	
+		alt="同一构件"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="103"
+		data-flex-basis="248px"
+	
+></p>
+<ul>
+<li>相当与理论力学中的基点法</li>
+</ul>
+<h4 id="移动副两构件上瞬时重合点间的运动关系"><strong>移动副两构件上瞬时重合点间的运动关系：</strong>
+</h4><ul>
+<li>速度：</li>
+</ul>
+$$
+矢量方程：  \boldsymbol{v}_{A 2}=\boldsymbol{v}_{A 1}+\boldsymbol{v}_{21}{ }^{r} \\
+方向： \perp A P_{2} \quad \perp A P_{1} \quad  沿导轨\\
+大小： \quad \omega l_{P 2 A} \quad \omega l_{P 1 A} \quad v_{r} \\
+其中  P_{1}  与  P_{2}  分别为构件 1 与 2 的绝对瞬心点。\\
+$$<ul>
+<li>加速度：</li>
+</ul>
+$$
+矢量方程：  \boldsymbol{a}_{A 2}{ }^{n}+\boldsymbol{a}_{A 2}{ }^{t}=\boldsymbol{a}_{A 1}{ }^{n}+\boldsymbol{a}_{A 1}{ }^{t}+\boldsymbol{a}_{21}{ }^{k}+\boldsymbol{a}_{21}{ }^{r} \\
+方向： \quad / / A P_{2} \quad \perp A P_{2} \quad / / A P_{1} \quad \perp A P_{1} \quad \perp \boldsymbol{v}_{21}{ }^{r} \quad  沿导轨\\
+大小： \quad v_{A 2}{ }^{2} / r_{A 2} \quad d v_{A 2} / d t \quad v_{A 1}{ }^{2} / r_{A 1} \quad d v_{A 1} / d t \quad 2 \omega v_{r} \quad d v_{l} / d t \\
+其中  r_{A 1}, ~ r_{A 2}  为  A_{1}  与  A_{2}  在各自轨迹上的曲率半径。
+$$<blockquote class="alert alert-note">
+    <p>可见，由于引入了动系，出现了科氏加速度。</p></blockquote>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250306194231243.png"
+	width="302"
+	height="274"
+	
+	loading="lazy"
+	
+		alt="两个构件"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="110"
+		data-flex-basis="264px"
+	
+></p>
 
 </section>
 
