@@ -532,6 +532,15 @@
             <li><a href="#例题">例题：</a></li>
           </ol>
         </li>
+        <li><a href="#轴向拉伸或压缩时的应变能">轴向拉伸或压缩时的应变能</a></li>
+        <li><a href="#拉伸与压缩时的超静定问题">拉伸与压缩时的超静定问题</a>
+          <ol>
+            <li><a href="#静定与超静定问题">静定与超静定问题</a></li>
+            <li><a href="#步骤">步骤：</a></li>
+            <li><a href="#温度应力和装配应力">温度应力和装配应力</a></li>
+          </ol>
+        </li>
+        <li><a href="#应力集中">应力集中</a></li>
       </ol>
     </li>
   </ol>
@@ -606,7 +615,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 6 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -974,7 +983,132 @@ $$<p>
 		data-flex-basis="371px"
 	
 ></p>
-<p><strong>以切代弧</strong></p>
+<p><strong>以切代弧</strong>：作垂线，交点即为最后的位置</p>
+<h3 id="轴向拉伸或压缩时的应变能">轴向拉伸或压缩时的应变能
+</h3><ul>
+<li>应变能（Vε）：固体在外力作用下，因变形而储存的能量
+称应变能。</li>
+</ul>
+$$
+ \begin{aligned}
+W & =\frac{1}{2} F \Delta l \\
+V_{\varepsilon} & =W=\frac{1}{2} F \Delta l \\
+& =\frac{1}{2} F \frac{F l}{E A}=\frac{F^{2} l}{2 E A}
+\end{aligned}
+$$<ul>
+<li>应变能密度：单位体积内储存的应变能</li>
+</ul>
+$$
+v=\frac{\mathrm{V}_{\varepsilon}}{V}=\frac{\frac{1}{2} F \Delta l}{A l}=\frac{1}{2} \sigma \varepsilon
+$$<ul>
+<li>变形：</li>
+</ul>
+$$
+v=\frac{\sigma^2}{2E}\\
+v=\frac{E\varepsilon^2}{2}
+$$<blockquote class="alert alert-note">
+    <p>可以用应变能解决垂直位移的问题（功能关系）：</p>
+<p>使用力求出应变能，再使用功=能解出</p></blockquote>
+<h3 id="拉伸与压缩时的超静定问题">拉伸与压缩时的超静定问题
+</h3><h4 id="静定与超静定问题">静定与超静定问题
+</h4><h5 id="静定问题">静定问题：
+</h5><p>杆件的轴力（或约束反力）可以用静力平衡条件求出，这种情况称作静定问题。</p>
+<p><strong>未知力（内力或外力）个数等于独立的平衡方程数</strong></p>
+<h5 id="超静定问题">超静定问题
+</h5><p>杆件的轴力（或约束反力）只凭静力平衡方程已不能解出全部未知力，这种情况称做超静定问题。
+未知力个数多于<strong>独立的平衡方程数</strong>
+<strong>超静定结构</strong>：结构的强度和刚度均得到提高</p>
+<blockquote>
+<p>独立平衡方程数目：</p>
+<p>平面任意力系：3个平衡方程</p>
+<p>平面共点力系：2个平衡方程</p>
+</blockquote>
+<h5 id="变形协调">变形协调：
+</h5><p>基于胡克定理</p>
+<details>
+  <summary>求解超静定问题的方法</summary>
+  <p>求解超静定问题，除了平衡方程外，还需要根据多余约
+束对位移或变形的限制，建立各部分位移或变形之间的几何
+关系，即建立几何方程，称为变形协调方程，并建立力与位
+移或变形之间的物理关系，即物理方程，将二者联立才能找
+到求解超静定问题所需的补充方程。</p>
+</details>
+<h4 id="步骤">步骤：
+</h4><ul>
+<li>超静定度（次）数：</li>
+</ul>
+<p>​	约束反力多于独立平衡方程的数目</p>
+<p>​	n=未知力的个数-独立平衡方程的数目</p>
+<ul>
+<li>
+<p>求解超静定问题的步骤：</p>
+<ol>
+<li>确定超静定度数列静力<strong>平衡方程</strong></li>
+<li>根据变形协调条件列<strong>变形几何方程</strong></li>
+<li>将变形与力之间的关系（<strong>胡克定律</strong>）代入变形几何方程得补充方程；</li>
+<li>联立<strong>补充方程</strong>与静力平衡方程求解。</li>
+</ol>
+</li>
+</ul>
+<h4 id="温度应力和装配应力">温度应力和装配应力
+</h4><h5 id="温度应力">温度应力：
+</h5><p>​	温度变化将引起物体的膨胀或收缩。静定结构可以自由变形，不会引起构件的内力，但在<strong>超静定结构</strong>中变形将受到部分或全部约束，温度变化时往往就要引起内力，与之相对应的应力称为<strong>热应力或温度应力</strong>。</p>
+$$
+\sigma_{T}=\frac{F_{R B}}{A}=\alpha_{l} E \Delta T（压）
+$$<p>
+$\Delta T -温度变化（升高）$</p>
+<p>$\alpha_l-材料的线胀系数$</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250310173153895.png"
+	width="517"
+	height="252"
+	
+	loading="lazy"
+	
+		alt="形式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="205"
+		data-flex-basis="492px"
+	
+></p>
+<p>杆的变形分为两部分：</p>
+<ol>
+<li>杆件的温度变形：（伸长）</li>
+</ol>
+$$
+\Delta l_{T}=\alpha_{l} \Delta T \cdot l
+$$<ol start="2">
+<li>杆端作用产生的缩短：</li>
+</ol>
+$$
+\Delta l_{B}=-\frac{F_{R B} l}{E A}
+$$<h5 id="装配应力">装配应力
+</h5><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250310173619168.png"
+	width="892"
+	height="546"
+	
+	loading="lazy"
+	
+		alt="装配应力的例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="163"
+		data-flex-basis="392px"
+	
+></p>
+<h3 id="应力集中">应力集中
+</h3><ul>
+<li>理论应力集中因数：</li>
+</ul>
+$$
+K=\frac{\sigma_{max}}{\sigma}
+$$<p>$\sigma$为平均应力，$\sigma_{max}$为最大的应力</p>
+<ol>
+<li>尺寸变化越急剧、角越尖、孔越小，应力集中的程度越严重。</li>
+<li>应力集中对塑性材料的影响不大；应力集中对脆性材料的影响严重，应特别注意</li>
+</ol>
 
 </section>
 
