@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/'>
 
-<link rel="stylesheet" href="/scss/style.min.ae1f2d3afbc8d4878327fdff788e81c0880546c834a5c36a9153294bcbc1ea9a.css"><meta property='og:title' content="材料力学">
+<link rel="stylesheet" href="/scss/style.min.3564f62e9e68344cdbe66859e9dda1b831aeb13267eb232e141443e82681b362.css"><meta property='og:title' content="材料力学">
 <meta property='og:description' content="绪论 基本概念 构件：\n杆件： 横截面：等截面和变截面 轴线：直杆和曲杆 板壳 块体 变形：弹性变形，塑性变形\n内力：\n失效：失去原有设计所规定的功能\n杆件与力：\n拉压杆，拉压力\n转轴，扭转\n">
 <meta property='og:url' content='https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/'>
 <meta property='og:site_name' content='Brent_blog'>
@@ -497,7 +497,7 @@
         </li>
       </ol>
     </li>
-    <li><a href="#轴向">轴向</a>
+    <li><a href="#拉伸压缩与剪切">拉伸、压缩与剪切</a>
       <ol>
         <li><a href="#轴向拉伸与压缩">轴向拉伸与压缩</a>
           <ol>
@@ -541,6 +541,14 @@
           </ol>
         </li>
         <li><a href="#应力集中">应力集中</a></li>
+        <li><a href="#剪切与挤压的实用计算">剪切与挤压的实用计算</a>
+          <ol>
+            <li><a href="#剪切的实用计算">剪切的实用计算</a></li>
+            <li><a href="#挤压的实用计算">挤压的实用计算</a></li>
+            <li><a href="#强度条件的应用">强度条件的应用</a></li>
+          </ol>
+        </li>
+        <li><a href="#复习总结第八次课">复习总结：第八次课</a></li>
       </ol>
     </li>
   </ol>
@@ -615,7 +623,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 7 分钟
+                    阅读时长: 8 分钟
                 </time>
             </div>
         
@@ -745,7 +753,7 @@ $$
 <li>扭转：受扭矩：作用线垂直于轴线。</li>
 <li>剪切：受到大小相等，方向相反，靠的很近的力</li>
 </ol>
-<h2 id="轴向">轴向
+<h2 id="拉伸压缩与剪切">拉伸、压缩与剪切
 </h2><h3 id="轴向拉伸与压缩">轴向拉伸与压缩
 </h3><p><strong>轴力：截面上的内力，与杆件的轴线重合</strong></p>
 <ul>
@@ -1109,7 +1117,118 @@ $$<p>$\sigma$为平均应力，$\sigma_{max}$为最大的应力</p>
 <li>尺寸变化越急剧、角越尖、孔越小，应力集中的程度越严重。</li>
 <li>应力集中对塑性材料的影响不大；应力集中对脆性材料的影响严重，应特别注意</li>
 </ol>
-
+<h3 id="剪切与挤压的实用计算">剪切与挤压的实用计算
+</h3><h4 id="剪切的实用计算">剪切的实用计算
+</h4><ul>
+<li>
+<p>剪切<strong>受力特点</strong>：</p>
+<p>构件受两组大小相等、方向相反、作用线相互很近的平行力系作用。</p>
+</li>
+<li>
+<p><strong>变形特点</strong>：</p>
+<p>位于两力之间的截面发生相对错动。</p>
+</li>
+</ul>
+<blockquote>
+<p>钢板在受铆钉孔削弱的截面处，应力增大，易在连接处拉断。</p>
+</blockquote>
+<ol>
+<li>铆钉：$F_s=F$</li>
+<li>销轴连接：$F_s=\frac{F}{2}$</li>
+</ol>
+$$
+\tau=\frac{F_s}{A}
+$$<p>
+<img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250312160903100.png"
+	width="418"
+	height="632"
+	
+	loading="lazy"
+	
+		alt="剪切"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="66"
+		data-flex-basis="158px"
+	
+></p>
+<p>剪切面位m-m，平行于剪切力</p>
+<blockquote class="alert alert-note">
+    <p><strong>公式</strong></p></blockquote>
+$$
+切应力强度条件： \tau=\frac{F_{s}}{A} \leq[\tau]=\frac{\tau_{u}}{n} \\  [\tau]  ：许用切应力，常由实验方法确定；\\
+ \tau_{u}  ：剪切极限应力；\quad n  ：安全系数\\
+塑性材料： \quad[\tau]=(0.5-0.7)[\sigma] \\
+脆性材料： \quad[\tau]=(0.8-1.0)[\sigma]
+$$<h4 id="挤压的实用计算">挤压的实用计算
+</h4><ul>
+<li>
+<p>螺栓与钢板相互接触的侧面上，发生的彼此间的局部承压现象，称为挤压。</p>
+</li>
+<li>
+<p>在接触面上的压力，称为<strong>挤压力。</strong></p>
+</li>
+</ul>
+$$
+挤压力\quad F_{bs}=F
+$$$$
+\sigma_{bs}=\frac{F_{bs}}{A_{bs}}
+$$<blockquote>
+<p><strong>挤压面积的计算</strong></p>
+<ol>
+<li>接触面位平面时，为实际接触面积</li>
+<li>接触面为圆柱面时，为直径投影面面积$A=dh$</li>
+</ol>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250312161522694.png"
+	width="378"
+	height="338"
+	
+	loading="lazy"
+	
+		alt="圆柱面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="111"
+		data-flex-basis="268px"
+	
+></p>
+</blockquote>
+<blockquote class="alert alert-note">
+    <p><strong>公式</strong></p></blockquote>
+$$
+挤压强度条件：
+\sigma_{b s}=\frac{F_{b s}}{A_{b s}} \leq\left[\sigma_{b s}\right]\\
+ \left[\sigma_{b s}\right]  ：许用挤压应力，常由实验方法确定\\
+塑性材料： \quad\left[\sigma_{b s}\right]=(1.5-2.5)[\sigma]\\ 
+脆性材料： \quad\left[\sigma_{b s}\right]=(0.9-1.5)[\sigma]
+$$<h4 id="强度条件的应用">强度条件的应用
+</h4><ul>
+<li>剪切与挤压的强度条件：</li>
+</ul>
+<ol>
+<li>校核强度</li>
+</ol>
+$$
+\tau \leq[\tau] \quad \sigma_{b s} \leq\left[\sigma_{b s}\right]\\
+$$<ol start="2">
+<li>设计截面</li>
+</ol>
+$$
+A \geq \frac{F_{S}}{[\tau]} \quad A_{b s} \geq \frac{F}{\left[\sigma_{b s}\right]}\\
+$$<ol start="3">
+<li>求许可载荷：</li>
+</ol>
+$$
+F_{S} \leq[\tau] A \quad F \leq\left[\sigma_{b s}\right]_{A b s}\\
+$$<ol start="4">
+<li>破坏条件：</li>
+</ol>
+$$
+\tau \geq \tau_{u}\\
+$$<h3 id="复习总结第八次课">复习总结：第八次课
+</h3>
 </section>
 
 

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://Brent050830.site/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,14 @@
                 href="https://Brent050830.site/"
                 />
   </url><url>
+    <loc>https://Brent050830.site/categories/c&#43;&#43;/</loc>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.site/p/c-/</loc>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
+  </url><url>
     <loc>https://Brent050830.site/categories/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,17 +34,11 @@
                 href="https://Brent050830.site/categories/"
                 />
   </url><url>
-    <loc>https://Brent050830.site/p/matlab/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
-  </url><url>
-    <loc>https://Brent050830.site/tags/matlab/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
-  </url><url>
     <loc>https://Brent050830.site/post/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.site/tags/</loc>
-    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,6 +49,15 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.site/tags/"
                 />
+  </url><url>
+    <loc>https://Brent050830.site/tags/%E8%AF%BE%E5%A4%96/</loc>
+    <lastmod>2025-03-10T23:44:06+08:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.site/p/matlab/</loc>
+    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.site/tags/matlab/</loc>
+    <lastmod>2025-03-09T21:54:17+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.site/categories/%E8%AF%BE%E5%A4%96/</loc>
     <lastmod>2025-03-09T21:54:17+08:00</lastmod>
