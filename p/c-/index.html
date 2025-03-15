@@ -509,6 +509,10 @@
             <li><a href="#整形">整形</a></li>
             <li><a href="#无符号和有符号的数字">无符号和有符号的数字</a></li>
             <li><a href="#实型">实型</a></li>
+            <li><a href="#常量类型的确定">常量类型的确定</a></li>
+            <li><a href="#char类型">char类型</a></li>
+            <li><a href="#转义字符">转义字符</a></li>
+            <li><a href="#字符串">字符串</a></li>
           </ol>
         </li>
       </ol>
@@ -539,8 +543,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/c&#43;&#43;/" >
-                C&#43;&#43;
+            <a href="/categories/%E8%AF%BE%E5%A4%96/" >
+                课外
             </a>
         
     </header>
@@ -589,7 +593,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -1088,7 +1092,191 @@
 </span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num2</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
+</div><ul>
+<li><code>cout&lt;&lt;fixed</code>设置为小数显示</li>
+<li><code>cout.width(20)</code>显示的最大宽度（最大位数）</li>
+</ul>
+<p><strong>最后输出时只提供了前七位的准确输出</strong>，其中小数的有效位数是包括小数点的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">num1</span><span class="o">=</span><span class="mf">1234567890.1234567890</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="kt">double</span> <span class="n">num2</span><span class="o">=</span><span class="mf">1234567890.1234567890</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">fixed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num1</span><span class="o">&lt;&lt;</span><span class="s">&#34;,&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num2</span><span class="o">&lt;&lt;</span><span class="s">&#34;,&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//但是16位的有效位数
+</span></span></span></code></pre></td></tr></table>
 </div>
+</div><ul>
+<li>一般使用最多的是float和double</li>
+</ul>
+<blockquote>
+<ol>
+<li>实型不区分有无符号，全部有符号</li>
+<li>有效位数为参考</li>
+</ol>
+</blockquote>
+<ul>
+<li>控制显示宽度和小数显示</li>
+</ul>
+<h4 id="常量类型的确定">常量类型的确定
+</h4><p>2001整形字面量的类型怎么确定？</p>
+<ol>
+<li><strong>从小到大的原则：</strong></li>
+</ol>
+<ul>
+<li>整数：int开始————long int</li>
+<li>实型：double开始</li>
+</ul>
+<ol start="2">
+<li>后缀指定：U（无符号）,UL（无符号long）</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;10的字节数是&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;9999999999999999的字节数是&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="mi">9999999999999999</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;3.14的字节是&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="mf">3.14</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//double类型
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="mi">10L</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="mf">3.14</span><span class="n">D</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;3.14F的字节是&#34;</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="mf">3.14F</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/c-/image-20250312231514932.png"
+	width="673"
+	height="452"
+	
+	loading="lazy"
+	
+		alt="原则"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="148"
+		data-flex-basis="357px"
+	
+></p>
+<h4 id="char类型">char类型
+</h4><p>ASCLL表进行对照</p>
+<ul>
+<li>
+<p>char类型用来表示字符的，分为有符号和无符号</p>
+</li>
+<li>
+<p>char类型本质上存储的是数字（0~255）</p>
+</li>
+<li>
+<p>但是由于是对照ASCLL表的，所以一般认为可存储的内容为ASCLL表中的内容</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">ch</span><span class="o">=</span><span class="mi">97</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ch</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="n">ch</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果是ch=a</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">ch</span><span class="o">=</span><span class="sc">&#39;a&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ch</span><span class="o">+</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出结果为98（可能认为是按照数字输出）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">ch</span><span class="o">=</span><span class="sc">&#39;a&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ch</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样就可以输出字母了</p>
+<h4 id="转义字符">转义字符
+</h4><ul>
+<li>ASCLL码中字符分为两类：
+<ul>
+<li>非打印字符和打印字符</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>非打印：无法打印出形态，但是有各种的·控制功能</p>
+<p>要使用这一功能，可以使用<strong>转义字符</strong>的形式</p>
+</blockquote>
+<ul>
+<li>转义字符：将普通字符使用\作为开头，将其含义进行转换，对照得到表中控制字符的功能</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;你好呀，</span><span class="se">\n</span><span class="s"> 我喜欢你&#34;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//换行功能
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;------------------&#34;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;hello</span><span class="se">\t</span><span class="s"> nihao1</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;a</span><span class="se">\t</span><span class="s"> itcast</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">;</span><span class="c1">//\t表示制表符，补充到8个字符位（不足才补充）,8个时会补充到16个
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;1234567</span><span class="se">\t</span><span class="s">ddddd&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>打印\本身，需要<code>\\</code></li>
+<li>打印双引号和单引号，<code>需要\',\&quot;</code>来输出，表示反向转义，消除特殊效果</li>
+</ul>
+<h4 id="字符串">字符串
+</h4><ul>
+<li>
+<p>c语言风格的字符串（了解）</p>
+<ol>
+<li><code>char a[]=&quot;woshi;//字符数组的形式&quot;</code></li>
+<li><code>char *b=&quot;woshi;//指针的形式&quot;</code></li>
+</ol>
+</li>
+<li>
+<p>c++风格的字符串</p>
+<p><code>string c=&quot;woshi&quot;;</code></p>
+</li>
+</ul>
+
 </section>
 
 
@@ -1139,6 +1327,66 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">个人博客搭建</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/%E6%95%B0%E5%AD%A6%E7%89%A9%E7%90%86%E5%85%AC%E5%BC%8F/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic1.imgdb.cn/item/67a798d5d0e0a243d4fd27cd.webp" loading="lazy" data-key="" data-hash="https://pic1.imgdb.cn/item/67a798d5d0e0a243d4fd27cd.webp"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">数学物理公式</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/markdown/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://pic1.imgdb.cn/item/67c03ef6d0e0a243d4073f65.jpg" loading="lazy" data-key="Markdown" data-hash="https://pic1.imgdb.cn/item/67c03ef6d0e0a243d4073f65.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown使用</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     

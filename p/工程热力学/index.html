@@ -526,6 +526,15 @@
         <li><a href="#卡诺定理">卡诺定理：</a></li>
         <li><a href="#热力学温度标尺">热力学温度标尺</a></li>
         <li><a href="#卡诺循环">卡诺循环</a></li>
+        <li><a href="#克劳修斯不等式">克劳修斯不等式</a></li>
+        <li><a href="#状态参数熵">状态参数熵</a>
+          <ol>
+            <li><a href="#可逆过程热量的计算">可逆过程热量的计算</a></li>
+            <li><a href="#示热图t-s图">示热图（T-S图）</a></li>
+          </ol>
+        </li>
+        <li><a href="#熵增">熵增</a></li>
+        <li><a href="#熵方程">熵方程</a></li>
       </ol>
     </li>
   </ol>
@@ -600,7 +609,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 6 分钟
                 </time>
             </div>
         
@@ -915,6 +924,135 @@ $$<blockquote class="alert alert-tip">
 		data-flex-basis="808px"
 	
 ></p>
+<h3 id="克劳修斯不等式">克劳修斯不等式
+</h3><ul>
+<li>任意循环的一般性质：
+<ul>
+<li>假定：
+<ol>
+<li>系统由任意温度T的热源得到的每一微小热量，都是由温度为To的恒温热源通过可逆机 R 供应的</li>
+<li>2可逆机 R 是微小的，因而当向系统输运热量时它将完成一个或若干个循环</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+$$
+> \oint \frac{\delta Q}{T} \leq 0
+> $$</blockquote>
+<p>上述为循环的一般属性</p>
+<ul>
+<li>注意：
+<ol>
+<li>对所讨论的热力系而言，T表示**热源(外界）**的温度</li>
+<li>未对系统的热力过程提出任何限制，适用于任意循环</li>
+<li><strong>一切可逆循环的克劳修斯积分等于零</strong></li>
+<li>一切不可逆循环的克劳修斯积分小于零</li>
+</ol>
+</li>
+</ul>
+<h3 id="状态参数熵">状态参数熵
+</h3><ul>
+<li>
+<p>任意可逆循环$\oint \frac{\delta Q}{T} = 0$</p>
+</li>
+<li>
+<p>S表示这个状态函数——叫做熵，即：</p>
+</li>
+</ul>
+$$
+\begin{array}{l}
+d S=\frac{\delta Q}{T}\\
+\Delta S=S_{2}-S_{1}=\int_{1}^{2} \frac{\delta Q}{T}
+\end{array}
+$$<ul>
+<li><strong>只适用于可逆过程</strong>（上述的两个公式）</li>
+<li>T可以看做是系统的温度</li>
+</ul>
+<h4 id="可逆过程热量的计算">可逆过程热量的计算
+</h4>$$
+\begin{array}{c}
+\mathbb{Q = T d S} \\
+Q_{1-2}=\int_{1}^{2} \mathbb{Q}=\int_{1}^{2} \operatorname{TdS}
+\end{array}
+$$<ul>
+<li>吸热，熵增加（温度T恒大于0）</li>
+<li>放热，熵减少</li>
+<li>绝热，熵不变</li>
+<li><strong>可逆过程</strong>中可利用态函数<strong>熵的增减</strong>来判断过程中系统与外界<strong>热交换</strong>的方向</li>
+</ul>
+<h4 id="示热图t-s图">示热图（T-S图）
+</h4><ul>
+<li>可用面积将可逆过程中交换热量表示出来。<strong>T-S图</strong>又称为<strong>示热图</strong></li>
+<li>在可逆过程中，<strong>热流</strong>穿过边界必将引起<strong>热力系熵</strong>的变化，而<strong>可逆功的传递</strong>与系统中的熵变化无关</li>
+</ul>
+<h3 id="熵增">熵增
+</h3><ul>
+<li>
+<p><strong>熵的变化</strong></p>
+<p>在任意<strong>不可逆</strong>过程中，熵的变化量<strong>大于</strong>该过程中加入系统的<strong>热量</strong>除以<strong>热源温度</strong>所得的商</p>
+</li>
+</ul>
+$$
+\Delta S>\frac{Q}{T}
+$$<ul>
+<li>变化的计算
+<ul>
+<li>熵是一个状态量，其在任意过程中的变化量只与初终状态有关，而与过程如何进行无关，即：</li>
+</ul>
+</li>
+</ul>
+$$
+\int_{1 a 2} d S=\int_{1} d S=S_{2}-S_{1}
+$$<ul>
+<li>不可逆过程熵的变化可以选择相同的初终态间的任意的<strong>可逆过程</strong>来计算</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250315131240510.png"
+	width="468"
+	height="376"
+	
+	loading="lazy"
+	
+		alt="计算"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="124"
+		data-flex-basis="298px"
+	
+></p>
+<h3 id="熵方程">熵方程
+</h3><ol>
+<li>热力学第二定理表达式:</li>
+</ol>
+$$
+dS_{i,s}\geq0
+$$<ul>
+<li>可作为<strong>热过程进行方向</strong>的判据</li>
+<li>前面讲过的热力学第二定律的种种说法和推论都可概括在上述表达式中</li>
+</ul>
+<blockquote>
+<ul>
+<li>
+<p>闭系的熵方程</p>
+<ul>
+<li>$$
+>     dS=\frac{\delta Q}{T}+dS_g
+>     $$</li>
+</ul>
+</li>
+<li>
+<p>开系的熵方程</p>
+<ul>
+<li>可稳定流动过程：
+$$
+>     S_1-S_2=\int_1^2\frac{\delta Q}{T}
+>     $$</li>
+</ul>
+</li>
+</ul>
+</blockquote>
 
 </section>
 
