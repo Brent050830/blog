@@ -561,6 +561,7 @@
             <li><a href="#数组的遍历">数组的遍历</a></li>
             <li><a href="#字符数组">字符数组</a></li>
             <li><a href="#多维数组">多维数组</a></li>
+            <li><a href="#多维数组的遍历">多维数组的遍历</a></li>
           </ol>
         </li>
       </ol>
@@ -2479,6 +2480,41 @@
 	
 ></p>
 <p>维度比较多时，使用上面的方法定义</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">11</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">22</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">v1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">33</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">v1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">44</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;v1数组的第二个元素的第一个元素是:&#34;</span><span class="o">&lt;&lt;</span><span class="n">v1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="p">{{</span><span class="mi">11</span><span class="p">,</span><span class="mi">22</span><span class="p">},{</span><span class="mi">33</span><span class="p">,</span><span class="mi">44</span><span class="p">}};</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="多维数组的遍历">多维数组的遍历
+</h4><p>基本要素：</p>
+<ul>
+<li>多层循环嵌套</li>
+<li>每一层循环对应一维</li>
+<li>for循环更为方便</li>
+</ul>
 
 </section>
 
