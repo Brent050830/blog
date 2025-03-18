@@ -609,7 +609,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 6 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -901,10 +901,26 @@ $$<ul>
 <li>定温-绝热-定温-绝热</li>
 </ul>
 <blockquote class="alert alert-tip">
-    <p>根据循环特性,卡诺循环效率为:</p></blockquote>
+    <p>根据循环特性,卡诺热机循环（正向循环）效率为:</p></blockquote>
 $$
 \eta_{t}=\frac{w_{n e t}}{q_{1}}=\frac{q_{1}-q_{2}}{q_{1}}=1-\frac{q_{2}}{q_{1}}=1-\frac{T_{2}\left|\Delta s_{c-d}\right|}{T_{1}\left|\Delta s_{a-b}\right|}=1-\frac{T_{2}}{T_{1}}
-$$<blockquote class="alert alert-tip">
+$$<p>以上为<strong>热机</strong>（正向循环，吸收热量，对外做工）的效率</p>
+<p><strong>其中$w$为对外界做的功，$q_1$为从高温热源吸收的热量，$q_2为对低温热源放出的热量$</strong></p>
+<ul>
+<li>即热效率=静功/吸热</li>
+</ul>
+<blockquote>
+<p>对于制冷循环（逆向循环）：（实际上将正向循环的公式反过来就好了（都取倒数））$\frac{t_1}{t_1-t_2}=\frac{q_1}{w}$</p>
+<blockquote>
+<p>有：</p>
+<p>制冷系数=$\frac{Q_1}{W}$</p>
+<p>为向高温热源放出的热量/输入的静功</p>
+<ul>
+<li><strong>吸热小于放热</strong>·</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote class="alert alert-tip">
     <p><strong>卡诺定理的补充：</strong></p>
 <ul>
 <li>卡诺循环的热效率仅仅取决于两个热源的温度,若提高高温热源$T_1$,降低低温热源($T_2$提高工作热源温差),则能够提高循环热效率</li>
@@ -1053,6 +1069,60 @@ $$
 </li>
 </ul>
 </blockquote>
+<blockquote class="alert alert-note">
+    <p>做题之后的一些感想：</p>
+<p>上面这些和做题有什么关系吗？？？？</p>
+<blockquote>
+<p>熵是什么呀？</p>
+</blockquote></blockquote>
+<p><strong>有一个理想的热机，有一个热源，一个冷源（这个热源和冷源的温度可能是固定的，也可能是有比热容，传热的）</strong></p>
+<ul>
+<li>
+<p>对于有比热容的两个热源：</p>
+<blockquote>
+<p>可逆过程</p>
+</blockquote>
+<p>利用熵变进行计算：</p>
+<ol>
+<li>
+<p><strong>使用$cmdt代替Q$对$\Delta S$积分，有起始温度和最终温度</strong></p>
+</li>
+<li>
+<p>两个物体都是这样，同时由于为<strong>可逆过程</strong>，因而两个热源的熵变之和为0，可以得到两者<strong>最终温度之间的关系</strong></p>
+</li>
+<li>
+<p>现在知道两个热源的起始，最终温度，可以算出吸收，放出热量，从而算出功</p>
+</li>
+</ol>
+<blockquote>
+<p>不可逆过程：</p>
+</blockquote>
+<ol>
+<li>当不可逆时，不建议使用上面1的公式，因为没有相加为0的关系了，可以根据已知得到始末的温度，后面热量和功的计算与可逆过程相同</li>
+<li>但是由于不可逆，会引入<strong>熵增</strong>的概念
+<ol>
+<li>知道始末温度，利用公式计算两个热源熵的改变量，相加即可</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>对于恒温的两个热源：</p>
+<blockquote>
+<p>可逆过程</p>
+</blockquote>
+<ol>
+<li>由于是恒温的过程，之前计算热效率的公式可以利用了（恒温，T不变，不用使用积分的形式），根据冷热源的温度计算效率，得出<strong>吸热、放热、做功</strong>三者之间的关系</li>
+<li>对于单个热源来说，此时的熵增可以利用那个公式了</li>
+</ol>
+<blockquote>
+<p>不可逆过程</p>
+</blockquote>
+<ol>
+<li>不可逆过程，同样使用那个公式，分别算出在两个热源中的熵增，相加即可</li>
+</ol>
+</li>
+</ul>
 
 </section>
 
