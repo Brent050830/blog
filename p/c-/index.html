@@ -564,6 +564,23 @@
             <li><a href="#多维数组的遍历">多维数组的遍历</a></li>
           </ol>
         </li>
+        <li><a href="#指针">指针</a>
+          <ol>
+            <li><a href="#基础">基础</a></li>
+            <li><a href="#野指针和空指针">野指针和空指针</a></li>
+            <li><a href="#指针运算">指针运算</a></li>
+            <li><a href="#动态内存分配">动态内存分配</a></li>
+            <li><a href="#数组元素的移除">数组元素的移除</a></li>
+            <li><a href="#数组元素的插入">数组元素的插入</a></li>
+            <li><a href="#指针悬挂">指针悬挂</a></li>
+            <li><a href="#const指针">const指针</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#结构体">结构体</a>
+      <ol>
+        <li><a href="#基本应用">基本应用</a></li>
       </ol>
     </li>
   </ol>
@@ -642,7 +659,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 15 分钟
+                    阅读时长: 19 分钟
                 </time>
             </div>
         
@@ -2515,7 +2532,455 @@
 <li>每一层循环对应一维</li>
 <li>for循环更为方便</li>
 </ul>
-
+<blockquote>
+<p>实现二维数组的遍历</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="p">{{</span><span class="mi">11</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">33</span><span class="p">},{</span><span class="mi">33</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">55</span><span class="p">}};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">v1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>三维数组的遍历</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v2</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="p">{{{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">},{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">}},{{</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">},{</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">}}};</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">)</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">		<span class="k">for</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">k</span><span class="o">&lt;</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span><span class="o">/</span><span class="k">sizeof</span><span class="p">(</span><span class="n">v2</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span><span class="n">k</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">			<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">v2</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>同样的原理，实现三维数组的遍历</strong></p>
+<ul>
+<li>二维是双重循环、三维是三重循环</li>
+</ul>
+<p>第一层循环为数组的最外层，最后一层循环为数组的最内层（数字）</p>
+<h3 id="指针">指针
+</h3><h4 id="基础">基础
+</h4><ul>
+<li>指针是最强大的功能之一，实现了<strong>内存的直接操纵</strong></li>
+</ul>
+<p><strong>指针：特定类型数据在内存中的存储地址，即内存地址</strong></p>
+<p>指针只是一个逻辑概念，其实际应用是：<strong>指针变量</strong></p>
+<p><img src="/p/c-/image-20250319223907397.png"
+	width="615"
+	height="226"
+	
+	loading="lazy"
+	
+		alt="指针变量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="272"
+		data-flex-basis="653px"
+	
+></p>
+<p><code>变量类型 * 指针变量名</code></p>
+<p><code>指针变量名=内存地址值</code></p>
+<p>可以先声明，后赋值</p>
+<p>也可以<strong>声明和赋值</strong>同步</p>
+<ul>
+<li>变量类型表示指针指向的内存地址，存放的是整形数据</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=&amp;</span><span class="n">num</span><span class="p">;</span><span class="c1">//声明一个指针变量，变量中记录的地址存放的是int类型的变量值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//输出内存区域储存的数据
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">cout</span><span class="o">&lt;&lt;&amp;</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span><span class="c1">//指针变量也是有自己的地址的
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>*有两种含义：</p>
+<ul>
+<li>声明时：*p，表示变量p是指针变量（存的是内存地址）</li>
+<li>使用时：*p表示取指针p执行内存区域的数据</li>
+</ul>
+</li>
+<li>
+<p>&amp;表示取变量内存地址，是一个取内存地址的单目运算符</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">num</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="mi">30</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>两种更改值的方式是互通的（可以直接修改*p或num）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">q</span><span class="o">=&amp;</span><span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">q</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">q</span><span class="o">=</span><span class="n">p</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">q</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这种写的方式也是可以的欸</p>
+<h4 id="野指针和空指针">野指针和空指针
+</h4><ul>
+<li>野指针：被声明但是未被初始化（赋值的）指针，会指向<strong>随机</strong>的内存空间</li>
+</ul>
+<p>指针没有初始化时，就是使用之前的内存，可能会产生问题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">m</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>这种情况是可以编译的（但是无法正常运行），但是会在一个未知的位置放一个10的值</p>
+</li>
+<li>
+<p><strong>空指针</strong></p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="nb">NULL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="k">nullptr</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>NULL表示“空，什么都没有的”含义，本质是0
+<ul>
+<li>这时候指针什么都不指向，但是还是得赋值，只是避免了野指针的危险</li>
+</ul>
+</li>
+</ul>
+<h4 id="指针运算">指针运算
+</h4><p>尽管指针变量内记录的是内存地址，但是任然可以进行简单的数学运算</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="n">p</span><span class="o">++</span><span class="p">,</span><span class="n">p</span><span class="o">--</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">num</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=&amp;</span><span class="n">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">p</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>由于是int类型的指针，则在+1的时候地址会加4（字节），即会加一个长度</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">v</span><span class="p">[]</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="n">v</span><span class="p">;</span><span class="c1">//v本身就是地址
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="p">(</span><span class="n">p</span><span class="o">++</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>指针中记录了数组0号元素的地址</p>
+</blockquote>
+<p>数组对象本身记录的是内存地址。可以通过指针运算</p>
+<h4 id="动态内存分配">动态内存分配
+</h4><p>手动进行内存空间的分配，内存空间的释放等内存管理操作</p>
+<ul>
+<li>变量和变量数组（指针）如果在使用后，后续的程序中没有作用了，那么就会占用内存</li>
+</ul>
+<blockquote>
+<p>动态内存分配</p>
+</blockquote>
+<ul>
+<li>变量、数组等对象的创建为<strong>静态内存分配</strong>（不会进行内存空间的自动清理）</li>
+</ul>
+<p>所以需要手动管理内存</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="k">new</span><span class="p">,</span><span class="k">delete</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p><code>new type(普通变量空间)  new type[n]（数组空间）</code></p>
+</li>
+<li>
+<p><code>delete 指针（删除普通变量空间）  delete [] 指针（删除数组空间）</code></p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span><span class="c1">//分配了20字节的内存空间，使用指针来接收这个内存空间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="c1">//相当与*(p+1)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">delete</span><span class="p">[]</span><span class="n">p</span><span class="p">;</span><span class="c1">//只有申请的内存空间才能释放
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>当程序运行出现错误的返回码时，说明对内存的操作是高危操作</p>
+<h4 id="数组元素的移除">数组元素的移除
+</h4><p>在一个数组中移除元素：</p>
+<ol>
+<li>new申请新数组的内存，将需要的数据复制到新的数组</li>
+<li>delete删除旧的数组</li>
+<li>将指针指向新的数组</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p1</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">]{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span><span class="c1">//定义数组的元素，此时指针的长度（元素数目）是无法计算的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="o">*</span><span class="n">p2</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">4</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">j</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">		<span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="n">p2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">p1</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="n">j</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delete</span> <span class="p">[]</span><span class="n">p1</span><span class="p">;</span><span class="c1">//回收老数组的空间，不是必须做的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">p1</span><span class="o">=</span><span class="n">p2</span><span class="p">;</span><span class="c1">//将老数组的指针指向新的数组，不是必须做的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>推荐数组使用动态内存分配创建</p>
+<ul>
+<li>方便进行空间管理</li>
+<li>方便进行修改</li>
+</ul>
+</blockquote>
+<h4 id="数组元素的插入">数组元素的插入
+</h4><p>也是手动实现插入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">];</span><span class="c1">//分配了20字节的内存空间，使用指针来接收这个内存空间
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="c1">//相当与*(p+1)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">delete</span><span class="p">[]</span><span class="n">p</span><span class="p">;</span><span class="c1">//只有申请的内存空间才能释放
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="o">*</span><span class="n">p1</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">]{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span><span class="c1">//定义数组的元素，此时指针的长度是无法计算的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="o">*</span><span class="n">p2</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">!=</span><span class="mi">1</span><span class="o">&amp;&amp;</span><span class="n">j</span><span class="o">!=</span><span class="mi">3</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">		<span class="n">p2</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">=</span><span class="n">p1</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">p2</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">		<span class="n">i</span><span class="o">--</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">		<span class="n">j</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delete</span> <span class="p">[]</span><span class="n">p1</span><span class="p">;</span><span class="c1">//回收老数组的空间，不是必须做的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">p1</span><span class="o">=</span><span class="n">p2</span><span class="p">;</span><span class="c1">//将老数组的指针指向新的数组，不是必须做的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">j</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">p2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>还可以使用偏移量，new[i]=old[i-offset]，当为目标的下标时，增加offset的值。目标下标的值单独填入即可</p>
+<p><strong>注意循环次数</strong></p>
+<h4 id="指针悬挂">指针悬挂
+</h4><ul>
+<li>是指指针所指向的区域已经被回收，这种问题称为指针悬挂</li>
+</ul>
+<p>所以有两点经验：</p>
+<ol>
+<li>不要轻易进行指针之间的赋值</li>
+<li>在delete之前，先确保改指针之后不会再用到</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p1</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span> <span class="p">;</span><span class="c1">//分配了一4字节的内存
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">*</span><span class="n">p1</span><span class="o">=</span><span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="o">*</span><span class="n">p2</span><span class="o">=</span><span class="n">p1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">p1</span><span class="o">&lt;&lt;</span><span class="s">&#34; &#34;</span><span class="o">&lt;&lt;</span><span class="n">p1</span><span class="o">&lt;&lt;</span><span class="s">&#34; &#34;</span><span class="o">&lt;&lt;&amp;</span><span class="n">a</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">delete</span> <span class="n">p1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">cout</span><span class="o">&lt;&lt;*</span><span class="n">p2</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>p1!=&amp;a，之后&amp;p2的值会随机生成（因为分配的内存没有了）</p>
+<h4 id="const指针">const指针
+</h4><ul>
+<li><strong>指向const的指针：</strong></li>
+</ul>
+<p>表示指向区域的数据是不变的，但是可以更改指向</p>
+<p><code>const int *p</code></p>
+<p><code>int const *p </code></p>
+<ul>
+<li>常量指针（const指针）</li>
+</ul>
+<p>指向不可以变，但是指向的数据不可以变（所以在<strong>定义的时候就要初始化</strong>）</p>
+<p><code>int *const p=地址</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl"><span class="kt">int</span><span class="o">*</span><span class="k">const</span> <span class="n">p</span><span class="o">=&amp;</span><span class="n">num2</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>指向const的const指针（*前后都写const）</li>
+</ul>
+<p>指针和指向区域的值都是不可修改的</p>
+<blockquote>
+<p>使用场景</p>
+</blockquote>
+<ul>
+<li>使用常量的同时也需要动态内存分配的场景</li>
+<li>因为只有使用指针时才能动态内存分配</li>
+</ul>
+<h2 id="结构体">结构体
+</h2><h3 id="基本应用">基本应用
+</h3>
 </section>
 
 

@@ -570,6 +570,22 @@
         <li><a href="#圆轴扭转时的应力">圆轴扭转时的应力</a>
           <ol>
             <li><a href="#横截面上的应力">横截面上的应力</a></li>
+            <li><a href="#极惯性矩和抗扭截面系数的计算">极惯性矩和抗扭截面系数的计算</a></li>
+            <li><a href="#扭转强度条件">扭转强度条件</a></li>
+          </ol>
+        </li>
+        <li><a href="#圆轴扭转时的变形">圆轴扭转时的变形</a>
+          <ol>
+            <li><a href="#扭转变形">扭转变形</a></li>
+            <li><a href="#扭转刚度条件">扭转刚度条件</a></li>
+          </ol>
+        </li>
+        <li><a href="#非圆截面杆扭转的概念">非圆截面杆扭转的概念</a>
+          <ol>
+            <li><a href="#自由扭转或纯扭转">自由扭转或纯扭转</a></li>
+            <li><a href="#约束扭转">约束扭转</a></li>
+            <li><a href="#切应力分布">切应力分布：</a></li>
+            <li><a href="#狭长矩形截面">狭长矩形截面</a></li>
           </ol>
         </li>
       </ol>
@@ -646,7 +662,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 11 分钟
+                    阅读时长: 13 分钟
                 </time>
             </div>
         
@@ -1505,16 +1521,226 @@ $I_p$为横截面对圆心的<strong>极惯性矩</strong>。</p>
 <blockquote>
 <ul>
 <li>最大切应力：
-$$
-    \begin{array}{l}
-     \tau_{\max }=\frac{T \rho_{\max }}{I_{\mathrm{p}}}=\frac{T}{\frac{I_{\mathrm{p}}}{\rho_{\max }}}=\frac{T}{W_{\mathrm{t}}}\\
-     { 在圆截面边缘上，有最大切应力 }\\
-     W_{\mathrm{t}}=\frac{I_{\mathrm{p}}}{\rho_{\max }}
-    \end{array}
->   $$
-$W_t$称为<strong>抗扭截面系数</strong>，单位为mm3或m3。</li>
+$$</li>
 </ul>
 </blockquote>
+<pre><code> \tau_{\max }=\frac{T \rho_{\max }}{I_{\mathrm{p}}}=\frac{T}{\frac{I_{\mathrm{p}}}{\rho_{\max }}}=\frac{T}{W_{\mathrm{t}}}\\
+ { 在圆截面边缘上，有最大切应力 }\\
+ W_{\mathrm{t}}=\frac{I_{\mathrm{p}}}{\rho_{\max }}
+$$
+$W_t$称为**抗扭截面系数**，单位为mm3或m3。
+</code></pre>
+<h4 id="极惯性矩和抗扭截面系数的计算">极惯性矩和抗扭截面系数的计算
+</h4><blockquote>
+<p>公式：(实心圆截面)
+$$</p>
+</blockquote>
+<p>d A=2 \pi \rho(d \rho) \
+I_{\mathrm{p}}=\int_{A} \rho^{2} d A=\int_{0}^{\frac{d}{2}} 2 \pi rho^{3} d \rho=\frac{\pi d^{4}}{32} \
+W_{\mathrm{t}}=\frac{I_{\mathrm{p}}}{\rho_{\max }}=\frac{\pi d^{4} / 32}{d / 2}=\frac{\pi d^{3}}{16}
+$$</p>
+<blockquote>
+<p>空心圆截面:</p>
+</blockquote>
+$$
+I_{\mathrm{p}}=\frac{\pi D^{4}\left(1-\alpha^{4}\right)}{32} \\
+\text { 其中 } \alpha=\frac{d}{D} \\
+W_{\mathrm{t}}=\frac{\pi D^{3}}{16}\left(1-\alpha^{4}\right)
+$$<ul>
+<li>以上两个物理量非常重要,要记下来</li>
+</ul>
+<h4 id="扭转强度条件">扭转强度条件
+</h4>$$
+\tau_{\max }=\frac{T_{\max }}{W_{t}} \leq[\tau]
+$$<p>对于等截面的圆轴来说,直接计算最大的扭矩即可</p>
+<p>但是对于阶梯型的圆轴来说,由于抗扭截面系数不同,要将每一个的切应力计算出来,进行比较</p>
+<ul>
+<li>同样将上述的公式进行变形,可以进行强度条件确定的应用</li>
+</ul>
+<h3 id="圆轴扭转时的变形">圆轴扭转时的变形
+</h3><h4 id="扭转变形">扭转变形
+</h4>$$
+\varphi=\frac{Tl}{GI_p}
+$$<blockquote>
+<p>$\varphi$：扭转角；$GI_p$：抗扭刚度（出现的第二个刚度）</p>
+</blockquote>
+<ul>
+<li>
+<p>单位长度的扭转角：</p>
+<ul>
+<li>
+$$
+    \varphi^`=\frac{T}{GI_p}
+    $$</li>
+<li>
+<p>单位为rad/m</p>
+</li>
+</ul>
+</li>
+<li>
+<p>公式的比较：</p>
+<ul>
+<li>$$
+    \varphi=\frac{T l}{G I_{p}} \\
+    \Delta l=\frac{F_{N} l}{E A}
+    $$</li>
+</ul>
+</li>
+<li>
+<p>收到多个力偶矩时：分段计算出每一段的扭矩，每一段的极惯性矩，长度，计算后再相加</p>
+</li>
+</ul>
+<h4 id="扭转刚度条件">扭转刚度条件
+</h4><ul>
+<li>是第一个对刚度有的要求</li>
+</ul>
+$$
+\varphi_{\max }^{\prime}=\frac{\boldsymbol{T}_{\max }}{\boldsymbol{G} \boldsymbol{I}_{\mathrm{p}}} \leq\left[\varphi^{\prime}\right] \quad(\mathrm{rad} / \mathbf{m})
+$$<blockquote>
+<p>所以对于扭转来说，既有强度条件，又有刚度条件</p>
+</blockquote>
+<ul>
+<li>扭转强度条件</li>
+</ul>
+$$
+\tau_{\max }=\frac{T}{W_{t}} \leq[\tau] \\
+W_{t}=\frac{1}{16} \pi D^{3}
+$$<ul>
+<li>扭转刚度条件</li>
+</ul>
+$$
+\varphi_{\max }^{\prime}=\frac{T}{G I_{p}} \leq\left[\varphi^{\prime}\right] \\
+I_{p}=\frac{1}{32} \pi D^{4}
+$$<h5 id="例题-1">例题
+</h5><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250319170157146.png"
+	width="911"
+	height="595"
+	
+	loading="lazy"
+	
+		alt="例题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="367px"
+	
+></p>
+<blockquote>
+<p>可见，对于阶梯型对的圆轴，并且有多个力矩加上：</p>
+<ul>
+<li>只要扭矩不同/面积（极惯性矩不同），就要分开计算</li>
+<li>不同段还有几个不同的是长度l，一般以固定点（段的分割点为基点）向外扩展</li>
+<li>同一方向的扭转角要相加</li>
+</ul>
+</blockquote>
+<hr>
+<ul>
+<li>同样有着超静定问题
+<ul>
+<li>此时的几何方程一般为角度之间的关系（扭转角相等）</li>
+</ul>
+</li>
+</ul>
+<h3 id="非圆截面杆扭转的概念">非圆截面杆扭转的概念
+</h3><p>圆截面杆扭转时的应力和变形公式，均建立在<strong>平面假设</strong>的基础上。
+<strong>对于非圆截面杆，平面假设不成立。</strong></p>
+<blockquote>
+<p>对于非圆截面杆 ,受扭时横截面不再保持为平面，杆的横截面已由原来的平面变成了<strong>曲面</strong>，这一现象称为<strong>截面翘曲</strong>。</p>
+<p>因此圆轴的应力、变形公式不在适用于圆截面杆</p>
+</blockquote>
+<h4 id="自由扭转或纯扭转">自由扭转或纯扭转
+</h4><ul>
+<li>在扭转过程中，端面可以自由翘曲。此时任意两相邻横截面的翘曲程度完全相同，横截面只有<strong>切应力</strong>，而没有<strong>正应力</strong>。（也就是说两端不收压力）</li>
+</ul>
+<h4 id="约束扭转">约束扭转
+</h4><ul>
+<li>扭转时，杆的端部受到支座的约束而不能自由翘曲。此时杆件任意<strong>两相邻横截面的翘曲程度不同</strong>，将在横截面上产生附加的<strong>正应力</strong>。</li>
+<li>对于矩形和椭圆形的实体截面杆，由于约束扭转产生的附加正应力很小，一般可以忽略。但对于薄壁截面杆来说，这种附加的正应力是不能忽略的。</li>
+</ul>
+<h4 id="切应力分布">切应力分布：
+</h4><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250319172437565.png"
+	width="400"
+	height="472"
+	
+	loading="lazy"
+	
+		alt="分布"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="84"
+		data-flex-basis="203px"
+	
+></p>
+<ul>
+<li>
+<p>矩形<strong>截面扭转</strong>时，横截面切应力如图所示，边缘上各点的切应力形成与边界相切的顺流。</p>
+</li>
+<li>
+<p>整个横截面上的<strong>最大切应力</strong>发生在长边的中点。</p>
+<ul>
+<li>$$
+    \tau_{\max }=\frac{T}{W_{\mathrm{t}}} & W_{\mathrm{t}}=\alpha h b^{2} \\
+    \varphi=\frac{T l}{G I_{\mathrm{t}}} & I_{\mathrm{t}}=\beta h b^{3}
+    $$</li>
+</ul>
+</li>
+<li>
+<p>短边中点的切应力$\tau_1$是短边上的最大切应力，且$\quad \tau_{1}=v \tau_{\max } $</p>
+</li>
+</ul>
+$$
+ W_{\mathrm{t}}  ：仍称为扭转截面系数\\
+ I_{\mathrm{t}}  ：非圆截面杆的相当极惯性矩\\
+ G I_{\mathrm{t}}  ：非圆截面杆的抗扭刚度
+$$<blockquote>
+<p>虽然在量纲上相同，但是几何意义截然不同</p>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250319172939900.png"
+	width="855"
+	height="238"
+	
+	loading="lazy"
+	
+		alt="系数表"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="359"
+		data-flex-basis="862px"
+	
+></p>
+<p>当$h/b&gt;10$有近似公式：$\alpha=\beta=1/3,v=0.743$</p>
+<h4 id="狭长矩形截面">狭长矩形截面
+</h4><ul>
+<li>
+<p>狭长矩形截面上切应力的分布</p>
+<ul>
+<li>
+<p>切应力在沿长边各点处的方向均与长边<strong>相切</strong>，其数值除在靠近顶点处以外均<strong>相等</strong>。</p>
+</li>
+<li>
+$$
+    I_{\mathrm{t}}=\frac{1}{3} h \delta^{3} \quad W_{\mathrm{t}}=\frac{1}{3} h \delta^{2}
+    $$</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250319173237752.png"
+	width="207"
+	height="468"
+	
+	loading="lazy"
+	
+		alt="分布"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="44"
+		data-flex-basis="106px"
+	
+></p>
 
 </section>
 
