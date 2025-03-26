@@ -590,6 +590,30 @@
         </li>
       </ol>
     </li>
+    <li><a href="#弯曲内力">弯曲内力</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#弯曲的概念和实例">弯曲的概念和实例</a></li>
+          </ol>
+        </li>
+        <li><a href="#受弯杆件的简化">受弯杆件的简化</a></li>
+        <li><a href="#剪力和弯矩">剪力和弯矩</a>
+          <ol>
+            <li><a href="#符号规定">符号规定</a></li>
+            <li><a href="#计算规律">计算规律</a></li>
+          </ol>
+        </li>
+        <li><a href="#剪力方程和弯矩方程-剪力图和弯矩图">剪力方程和弯矩方程 剪力图和弯矩图</a>
+          <ol>
+            <li><a href="#剪力方程和弯矩方程">剪力方程和弯矩方程</a></li>
+            <li><a href="#剪力图和弯矩图">剪力图和弯矩图</a></li>
+            <li><a href="#平面钢架的内力">平面钢架的内力</a></li>
+          </ol>
+        </li>
+        <li><a href="#载荷集度剪力和弯矩间的关系">载荷集度、剪力和弯矩间的关系</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -662,7 +686,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 13 分钟
+                    阅读时长: 18 分钟
                 </time>
             </div>
         
@@ -1731,6 +1755,294 @@ $$
 		class="gallery-image" 
 		data-flex-grow="44"
 		data-flex-basis="106px"
+	
+></p>
+<h2 id="弯曲内力">弯曲内力
+</h2><h4 id="弯曲的概念和实例">弯曲的概念和实例
+</h4><ul>
+<li>特点：杆件受一对大小相等，方向相反的力偶，力偶作用
+面是包含轴线的<strong>纵向面</strong>。</li>
+</ul>
+<p>​	以弯曲变形为主的杆件通常称为<strong>梁</strong>。</p>
+<ol>
+<li>受力特征：外力（包括力偶）的作用线垂直于杆轴线。</li>
+<li>变形特征：变形前为直线的轴线，变形后成为曲线。</li>
+</ol>
+<ul>
+<li>
+<p>弯曲特点</p>
+</li>
+<li>
+<p><strong>平面弯曲</strong>：弯曲变形后的轴线为平面曲线，且该平面曲线仍与外力共面。</p>
+</li>
+<li>
+<p><strong>对称弯曲</strong>：纵向对称面：梁的<strong>轴线</strong>与横截面的<strong>对称轴</strong>所构成的平面。</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250324171159620.png"
+	width="864"
+	height="290"
+	
+	loading="lazy"
+	
+		alt="对称"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="297"
+		data-flex-basis="715px"
+	
+></p>
+<ul>
+<li>当作用在梁上的<strong>载荷和支反力</strong>均位于<strong>纵向对称面</strong>内时，梁的轴线由直线弯成一条位于纵向对称面内的平面曲线，称为对称弯曲。</li>
+<li>条件：
+<ul>
+<li>梁要有对称面</li>
+<li>外力要作用在对称面内</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="受弯杆件的简化">受弯杆件的简化
+</h3><ol>
+<li>
+<p>梁的简化：通常取梁的轴线来代替梁，折杆或曲杆用中心线代替</p>
+</li>
+<li>
+<p>载荷：集中力，<strong>集中力偶</strong>，分布载荷</p>
+</li>
+<li>
+<p>支座的类型与简化：</p>
+<ol>
+<li>
+<p>固定端：水平和竖直方向不能动，也不能转动。</p>
+<p>坐标以及角度均被约束，支座反力有两个力和一个力偶</p>
+</li>
+<li>
+<p>固定铰支座：受两个力，可以旋转</p>
+</li>
+<li>
+<p>可动铰支座/活动铰支座：竖直方向不能动，水平方向可自由伸缩，还可以自由转动。</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250324172150625.png"
+	width="935"
+	height="328"
+	
+	loading="lazy"
+	
+		alt="可动"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="285"
+		data-flex-basis="684px"
+	
+></p>
+</li>
+<li>
+<ol>
+<li>车削杆件的简化（固定端？）</li>
+<li>火车轮轴的简化</li>
+<li>吊车大梁的简化：均匀分布载荷（均布载荷）</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>注意，不同类型的支座，其未知的约束反力以及约束力偶的数目是不相同的，在求解支反力时要注意这一点</p>
+<ul>
+<li>静定梁的基本形式：所有支座反力均可由平衡方程求出的梁，都叫静定梁</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250324173037472.png"
+	width="868"
+	height="675"
+	
+	loading="lazy"
+	
+		alt="静定"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+<ul>
+<li>超静定梁：</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250324173059967.png"
+	width="964"
+	height="653"
+	
+	loading="lazy"
+	
+		alt="超静定"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="147"
+		data-flex-basis="354px"
+	
+></p>
+<p>次数为需要补充方程的次数</p>
+<h3 id="剪力和弯矩">剪力和弯矩
+</h3><ol>
+<li>剪力$F_s$：构件受弯时，横截面上其作用线平行于横截面的内力合力。数值上等于截面任一侧<strong>外力的代数和</strong>。</li>
+<li>弯矩$M$​​：构件受弯时，横截面上其作用面垂直于横截面的内力系的合力偶矩。数值上等于截面任一侧外力对<strong>截面形心力矩的代数和</strong>。（有时还需要包括集中力偶）</li>
+</ol>
+<ul>
+<li>剪力和弯矩都是内力！</li>
+</ul>
+<h4 id="符号规定">符号规定
+</h4><ul>
+<li><strong>剪力</strong>：左上右下为正；反之为负。</li>
+</ul>
+<blockquote>
+<p>解释：对于一个杆件，有左右两端，若剪力在左端，则剪力如果向上，为正值，如果向下为负值。</p>
+</blockquote>
+<blockquote>
+<p>弯矩的正负：</p>
+<p>上压下拉 (上凹下凸) 为正；反之为负。</p>
+<p>直观的理解就是能使杆件像一个碗那样弯曲的力偶为正的</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250326214634508.png"
+	width="1120"
+	height="508"
+	
+	loading="lazy"
+	
+		alt="弯矩的正负"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="220"
+		data-flex-basis="529px"
+	
+></p>
+</blockquote>
+<h4 id="计算规律">计算规律
+</h4><blockquote>
+<p>剪力：</p>
+<p>和之前拉压力的计算区别不大，截面之后做一个<strong>竖直方向的受力平衡</strong>即可</p>
+</blockquote>
+<blockquote>
+<p>弯矩：</p>
+<p>同样是使用<strong>截面法</strong>，不过力矩平衡分析时既要包括<strong>集中力偶</strong>，也要有<strong>力产生的力矩（对取得截面取矩）</strong>（此时就要注意不同的支座约束反力的不同，有些很可能既有力的作用，还有集中力偶的·作用）</p>
+</blockquote>
+<blockquote class="alert alert-note">
+    <p>基本的解题步骤：</p>
+<ol>
+<li>求支座反力（分析支座的类型，确定未知反力的个数），利用力的平衡和力矩的平衡（一个杆件会有三个方程）</li>
+<li>截面法求内力</li>
+</ol></blockquote>
+<ul>
+<li>对于非均布载荷的分析：
+<ul>
+<li>对于此类载荷，可以使用等效分析：等效的力为载荷的面积，等效的作用点为载荷围成图形的形心的横坐标</li>
+<li>对于三角形分布的，$F=\frac{ql}{2}$，作用点在靠近q的$\frac{l}{3}$，可以使用积分计算形心的位置</li>
+<li>对于梯形分布的载荷，可以将其分解为矩形的和三角形的叠加，分别计算</li>
+</ul>
+</li>
+</ul>
+<h3 id="剪力方程和弯矩方程-剪力图和弯矩图">剪力方程和弯矩方程 剪力图和弯矩图
+</h3><h4 id="剪力方程和弯矩方程">剪力方程和弯矩方程
+</h4><p>用函数关系表示沿梁<strong>轴线</strong>各横截面上剪力和弯矩的变化规律，分别称作<strong>剪力方程</strong>和<strong>弯矩方程</strong>。</p>
+<ol>
+<li>剪力方程：$F_s=F_s(x)$</li>
+<li>弯矩方程：$M=M(x)$</li>
+</ol>
+<h4 id="剪力图和弯矩图">剪力图和弯矩图
+</h4><p>​	以平行于梁轴的横坐标x表示横截面的位置，以纵坐标表示相应截面上的剪力和弯矩，这种图线分别称为剪力图和弯矩图。(正值在x上方，负值在x轴下方)</p>
+<blockquote>
+<p>同样的步骤：</p>
+<ol>
+<li>求支反力</li>
+<li>列出在x位置的剪力方程和弯矩方程</li>
+</ol>
+</blockquote>
+<ul>
+<li>注意：<strong>集中力</strong>或者是<strong>集中力偶</strong>的作用会使剪力或弯矩发生突变，此时需要分段进行讨论</li>
+<li>有多少垂直的外力（集中力）就会多几个剪力方程（初始为1）</li>
+<li>有多少集中力偶，就会多几个弯矩方程（以作用点分割）</li>
+</ul>
+<p><strong>小结</strong></p>
+<p>1、取梁的左端点为座标原点，x轴向右为正；剪力图向上为正；弯
+矩图向上为正。</p>
+<p>2、以<strong>集中力、集中力偶作用处、分布载荷开始或结束处，及支座截</strong>
+<strong>面处</strong>为界点将梁分段。分段写出剪力方程和弯矩方程，然后绘出
+剪力图和弯矩图。</p>
+<p>3、梁上集中力作用处左、右两侧横截面上，剪（图）有突变，其突
+变值等于<strong>集中力的数值</strong>。在此处弯矩图则形成一个尖角。</p>
+<p>4、梁上集中力偶作用处左、右两侧横截面上的弯矩值（图）也有突
+变，其突变值等于<strong>集中力偶矩</strong>的数值。但在此处剪力图没有变化。</p>
+<p>5、梁上的最大剪力发生在全梁或各梁段的边界截面处；梁上的最大
+弯矩发生在全梁或各梁段的边界截面，或Fs = 0的截面处.</p>
+<h4 id="平面钢架的内力">平面钢架的内力
+</h4><p>平面刚架是由在同一平面内，<strong>不同取向</strong>的杆件，通过杆端相互刚性连结而组成的结构。</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250326223644891.png"
+	width="219"
+	height="209"
+	
+	loading="lazy"
+	
+		alt="钢架"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="104"
+		data-flex-basis="251px"
+	
+></p>
+<p>有剪力、弯矩、轴力的内力</p>
+<ul>
+<li>符号规定：
+<ul>
+<li>弯矩图：画在各杆的受压（凹入）侧，不注明正、负号。</li>
+<li>剪力图及轴力图：可画在刚架轴线的任一侧（通常正值画在刚架的外侧），注明正、负号。</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250326224058635.png"
+	width="1166"
+	height="624"
+	
+	loading="lazy"
+	
+		alt="钢架的内力"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="448px"
+	
+></p>
+<h3 id="载荷集度剪力和弯矩间的关系">载荷集度、剪力和弯矩间的关系
+</h3>$$
+\frac{d F_{S}(x)}{d x}=q(x) \quad \frac{d M(x)}{d x}=F_{S}(x) \quad \frac{d^{2} M(x)}{d x^{2}}=q(x)
+$$<p>几何意义：</p>
+<ol>
+<li><strong>剪力图</strong>上某点处的切线斜率等于该点处<strong>载荷集度</strong>的大小；</li>
+<li>弯矩图上某点处的切线斜率等于该点处<strong>剪力</strong>的大小。</li>
+</ol>
+<p>有：</p>
+<ul>
+<li>梁上有向下的均布载荷，即q(x) &lt; 0</li>
+<li>梁上无载荷区域，即q(x) = 0</li>
+<li>梁上有向上的均布载荷，即q(x) &gt; 0</li>
+<li>梁上最大弯矩$M_{max}$可能发生在$F_s(x)$=0的截面上、或发生在<strong>集中力</strong>所在的截面上、或<strong>集中力偶作用处</strong>；最大剪力可能发生在集中力所在的截面上、或分布载荷发生变化的区段上。</li>
+<li>在集中力作用处<strong>剪力图</strong>有突变，其突变值等于集中力的值。<strong>弯矩图有转折</strong>。</li>
+<li>在集中力偶作用处弯矩图有突变，其突变值等于集中力偶的值，但剪力图无变化。</li>
+</ul>
+<p><strong>可以通过积分的方式确定剪力、弯矩的大小</strong></p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250326224916708.png"
+	width="1213"
+	height="667"
+	
+	loading="lazy"
+	
+		alt="分布"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="181"
+		data-flex-basis="436px"
 	
 ></p>
 
