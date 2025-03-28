@@ -545,7 +545,38 @@
         <li><a href="#第二定律的统计解释">第二定律的统计解释</a></li>
       </ol>
     </li>
-    <li><a href="#热力学一般关系">热力学一般关系</a></li>
+    <li><a href="#热力学一般关系">热力学一般关系</a>
+      <ol>
+        <li><a href="#全微分">全微分</a></li>
+        <li><a href="#偏微分与麦克斯韦关系式">偏微分与麦克斯韦关系式</a></li>
+        <li><a href="#重要的热系数">重要的热系数</a>
+          <ol>
+            <li><a href="#定容比热容">定容比热容</a></li>
+            <li><a href="#定压比热容">定压比热容</a></li>
+            <li><a href="#绝热节流系数">绝热节流系数</a></li>
+          </ol>
+        </li>
+        <li><a href="#基本方程">基本方程</a>
+          <ol>
+            <li><a href="#熵方程-1">熵方程</a></li>
+            <li><a href="#热力学能方程">热力学能方程</a></li>
+            <li><a href="#焓方程">焓方程</a></li>
+          </ol>
+        </li>
+        <li><a href="#热力学基本关系式">热力学基本关系式</a></li>
+      </ol>
+    </li>
+    <li><a href="#气体的热力性质">气体的热力性质</a>
+      <ol>
+        <li><a href="#理想气体状态方程">理想气体状态方程</a>
+          <ol>
+            <li><a href="#理想气体的热系数">理想气体的热系数</a></li>
+            <li><a href="#理想气体比热容偏微商">理想气体比热容偏微商</a></li>
+            <li><a href="#绝热节流系数-1">绝热节流系数</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -618,7 +649,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 9 分钟
+                    阅读时长: 11 分钟
                 </time>
             </div>
         
@@ -1194,7 +1225,7 @@ Q为吸热放热的量（吸热为正值，放热为负值）</p>
 <h2 id="热力学一般关系">热力学一般关系
 </h2><ul>
 <li>研究对象：简单可压缩工质（具有<strong>普适性</strong>）</li>
-<li>特点：存在两个独立的状态参数，其状态函数为二元函数</li>
+<li>特点：存在<strong>两个独立的状态参数</strong>，其状态函数为二元函数</li>
 <li>简单可压缩系统：可压缩系统与外界只有准静态体积变化功(压缩或膨胀功)交换（即功全部来自于体积功）</li>
 <li>5个简单可压缩系统的基本状态参数：
 <ul>
@@ -1212,6 +1243,147 @@ Q为吸热放热的量（吸热为正值，放热为负值）</p>
 $$
 du=Tds-pdv
 $$<p>式子为<strong>基本热力学关系</strong>，包含了5个热力学参数，为$u(s,v)$的全微分</p>
+<p><img src="https://czy1101kksk.github.io/energy/img/pvt.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="参数"
+	
+	
+></p>
+$$
+\begin{pmatrix}
+ -s & u &v \\
+  h&  & f\\
+  -p&g  &T
+\end{pmatrix}
+$$<p>
+首先是将u两边的物理量写成<strong>微分的形式</strong>，在此基础上对应<strong>相乘对角线上的物理量</strong>（注意，微分的时候应该将-号去掉）</p>
+<h3 id="全微分">全微分
+</h3><p>$$
+d u = T d s-p d v\
+{ 即：热力学能 } = \text { 吸热量 }- \text { 做功量 }\</p>
+<p>d h = T d s+v d p(\text { 焓 } h = u+p v) \
+d f = -T d s-v d p(\text { 引入自由能 } f = u-T s) \
+d g = -s d T+v d p(\text { 引入自由焓 } g = h-T s)
+$$
+第一个公式是<strong>最基本的</strong>，包含了五个基本的热力学参数，是s关于u,v的偏微分，后面的是根据关系式的推导，上述的变换称为l变换</p>
+<h3 id="偏微分与麦克斯韦关系式">偏微分与麦克斯韦关系式
+</h3><p>重要的偏微商关系：（实际上是利用<strong>全微分方程的性质推导</strong>的）</p>
+<p>写成全微分的形式，因为前面的系数为全微分系数</p>
+<ul>
+<li>这是对四个基本参数的偏微分表示（<strong>一阶偏微商关系</strong>）</li>
+</ul>
+$$
+\left(\frac{\partial u}{\partial s}\right)_{v}=\left(\frac{\partial h}{\partial s}\right)_{p}=T \\
+-\left(\frac{\partial u}{\partial v}\right)_{s}=-\left(\frac{\partial f}{\partial v}\right)_{T}=p \\
+\left(\frac{\partial h}{\partial p}\right)_{s}=\left(\frac{\partial g}{\partial p}\right)_{T}=v \\
+-\left(\frac{\partial f}{\partial T}\right)_{v}=-\left(\frac{\partial g}{\partial T}\right)_{p}=s
+$$<p><strong>麦克斯韦</strong>关系式：（二阶混合偏微商）同样使用全微分方程的性质，主要的是一阶的方程</p>
+<ul>
+<li>$$
+  \frac{\partial}{\partial T}\left(\frac{\partial g}{\partial p}\right)_{T} & =\frac{\partial}{\partial p}\left(\frac{\partial g}{\partial T}\right)_{p} \\
+  \left(\frac{\partial v}{\partial T}\right)_{p} & =-\left(\frac{\partial s}{\partial p}\right)_{T} \\
+  \frac{\partial}{\partial T}\left(\frac{\partial f}{\partial v}\right)_{T} & =\frac{\partial}{\partial v}\left(\frac{\partial f}{\partial T}\right)_{v} \\
+  \left(\frac{\partial p}{\partial T}\right)_{v} & =\left(\frac{\partial s}{\partial v}\right)_{T}
+  $$</li>
+</ul>
+<p>其中两个一阶的关系：将<strong>不可测的熵s的偏微商</strong>与可测的<strong>基本状态参数p，v，T的偏微商</strong>相关联</p>
+<h3 id="重要的热系数">重要的热系数
+</h3><h4 id="定容比热容">定容比热容
+</h4>$$
+c_v=(\frac{\partial u}{\partial T})_v
+$$<h4 id="定压比热容">定压比热容
+</h4>$$
+c_p=(\frac{\partial h}{\partial T})_p
+$$<p>当然，比热容还可以写成在对应的物理量不变的情况下（体积或者是压强），热量比上温度的变化量。</p>
+<h4 id="绝热节流系数">绝热节流系数
+</h4>$$
+\mu_J=(\frac{\partial T}{\partial p})_h
+$$<h3 id="基本方程">基本方程
+</h3><p>将之前的基本的全微分方程加入<strong>基本的热系数</strong>变形之后的式子</p>
+<h4 id="熵方程-1">熵方程
+</h4>$$
+d s & =\left(\frac{\partial s}{\partial T}\right)_{v} d T+\left(\frac{\partial s}{\partial v}\right)_{T} d v \\
+& =\frac{c_{V}}{T} d T+\left(\frac{\partial p}{\partial T}\right)_{v} d v \\
+d s & =\left(\frac{\partial s}{\partial T}\right)_{p} d T+\left(\frac{\partial s}{\partial p}\right)_{T} d p \\
+& =\frac{c_{p}}{T} d T-\left(\frac{\partial v}{\partial T}\right)_{p} d p
+$$<h4 id="热力学能方程">热力学能方程
+</h4>$$
+d u & =\left(\frac{\partial u}{\partial T}\right)_{v} d T+\left(\frac{\partial u}{\partial v}\right)_{T} d v \\
+& =c_{V} d T+\left(T\left(\frac{\partial s}{\partial v}\right)_{T}-p\left(\frac{\partial v}{\partial v}\right)_{T}\right) d v \\
+& =c_{V} d T+\left[T\left(\frac{\partial p}{\partial T}\right)_{v}-p\right] d v
+$$<h4 id="焓方程">焓方程
+</h4>$$
+\begin{aligned}
+d h & =\left(\frac{\partial h}{\partial T}\right)_{p} d T+\left(\frac{\partial h}{\partial p}\right)_{T} d p \\
+& =c_{p} d T+\left(T\left(\frac{\partial s}{\partial p}\right)_{T}+v\left(\frac{\partial p}{\partial p}\right)_{T}\right) d p \\
+& =c_{p} d T-\left[T\left(\frac{\partial v}{\partial T}\right)_{p}-v\right] d p
+\end{aligned}\\
+$$<h3 id="热力学基本关系式">热力学基本关系式
+</h3><ul>
+<li>$\left(\frac{\partial c_{V}}{\partial v}\right)<em>{T}, ~\left(\frac{\partial c</em>{p}}{\partial p}\right)_{T}  与状态方程间的关系
+由上述热力学能与焓的微分式可得：$</li>
+</ul>
+$$
+\left(\frac{\partial c_{V}}{\partial v}\right)_{T}=T\left(\frac{\partial^{2} p}{\partial T^{2}}\right)_{v} \\
+\left(\frac{\partial c_{p}}{\partial p}\right)_{T}=-T\left(\frac{\partial^{2} v}{\partial T^{2}}\right)_{p}
+$$<p>$当给出较准确的状态方程以及某一压力  p_{0}  下测得的比定压热容数据  c_{p 0}(T)  ，可以通过积分算得函数关系  c_{p}(T, p)  ：$</p>
+$$
+c_{p}(T, p)=c_{p 0}(T)-T \int_{p_{0}}^{p}\left(\frac{\partial^{2} v}{\partial T^{2}}\right)_{p} d p$
+$$<ul>
+<li>$比热容差  \left(c_{p}-c_{v}\right)  与状态方程关系$</li>
+</ul>
+$$
+c_{v}=T\left(\frac{\partial s}{\partial T}\right)_{v} \\
+c_{p}-c_{v}=T\left(\frac{\partial v}{\partial T}\right)_{p}\left(\frac{\partial p}{\partial T}\right)_{v}=T v \frac{\alpha_{V}^{2}}{\kappa_{T}}>0
+$$<ul>
+<li>绝热节流系数的一般关系式</li>
+</ul>
+$$
+\mu_{j} \text { 是在焓值不变时 }(d h=0) \text { 温度对压力的偏微商：}\\
+\mu_{j}=\left(\frac{\partial T}{\partial p}\right)_{h}=\frac{1}{c_{p}}\left[T\left(\frac{\partial v}{\partial T}\right)_{p}-v\right]=\frac{v}{c_{p}}\left(T \alpha_{V}-1\right)
+$$<h2 id="气体的热力性质">气体的热力性质
+</h2><p>气体、液体、固体</p>
+<p>可以看做是气体的：</p>
+<ul>
+<li>气体的比体积大而气体分子自身所占体积相对极小</li>
+<li>分子间的平均距离大而分子间的相互作用力很小</li>
+<li>可以忽略分子自身所占的体积和分子间相互作用力对宏观热力性质的影响</li>
+</ul>
+<p><strong>总的来说就是分子自身不计体积，不计分子之间的作用力</strong></p>
+<h3 id="理想气体状态方程">理想气体状态方程
+</h3>$$
+pV=nRT=mR_gT
+$$<ul>
+<li>针对质量为m或者是物质的量为n的气体</li>
+</ul>
+<h4 id="理想气体的热系数">理想气体的热系数
+</h4><ul>
+<li>体膨胀系数</li>
+<li>等温压缩率</li>
+<li>压力的温度系数</li>
+</ul>
+<h4 id="理想气体比热容偏微商">理想气体比热容偏微商
+</h4><ul>
+<li>比定容热容：</li>
+<li>比定压热容：</li>
+</ul>
+<ol>
+<li>
+<p>在恒定温度下，理想气体<strong>比定容热容</strong>不随比体积变化，比定压热容不随压力变化</p>
+</li>
+<li>
+<p>理想气体的比定容和比定压热容都是温度的单值函数</p>
+</li>
+</ol>
+<h4 id="绝热节流系数-1">绝热节流系数
+</h4><ul>
+<li>理想气体的绝热节流系数恒为零</li>
+<li>理想气体经过绝热节流后温度不变</li>
+</ul>
 
 </section>
 
