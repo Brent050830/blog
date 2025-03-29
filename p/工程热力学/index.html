@@ -1262,13 +1262,13 @@ $$
 $$<p>
 首先是将u两边的物理量写成<strong>微分的形式</strong>，在此基础上对应<strong>相乘对角线上的物理量</strong>（注意，微分的时候应该将-号去掉）</p>
 <h3 id="全微分">全微分
-</h3><p>$$
-d u = T d s-p d v\
-{ 即：热力学能 } = \text { 吸热量 }- \text { 做功量 }\</p>
-<p>d h = T d s+v d p(\text { 焓 } h = u+p v) \
-d f = -T d s-v d p(\text { 引入自由能 } f = u-T s) \
+</h3>$$
+d u = T d s-p d v\\
+{ 即：热力学能 } = \text { 吸热量 }- \text { 做功量 }\\
+d h = T d s+v d p(\text { 焓 } h = u+p v) \\
+d f = -T d s-v d p(\text { 引入自由能 } f = u-T s) \\
 d g = -s d T+v d p(\text { 引入自由焓 } g = h-T s)
-$$
+$$<p>
 第一个公式是<strong>最基本的</strong>，包含了五个基本的热力学参数，是s关于u,v的偏微分，后面的是根据关系式的推导，上述的变换称为l变换</p>
 <h3 id="偏微分与麦克斯韦关系式">偏微分与麦克斯韦关系式
 </h3><p>重要的偏微商关系：（实际上是利用<strong>全微分方程的性质推导</strong>的）</p>
@@ -1284,10 +1284,10 @@ $$
 $$<p><strong>麦克斯韦</strong>关系式：（二阶混合偏微商）同样使用全微分方程的性质，主要的是一阶的方程</p>
 <ul>
 <li>$$
-  \frac{\partial}{\partial T}\left(\frac{\partial g}{\partial p}\right)_{T} & =\frac{\partial}{\partial p}\left(\frac{\partial g}{\partial T}\right)_{p} \\
-  \left(\frac{\partial v}{\partial T}\right)_{p} & =-\left(\frac{\partial s}{\partial p}\right)_{T} \\
-  \frac{\partial}{\partial T}\left(\frac{\partial f}{\partial v}\right)_{T} & =\frac{\partial}{\partial v}\left(\frac{\partial f}{\partial T}\right)_{v} \\
-  \left(\frac{\partial p}{\partial T}\right)_{v} & =\left(\frac{\partial s}{\partial v}\right)_{T}
+  \frac{\partial}{\partial T}\left(\frac{\partial g}{\partial p}\right)_{T}=\frac{\partial}{\partial p}\left(\frac{\partial g}{\partial T}\right)_{p} \\
+  \left(\frac{\partial v}{\partial T}\right)_{p}  =-\left(\frac{\partial s}{\partial p}\right)_{T} \\
+  \frac{\partial}{\partial T}\left(\frac{\partial f}{\partial v}\right)_{T}  =\frac{\partial}{\partial v}\left(\frac{\partial f}{\partial T}\right)_{v} \\
+  \left(\frac{\partial p}{\partial T}\right)_{v}  =\left(\frac{\partial s}{\partial v}\right)_{T}
   $$</li>
 </ul>
 <p>其中两个一阶的关系：将<strong>不可测的熵s的偏微商</strong>与可测的<strong>基本状态参数p，v，T的偏微商</strong>相关联</p>
@@ -1306,15 +1306,15 @@ $$<h3 id="基本方程">基本方程
 </h3><p>将之前的基本的全微分方程加入<strong>基本的热系数</strong>变形之后的式子</p>
 <h4 id="熵方程-1">熵方程
 </h4>$$
-d s & =\left(\frac{\partial s}{\partial T}\right)_{v} d T+\left(\frac{\partial s}{\partial v}\right)_{T} d v \\
-& =\frac{c_{V}}{T} d T+\left(\frac{\partial p}{\partial T}\right)_{v} d v \\
-d s & =\left(\frac{\partial s}{\partial T}\right)_{p} d T+\left(\frac{\partial s}{\partial p}\right)_{T} d p \\
-& =\frac{c_{p}}{T} d T-\left(\frac{\partial v}{\partial T}\right)_{p} d p
+d s  =\left(\frac{\partial s}{\partial T}\right)_{v} d T+\left(\frac{\partial s}{\partial v}\right)_{T} d v \\
+ =\frac{c_{V}}{T} d T+\left(\frac{\partial p}{\partial T}\right)_{v} d v \\
+d s  =\left(\frac{\partial s}{\partial T}\right)_{p} d T+\left(\frac{\partial s}{\partial p}\right)_{T} d p \\
+ =\frac{c_{p}}{T} d T-\left(\frac{\partial v}{\partial T}\right)_{p} d p
 $$<h4 id="热力学能方程">热力学能方程
 </h4>$$
-d u & =\left(\frac{\partial u}{\partial T}\right)_{v} d T+\left(\frac{\partial u}{\partial v}\right)_{T} d v \\
-& =c_{V} d T+\left(T\left(\frac{\partial s}{\partial v}\right)_{T}-p\left(\frac{\partial v}{\partial v}\right)_{T}\right) d v \\
-& =c_{V} d T+\left[T\left(\frac{\partial p}{\partial T}\right)_{v}-p\right] d v
+d u  =\left(\frac{\partial u}{\partial T}\right)_{v} d T+\left(\frac{\partial u}{\partial v}\right)_{T} d v \\
+ =c_{V} d T+\left(T\left(\frac{\partial s}{\partial v}\right)_{T}-p\left(\frac{\partial v}{\partial v}\right)_{T}\right) d v \\
+ =c_{V} d T+\left[T\left(\frac{\partial p}{\partial T}\right)_{v}-p\right] d v
 $$<h4 id="焓方程">焓方程
 </h4>$$
 \begin{aligned}
@@ -1324,15 +1324,14 @@ d h & =\left(\frac{\partial h}{\partial T}\right)_{p} d T+\left(\frac{\partial h
 \end{aligned}\\
 $$<h3 id="热力学基本关系式">热力学基本关系式
 </h3><ul>
-<li>$\left(\frac{\partial c_{V}}{\partial v}\right)<em>{T}, ~\left(\frac{\partial c</em>{p}}{\partial p}\right)_{T}  与状态方程间的关系
-由上述热力学能与焓的微分式可得：$</li>
+<li>$(\frac{\partial c_{V}}{\partial v})_T,(\frac{\partial c_p}{\partial p})_T$与状态方程间的关系由上述热力学能与焓的微分式可得：</li>
 </ul>
 $$
 \left(\frac{\partial c_{V}}{\partial v}\right)_{T}=T\left(\frac{\partial^{2} p}{\partial T^{2}}\right)_{v} \\
 \left(\frac{\partial c_{p}}{\partial p}\right)_{T}=-T\left(\frac{\partial^{2} v}{\partial T^{2}}\right)_{p}
 $$<p>$当给出较准确的状态方程以及某一压力  p_{0}  下测得的比定压热容数据  c_{p 0}(T)  ，可以通过积分算得函数关系  c_{p}(T, p)  ：$</p>
 $$
-c_{p}(T, p)=c_{p 0}(T)-T \int_{p_{0}}^{p}\left(\frac{\partial^{2} v}{\partial T^{2}}\right)_{p} d p$
+c_{p}(T, p)=c_{p 0}(T)-T \int_{p_{0}}^{p}\left(\frac{\partial^{2} v}{\partial T^{2}}\right)_{p} d p
 $$<ul>
 <li>$比热容差  \left(c_{p}-c_{v}\right)  与状态方程关系$</li>
 </ul>
