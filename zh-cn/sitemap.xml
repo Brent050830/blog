@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://Brent050830.site/</loc>
-    <lastmod>2025-03-12T21:22:42+08:00</lastmod>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://Brent050830.site/categories/</loc>
-    <lastmod>2025-03-12T21:22:42+08:00</lastmod>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,11 +28,14 @@
                 href="https://Brent050830.site/categories/"
                 />
   </url><url>
+    <loc>https://Brent050830.site/p/fury/</loc>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
+  </url><url>
     <loc>https://Brent050830.site/post/</loc>
-    <lastmod>2025-03-12T21:22:42+08:00</lastmod>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.site/tags/</loc>
-    <lastmod>2025-03-12T21:22:42+08:00</lastmod>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,6 +46,15 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.site/tags/"
                 />
+  </url><url>
+    <loc>https://Brent050830.site/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.site/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-04-15T16:33:23+08:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.site/p/fluent/</loc>
+    <lastmod>2025-04-15T15:41:59+08:00</lastmod>
   </url><url>
     <loc>https://Brent050830.site/tags/tick/</loc>
     <lastmod>2025-03-12T21:22:42+08:00</lastmod>
