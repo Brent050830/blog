@@ -663,6 +663,27 @@
         <li><a href="#积分法求弯曲变形">积分法求弯曲变形</a></li>
         <li><a href="#叠加原理求弯曲变形">叠加原理求弯曲变形</a></li>
         <li><a href="#简单超静定梁">简单超静定梁</a></li>
+        <li><a href="#提高弯曲刚度的一些措施">提高弯曲刚度的一些措施</a>
+          <ol>
+            <li><a href="#提高梁的刚度">提高梁的刚度</a></li>
+          </ol>
+        </li>
+        <li><a href="#总结">总结</a></li>
+        <li><a href="#强度问题">强度问题</a></li>
+        <li><a href="#刚度问题">刚度问题</a></li>
+        <li><a href="#超静定问题-1">超静定问题</a></li>
+      </ol>
+    </li>
+    <li><a href="#应力和应变分析强度理论">应力和应变分析，强度理论</a>
+      <ol>
+        <li><a href="#应力状态">应力状态、</a>
+          <ol>
+            <li><a href="#应力状态-1">应力状态</a></li>
+            <li><a href="#研究方法">研究方法</a></li>
+          </ol>
+        </li>
+        <li><a href="#二向和三向的应力状态">二向和三向的应力状态</a></li>
+        <li><a href="#二向应力状态分析解析法">二向应力状态分析——解析法</a></li>
       </ol>
     </li>
   </ol>
@@ -737,7 +758,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 24 分钟
+                    阅读时长: 26 分钟
                 </time>
             </div>
         
@@ -2577,6 +2598,275 @@ $$<p>称为梁的挠曲线近似微分方程</p>
 <li>列补充方程：将力与变形的关系带入变形几何方程</li>
 <li>使用静力平衡求解其他的支反力</li>
 </ol>
+<h3 id="提高弯曲刚度的一些措施">提高弯曲刚度的一些措施
+</h3><p>小于许用的挠度</p>
+<h4 id="提高梁的刚度">提高梁的刚度
+</h4>$$
+EIw^{''}=M(x)
+$$<h5 id="增大梁的抗弯刚度ei">增大梁的抗弯刚度EI
+</h5><ol>
+<li>增大E</li>
+</ol>
+<p>选取弹性模量较高的材料，提高梁的刚度，但是对于各种钢槽，E的数值差距不大，所以，选取高强度的钢材不能提高梁的刚度</p>
+<ol start="2">
+<li>增大I</li>
+</ol>
+<p>工程中采用工字型，框形截面</p>
+<h5 id="改善结构形式减少弯矩数值">改善结构形式，减少弯矩数值
+</h5><p>采用外伸的形式</p>
+<h5 id="采用超静定结构">采用超静定结构
+</h5><h3 id="总结">总结
+</h3><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250418164208704.png"
+	width="1229"
+	height="900"
+	
+	loading="lazy"
+	
+		alt="所有相关的形变的总结"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="136"
+		data-flex-basis="327px"
+	
+></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center"></th>
+          <th style="text-align: center">拉压</th>
+          <th style="text-align: center">扭转</th>
+          <th style="text-align: center">弯曲</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">内力</td>
+          <td style="text-align: center">轴力</td>
+          <td style="text-align: center">扭矩</td>
+          <td style="text-align: center">剪力<br>弯矩</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">内力图</td>
+          <td style="text-align: center">轴力图</td>
+          <td style="text-align: center">扭矩图</td>
+          <td style="text-align: center">剪力图<br>弯矩图</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">应力类型</td>
+          <td style="text-align: center">正应力</td>
+          <td style="text-align: center">切应力</td>
+          <td style="text-align: center">正应力<br>切应力</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">载荷-应力</td>
+          <td style="text-align: center">$\sigma=\frac{F_n}{A}$</td>
+          <td style="text-align: center">$\tau=\frac{T\rho}{I_P}$</td>
+          <td style="text-align: center">$\sigma=My/I_z$<br/>$\tau=F_sS^*_z/bI_z$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">应力-应变</td>
+          <td style="text-align: center">$\sigma=E\epsilon$</td>
+          <td style="text-align: center">$\tau=G\gamma$</td>
+          <td style="text-align: center"></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">载荷-变形</td>
+          <td style="text-align: center">$\Delta l=Fl/EA$</td>
+          <td style="text-align: center">$\varphi=Tl/GI_P$</td>
+          <td style="text-align: center">$w^{&rsquo;&rsquo;}=M/EI_z$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="强度问题">强度问题
+</h3><ol>
+<li>计算外力</li>
+<li>计算内力，做内力图</li>
+<li>求危险点的位置及其应力（现成公式）</li>
+<li>强度校核与设计（简单不等式）</li>
+</ol>
+<h3 id="刚度问题">刚度问题
+</h3><ol>
+<li>积分法</li>
+<li>叠加法</li>
+<li>能量法</li>
+</ol>
+<h3 id="超静定问题-1">超静定问题
+</h3><ol>
+<li>解除多余约束</li>
+<li>增加变形几何方程</li>
+<li>求解变形几何方程</li>
+<li>利用静力学平衡方程计算出其他外力</li>
+</ol>
+<p>但是对于组合变形，强度的求解步骤就变成</p>
+<ol>
+<li>计算外力</li>
+<li>计算内力，做内力图</li>
+<li>求危险点的位置，及其在横截面方向的应力</li>
+<li>求危险点及其在各个方位的应力，确定主应力</li>
+<li>做强度的校核</li>
+</ol>
+<h2 id="应力和应变分析强度理论">应力和应变分析，强度理论
+</h2><h3 id="应力状态">应力状态、
+</h3><blockquote>
+<p>实际的工程问题：</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250418174559514.png"
+	width="1139"
+	height="378"
+	
+	loading="lazy"
+	
+		alt="实际"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="301"
+		data-flex-basis="723px"
+	
+></p>
+</blockquote>
+<p>一点处既有<strong>正应力又有切应力</strong></p>
+<p><strong>直杆拉伸应力分析结果表明：即使同一点不同方向面上的应力也是各不相同的，此即应力的面的概念。</strong></p>
+<ul>
+<li>不仅横截面上存在应力，斜截面上也存在应力；</li>
+<li>同一面上不同点的应力各不相同；</li>
+<li>同一点不同方向面上的应力也是各不相同。</li>
+</ul>
+<h4 id="应力状态-1">应力状态
+</h4><p>过一点<strong>不同方向面</strong>上应力的情况，称之为这一点的<strong>应力状态</strong>，亦指该点的<strong>应力全貌</strong>。</p>
+<p><strong>找出最危险的点和截面</strong></p>
+<h4 id="研究方法">研究方法
+</h4><h5 id="单元体">单元体
+</h5><ul>
+<li>单元体的尺寸无限小，每个面上应力分布均匀</li>
+<li>任意一对平行平面上的应力相等</li>
+</ul>
+<p>对一个点来说，单元体可以有着不同的取向，所以存在一个单元体，使得每个面上的切应力为0</p>
+<blockquote class="alert alert-note">
+    <ul>
+<li>主平面：切应力为0</li>
+<li>主应力：主平面上的正应力</li>
+<li>主应力单元体：各侧面上切应力均为0的单元体</li>
+</ul></blockquote>
+<blockquote>
+<p>任意一点处必定存在这样的一个<strong>主应力单元体</strong>， 其中三个<strong>相互垂直</strong>的面均为<strong>主平面</strong>，三个相互垂直的主应力为$\sigma_1、\sigma_2、\sigma_3$且规定按代数值的大小来排序（包括符号）</p>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420134903765.png"
+	width="1147"
+	height="655"
+	
+	loading="lazy"
+	
+		alt="主应力单元体"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="420px"
+	
+></p>
+<p>符号规定：</p>
+<ul>
+<li>正应力：拉为正，压为负</li>
+<li>切应力：使微元顺时针转动为正、反之为负</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420135041179.png"
+	width="477"
+	height="517"
+	
+	loading="lazy"
+	
+		alt="切应力方向，对内部的点取矩"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="92"
+		data-flex-basis="221px"
+	
+></p>
+<h5 id="应力状态的分类">应力状态的分类：
+</h5><ol>
+<li>单向：三个主应力中只有一个不为零（正应力）</li>
+<li>平面：三个主应力中有两个不为零（实际上就是平面上受力）</li>
+<li>空间：三个主应力都不等于零</li>
+</ol>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420135335166.png"
+	width="1051"
+	height="347"
+	
+	loading="lazy"
+	
+		alt="三种分类"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="302"
+		data-flex-basis="726px"
+	
+></p>
+<p>这是只有正应力的情况，还有只有切应力的情况（但是由切应力互等定理，会有四个面有切应力）：</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420135522950.png"
+	width="459"
+	height="504"
+	
+	loading="lazy"
+	
+		alt="切应力"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="218px"
+	
+></p>
+<ul>
+<li>所以我们可以得到一个比较完整的分类：<img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420135629145.png"
+	width="1144"
+	height="718"
+	
+	loading="lazy"
+	
+		alt="完整分类"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="159"
+		data-flex-basis="382px"
+	
+></li>
+</ul>
+<h3 id="二向和三向的应力状态">二向和三向的应力状态
+</h3><blockquote class="alert alert-tip">
+    <p>求解的方法：</p>
+<ol>
+<li>对物体进行受力，分析其有哪几部分的变形（拉压，扭转，弯曲）</li>
+<li>按之前的，计算物体的应力（正应力，切应力）</li>
+<li>注意弯曲中，正应力距离中性轴越远越大，切应力距离中性轴越近越大</li>
+</ol></blockquote>
+<h3 id="二向应力状态分析解析法">二向应力状态分析——解析法
+</h3><ul>
+<li>二向应力为在x,y方向上有正应力与切应力</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420141557314.png"
+	width="1034"
+	height="413"
+	
+	loading="lazy"
+	
+		alt="一般为这种形式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="250"
+		data-flex-basis="600px"
+	
+></p>
+<blockquote class="alert alert-note">
+    <p>取斜截面，通过受力分析有，</p>
+<ol>
+<li>两相互垂直的截面上的正应力之和为常数</li>
+<li>两相互垂直的截面上的切应力之和为0</li>
+</ol></blockquote>
 
 </section>
 

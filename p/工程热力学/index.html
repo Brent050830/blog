@@ -577,6 +577,54 @@
         </li>
       </ol>
     </li>
+    <li><a href="#蒸汽的热力性质">蒸汽的热力性质</a>
+      <ol>
+        <li><a href="#蒸气立体图">蒸气立体图</a></li>
+        <li><a href="#相图p-t">相图（P-T）</a></li>
+        <li><a href="#p-v图">p-V图</a></li>
+        <li><a href="#热力平衡的判据">热力平衡的判据</a></li>
+        <li><a href="#液体加热气化">液体加热气化</a>
+          <ol>
+            <li><a href="#加热阶段">加热阶段</a></li>
+            <li><a href="#气化阶段">气化阶段</a></li>
+            <li><a href="#干度">干度</a></li>
+            <li><a href="#过热阶段">过热阶段</a></li>
+          </ol>
+        </li>
+        <li><a href="#热力性质表">热力性质表</a>
+          <ol>
+            <li><a href="#饱和液和饱和蒸气热力性质表">饱和液和饱和蒸气热力性质表</a></li>
+            <li><a href="#湿蒸气热力性质的计算">湿蒸气热力性质的计算</a></li>
+            <li><a href="#不饱和液和过热蒸气热力性质表">不饱和液和过热蒸气热力性质表</a></li>
+            <li><a href="#图">图</a></li>
+          </ol>
+        </li>
+        <li><a href="#小结">小结</a></li>
+      </ol>
+    </li>
+    <li><a href="#理想气体混合物和湿空气">理想气体混合物和湿空气</a>
+      <ol>
+        <li><a href="#成分计算摩尔质量和气体常数计算">成分计算、摩尔质量和气体常数计算</a></li>
+        <li><a href="#分压定理和分体积定理">分压定理和分体积定理</a></li>
+        <li><a href="#混合物的uhcs计算">混合物的u,h,c,s计算</a></li>
+        <li><a href="#湿空气及状态参数">湿空气及状态参数</a></li>
+        <li><a href="#未饱和湿空气和饱和湿空气">未饱和湿空气和饱和湿空气</a></li>
+        <li><a href="#途径">途径</a></li>
+        <li><a href="#干-湿球温度计">干-湿球温度计</a></li>
+        <li><a href="#图-1">图</a>
+          <ol>
+            <li><a href="#焓湿图h-d">焓湿图(h-d)</a></li>
+          </ol>
+        </li>
+        <li><a href="#湿空气的过程">湿空气的过程</a>
+          <ol>
+            <li><a href="#单纯的加热或冷却的过程">单纯的加热或冷却的过程</a></li>
+            <li><a href="#冷却去湿过程">冷却去湿过程</a></li>
+            <li><a href="#绝热加湿过程">绝热加湿过程</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -649,7 +697,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 12 分钟
+                    阅读时长: 16 分钟
                 </time>
             </div>
         
@@ -1390,15 +1438,15 @@ $$<ul>
 <li>首先是将上述的所有方程分一下类
 <ul>
 <li>基本的四个全微分方程（一般是使用前面的全微分的形式，后面的形式也要注意）</li>
-<li>对p,v,T,s的一阶偏微分的表达式，不怎么会使用到</li>
-<li>麦克斯韦关系式，一般是使用一阶的那个，有p,v,T中的两个与s之间的关系</li>
-<li>熵，焓，热力学能方程，最重要的关系式，将三个不可测量的量使用基本的p,v,T还有热力学的热系数表示</li>
+<li>对$p,v,T,s$的一阶偏微分的表达式，不怎么会使用到</li>
+<li>麦克斯韦关系式，一般是使用一阶的那个，有$p,v,T$中的两个与s之间的关系</li>
+<li>熵，焓，热力学能方程，最重要的关系式，将三个不可测量的量使用基本的$p,v,T$还有热力学的热系数表示</li>
 </ul>
 </li>
 <li>解题：
 <ul>
-<li>首先下标一样的才可以化简</li>
-<li>出现p,v,T三者之间的式子，可以使用麦克斯韦化简，变为含有熵的方程</li>
+<li>首先下标一样的才可以化简（也就是不变的物理量量相同）</li>
+<li>出现$p,v,T$三者之间的式子，可以使用麦克斯韦化简，变为含有熵的方程</li>
 <li>出现熵，焓，热力学能不变的方程（这三个在脚标的位置）时，要学会使用熵方程，不变是意味着微分=0</li>
 </ul>
 </li>
@@ -1406,7 +1454,447 @@ $$<ul>
 <blockquote>
 <p>一般来说，常用的有三种方程，其中焓、熵这些方程最重要，基本方程主要是带入将微分形式展开，麦克斯韦方程主要是解决p,v,T出现的方程</p>
 </blockquote>
-
+<h2 id="蒸汽的热力性质">蒸汽的热力性质
+</h2><p>感觉本章主要是图、表的使用</p>
+<h3 id="蒸气立体图">蒸气立体图
+</h3><p>不是蒸汽（蒸汽或汽通常指水蒸气）</p>
+<p>蒸气在其工作参数范围内既<strong>可呈现为气态、亦可呈现为液态</strong>，<strong>存在气-液相变</strong>的气化和凝结过程</p>
+<blockquote class="alert alert-note">
+    <p>单元工质的pvT立体面</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420143718037.png"
+	width="405"
+	height="518"
+	
+	loading="lazy"
+	
+		alt="面"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="78"
+		data-flex-basis="187px"
+	
+></p>
+<ul>
+<li>三块单向区，状态由任意两个参数确定</li>
+<li>三块两相区：气-液、固液、气固
+<ul>
+<li>在相变时可以两相共存，此时的压力和温度不是相互独立的变量（因为必须在相变的线上），但是，比体积和压力（或温度）可以确定状态</li>
+<li>三相线上，气液固可以共存</li>
+</ul>
+</li>
+<li>相变的起始或终止状态称为<strong>饱和态</strong>，饱和态的<strong>温度和压力是相对应的</strong></li>
+<li>中间的拱形区是<strong>气液两相区</strong>，围成它的两边的曲线分别是<strong>饱和液和饱和气线</strong>（阴影区域）
+<ul>
+<li>在**饱和线(相界面线)**上工质可以进行平衡的相变过程</li>
+<li>拱形的顶部，即两条饱和线的交点是临界点(临界温度和临界压力)</li>
+<li>临界温度是气液两相可共存的<strong>最高温度</strong></li>
+</ul>
+</li>
+</ul></blockquote>
+<h3 id="相图p-t">相图（P-T）
+</h3><blockquote>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420144734706.png"
+	width="536"
+	height="496"
+	
+	loading="lazy"
+	
+		alt="相图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="108"
+		data-flex-basis="259px"
+	
+></p>
+</blockquote>
+<blockquote class="alert alert-note">
+    <ul>
+<li>0-B是熔化线</li>
+<li>0-C是气化线，C为临界点
+<ul>
+<li>在临界状态，饱和气和饱和液相区的各个热力性质均相等</li>
+<li>在超临界压力时，<strong>气液相变不经历两相平衡共存的饱和态</strong>，通常以<strong>临界定温线作为气、液两个相区的分界</strong></li>
+</ul>
+</li>
+</ul></blockquote>
+<p>虚线为临界线，线右侧的区域全为气相区域，无论多大的压力都不能液化</p>
+<h3 id="p-v图">p-V图
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420145345896.png"
+	width="545"
+	height="507"
+	
+	loading="lazy"
+	
+		alt="pv"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="107"
+		data-flex-basis="257px"
+	
+></p>
+<blockquote>
+<ul>
+<li>除了临界点外，饱和气和饱和液有不同的体积比</li>
+<li>在<strong>p-v图上</strong>，气化线展开成2条即<strong>饱和液线(0&rsquo;-C)和饱和气线(0&rsquo;&rsquo;-C)</strong></li>
+<li>三相点展开成三相线0&rsquo;-0''</li>
+<li>在临界压力以上不存在气-液两相平衡区(以定温线分隔两区)</li>
+</ul>
+</blockquote>
+<blockquote class="alert alert-note">
+    <ul>
+<li>在图中，相变时，$p,T$之间有关系，相变时，温度和压强不会发生变化（在外界稳定的情况下），所以<strong>横线为相变</strong>（既是等温的也是等压的线，有气有液）的过程。</li>
+<li>当体系的容积改变时，气、液的比例会发生改变，从而使得T、p不变。（即横线从左到右）</li>
+<li>线段中间的点表示不同质量比的两相混合物，为<strong>湿饱和气</strong></li>
+<li>由图，以气 - 液两相为例，随着温度升高，<strong>气体和液体的性质逐渐趋近</strong>，也就是超过临界压力时，不会有相变过程的原因</li>
+</ul></blockquote>
+<ul>
+<li>一定压力下1 kg饱和液转变为液饱和气吸收的热量称为<strong>汽化潜热</strong>(定压相变过程温度恒定)：
+$$
+  r=h^{\prime\prime}-h^{\prime}=T_s(s^{\prime\prime}-s^{\prime})
+  $$</li>
+</ul>
+<h3 id="热力平衡的判据">热力平衡的判据
+</h3><ul>
+<li>平衡的自由能判据：在<strong>温度和体积不变</strong>的条件下，封闭系统的自发过程朝<strong>自由能减小</strong>的方向进行，系统<strong>平衡态自由能(功势函数)最小</strong>
+<ul>
+<li>自由能——定温定容系统
+自由焓——定温定压系统
+热力学能——定熵定容系统
+焓——定熵定压系统</li>
+</ul>
+</li>
+</ul>
+<h3 id="液体加热气化">液体加热气化
+</h3><h4 id="加热阶段">加热阶段
+</h4><ul>
+<li>
+<p>由不饱和液吸热变为饱和液，始终为单一的液相</p>
+</li>
+<li>
+$$
+  q=h^{'}-h_0
+  $$<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420154842153.png"
+	width="872"
+	height="384"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="227"
+		data-flex-basis="545px"
+	
+></p>
+<p>为T-s图上左侧曲边梯形的面积？</p>
+</li>
+</ul>
+<h4 id="气化阶段">气化阶段
+</h4><ul>
+<li>
+<p>相变的阶段，由饱和液变为饱和蒸气</p>
+</li>
+<li>
+<p>比体积，焓，熵增加</p>
+</li>
+<li>
+$$
+  r=T_s(s{''}-s{'})
+  $$<p>
+<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420155123521.png"
+	width="877"
+	height="378"
+	
+	loading="lazy"
+	
+		alt="变化"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="232"
+		data-flex-basis="556px"
+	
+></p>
+</li>
+</ul>
+<h4 id="干度">干度
+</h4><ul>
+<li>
+<p>横线中间点为饱和液和饱和气的混合物（湿蒸气）</p>
+</li>
+<li>
+$$
+  X=\frac{m^{\prime\prime}}{m^{\prime}+m^{\prime\prime}}=\frac{m^{\prime\prime}}{m}
+  $$</li>
+<li>
+<p>1-x为湿度</p>
+</li>
+</ul>
+<h4 id="过热阶段">过热阶段
+</h4><ul>
+<li>
+<p>对饱和蒸气继续加热，温度超过饱和温度的阶段，此时的工质称为<strong>过热蒸气</strong>，超出的温度值称为<strong>过热度(T-Ts)</strong></p>
+</li>
+<li>
+<p>工质在过热阶段吸收的热量等于<strong>过热与饱和蒸气的焓差</strong></p>
+</li>
+<li>
+$$
+  q=h-h{''}
+  $$<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420155415555.png"
+	width="864"
+	height="382"
+	
+	loading="lazy"
+	
+		alt="过热"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="226"
+		data-flex-basis="542px"
+	
+></p>
+</li>
+</ul>
+<blockquote class="alert alert-tip">
+    <p>随着压力的提高，蒸气定压发生过程线在p-v图上平行上移</p>
+<ul>
+<li>由于饱和温度相应提高，T-s图上的过程线亦向上移动</li>
+<li>当压力到达临界压力时，定压线通过临界点C</li>
+<li>此时，临界温度以下是液体加热阶段，临界温度以上是蒸气过热阶段，临界点上饱和液和饱和气的参数相同</li>
+<li>临界点是临界定温线上具有水平切线的拐点</li>
+<li>在超临界压力下，蒸气发生过程不经过气-液平衡两相区，不经过特殊的相变点，工质由液态到气态是在连续渐变中完成的，过程中总是呈现为均匀的单相</li>
+</ul></blockquote>
+<h3 id="热力性质表">热力性质表
+</h3><blockquote>
+<p>未饱和水、饱和水、湿蒸汽、饱和蒸汽、过热蒸汽 5 种状态</p>
+</blockquote>
+<ul>
+<li>液体的参数计算</li>
+<li>是蒸汽的参数计算</li>
+<li>过热蒸汽的参数计算</li>
+</ul>
+<h4 id="饱和液和饱和蒸气热力性质表">饱和液和饱和蒸气热力性质表
+</h4><ul>
+<li>两相共存时，有一个独立的参数（给定一个p/T，就能知道饱和的压力，温度）</li>
+<li>气-液平衡的饱和态只出现在三相点以上、临界点以下，故表的参数范围为三相点至临界点</li>
+</ul>
+<h4 id="湿蒸气热力性质的计算">湿蒸气热力性质的计算
+</h4><blockquote>
+$$V_{x}=(1-x)V'+xV''=V'+x(V''-V')$$$$h_{x}=h'+x(h''-h')=h'+xr$$$$s_{x}=s'+x(s''-s')$$</blockquote>
+<p>饱和液的比体积v&rsquo;和饱和蒸气的比体积v&rsquo;&rsquo;，<strong>x为干度</strong></p>
+<h4 id="不饱和液和过热蒸气热力性质表">不饱和液和过热蒸气热力性质表
+</h4><h4 id="图">图
+</h4><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420160900585.png"
+	width="482"
+	height="682"
+	
+	loading="lazy"
+	
+		alt="hs"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="70"
+		data-flex-basis="169px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420160913552.png"
+	width="536"
+	height="584"
+	
+	loading="lazy"
+	
+		alt="ph"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="220px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420160925621.png"
+	width="554"
+	height="672"
+	
+	loading="lazy"
+	
+		alt="ts"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="82"
+		data-flex-basis="197px"
+	
+></p>
+<h3 id="小结">小结
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420160956768.png"
+	width="1082"
+	height="502"
+	
+	loading="lazy"
+	
+		alt="小结"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="215"
+		data-flex-basis="517px"
+	
+></p>
+<h2 id="理想气体混合物和湿空气">理想气体混合物和湿空气
+</h2><h3 id="成分计算摩尔质量和气体常数计算">成分计算、摩尔质量和气体常数计算
+</h3><ul>
+<li>质量分数$w_i$</li>
+<li>体积分数$\varphi_i$</li>
+<li>摩尔分数$x_i$</li>
+</ul>
+$$
+混合物的摩尔质量\\
+\mathrm{M}=\frac{\mathrm{m}}{\mathrm{n}}=\frac{\sum_{\mathrm{i}} \mathrm{~m}_{\mathrm{i}}}{\mathrm{n}}=\frac{\sum_{\mathrm{i}} \mathrm{n}_{\mathrm{i}} \mathrm{M}_{\mathrm{i}}}{\mathrm{n}}=\sum_{\mathrm{i}} \mathrm{x}_{\mathrm{i}} \mathrm{M}_{\mathrm{i}}\\
+气体常数\\
+R g=\frac{R}{M}=\frac{n R}{m}=\frac{\sum_{i} n_{i} R}{m}=\frac{\sum_{i} m_{i} \frac{R}{M_{i}}}{m}=\sum_{i} w_{i} R_{g, i}
+$$<h3 id="分压定理和分体积定理">分压定理和分体积定理
+</h3><h3 id="混合物的uhcs计算">混合物的u,h,c,s计算
+</h3><p>前提：任一组元所处的状态不受其他组元的影响</p>
+<ul>
+<li>
+$$
+  \begin{aligned}
+   & 1kg,u(T)=\sum_{i}w_{i}u_{i}(T) \\
+   & 1mol,U_{m}(T)=\sum_{i}x_{i}U_{m,i}(T)
+  \end{aligned}
+  $$</li>
+<li>
+$$
+  \begin{aligned}
+   & h=u+pv=u+RgT \\
+   & h\left(T\right)=\sum_{i}w_{i}u_{i}\left(T\right)+\sum_{i}w_{i}R_{g,i}T \\
+   & =\sum_{i}w_{i}[u_{i}(T)+R_{g,i}T] \\
+   & =\sum_iw_ih_i(T) \\
+   & H_{m}(T)=\sum_{i}x_{i}H_{m,i}(T)
+  \end{aligned}
+  $$</li>
+<li>
+<p>比热容，和上面的同理</p>
+</li>
+<li>
+<p>熵，$s(T,p)=\Sigma_iw_is_i(T,p_i)$</p>
+</li>
+</ul>
+<h3 id="湿空气及状态参数">湿空气及状态参数
+</h3><ul>
+<li>湿空气：干空气和水蒸气的混合物</li>
+<li>水蒸气的含量是变量</li>
+</ul>
+<blockquote class="alert alert-note">
+    <ol>
+<li>
+<p>绝对湿度$m_V$：每立方米湿空气中所含的水蒸气的质量$AH=\frac{m_\text{水蒸气}}{V_\text{空气}}\quad(\text{单位:g/m}^3)$</p>
+</li>
+<li>
+<p>相对湿度：使用当前水蒸气的分压/当前温度下饱和水蒸气的分压</p>
+<p>$\phi=\frac{p_v}{p_s}$，越干燥，吸水能力强</p>
+</li>
+<li>
+<p>含湿量d：每kg的干空气中含有的水蒸气的数量</p>
+</li>
+</ol></blockquote>
+<h3 id="未饱和湿空气和饱和湿空气">未饱和湿空气和饱和湿空气
+</h3><ol>
+<li>未饱和湿空气（干空气+过热水蒸气）</li>
+<li>饱和湿空气，温度一定时，不能再加入水蒸气</li>
+</ol>
+<h3 id="途径">途径
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420205000875.png"
+	width="1193"
+	height="351"
+	
+	loading="lazy"
+	
+		alt="途径"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="339"
+		data-flex-basis="815px"
+	
+></p>
+<ol>
+<li>a-b：加水蒸气</li>
+<li>a-w：绝热，$T_w$绝热饱和温度</li>
+<li>a-d：压强不变，$T_d$露点温度</li>
+</ol>
+$$
+h_a=c_pt=1.005t\\h_\mathrm{v}=2501+1.863t\\h=1.005t+d(2501+1.863t)
+$$<blockquote>
+<p>为将干空气的焓与水蒸气的焓×含湿量相加</p>
+</blockquote>
+<h3 id="干-湿球温度计">干-湿球温度计
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420211251345.png"
+	width="534"
+	height="497"
+	
+	loading="lazy"
+	
+		alt="原理"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="107"
+		data-flex-basis="257px"
+	
+></p>
+<h3 id="图-1">图
+</h3><h4 id="焓湿图h-d">焓湿图(h-d)
+</h4><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420211425508.png"
+	width="458"
+	height="538"
+	
+	loading="lazy"
+	
+		alt="hd"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="204px"
+	
+></p>
+<h3 id="湿空气的过程">湿空气的过程
+</h3><h4 id="单纯的加热或冷却的过程">单纯的加热或冷却的过程
+</h4><blockquote>
+<p>d不变</p>
+<p>在焓湿图中为与y轴平行的直线</p>
+<p>$q=h_2-h_1$</p>
+</blockquote>
+<h4 id="冷却去湿过程">冷却去湿过程
+</h4>$$
+h_1=h_4+
+\begin{bmatrix}
+d_1-d_4
+\end{bmatrix}h_\text{水}+
+\begin{vmatrix}
+q
+\end{vmatrix} \\
+\begin{vmatrix}
+q
+\end{vmatrix}=h_1-h_4-
+\begin{bmatrix}
+d_1-d_4
+\end{bmatrix}h_\text{水}
+$$<h4 id="绝热加湿过程">绝热加湿过程
+</h4><ul>
+<li>向空气中喷水，气化潜热，蒸发冷却</li>
+</ul>
+$$
+h_1+(d_2-d_1)h_水=h_2
+$$
 </section>
 
 

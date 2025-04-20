@@ -451,7 +451,85 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#基本入门">基本入门</a></li>
+    <li><a href="#重新进行学习">重新进行学习</a></li>
+    <li><a href="#进行多孔介质的仿真">进行多孔介质的仿真</a>
+      <ol>
+        <li><a href="#前处理">前处理</a>
+          <ol>
+            <li><a href="#上实现汉化的方式httpsi0hdslbcombfsarticleb6c8f97e805e44c779c386c32989ba2938726c82png1192wavif">上<img src="https://i0.hdslb.com/bfs/article/b6c8f97e805e44c779c386c32989ba2938726c82.png@1192w.avif" alt="实现汉化的方式"></a></li>
+          </ol>
+        </li>
+        <li><a href="#多孔介质的设定">多孔介质的设定</a>
+          <ol>
+            <li><a href="#上">上</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#fluent软件简介及操作使用">fluent软件简介及操作使用</a>
+      <ol>
+        <li><a href="#求解器类型">求解器类型</a>
+          <ol>
+            <li><a href="#压力基求解器">压力基求解器</a></li>
+            <li><a href="#密度基求解器">密度基求解器</a></li>
+          </ol>
+        </li>
+        <li><a href="#功能特点">功能特点</a>
+          <ol>
+            <li><a href="#数值算法">数值算法</a></li>
+            <li><a href="#物理模型">物理模型</a></li>
+          </ol>
+        </li>
+        <li><a href="#边界条件">边界条件</a>
+          <ol>
+            <li><a href="#入口">入口</a></li>
+            <li><a href="#出口边界条件">出口边界条件</a></li>
+            <li><a href="#固体壁面边界条件">固体壁面边界条件</a></li>
+            <li><a href="#对称边界条件">对称边界条件</a></li>
+            <li><a href="#周期性边界条件">周期性边界条件</a></li>
+          </ol>
+        </li>
+        <li><a href="#流程">流程</a>
+          <ol>
+            <li><a href="#创建几何模型">创建几何模型</a></li>
+            <li><a href="#划分网格">划分网格</a></li>
+            <li><a href="#分析设置">分析设置</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -519,7 +597,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 0 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -534,7 +612,272 @@
     <section class="article-content">
     
     
-    
+    <h2 id="基本入门">基本入门
+</h2><blockquote class="alert alert-note">
+    <ol>
+<li>首先是打开WB软件(workbench)，里面好像有很多的可用的仿真软件</li>
+<li>之后选择工具箱中的fluent(CFX好像也可以)，将其拖到页面中</li>
+</ol></blockquote>
+<p>之后正式进入fluent的使用</p>
+<blockquote class="alert alert-tip">
+    <ul>
+<li>模型的导入：</li>
+</ul>
+<ol>
+<li>选择几何结构，在软件中编辑（SC软件），也可以导入</li>
+</ol>
+<blockquote>
+<ol>
+<li>先画一个管道，正常的sw就可以</li>
+<li>在选择“准备”-“体积抽取”-选择“一个封闭区域的边环”-√</li>
+<li>将外面的抑制掉（物理学抑制）（隐藏），关掉</li>
+</ol>
+</blockquote>
+<ol start="2">
+<li>在WB中选择网格，打开</li>
+</ol>
+<blockquote>
+<ol>
+<li>确定边界，点击边界的图形，右键，创建命名选择（使用英文命名）</li>
+<li>点击右侧边栏的网格，设置单元尺寸（越小，网格的单元越小），之后点击上方的生成，就将网格生成好了</li>
+<li>选择上方的界面，划一下，可以查看截面</li>
+</ol>
+</blockquote>
+<p>出来到WB，右键网格，更新</p>
+<ol start="3">
+<li>对流体进行基础的设置</li>
+</ol>
+<blockquote>
+<ol>
+<li>右键设置，进入fluent仿真界面，进行参数设置（double pre勾选  4,1数字）</li>
+<li>左边，一般（通用），网格缩放</li>
+<li>模型，选择粘性，选择k-epsilon</li>
+<li>单元区域条件，下面，选择边界材料为空气</li>
+<li>边界条件
+<ol>
+<li>壁面，粗糙高度：0.05</li>
+<li>出口，右键选择type，选择流出边界（outflow）</li>
+<li>入口：必须有条件，设置种类为速度相关，设置速度大小，设置k and epsilon</li>
+<li>方法是简单方法，初始化</li>
+<li>自动保存</li>
+<li>运行计算，迭代次数，1000次（一种概率的表示），开始计算，就会出现结果，但是计算的次数不一定是1000次</li>
+</ol>
+</li>
+</ol>
+</blockquote></blockquote>
+<p>结果查看：</p>
+<ul>
+<li>结果-云图-wall-显示</li>
+<li>结果-云图-新建面-yz面显示</li>
+<li>结果-迹线-新建的面</li>
+<li>结果-矢量-新建的面</li>
+</ul>
+<p>计算，显示</p>
+<h2 id="重新进行学习">重新进行学习
+</h2><p>所以在界面上的五个</p>
+<p>建模-网格化-设置-求解-结果</p>
+<p>前三个一般就够了，后面两个就是仿真结果摩擦部署的设置</p>
+<ol>
+<li>在sc中建模
+<ol>
+<li>在x-y界面上建模</li>
+<li>结束草图编辑</li>
+</ol>
+</li>
+<li>双击网格，网格化，</li>
+</ol>
+<h2 id="进行多孔介质的仿真">进行多孔介质的仿真
+</h2><h3 id="前处理">前处理
+</h3><h4 id="上实现汉化的方式httpsi0hdslbcombfsarticleb6c8f97e805e44c779c386c32989ba2938726c82png1192wavif">上<img src="https://i0.hdslb.com/bfs/article/b6c8f97e805e44c779c386c32989ba2938726c82.png@1192w.avif"
+	
+	
+	
+	loading="lazy"
+	
+		alt="实现汉化的方式"
+	
+	
+>
+</h4><ol>
+<li>打开fluent，选择mesh（左边），在左下角打开小三角，将文件的位置复制粘贴到模型的位置，进行核的数目（8,8,）,start</li>
+<li>在工作流中选择water那个，导入几何模型，点击文件名的三个点，选择模型</li>
+<li>选择切割平面，中插入切割平面</li>
+<li>有传感去，需要对传感器进行<strong>加密</strong></li>
+<li>按照曲率，选择三个与sensor有关的（新的然健会高亮）</li>
+</ol>
+<blockquote>
+<p>生成面网格</p>
+<p><img src="/p/fluent/image-20250416223627854.png"
+	width="407"
+	height="1030"
+	
+	loading="lazy"
+	
+		alt="参数设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="39"
+		data-flex-basis="94px"
+	
+></p>
+<p>最后点击生成</p>
+<p><img src="/p/fluent/image-20250416223814153.png"
+	width="548"
+	height="371"
+	
+	loading="lazy"
+	
+		alt="划分好了"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="147"
+		data-flex-basis="354px"
+	
+></p>
+</blockquote>
+<blockquote>
+<p>多孔介质会看做流体</p>
+<p>描述几何结构</p>
+<p><img src="/p/fluent/image-20250416224119484.png"
+	width="978"
+	height="630"
+	
+	loading="lazy"
+	
+		alt="参数设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="155"
+		data-flex-basis="372px"
+	
+></p>
+<p>创建封堵，封堵进出口</p>
+</blockquote>
+<blockquote>
+<p>更新边界</p>
+<p>也是会高亮显示</p>
+<p><img src="/p/fluent/image-20250416224412525.png"
+	width="769"
+	height="281"
+	
+	loading="lazy"
+	
+		alt="设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="273"
+		data-flex-basis="656px"
+	
+></p>
+<p>都是点击左下角进行最后的设置</p>
+</blockquote>
+<blockquote>
+<p>创建区域</p>
+<p>流体一般是3</p>
+<p>更新，将honey作为流体处理</p>
+</blockquote>
+<blockquote>
+<p>边界层保持默认的选项</p>
+<p>后面的生成也是默认的选项，最后点击生成</p>
+</blockquote>
+<h3 id="多孔介质的设定">多孔介质的设定
+</h3><h4 id="上">上
+</h4><p><img src="/p/fluent/image-20250416224912806.png"
+	width="793"
+	height="455"
+	
+	loading="lazy"
+	
+		alt="形状"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="418px"
+	
+></p>
+<p>质量是0.1，也是比较好的</p>
+<p>点击左上角，切换到计算的模式</p>
+<p>固体区域留下，多点网格，不算固体，仅仅是为了好看一点</p>
+<blockquote>
+<p>上方可以偏好设置</p>
+</blockquote>
+<p><strong>显示网格</strong></p>
+<p>模型的设置使用k-omega</p>
+<p>在流体的空气中选择数据库，找到氮气，选择复制，就进入了</p>
+<blockquote>
+<p>在单元区域条件的流体中，将流体，改为氮气</p>
+<p>右键复制，复制到其余的两个的流体中</p>
+<p>多孔区域</p>
+</blockquote>
+<blockquote>
+<p>在左边能够将热量打开，修改边界入口的热量</p>
+</blockquote>
+<p>保存（写出）</p>
+<p>进行计算的初始化设置</p>
+<p>计算</p>
+<h2 id="fluent软件简介及操作使用">fluent软件简介及操作使用
+</h2><h3 id="求解器类型">求解器类型
+</h3><p>都是在求解的界面中的</p>
+<h4 id="压力基求解器">压力基求解器
+</h4><blockquote>
+<p>分为压力基的分离求解器和压力基的耦合求解器</p>
+</blockquote>
+<h4 id="密度基求解器">密度基求解器
+</h4><h3 id="功能特点">功能特点
+</h3><h4 id="数值算法">数值算法
+</h4><p>三种数值算法</p>
+<h4 id="物理模型">物理模型
+</h4><ol>
+<li>粘性模型</li>
+<li>多向流模型</li>
+<li>辐射模型</li>
+<li>组分</li>
+<li>离散相</li>
+<li>凝固和融化</li>
+</ol>
+<h3 id="边界条件">边界条件
+</h3><h4 id="入口">入口
+</h4><p>速度，压力，质量三种边界条件</p>
+<h4 id="出口边界条件">出口边界条件
+</h4><p>压力边界和质量边界</p>
+<h4 id="固体壁面边界条件">固体壁面边界条件
+</h4><h4 id="对称边界条件">对称边界条件
+</h4><h4 id="周期性边界条件">周期性边界条件
+</h4><h3 id="流程">流程
+</h3><h4 id="创建几何模型">创建几何模型
+</h4><p>在workbench中创建流体流动fluent，几何结构</p>
+<h4 id="划分网格">划分网格
+</h4><p>在项目中的网格中进行划分</p>
+<h4 id="分析设置">分析设置
+</h4><ol>
+<li>
+<p>选择合适的主程序：</p>
+<ol>
+<li>2d,3d</li>
+<li>双精度</li>
+<li>核数</li>
+<li>show more options设置工作目录，启动路径</li>
+</ol>
+</li>
+<li>
+<p>检查网格</p>
+</li>
+<li>
+<p>选择解的格式</p>
+</li>
+<li>
+<p>选择基本的物理模型</p>
+</li>
+<li>
+<p>确定所需的附加模型</p>
+</li>
+</ol>
+
 </section>
 
 
