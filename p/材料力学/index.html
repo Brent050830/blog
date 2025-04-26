@@ -683,7 +683,30 @@
           </ol>
         </li>
         <li><a href="#二向和三向的应力状态">二向和三向的应力状态</a></li>
-        <li><a href="#二向应力状态分析解析法">二向应力状态分析——解析法</a></li>
+        <li><a href="#二向应力状态分析解析法">二向应力状态分析——解析法</a>
+          <ol>
+            <li><a href="#斜截面的最大正应力与方位">斜截面的最大正应力与方位</a></li>
+            <li><a href="#斜截面的最大切应力及方位">斜截面的最大切应力及方位</a></li>
+          </ol>
+        </li>
+        <li><a href="#二向应力状态分析图解法">二向应力状态分析——图解法</a>
+          <ol>
+            <li><a href="#应力圆莫尔圆">应力圆（莫尔圆）</a></li>
+          </ol>
+        </li>
+        <li><a href="#小结">小结：</a></li>
+        <li><a href="#三向应力状态">三向应力状态</a>
+          <ol>
+            <li><a href="#最大正应力与切应力">最大正应力与切应力</a></li>
+          </ol>
+        </li>
+        <li><a href="#广义胡克定律">广义胡克定律</a></li>
+        <li><a href="#复杂应力状态的应变能密度">复杂应力状态的应变能密度</a>
+          <ol>
+            <li><a href="#畸变能密度">畸变能密度</a></li>
+          </ol>
+        </li>
+        <li><a href="#强度理论的概述">强度理论的概述</a></li>
       </ol>
     </li>
   </ol>
@@ -758,7 +781,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 26 分钟
+                    阅读时长: 30 分钟
                 </time>
             </div>
         
@@ -2769,6 +2792,7 @@ $$<h5 id="增大梁的抗弯刚度ei">增大梁的抗弯刚度EI
 <ul>
 <li>正应力：拉为正，压为负</li>
 <li>切应力：使微元顺时针转动为正、反之为负</li>
+<li>$\alpha$：逆时针为正，反之为负</li>
 </ul>
 <p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250420135041179.png"
 	width="477"
@@ -2867,7 +2891,317 @@ $$<h5 id="增大梁的抗弯刚度ei">增大梁的抗弯刚度EI
 <li>两相互垂直的截面上的正应力之和为常数</li>
 <li>两相互垂直的截面上的切应力之和为0</li>
 </ol></blockquote>
-
+<h4 id="斜截面的最大正应力与方位">斜截面的最大正应力与方位
+</h4>$$
+\tan2\alpha_0=-\frac{2\tau_{xy}}{\sigma_x-\sigma_y}
+$$$$
+\left\{\begin{array}{l}
+\sigma_{\max/\min }=\frac{\sigma_{x}+\sigma_{y}}{2} \pm \sqrt{\left(\frac{\sigma_{x}-\sigma_{y}}{2}\right)^{2}+\tau_{x y}^{2}}
+\end{array}\right.
+$$<p>
+判断$\alpha$是原来的$\sigma_x$与哪一个主应力的夹角，如下：</p>
+<blockquote>
+<p>约定$\alpha_0$&lt;45º，即$\alpha_0$取值在±45º范围内，确定主应力方向的
+具体规则如下：</p>
+<ul>
+<li>
+<p>当$\sigma_x$&gt;$\sigma_y$时，$\alpha_0$是$\sigma_x$与$\sigma_{max}$之间的夹角；</p>
+</li>
+<li>
+<p>当$\sigma_x$&lt;$\sigma_y$时，$\alpha_0$是$\sigma_x$与$\sigma_{min}$之间的夹角；</p>
+</li>
+<li>
+<p>当$\sigma_x$=$\sigma_y$时，$\alpha_0$​=45°，主应力的方向可由单元体上切应力情况直观判断出来</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250422224321290.png"
+	width="1129"
+	height="480"
+	
+	loading="lazy"
+	
+		alt="特殊情况"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="564px"
+	
+></p>
+</li>
+</ul>
+</blockquote>
+<h4 id="斜截面的最大切应力及方位">斜截面的最大切应力及方位
+</h4><p><strong>正应力最大时，切应力为0</strong></p>
+$$
+\begin{cases}
+\tau_{\max}=\pm\sqrt{(\frac{\sigma_x-\sigma_y}{2})^2+\tau_{xy}^2} \\
+\tau_{\min} & 
+\end{cases}
+$$$$
+\tan2\alpha_1=\frac{\sigma_x-\sigma_y}{2\tau_{xy}}
+$$<blockquote>
+<p>两个角度之间的关系：</p>
+<p>$\alpha_1=\alpha_0+\frac{\pi}{4}$</p>
+</blockquote>
+<blockquote class="alert alert-tip">
+    <ol>
+<li>比较应力的大小时，是<strong>带着符号</strong>的</li>
+<li>求出来的应力大小也是带着符号的</li>
+<li>最后要求主应力的话，有<strong>三个主应力</strong>，从大到小</li>
+</ol></blockquote>
+<h3 id="二向应力状态分析图解法">二向应力状态分析——图解法
+</h3><h4 id="应力圆莫尔圆">应力圆（莫尔圆）
+</h4>$$
+(\sigma_\alpha-\frac{\sigma_x+\sigma_y}{2})^2+\tau_\alpha^2=(\frac{\sigma_x-\sigma_y}{2})^2+\tau_{xy}^2
+$$$$
+\begin{aligned}
+ & \text{圆心的坐标} & & C(\frac{\sigma_x+\sigma_y}{2},0) \\
+ & \text{圆的半径} & & R=\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+\end{aligned}
+$$<p>在$\sigma-\tau$图像中是一个<strong>圆的轨迹</strong></p>
+<blockquote>
+<p><strong>画法</strong></p>
+<ol>
+<li>建立坐标系，选定比例尺</li>
+<li>量取$OA=\sigma_x,AD=\tau_{xy}$，为D点</li>
+<li>同样，量取垂直面上的正应力和切应力，再次确定一个点D’</li>
+<li>连接 DD′两点的直线与$\sigma$轴相交于C点。</li>
+<li>以C为圆心，CD 为半径作圆，即得该单元体的应力圆</li>
+</ol>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250422224934120.png"
+	width="1178"
+	height="524"
+	
+	loading="lazy"
+	
+		alt="画法"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="224"
+		data-flex-basis="539px"
+	
+></p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>应用</strong></p>
+<ul>
+<li>
+<p>对应关系</p>
+<ul>
+<li>点面之间的对应关系：单元体某一面上的应力，必对应于应力圆上<strong>某一点的坐标</strong>。</li>
+<li>夹角关系：圆周上任意两点所引半径的夹角等于单元体上应
+两截面<strong>夹角的两倍</strong>。两者的<strong>转向一致</strong></li>
+</ul>
+</li>
+<li>
+<p>求单元体上任一截面上的应力</p>
+<ul>
+<li>找到基准的面（左右侧面）对应的线（基准）</li>
+<li>顺时针$\alpha$角的面对应的线就是基准线在图上旋转$2\alpha$</li>
+<li>正应力与压应力从图上读取即可</li>
+</ul>
+</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250422225633435.png"
+	width="1158"
+	height="478"
+	
+	loading="lazy"
+	
+		alt="如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="242"
+		data-flex-basis="581px"
+	
+></p>
+<ul>
+<li>求主应力数值和主平面位置
+<ul>
+<li>与横轴的交线就是主应力对应的坐标</li>
+<li>位置为绕着原来的面旋转$\alpha_0$</li>
+</ul>
+</li>
+<li>求最大切应力
+<ul>
+<li>过c点作垂线，交点两点的<strong>纵坐标分别代表最大和最小切应力</strong></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250422225857280.png"
+	width="973"
+	height="640"
+	
+	loading="lazy"
+	
+		alt="小结"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="364px"
+	
+></p>
+<h3 id="小结">小结：
+</h3><ul>
+<li>解析法：
+<ul>
+<li>一般公式2个（正、切应力），</li>
+<li>极值应力4个（极大与极小正应力，极大与极小切应力）</li>
+<li>主单元体方位角1个</li>
+<li>缺点：公式不好记 —— 7个</li>
+</ul>
+</li>
+<li>图解法
+<ul>
+<li>前半步 —— 画应力圆</li>
+<li>后半步 —— 看图精确计算</li>
+</ul>
+</li>
+</ul>
+<h3 id="三向应力状态">三向应力状态
+</h3><p><strong>定义：三向应力状态：三个主应力都不为零的应力状态</strong></p>
+<h4 id="最大正应力与切应力">最大正应力与切应力
+</h4><blockquote class="alert alert-note">
+    <ol>
+<li>求出物体某一点内的三个主应力（类似双向的应力，取两个面画就可以了）</li>
+<li>将求出的主应力画在图上，以两个一组画圆，画出三个圆</li>
+<li>大圆与两个小圆之间的阴影部分就是该点不同方向能取到的应力</li>
+<li><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250425230356196.png"
+	width="1142"
+	height="610"
+	
+	loading="lazy"
+	
+		alt="圆"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="187"
+		data-flex-basis="449px"
+	
+></li>
+<li><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250425230412662.png"
+	width="1144"
+	height="664"
+	
+	loading="lazy"
+	
+		alt="解法"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="172"
+		data-flex-basis="413px"
+	
+></li>
+</ol></blockquote>
+<p><strong>由图，$\sigma_{max}=\sigma_1$</strong></p>
+<p>最大的切应力为半径</p>
+<p><strong>公式总结</strong></p>
+$$
+\sigma_{\alpha} = \frac{\sigma_{x} + \sigma_{y}}{2} + \frac{\sigma_{x} - \sigma_{y}}{2} \cos 2\alpha - \tau_{xy} \sin 2\alpha
+$$$$
+\tau_{\alpha} = \frac{\sigma_{x} - \sigma_{y}}{2} \sin 2\alpha + \tau_{xy} \cos 2\alpha
+$$$$
+\tan 2\alpha_{0} = -\frac{2\tau_{xy}}{\sigma_{x} - \sigma_{y}}
+$$$$
+\left\{
+\begin{array}{l}
+\alpha_{0} \\
+\alpha_{0} + 90^{\circ}
+\end{array}
+\right.
+$$$$
+\left\{
+\begin{array}{l}
+\sigma_{\max} = \frac{\sigma_{x} + \sigma_{y}}{2} \pm \sqrt{\left(\frac{\sigma_{x} - \sigma_{y}}{2}\right)^{2} + \tau_{xy}^{2}}
+\end{array}
+\right.
+$$$$
+\tan 2\alpha_{1} = \frac{\sigma_{x} - \sigma_{y}}{2\tau_{xy}}
+$$$$
+\left\{
+\begin{array}{l}
+\alpha_{1} \\
+\alpha_{1} + 90^{\circ}
+\end{array}
+\right.
+$$$$
+\begin{cases}
+\tau_{\max}=\pm\sqrt{(\frac{\sigma_x-\sigma_y}{2})^2+\tau_{xy}^2} \\
+\tau_{\min} & 
+\end{cases}
+$$<h3 id="广义胡克定律">广义胡克定律
+</h3><blockquote>
+$$
+> \begin{gathered}
+> \mathcal{E}_{1}=\frac{1}{E}\left[\sigma_1-\mu\left(\sigma_2+\sigma_3\right)\right] \\
+> \mathcal{E}_2=\frac{1}{E}[\sigma_2-\mu(\sigma_3+\sigma_1)] \\
+> \mathcal{E}_{3}=\frac{1}{E}[\sigma_3-\mu(\sigma_1+\sigma_2)]
+> \end{gathered}
+> $$<p>
+这是主应力对应的<strong>主应变</strong></p>
+</blockquote>
+<h3 id="复杂应力状态的应变能密度">复杂应力状态的应变能密度
+</h3><p>单向的应变能密度：$\frac{1}{2}\sigma\epsilon$</p>
+<blockquote>
+$$
+> \nu_\varepsilon=\frac{1}{2E}[\sigma_1^2+\sigma_2^2+\sigma_3^2-2\mu(\sigma_1\sigma_2+\sigma_2\sigma_3+\sigma_1\sigma_3)]
+> $$</blockquote>
+$$
+\theta=\frac{1-2\mu}{E}(\sigma_1+\sigma_2+\sigma_3)
+$$<blockquote>
+<p>可见，只与三个主应力的和有关，设<strong>等值的应力为三个主应力的均值</strong></p>
+<p>构造这种等值应力的单元体：<img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250426000526557.png"
+	width="349"
+	height="384"
+	
+	loading="lazy"
+	
+		alt="等值"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="90"
+		data-flex-basis="218px"
+	
+></p>
+<p>则与原来的单元体的体积应变相同</p>
+<p>且这个单元体的主应变相等，在等值应力的作用下，单元体的形状不发生改变</p>
+</blockquote>
+<h4 id="畸变能密度">畸变能密度
+</h4><ul>
+<li>用$\nu_{V}$表示与单元体体积改变相应的那部分应变能密度，称为体积改变能密度</li>
+<li>用$\nu_{d}$表示与单元体形状改变相应的那部分应变能密度，称为形状改变能密度，又称为畸变能密度。</li>
+</ul>
+$$
+\nu_{\epsilon}=\nu_{V}+\nu_{d}
+$$<blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250426001046341.png"
+	width="1042"
+	height="479"
+	
+	loading="lazy"
+	
+		alt="关系"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="217"
+		data-flex-basis="522px"
+	
+></p>
+$$
+> \nu_\mathrm{d}=\nu_\varepsilon-\nu_\mathrm{V}=\frac{1+\mu}{6E}[(\sigma_1-\sigma_2)^2+(\sigma_2-\sigma_3)^2+(\sigma_1-\sigma_3)^2]
+> $$<p>
+得到畸变能密度</p>
+</blockquote>
+<h3 id="强度理论的概述">强度理论的概述
+</h3>
 </section>
 
 

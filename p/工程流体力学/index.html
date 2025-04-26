@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="流体静力学 静止状态 静止或者是相对静止的流体，质点之间没有相对运动，粘性表现不出来，剪应力为0。\n静止流体质点间只存在正应力，以压应力的形式体现 静止是压应力与体积力相互平衡的结果 静压强的特性：\n">
 <title>工程流体力学</title>
 
 <link rel='canonical' href='https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/'>
 
 <link rel="stylesheet" href="/scss/style.min.3564f62e9e68344cdbe66859e9dda1b831aeb13267eb232e141443e82681b362.css"><meta property='og:title' content="工程流体力学">
-<meta property='og:description' content="">
+<meta property='og:description' content="流体静力学 静止状态 静止或者是相对静止的流体，质点之间没有相对运动，粘性表现不出来，剪应力为0。\n静止流体质点间只存在正应力，以压应力的形式体现 静止是压应力与体积力相互平衡的结果 静压强的特性：\n">
 <meta property='og:url' content='https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/'>
 <meta property='og:site_name' content='Brent_blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='工流' /><meta property='article:published_time' content='2025-03-01T18:51:10&#43;08:00'/><meta property='article:modified_time' content='2025-03-01T18:51:10&#43;08:00'/><meta property='og:image' content='https://t.alcy.cc/ycy?random=1f56051a' />
 <meta name="twitter:title" content="工程流体力学">
-<meta name="twitter:description" content=""><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="流体静力学 静止状态 静止或者是相对静止的流体，质点之间没有相对运动，粘性表现不出来，剪应力为0。\n静止流体质点间只存在正应力，以压应力的形式体现 静止是压应力与体积力相互平衡的结果 静压强的特性：\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://t.alcy.cc/ycy?random=1f56051a' />
     <link rel="shortcut icon" href="/favicon.ico" />
 <div class="loading">
@@ -451,7 +451,46 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#流体静力学">流体静力学</a>
+      <ol>
+        <li><a href="#静止状态">静止状态</a></li>
+        <li><a href="#绝对压强相对压强真空压强">绝对压强、相对压强、真空压强</a></li>
+        <li><a href="#静水压">静水压</a></li>
+        <li><a href="#有加速度情况下的静压强">有加速度情况下的静压强</a></li>
+        <li><a href="#有旋转情况下的静压强">有旋转情况下的静压强</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -515,7 +554,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 0 分钟
+                    阅读时长: 1 分钟
                 </time>
             </div>
         
@@ -530,7 +569,59 @@
     <section class="article-content">
     
     
-    
+    <h2 id="流体静力学">流体静力学
+</h2><h3 id="静止状态">静止状态
+</h3><p><strong>静止或者是相对静止</strong>的流体，质点之间没有<strong>相对运动</strong>，<strong>粘性</strong>表现不出来，剪应力为0。</p>
+<blockquote>
+<ul>
+<li>静止流体质点间只存在<strong>正应力</strong>，以压应力的形式体现</li>
+<li>静止是<strong>压应力与体积力</strong>相互平衡的结果</li>
+</ul>
+</blockquote>
+<hr>
+<blockquote class="alert alert-note">
+    <p>静压强的特性：</p>
+<ol>
+<li>各向等值——点性质，与方向无关</li>
+<li>作用垂向性——总是作用于物体表面法向</li>
+</ol></blockquote>
+$$
+f_x = \frac{1}{\rho} \frac{\partial p}{\partial x} = 0\\[6pt]
+f_y - \frac{1}{\rho} \frac{\partial p}{\partial y} = 0\\[6pt]
+f_z - \frac{1}{\rho} \frac{\partial p}{\partial z} = 0\\dp=\frac{\partial p}{\partial x}dx+\frac{\partial p}{\partial y}dy+\frac{\partial p}{\partial z}dz=\rho(f_xdx+f_ydy+f_zdz)
+$$<h3 id="绝对压强相对压强真空压强">绝对压强、相对压强、真空压强
+</h3><ol>
+<li>绝对压强：以真空压强（0）为基准的压强</li>
+<li>相对压强（表压）：以大气压强为基准的压强</li>
+<li>真空压强：当绝对压强小于大气压时，其差值为真空压强（负表压的绝对值）</li>
+</ol>
+<h3 id="静水压">静水压
+</h3><p>**静止状态：**在连续、均匀、静止流体中，<strong>压强只和垂直高度相关</strong>，与容器形状无关，水平面上压强相等</p>
+<h3 id="有加速度情况下的静压强">有加速度情况下的静压强
+</h3><blockquote>
+$$
+> \begin{aligned}
+>  & \nabla P=\rho(\mathbf{g}-\mathbf{a}) \\
+>  & \theta=\tan^{-1}\frac{a_x}{g+a_z}
+> \end{aligned}
+> $$<ul>
+<li>压强增加率要大于无加速度情况</li>
+<li>与容器大小与形状无关</li>
+<li>等压面平行于自由面</li>
+</ul>
+</blockquote>
+$$
+dp=\rho(-adx-gdz)，两端积分\\
+p=\rho g(-\frac{a}{g}x-z)+c\\
+将坐标原点选在自由面的中心\\
+p=p=\rho g(-\frac{a}{g}x-z)+p_a
+$$<h3 id="有旋转情况下的静压强">有旋转情况下的静压强
+</h3>$$
+p=p_0-\rho gz+\frac{1}{2}\rho r^2\omega^2
+$$<blockquote>
+<p>壁面处液面升高相对于原来的水平面为h/2</p>
+</blockquote>
+
 </section>
 
 

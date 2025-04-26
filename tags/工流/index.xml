@@ -13,7 +13,59 @@
         <pubDate>Sat, 01 Mar 2025 18:51:10 +0800</pubDate>
         
         <guid>https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/</guid>
-        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051a" alt="Featured image of post 工程流体力学" /&gt;</description>
+        <description>&lt;img src="https://t.alcy.cc/ycy?random=1f56051a" alt="Featured image of post 工程流体力学" /&gt;&lt;h2 id=&#34;流体静力学&#34;&gt;流体静力学
+&lt;/h2&gt;&lt;h3 id=&#34;静止状态&#34;&gt;静止状态
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;静止或者是相对静止&lt;/strong&gt;的流体，质点之间没有&lt;strong&gt;相对运动&lt;/strong&gt;，&lt;strong&gt;粘性&lt;/strong&gt;表现不出来，剪应力为0。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;静止流体质点间只存在&lt;strong&gt;正应力&lt;/strong&gt;，以压应力的形式体现&lt;/li&gt;
+&lt;li&gt;静止是&lt;strong&gt;压应力与体积力&lt;/strong&gt;相互平衡的结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;静压强的特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;各向等值——点性质，与方向无关&lt;/li&gt;
+&lt;li&gt;作用垂向性——总是作用于物体表面法向&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+$$
+f_x = \frac{1}{\rho} \frac{\partial p}{\partial x} = 0\\[6pt]
+f_y - \frac{1}{\rho} \frac{\partial p}{\partial y} = 0\\[6pt]
+f_z - \frac{1}{\rho} \frac{\partial p}{\partial z} = 0\\dp=\frac{\partial p}{\partial x}dx+\frac{\partial p}{\partial y}dy+\frac{\partial p}{\partial z}dz=\rho(f_xdx+f_ydy+f_zdz)
+$$&lt;h3 id=&#34;绝对压强相对压强真空压强&#34;&gt;绝对压强、相对压强、真空压强
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;绝对压强：以真空压强（0）为基准的压强&lt;/li&gt;
+&lt;li&gt;相对压强（表压）：以大气压强为基准的压强&lt;/li&gt;
+&lt;li&gt;真空压强：当绝对压强小于大气压时，其差值为真空压强（负表压的绝对值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;静水压&#34;&gt;静水压
+&lt;/h3&gt;&lt;p&gt;**静止状态：**在连续、均匀、静止流体中，&lt;strong&gt;压强只和垂直高度相关&lt;/strong&gt;，与容器形状无关，水平面上压强相等&lt;/p&gt;
+&lt;h3 id=&#34;有加速度情况下的静压强&#34;&gt;有加速度情况下的静压强
+&lt;/h3&gt;&lt;blockquote&gt;
+$$
+&gt; \begin{aligned}
+&gt;  &amp; \nabla P=\rho(\mathbf{g}-\mathbf{a}) \\
+&gt;  &amp; \theta=\tan^{-1}\frac{a_x}{g+a_z}
+&gt; \end{aligned}
+&gt; $$&lt;ul&gt;
+&lt;li&gt;压强增加率要大于无加速度情况&lt;/li&gt;
+&lt;li&gt;与容器大小与形状无关&lt;/li&gt;
+&lt;li&gt;等压面平行于自由面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+$$
+dp=\rho(-adx-gdz)，两端积分\\
+p=\rho g(-\frac{a}{g}x-z)+c\\
+将坐标原点选在自由面的中心\\
+p=p=\rho g(-\frac{a}{g}x-z)+p_a
+$$&lt;h3 id=&#34;有旋转情况下的静压强&#34;&gt;有旋转情况下的静压强
+&lt;/h3&gt;$$
+p=p_0-\rho gz+\frac{1}{2}\rho r^2\omega^2
+$$&lt;blockquote&gt;
+&lt;p&gt;壁面处液面升高相对于原来的水平面为h/2&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
         </item>
         
     </channel>
