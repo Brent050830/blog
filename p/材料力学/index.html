@@ -706,7 +706,39 @@
             <li><a href="#畸变能密度">畸变能密度</a></li>
           </ol>
         </li>
-        <li><a href="#强度理论的概述">强度理论的概述</a></li>
+        <li><a href="#强度理论的概述">强度理论的概述</a>
+          <ol>
+            <li><a href="#概念">概念</a></li>
+            <li><a href="#破坏的两种类型">破坏的两种类型</a></li>
+            <li><a href="#失效准则">失效准则</a></li>
+          </ol>
+        </li>
+        <li><a href="#四种强度理论">四种强度理论</a>
+          <ol>
+            <li><a href="#最大拉应力第一强度">最大拉应力（第一强度）</a></li>
+            <li><a href="#最大伸长线应变第二">最大伸长线应变（第二）</a></li>
+            <li><a href="#最大切应力理论第三强度理论">最大切应力理论（第三强度理论）</a></li>
+            <li><a href="#最大畸变能密度理论">最大畸变能密度理论</a></li>
+            <li><a href="#相当应力">相当应力</a></li>
+            <li><a href="#强度计算的步骤">强度计算的步骤</a></li>
+          </ol>
+        </li>
+        <li><a href="#莫尔强度理论">莫尔强度理论</a></li>
+      </ol>
+    </li>
+    <li><a href="#组合变形">组合变形</a>
+      <ol>
+        <li><a href="#组合变形和叠加原理">组合变形和叠加原理</a></li>
+        <li><a href="#拉压与弯曲的组合">拉压与弯曲的组合</a>
+          <ol>
+            <li><a href="#受力分析">受力分析</a></li>
+          </ol>
+        </li>
+        <li><a href="#扭转和弯曲的组合">扭转和弯曲的组合</a>
+          <ol>
+            <li><a href="#弯拉扭的组合">弯拉扭的组合</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -781,7 +813,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 30 分钟
+                    阅读时长: 33 分钟
                 </time>
             </div>
         
@@ -3102,11 +3134,16 @@ $$<p>在$\sigma-\tau$图像中是一个<strong>圆的轨迹</strong></p>
 <p><strong>由图，$\sigma_{max}=\sigma_1$</strong></p>
 <p>最大的切应力为半径</p>
 <p><strong>公式总结</strong></p>
+<ol>
+<li>任意斜截面的应力</li>
+</ol>
 $$
 \sigma_{\alpha} = \frac{\sigma_{x} + \sigma_{y}}{2} + \frac{\sigma_{x} - \sigma_{y}}{2} \cos 2\alpha - \tau_{xy} \sin 2\alpha
 $$$$
 \tau_{\alpha} = \frac{\sigma_{x} - \sigma_{y}}{2} \sin 2\alpha + \tau_{xy} \cos 2\alpha
-$$$$
+$$<p>
+2. 最大正应力的方位</p>
+$$
 \tan 2\alpha_{0} = -\frac{2\tau_{xy}}{\sigma_{x} - \sigma_{y}}
 $$$$
 \left\{
@@ -3115,13 +3152,17 @@ $$$$
 \alpha_{0} + 90^{\circ}
 \end{array}
 \right.
-$$$$
+$$<p>
+3. 最大正应力</p>
+$$
 \left\{
 \begin{array}{l}
 \sigma_{\max} = \frac{\sigma_{x} + \sigma_{y}}{2} \pm \sqrt{\left(\frac{\sigma_{x} - \sigma_{y}}{2}\right)^{2} + \tau_{xy}^{2}}
 \end{array}
 \right.
-$$$$
+$$<p>
+4. 最大切应力的方位</p>
+$$
 \tan 2\alpha_{1} = \frac{\sigma_{x} - \sigma_{y}}{2\tau_{xy}}
 $$$$
 \left\{
@@ -3130,7 +3171,10 @@ $$$$
 \alpha_{1} + 90^{\circ}
 \end{array}
 \right.
-$$$$
+$$<ol start="5">
+<li>最大切应力</li>
+</ol>
+$$
 \begin{cases}
 \tau_{\max}=\pm\sqrt{(\frac{\sigma_x-\sigma_y}{2})^2+\tau_{xy}^2} \\
 \tau_{\min} & 
@@ -3201,7 +3245,202 @@ $$
 得到畸变能密度</p>
 </blockquote>
 <h3 id="强度理论的概述">强度理论的概述
-</h3>
+</h3><h4 id="概念">概念
+</h4><p><strong>强度理论是关于“构件发生强度失效的起因”的假说</strong></p>
+<h4 id="破坏的两种类型">破坏的两种类型
+</h4><p><strong>断裂与屈服</strong></p>
+<blockquote>
+<ul>
+<li>
+<p>断裂破坏</p>
+<ul>
+<li>脆性断裂：无明显的变形下突然断裂——脆性材料的失效</li>
+<li>韧性断裂：产生大量塑性变形后的断裂</li>
+</ul>
+</li>
+<li>
+<p>屈服破坏：<strong>塑性材料</strong>的失效</p>
+<p>材料出现显著的<strong>塑性变形</strong>而丧失其正常的工作能力</p>
+</li>
+</ul>
+</blockquote>
+<ol>
+<li>铸铁属于正应力破坏</li>
+<li>低碳钢属于切应力破坏</li>
+</ol>
+<h4 id="失效准则">失效准则
+</h4><p>材料发生脆断或塑性破坏的具体原因或共同因素：</p>
+<blockquote>
+<p>最大正应力</p>
+<p>最大切应力</p>
+<p>最大伸长线应变</p>
+<p>最大畸变能密度</p>
+</blockquote>
+<h3 id="四种强度理论">四种强度理论
+</h3><ul>
+<li>第一类强度理论：以脆断作为破坏的标志。
+包括：<strong>最大拉应力理论和最大伸长线应变理论</strong>。</li>
+<li>第二类强度理论：以<strong>屈服作为破坏的标志</strong>。
+包括：<strong>最大切应力理论和最大畸变能密度理论</strong></li>
+</ul>
+<h4 id="最大拉应力第一强度">最大拉应力（第一强度）
+</h4><blockquote>
+<p><strong>最大拉应力</strong>为引起材料脆断的因素</p>
+<p>无论<strong>材料处于什么应力状态</strong>，只要微元内的最大拉应力$\sigma_1$达到了单向拉伸的强度极限$\sigma_b$，就会发生断裂破坏。</p>
+<p>此理论对于大<strong>部分脆性材料受拉应力作用</strong></p>
+</blockquote>
+<p>只需要校核最大拉应力</p>
+<blockquote>
+<p>局限性：
+➢ 未考虑<strong>另外二个主应力</strong>影响</p>
+<p>➢ 对<strong>没有</strong>拉应力的应力状态无法应用</p>
+<p>➢ 对塑性材料的破坏无法解释</p>
+</blockquote>
+<h4 id="最大伸长线应变第二">最大伸长线应变（第二）
+</h4><blockquote>
+<ul>
+<li>根据：当作用在构件上的外力过大时，其危险点处的材料就会沿垂直于最大拉应变方向的平面发生破坏。</li>
+<li>最大拉应变：$\epsilon_1=\frac{1}{E}[\sigma_1-\mu(\sigma_2+\sigma_3)]$</li>
+<li>条件：构件内有一处的最大拉应力达到了单向拉伸的极限，就会发生破坏</li>
+</ul>
+</blockquote>
+<p>第二强度理论对于<strong>一拉一压的二向应力状态的脆性材料</strong>的断裂较符合，如铸铁受拉压比第一强度理论更接近实际情况</p>
+<h4 id="最大切应力理论第三强度理论">最大切应力理论（第三强度理论）
+</h4><blockquote>
+<ul>
+<li>根据：作用在构件上的外力过大时，其危险点处的材料就会沿<strong>最大切应力所在截面滑移</strong>而发生屈服失效</li>
+<li>失效准则：最大切应力</li>
+<li>基本假说：最大切应力$\tau_{max}$是引起材料屈服的因素。
+失效准则：最大切应力$\tau_{max}$
+强度条件：$\sigma _1- \sigma _3\leq [ \sigma ]$</li>
+</ul>
+</blockquote>
+<hr>
+<p>局限性：</p>
+<p>未考虑$\sigma_2$的影响</p>
+<p>不能解释三向均拉的条件下断裂的现象</p>
+<h4 id="最大畸变能密度理论">最大畸变能密度理论
+</h4><h4 id="相当应力">相当应力
+</h4><blockquote>
+<p>将各个强度理论的强度条件写成同一的形式</p>
+<p>$\sigma_r$为复杂应力状态下的相当应力</p>
+<p>下面的式子为强度条件（需要小于许用应力）：</p>
+</blockquote>
+$$
+\begin{aligned}
+\sigma_{\mathrm{r} 1} & =\sigma_{1} \\
+\sigma_{\mathrm{r} 2} & =\sigma_{1}-\mu\left(\sigma_{2}+\sigma_{3}\right) \\
+\sigma_{\mathrm{r} 3} & =\sigma_{1}-\sigma_{3} \\
+\sigma_{\mathrm{r} 4} & =\sqrt{\frac{1}{2}\left[\left(\sigma_{1}-\sigma_{2}\right)^{2}+\left(\sigma_{2}-\sigma_{3}\right)^{2}+\left(\sigma_{3}-\sigma_{1}\right)^{2}\right]}
+\end{aligned}
+$$<blockquote class="alert alert-tip">
+    <p><strong>适用范围</strong></p>
+<p>(1) 脆性材料选用第一或第二强度理论；</p>
+<p>(2) 塑性材料选用第三或第四强度理论；</p>
+<p>(3) 在二向和三向等拉应力时，无论是塑性还是脆性都发生脆性破坏，故选用第一或第二强度理论；</p>
+<p>(4) 在二向和三向等压应力时，无论是塑性还是脆性材料都发生塑性破坏，故选用第三或第四强度理论。</p></blockquote>
+<h4 id="强度计算的步骤">强度计算的步骤
+</h4><ol>
+<li>外力分析</li>
+<li>内力分析</li>
+<li>应力分析</li>
+<li>强度分析</li>
+</ol>
+<h3 id="莫尔强度理论">莫尔强度理论
+</h3><p>任意一点的应力圆若与由极限应力确定的包络线相接触，则材料即将屈服或断裂。</p>
+$$
+\sigma_1-\frac{[\sigma_t]}{[\sigma_c]}\sigma_3\leq[\sigma_t]
+$$<p>
+<img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250428235836034.png"
+	width="1063"
+	height="670"
+	
+	loading="lazy"
+	
+		alt="平面应力"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="380px"
+	
+></p>
+<h2 id="组合变形">组合变形
+</h2><h3 id="组合变形和叠加原理">组合变形和叠加原理
+</h3><p>构件在载荷作用下发生两种或两种以上的基本变形, 则构件的变形称为组合变形。</p>
+<blockquote>
+<p>处理组合变形的基本方法：叠加法</p>
+<ol>
+<li>
+<p>外力分析</p>
+<p>将外力简化并<strong>沿主惯性轴分解</strong>，将组合变形分解为基本变形，使之每个力（或力偶）对应一种基本变形。</p>
+</li>
+<li>
+<p>内力分析</p>
+<p>求每个外力分量对应的内力方程和内力图，确定危险截面。分别计算每一种基本变形下构件的应力和变形。</p>
+</li>
+<li>
+<p>应力分析</p>
+<p>画出危险截面的应力分布图，利用叠加原理将基本变形下的应力和变形叠加，建立危险点的强度条件。</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="拉压与弯曲的组合">拉压与弯曲的组合
+</h3><p>**受力：**既有轴向的拉压力，还有横向力</p>
+<h4 id="受力分析">受力分析
+</h4>$$
+\sigma{=}\sigma_\mathrm{N}+\sigma_M=\frac{F_\mathrm{N}}{A}+\frac{M_z\cdot y}{I_z}
+$$<p>
+则，将两个正应力相加即可（注意正负）</p>
+<blockquote class="alert alert-tip">
+    <p>对于<strong>弯曲刚度EI较</strong>小的杆，在压缩与弯曲组合变形下，轴向压力引起的附加弯矩较大，且附加弯矩的转向与横向力引起的弯矩同向，此时叠加原理将不再适用。</p></blockquote>
+<p><strong>注意：对非规则的物体取矩，一般是对中性面（形心）取矩</strong></p>
+<h3 id="扭转和弯曲的组合">扭转和弯曲的组合
+</h3><p>同时受到转矩和横向力的作用</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250429185028322.png"
+	width="1185"
+	height="293"
+	
+	loading="lazy"
+	
+		alt="所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="404"
+		data-flex-basis="970px"
+	
+></p>
+<blockquote>
+<p>受到弯矩M和扭矩T</p>
+<ol>
+<li>
+$$
+>    \begin{aligned}
+>     & \sigma_{r3}=\sigma_1-\sigma_3=\sqrt{\sigma^2+4\tau^2} \\
+>     & \sigma_{r4}=\sqrt{\sigma^2+3\tau^2}
+>    \end{aligned}
+>    $$</li>
+<li>
+$$
+>    \sigma_{r3}=\frac{1}{W}\sqrt{M^2+T^2}\leq[\sigma]\\\sigma_{r4}=\frac{1}{W}\sqrt{M^2+0.75T^2}\leq[\sigma]
+>    $$</li>
+</ol>
+</blockquote>
+<h4 id="弯拉扭的组合">弯拉扭的组合
+</h4><p>发生三种基本变形</p>
+$$
+\sigma_{r3}=\sqrt{\left(\sigma_M+\sigma_\mathrm{N}\right)^2+4\tau_T^2}\leq[\sigma]\\\sigma_{r4}=\sqrt{\left(\sigma_M+\sigma_\mathrm{N}\right)^2+3\tau_T^2}\leq[\sigma]
+$$<blockquote>
+<p>步骤：</p>
+<ol>
+<li>外力分析（将外力想形心简化）</li>
+<li>做出内力图像，确定危险截面</li>
+<li>确定危险点及其应力状态，计算主应力</li>
+<li>带进公式进行校核（选择正确的强度理论）</li>
+</ol>
+</blockquote>
+
 </section>
 
 

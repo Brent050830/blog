@@ -609,7 +609,7 @@
         <li><a href="#混合物的uhcs计算">混合物的u,h,c,s计算</a></li>
         <li><a href="#湿空气及状态参数">湿空气及状态参数</a></li>
         <li><a href="#未饱和湿空气和饱和湿空气">未饱和湿空气和饱和湿空气</a></li>
-        <li><a href="#途径">途径</a></li>
+        <li><a href="#从未饱和变为饱和途径">从未饱和变为饱和途径</a></li>
         <li><a href="#干-湿球温度计">干-湿球温度计</a></li>
         <li><a href="#图-1">图</a>
           <ol>
@@ -621,9 +621,15 @@
             <li><a href="#单纯的加热或冷却的过程">单纯的加热或冷却的过程</a></li>
             <li><a href="#冷却去湿过程">冷却去湿过程</a></li>
             <li><a href="#绝热加湿过程">绝热加湿过程</a></li>
+            <li><a href="#绝热混合过程">绝热混合过程</a></li>
           </ol>
         </li>
         <li><a href="#todo">todo</a></li>
+      </ol>
+    </li>
+    <li><a href="#理想气体的热力学过程">理想气体的热力学过程</a>
+      <ol>
+        <li><a href="#研究对象">研究对象</a></li>
       </ol>
     </li>
   </ol>
@@ -698,7 +704,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 16 分钟
+                    阅读时长: 17 分钟
                 </time>
             </div>
         
@@ -1806,12 +1812,48 @@ $$
 <p>含湿量d：每kg的干空气中含有的水蒸气的数量</p>
 </li>
 </ol></blockquote>
-<h3 id="未饱和湿空气和饱和湿空气">未饱和湿空气和饱和湿空气
+$$
+\begin{aligned}
+ & d=\frac{m_\mathrm{v}}{m_a}=\frac{\frac{p_\mathrm{v}V}{R_\mathrm{v}T}}{\frac{p_aV}{R_aT}}=\frac{p_\mathrm{v}R_a}{p_aR_\mathrm{v}}=\frac{p_\mathrm{v}\times287}{p_a\times461.9} \\
+ & =0.622\frac{p_\mathrm{v}}{p-p_\mathrm{v}}=0.622\frac{\phi p_\mathrm{s}}{p-\phi p_\mathrm{s}}
+\end{aligned}
+$$<h3 id="未饱和湿空气和饱和湿空气">未饱和湿空气和饱和湿空气
 </h3><ol>
 <li>未饱和湿空气（干空气+过热水蒸气）</li>
 <li>饱和湿空气，温度一定时，不能再加入水蒸气</li>
 </ol>
-<h3 id="途径">途径
+<blockquote>
+<p>比较</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250426225307532.png"
+	width="1202"
+	height="353"
+	
+	loading="lazy"
+	
+		alt="未饱和"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="340"
+		data-flex-basis="817px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250426225326256.png"
+	width="1129"
+	height="358"
+	
+	loading="lazy"
+	
+		alt="饱和水蒸气"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="315"
+		data-flex-basis="756px"
+	
+></p>
+</blockquote>
+<h3 id="从未饱和变为饱和途径">从未饱和变为饱和途径
 </h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250420205000875.png"
 	width="1193"
 	height="351"
@@ -1827,10 +1869,13 @@ $$
 	
 ></p>
 <ol>
-<li>a-b：加水蒸气</li>
+<li>a-b：加水蒸气，温度不变</li>
 <li>a-w：绝热，$T_w$绝热饱和温度</li>
 <li>a-d：压强不变，$T_d$露点温度</li>
 </ol>
+<blockquote>
+<p>取0℃时的两者的焓为0，作为基准</p>
+</blockquote>
 $$
 h_a=c_pt=1.005t\\h_\mathrm{v}=2501+1.863t\\h=1.005t+d(2501+1.863t)
 $$<blockquote>
@@ -1867,6 +1912,23 @@ $$<blockquote>
 		data-flex-basis="204px"
 	
 ></p>
+<blockquote>
+<ul>
+<li>横轴为d线，d=0时为干空气</li>
+<li>人为将h线旋转了135°（图中的斜线为等h的线）</li>
+<li>横线为等温线</li>
+<li>曲线等相对湿度</li>
+</ul>
+</blockquote>
+<h5 id="t线">t线
+</h5>$$
+\begin{aligned}
+ & \left(\frac{\partial h}{\partial d}\right)_t= \\
+ & 2501+1.863t \\
+ & =Const>0
+\end{aligned}
+$$<h5 id="等phi线">等$\Phi$线
+</h5><p>向上凹的曲线，饱和线上方为未饱和线，下部无意义</p>
 <h3 id="湿空气的过程">湿空气的过程
 </h3><h4 id="单纯的加热或冷却的过程">单纯的加热或冷却的过程
 </h4><blockquote>
@@ -1875,7 +1937,8 @@ $$<blockquote>
 <p>$q=h_2-h_1$</p>
 </blockquote>
 <h4 id="冷却去湿过程">冷却去湿过程
-</h4>$$
+</h4><p>先是等湿度的降温，再降低湿度（降温，空气中能含有的最多的蒸气量下降，但是实际的蒸气量不变，相对湿度上升）（当到1时，无法容纳更多的水蒸气，开始析出）</p>
+$$
 h_1=h_4+
 \begin{bmatrix}
 d_1-d_4
@@ -1893,15 +1956,58 @@ $$<h4 id="绝热加湿过程">绝热加湿过程
 </h4><ul>
 <li>向空气中喷水，气化潜热，蒸发冷却</li>
 </ul>
+<p>湿度上升，相对湿度上升，温度下降</p>
 $$
 h_1+(d_2-d_1)h_水=h_2
-$$<h3 id="todo">todo
+$$<h4 id="绝热混合过程">绝热混合过程
+</h4><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250426231229225.png"
+	width="1250"
+	height="569"
+	
+	loading="lazy"
+	
+		alt="诶"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="527px"
+	
+></p>
+<h3 id="todo">todo
 </h3><ol>
 <li>三种图表的使用（定压时的饱和，定温时的饱和，定容时的未饱和和过饱和的数据）</li>
 <li>图像的读法</li>
 <li>解题的步骤和注意点</li>
 <li>熵增的进一步说法</li>
 </ol>
+<h2 id="理想气体的热力学过程">理想气体的热力学过程
+</h2>$$
+Pv=R_gT
+$$<p>
+其中的$R_g$为气体的气体常数</p>
+<blockquote class="alert alert-tip">
+    <p>对于理想气体，有（u和h为温度的单值函数）</p></blockquote>
+$$
+du=c_vdT\\
+dh=c_pdT\\
+ds=c_p\frac{dT}{T}-R_g\frac{dp}{p}
+$$<p>两个比热容与温度也有关，但是在计算精度要求不高的场合，看做两者不变</p>
+<h3 id="研究对象">研究对象
+</h3><ul>
+<li>简单可压缩系统</li>
+<li>理想气体</li>
+<li>可逆过程</li>
+</ul>
+<p><strong>的</strong></p>
+<ul>
+<li>能量转换：q,w,wt</li>
+<li>状态变化：p,v,t,u,h,s</li>
+</ul>
+<blockquote class="alert alert-note">
+    <p><strong>公式总结</strong></p></blockquote>
+<p>$$</p>
+<p>$$</p>
 
 </section>
 
