@@ -630,6 +630,20 @@
     <li><a href="#理想气体的热力学过程">理想气体的热力学过程</a>
       <ol>
         <li><a href="#研究对象">研究对象</a></li>
+        <li><a href="#多变过程的分析计算">多变过程的分析计算</a></li>
+        <li><a href="#基本热力过程的功能">基本热力过程的功能</a></li>
+        <li><a href="#图像">图像</a></li>
+      </ol>
+    </li>
+    <li><a href="#气体与蒸气的流动">气体与蒸气的流动</a>
+      <ol>
+        <li><a href="#稳定流动的基本方程">稳定流动的基本方程</a>
+          <ol>
+            <li><a href="#连续性方程">连续性方程</a></li>
+            <li><a href="#能量方程">能量方程</a></li>
+          </ol>
+        </li>
+        <li><a href="#等熵过程">等熵过程</a></li>
       </ol>
     </li>
   </ol>
@@ -704,7 +718,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 17 分钟
+                    阅读时长: 18 分钟
                 </time>
             </div>
         
@@ -2006,8 +2020,129 @@ $$<p>两个比热容与温度也有关，但是在计算精度要求不高的场
 </ul>
 <blockquote class="alert alert-note">
     <p><strong>公式总结</strong></p></blockquote>
-<p>$$</p>
-<p>$$</p>
+$$
+\delta q=du+\delta w=dh+\delta w_t\\
+w=\int pd\nu\quad w_t=-\int\nu dp\quad q=\int Tds\\
+\Delta u=\int c_\mathrm{v}dT\quad\Delta h=\int c_\mathrm{p}dT\\
+\begin{aligned}
+ & \Delta s=\int_1^2c_\mathrm{v}\frac{dT}{T}+R\ln\frac{\nu_2}{\nu_1} \\
+ & =\int_1^2c_\mathrm{p}\frac{dT}{T}-R\ln\frac{p_2}{p_1}=\int_1^2c_\mathrm{p}\frac{d\nu}{\nu}+\int_1^2c_\mathrm{v}\frac{dp}{p}
+\end{aligned}\\
+ds=\frac{dQ}{T}
+$$$$
+Cp-Cv=RgCp/Cv=rCp=rRg/(r-1)Cv=Rg/(r-1)
+$$<blockquote>
+<p><strong>说明</strong></p>
+<ol>
+<li>热量q与是否绝热有关，绝热的系统没有热量的产生</li>
+<li>热力学能与焓的变化只与温度的变化有关，等温过程没有两者的变化</li>
+<li>熵增与温度和压强的变化都有关</li>
+</ol>
+</blockquote>
+<h3 id="多变过程的分析计算">多变过程的分析计算
+</h3><p>多变，即$pv^n=const$</p>
+<ol>
+<li>
+$$
+   \frac{p_{2}}{p_{1}}=\left(\frac{v_{1}}{v_{2}}\right)^{n} \quad\frac{T_{2}}{T_{1}}=\left(\frac{v_{1}}{v_{2}}\right)^{n-1} \quad\frac{T_{2}}{T_{1}}=\left(\frac{p_{2}}{p_{1}}\right)^{\frac{n-1}{n}}
+   $$</li>
+<li>
+$$
+   w=\int p d v=\frac{R}{n-1}\left(T_{1}-T_{2}\right)\\
+   w_t=nw
+   $$$$
+   \begin{array}{l}
+   q=\Delta u+w=c_{v}\left(T_{2}-T_{1}\right)-\frac{R}{n-1}\left(T_{2}-T_{1}\right)\\
+   =\left(C_{0}-\frac{R}{n-1}\right)\left(T_{2}-T_{1}\right)=\frac{n-\gamma}{n-1} C_{0}\left(T_{2}-T_{1}\right)=C_{n}\left(T_{2}-T_{1}\right)
+   \end{array}
+   $$$$
+   C_{n}=\frac{n-\gamma}{n-1} C_{v}
+   $$</li>
+</ol>
+<p><strong>多变过程的分析，$C_n$为n下的比热容</strong></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250505213108221.png"
+	width="1099"
+	height="469"
+	
+	loading="lazy"
+	
+		alt="基本的热力过程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="234"
+		data-flex-basis="562px"
+	
+></p>
+<h3 id="基本热力过程的功能">基本热力过程的功能
+</h3><ol>
+<li>体积功</li>
+</ol>
+$$
+(p)  \quad w=\int p d v=p \Delta v \\
+(T) \quad w=\int p d v=\int \frac{R T}{v} d v=R T \ln \frac{v_{2}}{v_{1}}=q=T \Delta s \\
+(s) \quad w=\int p d v=\frac{R}{k-1}\left(T_{1}-T_{2}\right)=\frac{R T_{1}}{k-1}\left[1-\left(\frac{p_{2}}{p_{1}}\right)^{\frac{k-1}{k}}\right]\\ 
+(V) \quad w=\int p d v=0 \\
+$$<ol start="2">
+<li>技术功</li>
+</ol>
+$$
+(p) \quad w_{\mathrm{t}}=-\int v d p=0 \\
+(T) \quad w_{t}=w=q \\
+(S) \quad w_{t}=\gamma w \\
+(v) \quad w_{\mathrm{t}}=-\int v d p=-v \Delta p \\
+$$$$
+q=\Delta u+w=\Delta h+w_t
+$$<ol start="3">
+<li>热量</li>
+</ol>
+$$
+(P) \quad q=\Delta h=c_{\mathrm{p}} \Delta T \\
+(T) \quad q=w=w_{t} \\
+(S)  \quad q=0 \\
+(V) \quad q=\Delta u=c_{\mathrm{v}} \Delta T \\
+$$<h3 id="图像">图像
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250505214039733.png"
+	width="1248"
+	height="582"
+	
+	loading="lazy"
+	
+		alt="p-v,T-s"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="214"
+		data-flex-basis="514px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250505214056673.png"
+	width="1253"
+	height="533"
+	
+	loading="lazy"
+	
+		alt="2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="235"
+		data-flex-basis="564px"
+	
+></p>
+<h2 id="气体与蒸气的流动">气体与蒸气的流动
+</h2><h3 id="稳定流动的基本方程">稳定流动的基本方程
+</h3><h4 id="连续性方程">连续性方程
+</h4>$$
+\frac{dA}{A}+\frac{dc_f}{c_f}-\frac{dv}{v}=0
+$$<h4 id="能量方程">能量方程
+</h4><p>即上述的q,w方程</p>
+<h3 id="等熵过程">等熵过程
+</h3>$$
+Ma=\frac{c_f}{c}
+$$$$
+\frac{dA}{A}=(Ma^2-1)\frac{dc_f}{c_f}
+$$<p>Ma为马赫数，c为声速</p>
 
 </section>
 

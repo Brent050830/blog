@@ -741,6 +741,23 @@
         </li>
       </ol>
     </li>
+    <li><a href="#压杆稳定">压杆稳定</a>
+      <ol>
+        <li><a href="#概念-1">概念</a></li>
+        <li><a href="#两端绞支细长压杆的临界压力">两端绞支细长压杆的临界压力</a></li>
+        <li><a href="#其他支座条件下细长压杆的临界压力">其他支座条件下细长压杆的临界压力</a>
+          <ol>
+            <li><a href="#对于某一主惯性轴的临界压力">对于某一主惯性轴的临界压力</a></li>
+          </ol>
+        </li>
+        <li><a href="#欧拉公式的适用范围-经验公式">欧拉公式的适用范围 经验公式</a>
+          <ol>
+            <li><a href="#临界压力">临界压力</a></li>
+            <li><a href="#长细比">长细比</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -813,7 +830,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 33 分钟
+                    阅读时长: 35 分钟
                 </time>
             </div>
         
@@ -3386,7 +3403,7 @@ $$<p>
 </ol>
 </blockquote>
 <h3 id="拉压与弯曲的组合">拉压与弯曲的组合
-</h3><p>**受力：**既有轴向的拉压力，还有横向力</p>
+</h3><p><strong>受力</strong>既有轴向的拉压力，还有横向力</p>
 <h4 id="受力分析">受力分析
 </h4>$$
 \sigma{=}\sigma_\mathrm{N}+\sigma_M=\frac{F_\mathrm{N}}{A}+\frac{M_z\cdot y}{I_z}
@@ -3414,19 +3431,19 @@ $$<p>
 <blockquote>
 <p>受到弯矩M和扭矩T</p>
 <ol>
-<li>
-$$
->    \begin{aligned}
->     & \sigma_{r3}=\sigma_1-\sigma_3=\sqrt{\sigma^2+4\tau^2} \\
->     & \sigma_{r4}=\sqrt{\sigma^2+3\tau^2}
->    \end{aligned}
->    $$</li>
-<li>
-$$
->    \sigma_{r3}=\frac{1}{W}\sqrt{M^2+T^2}\leq[\sigma]\\\sigma_{r4}=\frac{1}{W}\sqrt{M^2+0.75T^2}\leq[\sigma]
->    $$</li>
+<li>对于一般的塑性材料截面危险点的校核公式</li>
 </ol>
-</blockquote>
+$$
+> \begin{aligned}
+>    & \sigma_{r3}=\sigma_1-\sigma_3=\sqrt{\sigma^2+4\tau^2} \\
+>    & \sigma_{r4}=\sqrt{\sigma^2+3\tau^2}
+>   \end{aligned}
+> $$<ol start="2">
+<li>对于截面是实心圆截面或者空心圆截面的塑性材料的弯扭</li>
+</ol>
+$$
+> \sigma_{r3}=\frac{1}{W}\sqrt{M^2+T^2}\leq[\sigma]\\\sigma_{r4}=\frac{1}{W}\sqrt{M^2+0.75T^2}\leq[\sigma]
+> $$</blockquote>
 <h4 id="弯拉扭的组合">弯拉扭的组合
 </h4><p>发生三种基本变形</p>
 $$
@@ -3439,6 +3456,234 @@ $$<blockquote>
 <li>确定危险点及其应力状态，计算主应力</li>
 <li>带进公式进行校核（选择正确的强度理论）</li>
 </ol>
+</blockquote>
+<blockquote>
+<p>上述的公式适用于组合变形（弯+扭）</p>
+<p>其中的切应力方向可以不用考虑</p>
+</blockquote>
+<h2 id="压杆稳定">压杆稳定
+</h2><h3 id="概念-1">概念
+</h3><p><strong>欧拉临界压力和欧拉公式</strong></p>
+<h3 id="两端绞支细长压杆的临界压力">两端绞支细长压杆的临界压力
+</h3><p>两端铰支：两端的转角不为0</p>
+<blockquote>
+<p>力的表达式的通解为：</p>
+</blockquote>
+$$
+w=A\sin kx+B\cos kx
+$$<p>其中的A,B为积分常数</p>
+<blockquote>
+<p>使用边界条件，得：</p>
+</blockquote>
+$$
+F=\frac{n^{2} \pi^{2} E I}{l^{2}}(n=0,1,2, \cdots)
+$$$$
+F_{cr}=\frac{\pi^{2} E I}{l^{2}}
+$$<blockquote>
+<p>这就是<strong>两端铰支等截面细长</strong>受压直杆临界力计算公式</p>
+</blockquote>
+<p>$设压杆中点的挠度为\delta，则A=\delta$</p>
+$$
+w(x)=\delta \sin \left(\frac{\pi}{l} x\right)
+$$<blockquote class="alert alert-note">
+    <p>使用条件：</p>
+<ul>
+<li>理想压杆（轴线为直线，压力与轴线重合，材料均匀）</li>
+<li>线弹性，小变形</li>
+<li>两端为铰支座</li>
+</ul></blockquote>
+<hr>
+<p>上述都是n=1的情况，在n=其他整数的条件上</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505164820013.png"
+	width="1156"
+	height="346"
+	
+	loading="lazy"
+	
+		alt="屈曲"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="334"
+		data-flex-basis="801px"
+	
+></p>
+<h3 id="其他支座条件下细长压杆的临界压力">其他支座条件下细长压杆的临界压力
+</h3>$$
+F_{cr}=\frac{\pi^{2} E I}{(\mu l)^{2}}
+$$<blockquote>
+<p>其中的</p>
+<p>$\mu$为长度系数（无量纲）</p>
+<p>$\mu l$相当长度（相当于两端铰支杆的长度）</p>
+</blockquote>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">形式</th>
+          <th style="text-align: center">两端铰支</th>
+          <th style="text-align: center">一端固定<br>一端自由</th>
+          <th style="text-align: center">两端固定</th>
+          <th style="text-align: center">一端铰支<br>一端固定</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">图示</td>
+          <td style="text-align: center"><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505165449091.png"
+	width="186"
+	height="405"
+	
+	loading="lazy"
+	
+		alt="两端"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="45"
+		data-flex-basis="110px"
+	
+></td>
+          <td style="text-align: center"><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505165527720.png"
+	width="237"
+	height="413"
+	
+	loading="lazy"
+	
+		alt="2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="57"
+		data-flex-basis="137px"
+	
+></td>
+          <td style="text-align: center"><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505165605047.png"
+	width="221"
+	height="435"
+	
+	loading="lazy"
+	
+		alt="3"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="50"
+		data-flex-basis="121px"
+	
+></td>
+          <td style="text-align: center"><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505165629126.png"
+	width="218"
+	height="435"
+	
+	loading="lazy"
+	
+		alt="4"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="50"
+		data-flex-basis="120px"
+	
+></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">系数</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2</td>
+          <td style="text-align: center">3</td>
+          <td style="text-align: center">0.7</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">公式</td>
+          <td style="text-align: center">$F_{cr}=\frac{\pi^{2} E I}{l^{2}}$</td>
+          <td style="text-align: center">$F_{cr}=\frac{\pi^{2} E I}{(2l)^{2}}$</td>
+          <td style="text-align: center">$F_{cr}=\frac{\pi^{2} E I}{(0.5l)^{2}}$</td>
+          <td style="text-align: center">$F_{cr}=\frac{\pi^{2} E I}{(0.7l)^{2}}$</td>
+      </tr>
+  </tbody>
+</table></div>
+<blockquote>
+<p><strong>相当长度的物理意义</strong></p>
+<ul>
+<li>压杆失稳时，挠曲线上两拐点间的长度就是压杆的相当长度</li>
+<li>是各种支承条件下，细长压杆失稳时，挠曲线中相当于半波正弦曲线的一段长度</li>
+</ul>
+</blockquote>
+<h4 id="对于某一主惯性轴的临界压力">对于某一主惯性轴的临界压力
+</h4><blockquote class="alert alert-tip">
+    <p>计算临界的压力时，有如下的两种情况</p>
+<ol>
+<li>若杆端在各个方向的<strong>约束情况相同（如球形铰</strong>等，则I应取最小的形心主惯性矩。（也就是只是上述4种情况的1种）</li>
+<li>若杆端在各个方向的<strong>约束情况不同（如柱形铰）</strong>，应分别计算杆在不同方向失稳时的临界压力。</li>
+</ol></blockquote>
+<p>思路：</p>
+<ul>
+<li>在两个方向的约束情况不同</li>
+<li>分别计算两个临界压力，取小的为压杆的临界压力</li>
+</ul>
+<h3 id="欧拉公式的适用范围-经验公式">欧拉公式的适用范围 经验公式
+</h3><h4 id="临界压力">临界压力
+</h4><blockquote>
+<p>欧拉公式只有在<strong>弹性范围内才是适用的</strong>。这就要求在临界载荷作用下，压杆在直线平衡构形时，其横截面上的正应力小于或等于材料的<strong>比例极限</strong></p>
+</blockquote>
+$$
+\sigma_{cr}=\frac{F_{cr}}{A}<=\sigma_p
+$$<h4 id="长细比">长细比
+</h4>$$
+\sigma_{\mathrm{cr}}=\frac{F_{\mathrm{cr}}}{A}=\frac{\frac{\pi^{2} E I}{(\mu l)^{2}}}{A}=\frac{\frac{\pi^{2} E I}{(\mu l)^{2}}}{\frac{I}{i^{2}}}=\frac{\pi^{2} E}{\left(\frac{\mu l}{i}\right)^{2}}=\frac{\pi^{2} E}{\lambda^{2}}
+$$<blockquote>
+<p>定义$\lambda$为长细比，是综合反映压杆长度、约束条件、截面尺寸和截面形状对压杆临界载荷影响的量，由下式确定：</p>
+</blockquote>
+$$
+\lambda=\frac{\mu l}{i}
+$$$$
+\lambda \geq \pi \sqrt{\frac{E}{\sigma_{\mathrm{p}}}}=\lambda_{\mathrm{p}}
+$$<p>
+$\lambda_p$为能够应用<strong>欧拉公式的压杆柔度界限值</strong></p>
+<ol>
+<li></li>
+</ol>
+$$
+\begin{array}{l}
+\text { 大柔度杆：} \lambda \geq \lambda_{p}\\
+F_{\text {cr }}=\frac{\pi^{2} E I}{(\mu l)^{2}} \quad \sigma_{\text {cr }}=\frac{\pi^{2} E}{\lambda^{2}}
+\end{array}
+$$<ol start="2">
+<li></li>
+</ol>
+$$
+\begin{array}{l}
+\text { 中柔度杆：} \lambda_{0} \leq \lambda<\lambda_{p}\\
+\sigma_{\mathrm{cr}}=a-b \lambda
+\end{array}
+$$<ol start="3">
+<li>$$
+   \begin{array}{l}
+   \text { 小柔度杆：} \lambda \leq \lambda_{0}\\
+   \sigma_{\mathrm{cr}}=\sigma_{s}
+   \end{array}
+   $$</li>
+</ol>
+<p>这就是不同的柔性状态下的，压时的临界应力</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250505183536626.png"
+	width="1147"
+	height="657"
+	
+	loading="lazy"
+	
+		alt="总图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="418px"
+	
+></p>
+<blockquote>
+<p>其中的$\sigma_{cr}$为杆件承受的最大的正应力</p>
+<p>$\lambda$受到杆件的<strong>支撑情况，形状、长度的影响，与材料无关</strong></p>
+<p>但是$\lambda_0$,$\lambda_p$只与材料的力学性质有关</p>
+<p>对于同一材料，$\lambda$越小，所承受的应力越大</p>
 </blockquote>
 
 </section>
