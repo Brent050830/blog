@@ -7,7 +7,162 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Mon, 03 Mar 2025 16:41:12 +0800</lastBuildDate><atom:link href="https://Brent050830.site/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 17 May 2025 13:59:07 +0800</lastBuildDate><atom:link href="https://Brent050830.site/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>随机过程</title>
+        <link>https://Brent050830.site/p/%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/</link>
+        <pubDate>Sat, 17 May 2025 13:59:07 +0800</pubDate>
+        
+        <guid>https://Brent050830.site/p/%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/</guid>
+        <description>&lt;img src="https://t.alcy.cc/ycy?random=c434e6a8" alt="Featured image of post 随机过程" /&gt;&lt;h1 id=&#34;随机过程&#34;&gt;随机过程
+&lt;/h1&gt;&lt;h2 id=&#34;概统知识点的补充&#34;&gt;概统知识点的补充
+&lt;/h2&gt;&lt;h4 id=&#34;正态分布&#34;&gt;正态分布
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;概括一下就是：&lt;/p&gt;
+&lt;p&gt;服从n元正态分布；每个元素都服从正态分布，且相互独立；其中元素的任意线性组合都服从正态分布。三者是等价的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;数字特征&#34;&gt;数字特征
+&lt;/h4&gt;&lt;h5 id=&#34;数学期望&#34;&gt;数学期望
+&lt;/h5&gt;&lt;h5 id=&#34;协方差函数&#34;&gt;协方差函数
+&lt;/h5&gt;&lt;h2 id=&#34;随机过程的基本概念&#34;&gt;随机过程的基本概念
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;也就是会随着时间变化的随机变量：在某一时刻的随机变量的分布是确定的，但是分布会随着时间参数t变化&lt;/p&gt;
+&lt;p&gt;（可能是多个随机变量与t构成的函数）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;均值函数与协方差函数&#34;&gt;均值函数与协方差函数
+&lt;/h3&gt;&lt;blockquote class=&#34;alert alert-note&#34;&gt;
+    &lt;p&gt;随机过程中特别的数字特征主要是&lt;strong&gt;自相关函数与自协方差函数&lt;/strong&gt;（因为时间参数t不同时就是不同的分布）&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;均值函数：$\mu_X(t)=E[X(t)]$&lt;/p&gt;
+&lt;p&gt;方差函数：$\sigma_X^2(t)=D_X(t)=D[X(t)]=E[X^2(t)]-E^2[X(t)]$&lt;/p&gt;
+&lt;p&gt;自相关函数：$R_X(t_1,t_2)=E[X(t_1)·X(t_2)]$&lt;/p&gt;
+&lt;p&gt;自协方差函数：$C_X(t_1,t_2)=Cov[X(t_1),X(t_2)]=E[X(t_1)·X(t_2)]-E[X(t_1)]·E[X(t_2)]$&lt;/p&gt;
+&lt;p&gt;互相关函数：$R_{XY}(t_1,t_2)=E[X(t_1)·Y(t_2)]$&lt;/p&gt;
+&lt;p&gt;互协方差函数：$C_{XY}(t_1,t_2)=Cov[X(t_1),Y(t_2)]=E[X(t_1)·Y(t_2)]-E[X(t_1)]·E[Y(t_2)]$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;一些做题的概念：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有的样本函数：就是将其表示成为t的函数（将其余的参数消去）&lt;/li&gt;
+&lt;li&gt;分布律：确定t时的分布&lt;/li&gt;
+&lt;li&gt;求均值函数等时：时间参数t可以看做是常数，可以直接按照运算法则提取出来&lt;/li&gt;
+&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;正态过程&#34;&gt;正态过程
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;随机过程在任意不同的时间参数t（$t_1,t_2,&amp;hellip;t_n$）下服从n元的正态分布，则称$X(t)$为正态过程&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;正太过程是二阶矩过程，有限维分布完全由均值函数和自协方差函数确定&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相关与独立的关系&lt;/p&gt;
+&lt;h2 id=&#34;马尔科夫链&#34;&gt;马尔科夫链
+&lt;/h2&gt;&lt;h3 id=&#34;定义&#34;&gt;定义：
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;将来只有现在的状态决定，现在的结果与过去无关&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;即知道现在状态的条件下，过去与将来相互独立&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;$ A=\left{X_{0}=i_{0}, \ldots, X_{n-1}=i_{n-1}\right}, B=\left{X_{n}=i\right}, C=\left{X_{n+1}=j\right} $&lt;/p&gt;
+$$
+P(A C \mid B)=P(C \mid B) P(A \mid B)
+$$&lt;h3 id=&#34;转移概率&#34;&gt;转移概率
+&lt;/h3&gt;$$
+p_{i j}(m, m+n)=P\left(X_{m+n}=j \mid X_{m}=i\right)
+$$&lt;blockquote&gt;
+&lt;p&gt;为m时处于状态i时，n步后转移到状态j的概率&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于&lt;strong&gt;时齐的马尔科夫链&lt;/strong&gt;，$p_{ij}$为从i到j的一步转移矩阵，不依赖于n&lt;/p&gt;
+&lt;h3 id=&#34;常返与暂留&#34;&gt;常返与暂留
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;首先来说几个相关的概念吧&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;首次击中的时间：&lt;/strong&gt;$\tau_i=min(n\geq1;X_n=i)$ 为首次击中状态 $i$ 的时间（首中时）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;首次击中的概率&lt;/strong&gt;：$f_{ij}^{(n)}$ 为从状态 $i$ 出发在 $n$ 步首次击中状态 $j$ 的概率。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;击中的概率：&lt;/strong&gt;$f_{ij}=P(\tau_j&amp;lt;\infty\mid X_0=i)$ 为从状态 $i$ 出发在有限步能够击中状态 $j$ 的概率，显然有 $f_{ij}=\sum f_{ij}^{(n)}$ 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;平均回转时：&lt;/strong&gt;$\mu_i=\sum nf_{ii}^{(n)}=\begin{cases}&amp;lt;\infty\qquad正常返\[2ex]=\infty\qquad零常返\end{cases}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;互达等价类&#34;&gt;互达等价类
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;可达： $i$ 能到达 $j$ 。$i\searrow j$（称为i可达j）。&lt;/li&gt;
+&lt;li&gt;互达： $i$ 能到达 $j$ 且 $j$ 能到达 $i$ 。$i\leftrightarrow j$ 。有 $d(i)=d(j)$ 且各状态有&lt;strong&gt;相同的周期性与常返性&lt;/strong&gt;。（互达的两个有着相同的周期和常返性）&lt;/li&gt;
+&lt;li&gt;周期性：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;平稳分布&#34;&gt;平稳分布
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义&lt;/p&gt;
+&lt;p&gt;对于时齐的马尔科夫链，设初始的分布为$\pi$，转移矩阵为**$P$**，则$X_1$的分布为$\pi P$，当$X_0与X_1$分布相同时的的$\pi$称为平稳分布（实际上就是马尔科夫链在时间=0时的初始分布）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;对于暂留或0常返的状态j：
+&lt;ol&gt;
+&lt;li&gt;对于任意的状态i，$\lim_{n}$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;开集和闭集&#34;&gt;开集和闭集
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;定义：到了闭集之后就出不去了&lt;/li&gt;
+&lt;li&gt;常返与互达等价类是闭集是充要条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;吸收概率与平均吸收时间&#34;&gt;吸收概率与平均吸收时间
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;将马尔科夫链分为暂留态集和若干&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;定义h为被吸收的概率&lt;/p&gt;
+&lt;h2 id=&#34;泊松过程和纳维过程&#34;&gt;泊松过程和纳维过程
+&lt;/h2&gt;&lt;h3 id=&#34;独立增量过程&#34;&gt;独立增量过程
+&lt;/h3&gt;&lt;p&gt;●在互不重叠的区间上,状态的增量是相互独立&lt;/p&gt;
+&lt;h3 id=&#34;泊松过程&#34;&gt;泊松过程
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;以N(t)表示在时间间隔(0,t]内事件发生的数目,N(t),t≥0}是取非负整数、时间连续的随机过程,称为&lt;strong&gt;计数过程&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;满足以下三个条件的随机过程 ${N(t), t \geq 0}$ 称为参数为 $\lambda$（$\lambda &amp;gt; 0$）的泊松过程：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;初始条件&lt;/strong&gt;：$N(0) = 0$，表示在初始时刻 $t = 0$ 时，事件发生的累计次数为 0。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;独立增量性&lt;/strong&gt;：对任意的 $n$ 以及 $0 \leq t_0 &amp;lt; t_1 &amp;lt; \cdots &amp;lt; t_n$，增量 $N(t_1) - N(t_0), N(t_2) - N(t_1), \cdots, N(t_n) - N(t_{n-1})$ 相互独立。即不相交时间区间上事件发生次数的变化相互独立。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;增量分布&lt;/strong&gt;：对任意的 $t &amp;gt; s \geq 0$，增量 $N(t) - N(s)$ 服从参数为 $\lambda(t - s)$ 的泊松分布，概率质量函数为
+$$P(N(t) - N(s) = k) = \frac{(\lambda(t - s))^k e^{-\lambda(t - s)}}{k!}, \quad k = 0, 1, 2, \cdots.$$
+其中 $\lambda$ 为过程的强度，表示单位时间内事件发生的平均次数。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;设${N(t),t\geq0}$是计数过程 (满足非负性、单调性、右连左极),若满
+足：&lt;/p&gt;
+&lt;p&gt;1.对充分小的$\Delta t$ ,$P(N(t+\Delta t)-N(t)=1)=\lambda\Delta t+o(\Delta t)$,即在充分小的时间间隔$\Delta t$内，事件发生一次的概率与$\Delta t$成正比，$o(\Delta t)$ 是关于$\Delta t$的高阶无穷小 。&lt;/p&gt;
+&lt;p&gt;2.对充分小的$\Delta t$ ,$P(N(t+\Delta t)-N(t)\geq2)=o(\Delta t)$ ,即在充分小的时间间隔内，事件发生两次或两次以上的概率是关于$\Delta t$的高阶无穷小，可近似认为几乎不会发生。&lt;/p&gt;
+&lt;p&gt;3.过程具有平稳独立增量性 (独立增量性同前；平稳增量性指增量
+$N(t+h)-N(t)$的分布仅依赖于时间间隔$h$ ,与起始时刻$t$无关 )
+,则称${N(t),t\geq0}$为泊松过程 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;性质：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;$\begin{aligned}&amp;amp;1.E\left[N\left(t\right)\right]=\lambda t\&amp;amp;2.D{\left[N(t)\right]}=\lambda t\&amp;amp;3.C_N(s,t)=\lambda min(s,t)\&amp;amp;R_N\left(s,t\right)=C_N\left(s,t\right)+\mu_N\left(s\right)\mu_N\left(t\right)=\lambda min\left(s,t\right)+\lambda^2st,\&amp;amp;s,t\geq0。\end{aligned}$&lt;/p&gt;
+&lt;p&gt;$5.P{N_{t}=n\mid N_{s}=m}=e^{-\lambda(t-s)}\frac{[\lambda(t-s)]^{n-m}}{(n-m)!}$&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;使用独立增量性进行解题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将求解的问题转变为求解独立增量的过程，由于是相互独立的，所以可以使用乘法直接展开&lt;/p&gt;
+&lt;h4 id=&#34;合成与分解&#34;&gt;合成与分解
+&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;合成：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;设${N_1(t)}$和${N_2(t)}$是强度为$\lambda_1$和$\lambda_2$的泊松过程，且&lt;strong&gt;相互独立&lt;/strong&gt;，则${N_1(t)+N_2(t)}$是$\lambda_1+\lambda_2$的泊松过程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;分解&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;设${N(t)}$是强度为$\lambda$的泊松过程,若每个事件独立地以概率$p$为类型1,以$1-p$为类型2,令${N_{1}(t)}$和${N_{2}(t)}$分别表示到$t$为止类型1和类型2发生的个数,则${N_{1}(t)}$和${N_{2}(t)}$分别是强度为$\lambda p$和$\lambda(1-p)$的泊松过程,且&lt;strong&gt;相互独立&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;两个窗口接收服务&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>材料力学索引</title>
         <link>https://Brent050830.site/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6%E7%B4%A2%E5%BC%95/</link>
         <pubDate>Mon, 03 Mar 2025 16:41:12 +0800</pubDate>
@@ -100,6 +255,68 @@ $$&lt;h3 id=&#34;有旋转情况下的静压强&#34;&gt;有旋转情况下的静
 p=p_0-\rho gz+\frac{1}{2}\rho r^2\omega^2
 $$&lt;blockquote&gt;
 &lt;p&gt;壁面处液面升高相对于原来的水平面为h/2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;相似原理与量纲分析&#34;&gt;相似原理与量纲分析
+&lt;/h2&gt;&lt;h3 id=&#34;相似原理&#34;&gt;相似原理
+&lt;/h3&gt;&lt;p&gt;按照相似性原理与量纲分析设计模型，选择流动的介质&lt;/p&gt;
+&lt;h4 id=&#34;相似条件&#34;&gt;相似条件
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;几何相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运动相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;动力相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相似判据：&lt;/p&gt;
+$$
+   Re=\frac{F_1}{F_\tau}=\frac{uL}{v}
+   $$&lt;p&gt;
+雷诺数就是两个流动粘性力相似的判据&lt;/p&gt;
+&lt;p&gt;将表中的无量纲数统称为相似准则数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;流动相似的充分必要条件：&lt;/p&gt;
+&lt;p&gt;几何相似，运动相似和动力相似&lt;/p&gt;
+&lt;p&gt;或者满足以下的单值条件：几何、物理、边界、初始条件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;量纲分析&#34;&gt;量纲分析
+&lt;/h3&gt;&lt;h4 id=&#34;量纲和谐原理&#34;&gt;量纲和谐原理
+&lt;/h4&gt;&lt;p&gt;物理方程式中的各项必须量纲完全一致。只有相同量纲的物理量才能相加减。&lt;/p&gt;
+&lt;p&gt;对于相同量纲齐次的方程，只要使用方程的任一量纲除其他各项，变成无量纲量&lt;/p&gt;
+&lt;h4 id=&#34;量纲分析的方法&#34;&gt;量纲分析的方法
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;基本的量纲：L,T,M,$\theta$&lt;/li&gt;
+&lt;li&gt;瑞利法
+&lt;ol&gt;
+&lt;li&gt;列出所有印象这一物理过程的全部n+1个物理量，基本量纲的乘除&lt;/li&gt;
+&lt;li&gt;解出方程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;$\pi$定理
+&lt;ol&gt;
+&lt;li&gt;组成无量纲的数（选择r个量纲不同的物理量，与其余的物理量组成无量纲数）（一共有k-r个$\pi$数）&lt;/li&gt;
+&lt;li&gt;重复变量与其余变量&lt;/li&gt;
+&lt;li&gt;其中的重复的变量必须是包括所有的量纲的，组成的指数行行列式不为0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;模型实验&#34;&gt;模型实验
+&lt;/h3&gt;&lt;h4 id=&#34;全面力学相似模型试验&#34;&gt;全面力学相似模型试验
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;要达到全面的相似，必须所有的相似准则相等，且初始的条件和边界条件相相似。但是这是不现实的&lt;/p&gt;
+&lt;p&gt;所以在正常的生产中选择主要的因素，使其相等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;近似莫化法&#34;&gt;近似莫化法
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;抓住主要的矛盾&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/blockquote&gt;
 </description>
         </item>

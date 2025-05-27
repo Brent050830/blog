@@ -641,9 +641,29 @@
           <ol>
             <li><a href="#连续性方程">连续性方程</a></li>
             <li><a href="#能量方程">能量方程</a></li>
+            <li><a href="#熵方程-2">熵方程</a></li>
           </ol>
         </li>
         <li><a href="#等熵过程">等熵过程</a></li>
+        <li><a href="#在喷管与扩压管中的流动">在喷管与扩压管中的流动</a></li>
+        <li><a href="#喷管中的气体流动的计算">喷管中的气体流动的计算</a>
+          <ol>
+            <li><a href="#滞止参数">滞止参数</a></li>
+          </ol>
+        </li>
+        <li><a href="#水蒸气在流管中的定熵流动">水蒸气在流管中的定熵流动</a></li>
+        <li><a href="#有摩擦时的流动">有摩擦时的流动</a></li>
+      </ol>
+    </li>
+    <li><a href="#气体的压缩">气体的压缩</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#摩擦对于压缩过程的影响">摩擦对于压缩过程的影响</a></li>
+          </ol>
+        </li>
+        <li><a href="#活塞式压气机的余隙影响">活塞式压气机的余隙影响</a></li>
+        <li><a href="#多级压缩与中间冷却">多级压缩与中间冷却</a></li>
       </ol>
     </li>
   </ol>
@@ -718,7 +738,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 18 分钟
+                    阅读时长: 20 分钟
                 </time>
             </div>
         
@@ -2134,15 +2154,236 @@ $$<h3 id="图像">图像
 </h2><h3 id="稳定流动的基本方程">稳定流动的基本方程
 </h3><h4 id="连续性方程">连续性方程
 </h4>$$
-\frac{dA}{A}+\frac{dc_f}{c_f}-\frac{dv}{v}=0
-$$<h4 id="能量方程">能量方程
+\frac{dA}{A}+\frac{dc_f}{c_f}-\frac{dv}{v}=0\\
+q=\frac{Ac_f}{v}为定值
+$$<p>上述方程建立了流速、截面面积和比体积（密度）之间的相互关系，普遍适用于稳定流动的过程，与流体的性质无关</p>
+<h4 id="能量方程">能量方程
 </h4><p>即上述的q,w方程</p>
+<h4 id="熵方程-2">熵方程
+</h4><p>第三章中推导的方程</p>
 <h3 id="等熵过程">等熵过程
 </h3>$$
 Ma=\frac{c_f}{c}
 $$$$
 \frac{dA}{A}=(Ma^2-1)\frac{dc_f}{c_f}
 $$<p>Ma为马赫数，c为声速</p>
+$$
+c=\sqrt{\gamma R_gv}=\sqrt{\gamma R_gT}
+$$<p>
+<strong>速度与焓之间的关系</strong></p>
+$$
+\frac{1}{2}(c_{f2}^2-c_{f1}^2)=h_1-h_2
+$$<p>
+焓与温度也有关系，则已知始末温度，初始速度，可以求出最终的速度</p>
+<h3 id="在喷管与扩压管中的流动">在喷管与扩压管中的流动
+</h3><blockquote>
+<ol>
+<li>由等熵过程的式子可以得出，对于<strong>喷管</strong>而言，使得气体<strong>增速</strong>，在亚音速时，面积是渐渐减小的；在超音速时，面积是逐步增大的</li>
+<li>对于扩压管而言，达到减速增压的目的，相反即可</li>
+<li>要使的气体在管中从亚音速加速到超音速，需要缩放喷管，在最小的截面（喉部）有着临界的参数</li>
+</ol>
+</blockquote>
+$$
+c_{\mathrm{f,cr}}=c_{\mathrm{cr}}=\sqrt{\gamma p_{\mathrm{cr}}v_{\mathrm{cr}}}=\sqrt{\gamma R_{\mathrm{g}}T_{\mathrm{cr}}}
+$$<p>临界的速度</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250511182812008.png"
+	width="1097"
+	height="502"
+	
+	loading="lazy"
+	
+		alt="管子"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="218"
+		data-flex-basis="524px"
+	
+></p>
+<h3 id="喷管中的气体流动的计算">喷管中的气体流动的计算
+</h3><h4 id="滞止参数">滞止参数
+</h4>$$
+h^{\star}=h+\frac{c_{\mathrm{f}}^{2}}{2}
+$$$$
+\begin{gathered}
+c_{p}(T^{\star}-T)=\frac{c_{\mathrm{f}}^{2}}{2} \\
+T^{\star}=T+\frac{c_{\mathrm{f}}^{2}}{2c_{p}} \\
+p^{*}=p\left(\frac{T^{*}}{T}\right)^{\frac{\gamma}{\gamma-1}}=p\left(\frac{T}{T^{*}}\right)^{\frac{\gamma}{1-\gamma}} \\
+v^{*}=v\left(\frac{T}{T^{*}}\right)^{\frac{1}{Y-1}} \\
+v^{*}=\frac{R_{_{g}}T^{*}}{p^{^{*}}}
+\end{gathered}
+$$<p>上述为滞止的温度，压强，比容的计算</p>
+<blockquote>
+<p>出口处的流速可以由滞止的T,P,v和出口处的压强唯一确定</p>
+</blockquote>
+$$
+\begin{aligned}
+\mathrm{c~f2} & =\sqrt{2(h^{*}-h_{2})}=\sqrt{2c_{p}(T^{*}-T_{2})} \\
+ & =\sqrt{2\frac{\gamma}{\gamma-1}R_{\mathrm{g}}(T^{*}-T_{2})}=\sqrt{2\frac{\gamma}{\gamma-1}R_{\mathrm{g}}T^{*}\left(1-\frac{T_{2}}{T^{*}}\right)} \\
+ & =\sqrt{2\frac{\gamma}{\gamma-1}R_{g}T^{*}\left[1-\left(\frac{p_{2}}{p^{*}}\right)^{\frac{\gamma-1}{\gamma}}\right]} \\
+ & =\sqrt{2\frac{\gamma}{\gamma-1}p^{*}v^{*}\left[1-\left(\frac{p_{2}}{p^{*}}\right)^{\frac{\gamma-1}{\gamma}}\right]}
+\end{aligned}
+$$$$
+c_{\mathrm{f,max}}=\sqrt{2\frac{\gamma}{\gamma-1}p^*v^*}=\sqrt{2\frac{\gamma}{\gamma-1}RT^*}
+$$<blockquote>
+<p>临界压力与滞止压力的比值</p>
+</blockquote>
+$$
+\frac{p_{\mathrm{cr}}}{p^{*}}=\nu_{\mathrm{cr}}=\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma}{\gamma-1}}
+$$$$
+c_{\mathrm{f,cr}}=\sqrt{2\frac{\gamma}{\gamma+1}p^{*}v^{*}}=\sqrt{2\frac{\gamma}{\gamma+1}R_{\mathrm{g}}T^{*}}
+$$<p>
+由滞止的参数唯一确定</p>
+<h3 id="水蒸气在流管中的定熵流动">水蒸气在流管中的定熵流动
+</h3><p>之前的公式适用于水蒸气，不过不能使用理想气体的公式</p>
+<p>焓变不能使用$c_p$计算</p>
+<p>计算临界的压力比时</p>
+<blockquote>
+<p>过热蒸汽: $\gamma=1.3$, $\nu_{\mathrm{cr}}=0.546$;</p>
+<p>干饱和蒸汽: $\gamma=1.135$, $\nu_{\mathrm{cr}}=0.577$;</p>
+<p>湿蒸汽: $\gamma=1.035+0.1x$</p>
+</blockquote>
+<h3 id="有摩擦时的流动">有摩擦时的流动
+</h3><ul>
+<li>
+<p>有摩擦引起的熵产$ds=\delta s_g$</p>
+</li>
+<li>
+<ol>
+<li>
+<p>速度系数</p>
+</li>
+<li>
+<p>喷管的效率</p>
+<p>出口实际的动能与出口的理想动能之比</p>
+</li>
+</ol>
+</li>
+</ul>
+<ol start="3">
+<li>由h2和p2可以确定实际的出口状态</li>
+</ol>
+<blockquote>
+<p>总的解题步骤</p>
+<ol>
+<li>先判断是不是减缩的喷管还是缩放的喷管</li>
+<li>若是减缩的，就是要判断最后的压力是否大于临界的压力，若不大于，则最后的压力要取临界的压力</li>
+<li>将最后的压力带入等熵的转换公式中</li>
+<li>若有效率，带入即可</li>
+<li>水蒸气可以使用水蒸气的焓熵图进行计算</li>
+</ol>
+</blockquote>
+<blockquote class="alert alert-note">
+    <p>在减缩的过程中，压力减小，温度降低，比容变大；流量变大</p></blockquote>
+<h2 id="气体的压缩">气体的压缩
+</h2><blockquote>
+<p>压缩所需要的功在之前有提到过</p>
+</blockquote>
+<p>绝热压缩： $W_{\mathrm{t,s}}=\frac\gamma{\gamma-1}p_{1}V_{1}\left[1-\left(\frac{p_{2}}{p_{1}}\right)^{\frac{\gamma-1}\gamma}\right]$</p>
+<p>多变压缩：$W_{1, n}= \frac n{n- 1}p_{1}V_{1}\left [ 1- \left ( \frac {p_{2}}{p_{1}}\right ) ^{\frac {n- 1}n}\right ]$</p>
+<p>定温压缩： $W_{1,T}=mR_{\mathbf{g}}T\ln \frac{p_1}{p_2}$</p>
+<p>为负值，表示气体压缩消耗功，对外界放热</p>
+<blockquote>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250513184332147.png"
+	width="1084"
+	height="558"
+	
+	loading="lazy"
+	
+		alt="大小"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="194"
+		data-flex-basis="466px"
+	
+></p>
+<p>可见，放热压缩可以节省压气机的耗功量</p>
+</blockquote>
+<h4 id="摩擦对于压缩过程的影响">摩擦对于压缩过程的影响
+</h4>$$
+\eta_{\mathrm{C,s}}=\frac{W_{1}}{W_{1}^{\prime}}=\frac{H_{1}-H_{2}}{H_{1}-H_{2^{\prime}}}
+$$<p>可逆绝热过程的耗功量与实际的不可逆过程的耗功量的比值，<strong>为压气机的绝热效率</strong></p>
+<blockquote>
+<p>对于理想气体来说</p>
+</blockquote>
+$$
+\eta_{\mathrm{C.s}}=\frac{H_{2}-H_{1}}{H_{2^{\prime}}-H_{1}}=\frac{mc_{p}(T_{2}-T_{1})}{mc_{p}(T_{2^{\prime}}-T_{1})}=\frac{T_{2}-T_{1}}{T_{2^{\prime}}-T_{1}}
+$$$$
+\frac{p_2}{p_1}=\pi
+$$<p>
+为<strong>增压比</strong></p>
+<h3 id="活塞式压气机的余隙影响">活塞式压气机的余隙影响
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250513185024506.png"
+	width="580"
+	height="391"
+	
+	loading="lazy"
+	
+		alt="压缩的过程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="148"
+		data-flex-basis="356px"
+	
+></p>
+<p>在压缩的过程中，会有空余的间隙$V_c$</p>
+<p>研究这部分的体积对于耗功量的影响</p>
+<blockquote>
+<p>余隙对单位产气量耗功不影响</p>
+</blockquote>
+$$
+\eta_V=\frac{V}{V_\mathrm{h}}=\frac{V_1-V_4}{V_1-V_3}
+$$<p>上述为容积效率</p>
+<h3 id="多级压缩与中间冷却">多级压缩与中间冷却
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250513185350164.png"
+	width="592"
+	height="407"
+	
+	loading="lazy"
+	
+		alt="两级压缩"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
+<p>先进行第一级（低压的）压缩，进入冷却装置进行冷却（定压的过程），之后进行高压的压缩，会节省图中的阴影部分的功</p>
+$$
+\frac{p_2}{p_1}
+$$$$
+p_2=\sqrt{p_1p_4}
+$$$$
+\pi=(\frac{p_n}{p_1})^{\frac{1}{n}}
+$$<p>
+<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250513190030272.png"
+	width="731"
+	height="427"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="171"
+		data-flex-basis="410px"
+	
+></p>
+<p>左图中右侧的线是绝热的线，左侧的线为等温的线，</p>
+<p>要将之前的冷却到1时的温度</p>
+$$
+\begin{aligned}
+\boldsymbol{W}_{\mathrm{t},s} & =W_{t,s}^{1}+W_{t,s}^{1} \\
+ & =\frac{\gamma}{\gamma-1}p_1V_1\left[1-\left(\frac{p_2}{p_1}\right)^{\frac{\gamma-1}{\gamma}}\right]+\frac{\gamma}{\gamma-1}p_3V_3\left[1-\left(\frac{p_4}{p_3}\right)^{\frac{\gamma-1}{\gamma}}\right]
+\end{aligned}
+$$$$
+W_{1,s}=\frac{\gamma}{\gamma-1}p_1V_1[2-\left(\frac{p_2}{p_1}\right)^{\frac{\gamma-1}{\gamma}}-\left(\frac{p_4}{p_2}\right)^{\frac{\gamma-1}{\gamma}}]
+$$<p>
+求导得出的最佳的压强就是上述的式子$P_2$</p>
 
 </section>
 

@@ -776,6 +776,38 @@
             <li><a href="#组合变形-1">组合变形</a></li>
           </ol>
         </li>
+        <li><a href="#应变能的普遍表达式">应变能的普遍表达式</a>
+          <ol>
+            <li><a href="#使用">使用</a></li>
+            <li><a href="#互等定理">互等定理</a></li>
+          </ol>
+        </li>
+        <li><a href="#卡式定理">卡式定理</a>
+          <ol>
+            <li><a href="#余能">余能</a></li>
+            <li><a href="#余能定理">余能定理</a></li>
+            <li><a href="#卡式第二定理">卡式第二定理</a></li>
+            <li><a href="#虚功原理">虚功原理</a></li>
+            <li><a href="#单位载荷法">单位载荷法</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#超静定结构">超静定结构</a>
+      <ol>
+        <li><a href="#超静定结构的概述">超静定结构的概述</a>
+          <ol>
+            <li><a href="#分类">分类：</a></li>
+            <li><a href="#次数的判定">次数的判定：</a></li>
+            <li><a href="#方法">方法：</a></li>
+          </ol>
+        </li>
+        <li><a href="#用力法解超静定结构">用力法解超静定结构</a>
+          <ol>
+            <li><a href="#过程">过程</a></li>
+            <li><a href="#力法正则方程">力法正则方程</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -850,7 +882,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 36 分钟
+                    阅读时长: 41 分钟
                 </time>
             </div>
         
@@ -3826,6 +3858,399 @@ $$<h4 id="组合变形-1">组合变形
 </ol>
 </blockquote>
 <p>上述忽略了剪力的影响</p>
+<blockquote>
+<p>在我的理解中，应变能密度中的计算公式中带入的是杆件的内力，长度是每一段的内力对应的长度</p>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521173724104.png"
+	width="1019"
+	height="550"
+	
+	loading="lazy"
+	
+		alt="表格"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="185"
+		data-flex-basis="444px"
+	
+></p>
+<h3 id="应变能的普遍表达式">应变能的普遍表达式
+</h3>$$
+V_\varepsilon=\frac{1}{2}F\delta
+$$<blockquote>
+<p>前面的应变能是使用内力（力矩）计算出来的</p>
+<p>F：广义力，包括力和力偶(实际上是外力)</p>
+<p>$\delta ：$广义位移，包括线位移和角位移</p>
+</blockquote>
+$$
+V_\varepsilon=\frac{1}{2}(F_1\delta_1+F_2\delta_2+F_3\delta_3)
+$$<p>
+角标相同的为对应的力位移（如图：）</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521174307722.png"
+	width="581"
+	height="570"
+	
+	loading="lazy"
+	
+		alt="如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="101"
+		data-flex-basis="244px"
+	
+></p>
+<h4 id="使用">使用
+</h4><p>简单的计算应变能，一般只收到一个力的作用</p>
+<p>求<strong>受到的力</strong></p>
+<blockquote>
+<p>不过一般功能原理是用来求位移的，复杂位移不能这么求</p>
+</blockquote>
+<h4 id="互等定理">互等定理
+</h4><blockquote>
+<p>应变能Vε<strong>只与外力的最终值有关</strong>，而与加载过程和加载次序无关</p>
+</blockquote>
+<blockquote>
+<p>第一组力在第二组力引起的位移上所作的功，等于第二组力在第一组力引起的位移上所作的功。</p>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521174936381.png"
+	width="619"
+	height="566"
+	
+	loading="lazy"
+	
+		alt="加载的顺序"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="109"
+		data-flex-basis="262px"
+	
+></p>
+$$
+V_{\varepsilon1}=V_{\varepsilon2}F_1\delta_1^{\prime}+F_2\delta_2^{\prime}=F_3\delta_3^{\prime}+F_4\delta_4^{\prime}
+$$<h3 id="卡式定理">卡式定理
+</h3>$$
+V_\varepsilon=V_\varepsilon(\Delta_1,\Delta_2,...,\Delta_n)
+$$$$
+F_i=\frac{\partial V_\varepsilon(\Delta_1,\Delta_2,...,\Delta_n)}{\partial\Delta_i}
+$$<blockquote>
+<p>弹性杆件的<strong>应变能对于杆件上某一位移的变化率</strong>，等于该位移相应的<strong>载荷（外力）</strong></p>
+<p>这里有一个关键的问题：什么是位移对应的载荷</p>
+<ul>
+<li>当位移是长度时，对应的载荷就是位移的这点上所受的力的大小</li>
+<li>当位移为角度时，对应的载荷就是这点上所受力矩的大小</li>
+</ul>
+</blockquote>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521204038640.png"
+	width="1135"
+	height="222"
+	
+	loading="lazy"
+	
+		alt="这里的一对力和一对力偶比较特殊"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="511"
+		data-flex-basis="1227px"
+	
+></p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521204124951.png"
+	width="1069"
+	height="637"
+	
+	loading="lazy"
+	
+		alt="一对"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+<p><strong>等式的左边是力，所以卡氏第一定理用来求力更加方便</strong></p>
+<h4 id="余能">余能
+</h4><p>是一个能量参数，在之前的应变能的基础上推出来的：</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521204349712.png"
+	width="1004"
+	height="618"
+	
+	loading="lazy"
+	
+		alt="余能的定义"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="162"
+		data-flex-basis="389px"
+	
+></p>
+<h4 id="余能定理">余能定理
+</h4>$$
+V_c=V_c(F_1,F_2,...,F_n)
+$$<blockquote>
+<ul>
+<li>弹性杆件的<strong>余能</strong>对于杆件上某一载荷的变化率，等于该载荷相应的位移</li>
+<li>余能定理适用于一切受力状态下的<strong>线弹性杆件与非线弹性弹性杆件</strong></li>
+</ul>
+</blockquote>
+<p>但是余能，余功没有实际的物理概念，所以对于线弹性的材料，余能和应变能在数值上相等</p>
+<h4 id="卡式第二定理">卡式第二定理
+</h4>$$
+\Delta_i=\frac{\partial V_\varepsilon(F_1,F_2\cdots F_n)}{\partial F_i}
+$$<p>上述为公式</p>
+<blockquote>
+<p>只适用于线弹性的情况</p>
+</blockquote>
+$$
+\begin{aligned}\text{(1)轴向拉压}\\&\Delta_{i}=\frac{\partial V_{\varepsilon}}{\partial F_{i}}=\frac{\partial}{\partial F_{i}}\int\frac{F_{N}^{2}(x)\mathrm{d}x}{2EA}=\boxed{\int\frac{F_{N}(x)}{EA}\frac{\partial F_{N}(x)}{\partial F_{i}}\mathrm{d}x}\\(2)&\text{扭转}\\&\Delta_i=\frac{\partial V_\varepsilon}{\partial F_i}=\frac{\partial}{\partial F_i}\int\frac{T^2(x)\mathrm{d}x}{2GI_p}=\boxed{\int\frac{T(x)}{GI_p}\frac{\partial T(x)}{\partial F_i}\mathrm{d}x}\\(3)&\text{弯曲}\\\Delta_{t}&=\frac{\partial V_\varepsilon}{\partial F_i}=\frac{\partial}{\partial F_i}\int\frac{M^2(x)\mathrm{d}x}{2EI}=\boxed{\int\frac{M(x)}{EI}\frac{\partial M(x)}{\partial F_i}\mathrm{d}x}\end{aligned}
+$$<p>为卡式第二定理的表达式</p>
+<ol start="4">
+<li>桁架
+$$
+   \Delta_i=\frac{\partial V_\varepsilon}{\partial F_i}=\sum_{j=1}^n\frac{F_{Nj}l_j}{EA}\frac{\partial F_{Nj}}{\partial F_i}
+   $$</li>
+</ol>
+<blockquote>
+<p>做题的步骤：</p>
+<ol>
+<li>确保每一个需要求的位移都有其对应的载荷，一般不能使用支反力，若是没有的话就加上虚拟的力（力矩），虚拟的力（力矩）在求偏导之后就要带入0</li>
+<li>求出加上虚拟力之后的支反力</li>
+<li>分段求出杆件的应变能，将应变能对于对应载荷力进行求导，在将虚拟力带入应变能</li>
+<li>带入公式进行计算</li>
+</ol>
+</blockquote>
+<h4 id="虚功原理">虚功原理
+</h4><p>在约束允许的范围内，可以实现的微小的位移</p>
+<p><strong>本质：能量最小原理</strong></p>
+<p>作用在杆件上的力可以分为内力和外力两种</p>
+<blockquote>
+<ul>
+<li>外力：外载荷和支座反力</li>
+<li>内力：截面各部分间的相互作用力</li>
+</ul>
+</blockquote>
+$$
+\sum_{i=1}^nF_i\Delta_i=\int_l(M\mathrm{d}\theta+F_S\cdot\mathrm{d}\lambda+F_N\mathrm{d}\delta+T\mathrm{d}\varphi)
+$$<p>上述为虚功原理的表达式，也就是所有的力与位移乘积的积分：</p>
+<h4 id="单位载荷法">单位载荷法
+</h4><blockquote>
+<p>表达式：</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521230706881.png"
+	width="1108"
+	height="162"
+	
+	loading="lazy"
+	
+		alt="表达式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="683"
+		data-flex-basis="1641px"
+	
+></p>
+<p>将虚设的单位力作为载荷，将实际的载荷引起的位移当做虚位移</p>
+<ul>
+<li>对于线弹性的杆件，我们可以得到最后的单位载荷法的公式：</li>
+</ul>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521233034020.png"
+	width="1690"
+	height="166"
+	
+	loading="lazy"
+	
+		alt="公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1018"
+		data-flex-basis="2443px"
+	
+></p>
+</blockquote>
+<blockquote class="alert alert-note">
+    <p><strong>说明：</strong></p>
+<ol>
+<li>计算的结果为正，说明位移与单位载荷指向一致，反之则相反</li>
+<li>公式右端的各项内力的正负号规定同前</li>
+<li>处理桁架问题时，右边仅剩轴力这一项</li>
+</ol></blockquote>
+<h5 id="莫尔积分">莫尔积分
+</h5><p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250521232944775.png"
+	width="600"
+	height="422"
+	
+	loading="lazy"
+	
+		alt="表达式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="142"
+		data-flex-basis="341px"
+	
+></p>
+<p>这就是上面的单位载荷法的每一项</p>
+$$
+\Delta=\int_l\frac{F_N(x)\overline{F}_N(x)}{EA}\mathbf{d}x+\int_l\frac{T(x)\overline{T}(x)}{GI_p}\mathbf{d}x+\int_l\frac{M(x)\overline{M}(x)}{EI}\mathbf{d}x
+$$<p>
+该式中Δ应看成广义位移，把单位载荷看成与广义位移相对应的广义力。</p>
+<blockquote>
+<p><strong>对式子中各个项的解释</strong></p>
+<ol>
+<li>$M(x)$：结构在原载荷下的内力</li>
+<li>$\overline M(x)$​：去掉主动力，在所求广义位移点，沿所求广义位移的方向加广义单位力时，结构产生的内力</li>
+<li>整个摩尔积分必须布满整个结构（也就是必须对整个结构进行能量分析）</li>
+<li>同一段内力的积分的坐标系必须相同</li>
+</ol>
+</blockquote>
+<p>现在在分析的过程中，由于积分的方向有左到右、右到左，上到下，下到上等等，弯矩的正负很难确定</p>
+<p><strong>正负方向的判断</strong></p>
+<p>发现，横向的杆件的弯矩可以进行正负的规定，但是其他方向的弯矩不能严格规定。由于单位载荷法是两项相乘，所以可以根据两者绝对的正负决定。而卡式第二定理为平方，正负就更加不影响了。</p>
+<p>所以，<strong>只要知道相对的正负即可</strong></p>
+<blockquote class="alert alert-tip">
+    <p>**解题步骤：**万物归一</p>
+<ol>
+<li>将原载荷下的内力求出来</li>
+<li>在相同的坐标系下，只加所求位移对应的载荷，去掉原载荷，求出内力</li>
+<li>带入公式中进行计算（相对位移时使用一对力）</li>
+</ol></blockquote>
+<p>功能原理中，针对的做的功都是<strong>外力中的载荷</strong></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th style="text-align: center">卡氏第二定理</th>
+          <th style="text-align: center">单位载荷法</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">一个系统</td>
+          <td style="text-align: center">两个系统</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$Δ=\frac{\partial V_{ε}}{\partial F_{i}}=\int\frac{M}{K}\frac{\partial M}{\partial F_{i}}\mathrm{d}x$</td>
+          <td style="text-align: center">$Δ=\int\frac{M}{K}\vec{M}\mathrm{d}x$</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">内力（一套）</td>
+          <td style="text-align: center">内力（两套）</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">每次求新的位移，需要附加新的力，然后求新的内力</td>
+          <td style="text-align: center">每次求新的位移，原系统内力不变，重求单位载荷系统内力</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">“无为有处有还无”</td>
+          <td style="text-align: center">“万力归一”</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="超静定结构">超静定结构
+</h2><h3 id="超静定结构的概述">超静定结构的概述
+</h3><p>**静定问题：**杆件的轴力（约束反力）可以用静力平衡条件求出,这种情况称作静定问题（未知力的个数等于独立平衡方程的数目）</p>
+<p><strong>超静定问题：未知力个数多于独立的平衡方程数</strong></p>
+<blockquote>
+<p>独立平衡方程的个数：</p>
+<ul>
+<li>平面任意力系：3</li>
+<li>平面共点力系：2</li>
+</ul>
+</blockquote>
+<h4 id="分类">分类：
+</h4><ol>
+<li>仅在结构外部存在多余约束，即支反力是超静定的，可称为<strong>外力超静定系统</strong></li>
+<li>仅在结构内部存在多余约束，即内力是超静定的，可称为<strong>内力超静定</strong>系统</li>
+<li>在结构外部和内部均存在多余约束，即支反力和内力是超静定的，也称<strong>联合超静定结构</strong></li>
+</ol>
+<h4 id="次数的判定">次数的判定：
+</h4><blockquote>
+<p><strong>方法：</strong></p>
+<p>解决多余的约束，将超静定结构变为1或多个静定结构，解除的约束数量为超静定次数。<strong>解除约束主要可分为三种</strong></p>
+<ol>
+<li>去掉一个可动铰支座、或切断一根链杆= 解除一个线位移约束</li>
+<li>去除一个铰接——解除两个线位移约束</li>
+<li>去掉一个刚性连接=解除两个线位移约束+一个角位移约束</li>
+</ol>
+</blockquote>
+<h4 id="方法">方法：
+</h4><ol>
+<li>力法：以未知力为基本未知量的求解方法</li>
+<li>位移法：以未知位移为基本未知量的求解方法</li>
+</ol>
+<h3 id="用力法解超静定结构">用力法解超静定结构
+</h3><h4 id="过程">过程
+</h4><blockquote>
+<ol>
+<li>
+<p>判定超静定次数：</p>
+<p>解除超静定结构的多余约束，永多余的约束力代替多余约束，得到一个几何不变的静定系统，<strong>称为相当系统</strong></p>
+</li>
+<li>
+<p>加上变形几何条件</p>
+</li>
+<li>
+<p>求出多余的约束力</p>
+</li>
+<li>
+<p>在相当系统的基础上求解原来系统的内力和变形</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="力法正则方程">力法正则方程
+</h4>$$
+\delta_{11}X_1+\Delta_{1F}=0
+$$<p>上述为力法正则方程的基本表达式</p>
+<blockquote>
+<p>最应该注意的就是角标的问题</p>
+</blockquote>
+<blockquote class="alert alert-tip">
+    <p>复杂的超静定问题的正则方程：</p>
+<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250523205621665.png"
+	width="1207"
+	height="448"
+	
+	loading="lazy"
+	
+		alt="正则方程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="269"
+		data-flex-basis="646px"
+	
+></p>
+<p>其中角标问题的说明</p>
+<ol>
+<li>先进行大的说明：$\delta$为单位值的力对应的位移，$X$为对应未知力的大小，$\Delta$为在外力的作用下产生的位移</li>
+<li>前面的下角标代表位移的位置和方向，后面的下角标代表是哪个力产生的位移</li>
+<li>最后一个公式表明行列式是对称的</li>
+</ol></blockquote>
+<blockquote>
+<p>步骤：</p>
+<ol>
+<li>使用单位载荷法将外力引起的位移求出来，一共需要求出n个</li>
+<li>使用单位载荷法将$\delta$求出来，注意对称性<img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250523224917051.png"
+	width="552"
+	height="171"
+	
+	loading="lazy"
+	
+		alt="公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="322"
+		data-flex-basis="774px"
+	
+></li>
+<li>带入正则方程中将未知力的大小求解出来</li>
+</ol>
+</blockquote>
 
 </section>
 

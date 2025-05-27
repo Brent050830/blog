@@ -65,6 +65,68 @@ p=p_0-\rho gz+\frac{1}{2}\rho r^2\omega^2
 $$&lt;blockquote&gt;
 &lt;p&gt;壁面处液面升高相对于原来的水平面为h/2&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&#34;相似原理与量纲分析&#34;&gt;相似原理与量纲分析
+&lt;/h2&gt;&lt;h3 id=&#34;相似原理&#34;&gt;相似原理
+&lt;/h3&gt;&lt;p&gt;按照相似性原理与量纲分析设计模型，选择流动的介质&lt;/p&gt;
+&lt;h4 id=&#34;相似条件&#34;&gt;相似条件
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;几何相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运动相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;动力相似&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;相似判据：&lt;/p&gt;
+$$
+   Re=\frac{F_1}{F_\tau}=\frac{uL}{v}
+   $$&lt;p&gt;
+雷诺数就是两个流动粘性力相似的判据&lt;/p&gt;
+&lt;p&gt;将表中的无量纲数统称为相似准则数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;流动相似的充分必要条件：&lt;/p&gt;
+&lt;p&gt;几何相似，运动相似和动力相似&lt;/p&gt;
+&lt;p&gt;或者满足以下的单值条件：几何、物理、边界、初始条件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;量纲分析&#34;&gt;量纲分析
+&lt;/h3&gt;&lt;h4 id=&#34;量纲和谐原理&#34;&gt;量纲和谐原理
+&lt;/h4&gt;&lt;p&gt;物理方程式中的各项必须量纲完全一致。只有相同量纲的物理量才能相加减。&lt;/p&gt;
+&lt;p&gt;对于相同量纲齐次的方程，只要使用方程的任一量纲除其他各项，变成无量纲量&lt;/p&gt;
+&lt;h4 id=&#34;量纲分析的方法&#34;&gt;量纲分析的方法
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;基本的量纲：L,T,M,$\theta$&lt;/li&gt;
+&lt;li&gt;瑞利法
+&lt;ol&gt;
+&lt;li&gt;列出所有印象这一物理过程的全部n+1个物理量，基本量纲的乘除&lt;/li&gt;
+&lt;li&gt;解出方程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;$\pi$定理
+&lt;ol&gt;
+&lt;li&gt;组成无量纲的数（选择r个量纲不同的物理量，与其余的物理量组成无量纲数）（一共有k-r个$\pi$数）&lt;/li&gt;
+&lt;li&gt;重复变量与其余变量&lt;/li&gt;
+&lt;li&gt;其中的重复的变量必须是包括所有的量纲的，组成的指数行行列式不为0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;模型实验&#34;&gt;模型实验
+&lt;/h3&gt;&lt;h4 id=&#34;全面力学相似模型试验&#34;&gt;全面力学相似模型试验
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;要达到全面的相似，必须所有的相似准则相等，且初始的条件和边界条件相相似。但是这是不现实的&lt;/p&gt;
+&lt;p&gt;所以在正常的生产中选择主要的因素，使其相等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;近似莫化法&#34;&gt;近似莫化法
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;抓住主要的矛盾&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         
