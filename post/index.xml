@@ -160,6 +160,83 @@ $N(t+h)-N(t)$的分布仅依赖于时间间隔$h$ ,与起始时刻$t$无关 )
 &lt;p&gt;设${N(t)}$是强度为$\lambda$的泊松过程,若每个事件独立地以概率$p$为类型1,以$1-p$为类型2,令${N_{1}(t)}$和${N_{2}(t)}$分别表示到$t$为止类型1和类型2发生的个数,则${N_{1}(t)}$和${N_{2}(t)}$分别是强度为$\lambda p$和$\lambda(1-p)$的泊松过程,且&lt;strong&gt;相互独立&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;两个窗口接收服务&lt;/p&gt;
+&lt;h4 id=&#34;非齐次的泊松过程&#34;&gt;非齐次的泊松过程
+&lt;/h4&gt;&lt;p&gt;计数过程$\left{N(t)\right}$称作强度为$\lambda(t)$的非齐次泊松过程，如果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$N(0)=0$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\textbf{ 独 立 增 量 }$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P\left { N( t+ h) - N( t) = 1\right } = \overbrace{\lambda ( t) }h+ o( h)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P{N(t+h)-N(t)\geq2}=o(h)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上述是非齐次的泊松过程的定义&lt;/p&gt;
+$$
+\text{对任意的}t&gt;s\geq0,N(t)-N(s)\sim\pi(\int_s^t\lambda(u)du)
+$$&lt;p&gt;
+服从的&lt;strong&gt;强度是积分的形式&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;布朗运动&#34;&gt;布朗运动
+&lt;/h3&gt;$$
+X(t)\sim N(0,\sigma^2t)
+$$$$
+0\leq s&lt;t,X(t)-X(s)\sim N(0,\sigma^2(t-s))
+$$&lt;p&gt;
+这说明了是&lt;strong&gt;平稳独立增量过程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;后续只讨论$\sigma$=1的标准的布朗运动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;性质：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$X(0)=0$&lt;/li&gt;
+&lt;li&gt;独立增量&lt;/li&gt;
+&lt;li&gt;对$\forall t&amp;gt;s\geq0$,
+$X(t)-X(s)\sim N(0,\sigma^{2}(t-s))$&lt;/li&gt;
+&lt;li&gt;样本轨道连续&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;解读：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;是齐次的独立增量过程&lt;/li&gt;
+&lt;li&gt;是正太过程，完全由均值函数和自协方差函数确定&lt;/li&gt;
+&lt;li&gt;数字特征：&lt;img src=&#34;https://Brent050830.site/p/%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/image-20250529223829533.png&#34;
+	width=&#34;952&#34;
+	height=&#34;379&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数字特征&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;251&#34;
+		data-flex-basis=&#34;602px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;其他的性质&#34;&gt;其他的性质
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;样本轨道连续的随机过程是布朗运动当且仅当它是正态过程$E(B(t))=0且E[B(t)B(s)]=t\wedge s.$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有markov性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自相似性：$\textbf{固 定 }a\neq 0, { \frac 1aB( a^2t) ; t\geq 0}$是布朗运动&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+$$
+   \text{令}\tilde{B}(t)=\begin{cases}tB(1/t),&amp;t&gt;0\\\quad0,&amp;t=0&amp;&amp;\end{cases},\text{则}\{\tilde{B}(t);t\geq0\}\text{是布朗过程}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         <item>
@@ -318,7 +395,407 @@ $$
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
-</description>
+&lt;h2 id=&#34;可压缩流体的一维流动&#34;&gt;可压缩流体的一维流动
+&lt;/h2&gt;&lt;h3 id=&#34;边界层的基本概念&#34;&gt;边界层的基本概念
+&lt;/h3&gt;&lt;h4 id=&#34;基本概念&#34;&gt;基本概念
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603133643911.png&#34;
+	width=&#34;574&#34;
+	height=&#34;220&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;会形如图所示额绕流&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;260&#34;
+		data-flex-basis=&#34;626px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;右图的为真实气体的绕流&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;把这种&lt;strong&gt;大Re数下流体绕流物体表面&lt;/strong&gt;的速度梯度变化很大的&lt;strong&gt;薄层称为边界层&lt;/strong&gt;(boundarylayer)。在边界层以外,由于&lt;strong&gt;速度梯度甚小,故其中粘性切应力甚微,因此可视为理想流体。&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所以，在大雷诺数的情况下，很薄的层为边界层（速度变化非常快），粘性力的作用明显，但是在边界层之外，粘性的切应力很小，可以看做是理想气体&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;边界层厚度$\delta$&lt;/strong&gt;：到达流体来流速度的99%处到平板的距离&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;边界层理论的意义：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当雷诺数很大时，可以将物体表面的流场分为边界层流动和边界层外的势流流动
+&lt;ul&gt;
+&lt;li&gt;对于边界层，使用边界层方程进行求解&lt;/li&gt;
+&lt;li&gt;对于势流流动，使用理想流体的欧拉方程求解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;对于小雷诺数时，惯性项远小于粘性项，可以忽略惯性项，简化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;基本特征&#34;&gt;基本特征
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603134522983.png&#34;
+	width=&#34;496&#34;
+	height=&#34;147&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;三个区域&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;337&#34;
+		data-flex-basis=&#34;809px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;图中的流场分为三个区域：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;边界层&lt;/li&gt;
+&lt;li&gt;尾流区&lt;/li&gt;
+&lt;li&gt;外部势流&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;对于小雷诺数的情况，边界层较厚，且向前延伸&lt;/li&gt;
+&lt;li&gt;对于大雷诺数的情况，边界层很薄，边界层内的速度梯度很大，粘性切应力很大；外部的速度梯度很小，粘性切应力很小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;边界层内存在两种流态：层流边界层和湍流边界层&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603135136016.png&#34;
+	width=&#34;497&#34;
+	height=&#34;222&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;边界层&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;223&#34;
+		data-flex-basis=&#34;537px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断层流还是湍流的方式：&lt;/li&gt;
+&lt;/ul&gt;
+$$
+Re_{x}=\frac{V_{\infty}x}{v}
+$$&lt;blockquote&gt;
+&lt;p&gt;其中的x为离物体的前段的距离，V为势流速度&lt;/p&gt;
+&lt;p&gt;对于平板边界层来说：临界的雷诺数为$Re_{x}=3\times10^{5}\sim3\times10^{6}。$&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;综上所述,边界层的基本特征为:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;与物体的特征长度L相比,边界层的厚度8很小,即&amp;amp;/L=1;&lt;/li&gt;
+&lt;li&gt;边界层内沿物面法向的速度变化剧烈,即速度梯度au/ay很大;&lt;/li&gt;
+&lt;li&gt;边界层内粘性力和惯性力为同一数量级;&lt;/li&gt;
+&lt;li&gt;边界层沿流动方向&lt;strong&gt;逐渐增厚;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;边界层流体的流动也分为层流和湍流两种流态,用Reg数判别;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;边界层内压强p与y无关即p=p(x)&lt;/strong&gt;,故边界层各横截面上的压强等于同一截面上边界层外边界上的压强。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;边界层微分方程&#34;&gt;边界层微分方程
+&lt;/h3&gt;&lt;p&gt;理想流体的区域可以使用之前的6章中的位势理论求解&lt;/p&gt;
+&lt;p&gt;但是，边界层内的粘性流体的流动怎么解决&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;方程为：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603140017921.png&#34;
+	width=&#34;801&#34;
+	height=&#34;380&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;方程&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;505px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;上述的方程可以简化为：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603140117176.png&#34;
+	width=&#34;635&#34;
+	height=&#34;218&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;简化&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;291&#34;
+		data-flex-basis=&#34;699px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;边界层的动量积分方程&#34;&gt;边界层的动量积分方程
+&lt;/h3&gt;&lt;p&gt;由于上述的方程求解起来还是较为困难&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+$$
+  \frac{\mathrm{d}}{\mathrm{d}x}\int_{0}^{s}\rho u_{x}^{2}\mathrm{d}y-V_{\infty}\frac{\mathrm{d}}{\mathrm{d}x}\int_{0}^{s}\rho u_{x}\mathrm{d}y=-\delta\frac{\mathrm{d}p}{\mathrm{d}x}-\tau_{0}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  \frac{\partial}{\partial t}\int_{0}^{s}\rho u_{x}\mathrm{d}y+\frac{\mathrm{d}}{\mathrm{d}x}\int_{0}^{s}\rho u_{x}^{2}\mathrm{d}y-V_{\infty}\frac{\mathrm{d}}{\mathrm{d}x}\int_{0}^{s}\rho u_{x}\mathrm{d}y=-\delta\frac{\mathrm{d}p}{\mathrm{d}x}-\tau_{0}
+  $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;平板边界层的近似计算&#34;&gt;平板边界层的近似计算
+&lt;/h3&gt;&lt;h4 id=&#34;层流的平板边界层&#34;&gt;层流的平板边界层
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+$$
+  \delta=\sqrt{\frac{280}{13}\frac{\mu x}{V_{\infty}}}=4.64xRe_{x}^{-\frac{1}{2}}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  u_{x}(y)=V_{\infty}(0.323x^{-1}yRe_{x}^{\frac{1}{2}}-0.005x^{-3}y^{3}Re_{x}^{\frac{3}{2}})
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  \tau_{0}=\frac{3\mu V_{\infty}}{2\times4.64\sqrt{\nu x/V_{\infty}}}=0.323\sqrt{\frac{\mu\rho V_{\infty}^{2}}{x}}=0.323\rho V_{\infty}^{2}Re_{\mathrm{L}}^{-\frac{1}{2}}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  F_{t}=b\int_{0}^{L}\tau_{0}\mathrm{d}x=0.323b\int_{0}^{L}\sqrt{\frac{\mu\rho V_{\infty}^{3}}{x}}\mathrm{d}x=0.646bL\rho V_{\infty}^{2}Re_{\mathrm{L}}^{-\frac{1}{2}}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  C_{1}=\frac{F_{1}}{\frac{1}{2}\rho V_{\infty}^{2}A}
+  $$$$
+  C_{\mathrm{f}}=1.292Re_{\mathrm{L}}^{-\frac{1}{2}}
+  $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;湍流的&#34;&gt;湍流的
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+$$
+  \delta=0.37\left(\frac{\nu}{V_{\infty}}\right)^{\frac{1}{5}}x^{\frac{4}{5}}=0.37xRe_{x}^{-\frac{1}{5}}
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  \delta=0.37\left(\frac{\nu}{V_{\infty}}\right)^{\frac{1}{5}}x^{\frac{4}{5}}=0.37xRe_{x}^{-\frac{1}{5}}
+  $$$$
+  \tau_{0}=0.225\rho V_{\infty}^{2}\left(\frac{\nu}{V_{\infty}}\right)^{\frac{1}{4}}\left(0.37\left(\frac{\nu}{V_{\infty}}\right)^{\frac{1}{5}}x^{\frac{4}{5}}\right)^{-\frac{1}{4}}=0.0289\rho V_{\infty}^{2}Re^{-\frac{1}{5}}
+  $$$$
+  F_{i}=b\int_{0}^{L}\tau_{0}\mathrm{d}x=0.0289\rho V_{\infty}^{2}\left(\frac{\nu}{V_{\infty}}\right)^{\frac{1}{3}}b\int_{0}^{L}x^{-\frac{1}{5}}\mathrm{d}x=0.036bL\rho V_{\infty}^{2}Re_{\mathrm{L}}^{-\frac{1}{5}}
+  $$$$
+  C_{\mathrm{f}}=\frac{0.455}{(\mathrm{lg}Re_{\mathrm{L}})^{2.58}}\quad(10^{5}\leqslant Re\leqslant10^{9})
+  $$&lt;p&gt;最后的为&lt;strong&gt;平板的阻力系数&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;判断边界层的流态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;计算$x_{cr}$的大小,确定层流和湍流的分界&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603143225807.png&#34;
+	width=&#34;798&#34;
+	height=&#34;111&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;计算&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;718&#34;
+		data-flex-basis=&#34;1725px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用相应的公式进行计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;沿曲面的边界层及分离现象&#34;&gt;沿曲面的边界层及分离现象
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603143910683.png&#34;
+	width=&#34;334&#34;
+	height=&#34;208&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;所示的&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;385px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;压强的关系：O&amp;gt;F&amp;gt;M&lt;/p&gt;
+&lt;p&gt;则从O-M是顺压强梯度的流动&lt;/p&gt;
+&lt;p&gt;但是M-F是逆压强梯度的流动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;由边界层理论：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603144136165.png&#34;
+	width=&#34;335&#34;
+	height=&#34;122&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;公式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;274&#34;
+		data-flex-basis=&#34;659px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;边界层的分离：&lt;img src=&#34;https://Brent050830.site/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603151810146.png&#34;
+	width=&#34;537&#34;
+	height=&#34;230&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;形成的过程&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;233&#34;
+		data-flex-basis=&#34;560px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;粘性流体绕着小圆球的蠕流流动&#34;&gt;粘性流体绕着小圆球的蠕流流动
+&lt;/h3&gt;&lt;h4 id=&#34;斯托克斯阻力系数&#34;&gt;斯托克斯阻力系数
+&lt;/h4&gt;&lt;p&gt;在&lt;strong&gt;小雷诺数情况下的绕着小球&lt;/strong&gt;的流动（蠕流）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+$$
+  u_{r}=V_{\infty}\mathrm{cos}\theta\left[1-\frac{3}{2}\frac{r_{0}}{r}+\frac{1}{2}\frac{r_{0}^{3}}{r^{3}}\right]\\u_{\theta}=V_{\infty}\mathrm{sin}\theta\left[1-\frac{3}{4}\frac{r_{0}}{r}+\frac{1}{4}\frac{r_{0}^{3}}{r^{3}}\right]\\P(r,\theta)=p_{0}-\frac{3}{2}\mu\frac{V_{\infty}r_{0}}{r^{2}}\mathrm{cos}\theta
+  $$&lt;/li&gt;
+&lt;li&gt;
+$$
+  C_{\mathrm{f}}=\frac{F_{\mathrm{f}}}{\frac{1}{2}\rho V_{\infty}^{2}A}=\frac{6\pi\mu r_{0}V_{\infty}}{\frac{1}{2}\rho V_{\infty}^{2}\pi r_{0}^{2}}=\frac{24}{\frac{V_{\infty}d_{0}}{\nu}}=\frac{24}{Re}
+  $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;颗粒在静止流体中的自由沉降&#34;&gt;颗粒在静止流体中的自由沉降
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+$$
+  V_{t}=\sqrt{\frac{4gd(\rho_{s}-\rho)}{3C_{t}\rho}}
+  $$&lt;ul&gt;
+&lt;li&gt;
+$$
+    V_{\mathrm{f}}=\frac{1}{18}\frac{g}{v}\frac{\rho_{s}-\rho}{\rho}d^{2}
+    $$&lt;/li&gt;
+&lt;li&gt;
+$$
+    C_{\mathrm{f}}=\frac{24}{Re}+\frac{6}{\sqrt{Re}}+0.4\\0.4V_{\mathrm{f}}^{2}+6\sqrt{\frac{vV_{\mathrm{f}}^{3}}{d}}+\frac{24v}{d}V_{\mathrm{f}}-\frac{4}{3}gd\frac{\rho_{s}-\rho}{\rho}=0
+    $$&lt;/li&gt;
+&lt;li&gt;
+$$
+    V_{\mathrm{f}}=\sqrt{2.8gd}\frac{\rho_{s}-\rho}{\rho}
+    $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;粘性物体绕流的阻力&#34;&gt;粘性物体绕流的阻力
+&lt;/h3&gt;&lt;h4 id=&#34;摩擦阻力和压差阻力&#34;&gt;摩擦阻力和压差阻力
+&lt;/h4&gt;&lt;p&gt;绕流阻力由&lt;strong&gt;摩擦阻力和压差阻力&lt;/strong&gt;组成&lt;/p&gt;
+$$
+F_{\mathrm{D}}=(C_{\mathrm{f}}A_{\mathrm{f}}+C_{\mathrm{p}}A_{\mathrm{p}})\frac{\rho V_{\infty}^{2}}{2}\quad\text{或}\quad F=C_{\mathrm{D}}\frac{\rho V_{\infty}^{2}}{2}A
+$$&lt;p&gt;
+$C_D$称为绕流系数&lt;/p&gt;
+&lt;h4 id=&#34;绕流物体的升力&#34;&gt;绕流物体的升力
+&lt;/h4&gt;$$
+F_L=C_L\rho\frac{V^2}{2}A
+$$$$
+\begin{aligned}&amp;\text{式中:}C_L\text{为升力系数}(\text{lift coefficient})\text{,升力系数主要依赖于冲角和物体的横截面的形状;}\\&amp;A\text{ 为物体或升力矢量体的投影面。}\end{aligned}
+$$&lt;h3 id=&#34;做题的感悟&#34;&gt;做题的感悟：
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;带公式就行&lt;/li&gt;
+&lt;li&gt;主要记住与雷诺数、切应力等等相关的公式&lt;/li&gt;
+&lt;/ol&gt;
+$$
+\tau_{0}=\mu\left(\frac{\mathrm{d}u_{x}}{\mathrm{d}y}\right)_{y=0}
+$$&lt;h2 id=&#34;可压缩流体的一维流动-1&#34;&gt;可压缩流体的一维流动
+&lt;/h2&gt;&lt;h3 id=&#34;音速和马赫数&#34;&gt;音速和马赫数
+&lt;/h3&gt;&lt;h4 id=&#34;音速&#34;&gt;音速
+&lt;/h4&gt;$$
+c=\sqrt{\frac{\mathrm{d}p}{\mathrm{d}\rho}}=\sqrt{k\frac{p}{\rho}}=\sqrt{kRT}
+$$&lt;p&gt;上述为音速的计算公式，其中的R为空气的287，k=1.4，这里的温度T在喷管中是会时刻变化的量。&lt;/p&gt;
+$$
+\begin{aligned}&amp;E_{v}=\frac{\mathrm{d}p}{\mathrm{d}\rho/\rho}\\\\&amp;c=\sqrt{\frac{\mathrm{d}p}{\mathrm{d}\rho}}=\sqrt{\frac{E_{v}}{\rho}}\end{aligned}
+$$&lt;p&gt;
+不可压缩时，气体的音速将变为无穷大&lt;/p&gt;
+&lt;h4 id=&#34;马赫数&#34;&gt;马赫数
+&lt;/h4&gt;$$
+Ma=\frac{V}{a}
+$$&lt;blockquote&gt;
+&lt;p&gt;马赫数越小，气体的压缩性的影响就越小，反之，压缩性的影响越大&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;$( 1) Ma&amp;lt; 1, 则$ $v&amp;lt; c, 气 流 本 身 的 速 度 小 于 声 速 , 为 亚 音 速 流 动 ( subsonicflows) ;$&lt;/p&gt;
+&lt;p&gt;$( 2) Ma&amp;gt; 1, 则$ $v&amp;gt; c$,气流本身的速度大于声速，为超音速流动(supersonic flows);&lt;/p&gt;
+&lt;p&gt;$(3)Ma\approx1,则v=c$,气流本身的速度等于声速，称为跨音速流动(sonic flows)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;气体的一维定常流动的基本方程&#34;&gt;气体的一维定常流动的基本方程
+&lt;/h3&gt;&lt;h4 id=&#34;连续性方程&#34;&gt;连续性方程
+&lt;/h4&gt;$$
+\frac{\mathrm{d}\rho}{\rho}+\frac{\mathrm{d}v}{v}+\frac{\mathrm{d}A}{A}=0
+$$&lt;blockquote&gt;
+&lt;p&gt;表明&lt;strong&gt;速度，密度，流管的截面积&lt;/strong&gt;三者的相对的变化量的代数和必须为0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;能量方程&#34;&gt;能量方程
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;不可压缩流动的&lt;/li&gt;
+&lt;/ul&gt;
+$$
+zg+\frac{p}{\rho}+\frac{v^2}{2}=C
+$$&lt;ul&gt;
+&lt;li&gt;省去比位能，加入能量的转换
+$$
+  u+\frac{p}{\rho}+\frac{v^{2}}{2}=C
+  $$&lt;/li&gt;
+&lt;/ul&gt;
+$$
+\begin{gathered}h+{\frac{v^{2}}{2}}=C\\C_{p}T+{\frac{v^{2}}{2}}=C\\\frac{k}{k-1}\frac{p}{\rho}+\frac{v^{2}}{2}=C\\\frac{kRT}{k-1}+\frac{v^{2}}{2}=C\\\frac{c^{2}}{k-1}+\frac{v^{2}}{2}=C\end{gathered}
+$$&lt;h4 id=&#34;运动方程&#34;&gt;运动方程
+&lt;/h4&gt;$$
+\int\frac{\mathrm{d}p}{\rho}+\frac{v^2}{2}=C
+$$&lt;h3 id=&#34;定常流动的基本特性&#34;&gt;定常流动的基本特性
+&lt;/h3&gt;&lt;h4 id=&#34;滞止状态&#34;&gt;滞止状态
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;流动速度为0的点的状态为滞止状态，角标使用0表示&lt;/p&gt;
+&lt;/blockquote&gt;
+$$
+\begin{gathered}h_{0}=h+\frac{v^{2}}{2}\\C_{p}T_{0}=C_{p}T+\frac{v^{2}}{2}\\\frac{k}{k-1}\frac{p_{0}}{\rho_{0}}=\frac{k}{k-1}\frac{p}{\rho}+\frac{v^{2}}{2}\\\frac{k}{k-1}RT_{0}=\frac{kRT}{k-1}+\frac{v^{2}}{2}\\\frac{c_{0}^{2}}{k-1}=\frac{c^{2}}{k-1}+\frac{v^{2}}{2}\end{gathered}
+$$&lt;h4 id=&#34;临界状态&#34;&gt;临界状态
+&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;断面上的速度为&lt;strong&gt;当地的音速&lt;/strong&gt;时为临界状态，使用角标*表示&lt;/p&gt;
+&lt;/blockquote&gt;
+$$
+\frac{T^{*}}{T_{0}}=\left(1+\frac{k-1}{2}\right)^{-1}=\left(\frac{2}{k+1}\right)\\\frac{\rho^{*}}{\rho_{0}}=\left(1+\frac{k-1}{2}\right)^{\frac{-1}{k-1}}=\left(\frac{2}{k+1}\right)^{\frac{1}{k-1}}\\\frac{p^{*}}{p_{0}}=\left(1+\frac{k-1}{2}\right)^{\frac{-k}{k-1}}=\left(\frac{2}{k+1}\right)^{\frac{k}{k-1}}
+$$&lt;p&gt;公式中的密度的标识为比体积的倒数&lt;/p&gt;
+&lt;h4 id=&#34;极限状态&#34;&gt;极限状态
+&lt;/h4&gt;$$
+\frac{c_0^2}{k-1}=\frac{c^2}{k-1}+\frac{v^2}{2}
+$$&lt;p&gt;由这个&lt;strong&gt;能量守恒方程&lt;/strong&gt;&lt;/p&gt;
+$$
+v_{\mathrm{mex}}=\sqrt{\frac{2}{k-1}}c_{0}
+$$&lt;p&gt;
+这时的内能和压能全部位移0，称为达到了极限状态&lt;/p&gt;
+&lt;p&gt;此时的热力学温度为0，绝对压强为0&lt;/p&gt;
+&lt;h3 id=&#34;喷管中的等熵流动&#34;&gt;喷管中的等熵流动
+&lt;/h3&gt;$$
+\frac{\mathrm{d}A}{A}=-\frac{1-Ma^{2}}{kMa^{2}}\frac{\mathrm{d}p}{p}
+$$&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;亚音速时，只有截面缩小才能使气流加速，截面增大使气流减速&lt;/li&gt;
+&lt;li&gt;超音速时，与上面的相反&lt;/li&gt;
+&lt;li&gt;音速流动时，处于临界的状态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;喷管&#34;&gt;喷管
+&lt;/h4&gt;&lt;h5 id=&#34;渐缩喷管&#34;&gt;渐缩喷管
+&lt;/h5&gt;</description>
         </item>
         <item>
         <title>个人博客搭建</title>

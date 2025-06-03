@@ -492,6 +492,62 @@
       </ol>
     </li>
     <li><a href="#高压指示器dcdchvd和放电回路">高压指示器，DC/DC，hvd和放电回路</a></li>
+    <li><a href="#bspd">BSPD</a>
+      <ol>
+        <li><a href="#低压系统">低压系统</a></li>
+      </ol>
+    </li>
+    <li><a href="#bms">BMS</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#控制功能">控制功能</a></li>
+            <li><a href="#输出故障的信号">输出故障的信号</a></li>
+            <li><a href="#系统关键信号">系统关键信号</a></li>
+            <li><a href="#辅助触点信号的scs保护">辅助触点信号的scs保护</a></li>
+          </ol>
+        </li>
+        <li><a href="#均衡的功能">均衡的功能</a></li>
+        <li><a href="#soc预测">soc预测</a></li>
+      </ol>
+    </li>
+    <li><a href="#安全回路原理图中不需要逻辑的部分">安全回路原理图中不需要逻辑的部分</a>
+      <ol>
+        <li><a href="#lvms和tsms">LVMS和TSMS</a></li>
+        <li><a href="#惯性开关">惯性开关</a></li>
+        <li><a href="#制动超行程开关">制动超行程开关</a></li>
+        <li><a href="#安全回路的组成">安全回路的组成</a></li>
+      </ol>
+    </li>
+    <li><a href="#整车控制器vcu">整车控制器VCU</a>
+      <ol>
+        <li><a href="#vcu是做什么的">VCU是做什么的</a></li>
+        <li><a href="#io口">io口</a></li>
+        <li><a href="#ad转换">AD转换</a></li>
+        <li><a href="#关于pwm">关于PWM</a></li>
+        <li><a href="#can通信">CAN通信</a></li>
+        <li><a href="#dbc矩阵的解析">DBC矩阵的解析</a></li>
+      </ol>
+    </li>
+    <li><a href="#华海的vcu编程">华海的VCU编程</a>
+      <ol>
+        <li><a href="#simulink">simulink</a>
+          <ol>
+            <li><a href="#实例实现预充电电路的仿真">实例：实现预充电电路的仿真</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#dbc">DBC</a>
+      <ol>
+        <li><a href="#一帧can报文的组成">一帧can报文的组成</a></li>
+        <li><a href="#dbc的解析">DBC的解析</a>
+          <ol>
+            <li><a href="#练习">练习</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
     <li><a href="#电气组培训">电气组培训</a>
       <ol>
         <li><a href="#规则">规则</a></li>
@@ -573,7 +629,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -792,10 +848,475 @@
 <h2 id="高压指示器dcdchvd和放电回路">高压指示器，DC/DC，hvd和放电回路
 </h2><p>高压和低压之间理论上存在电阻</p>
 <p>通过车架来接地</p>
+<h2 id="bspd">BSPD
+</h2><h3 id="低压系统">低压系统
+</h3><p><strong>继电器的控制：</strong></p>
+<p><img src="/p/fury/image-20250530131814128.png"
+	width="1208"
+	height="883"
+	
+	loading="lazy"
+	
+		alt="原理图片"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="136"
+		data-flex-basis="328px"
+	
+></p>
+<p>继电器：bspd，imd，ams</p>
+<blockquote>
+<p>现在讲的是bspd</p>
+<p>制动系统优先驱动</p>
+</blockquote>
+<ol>
+<li>加速踏板传感器：APPS，滑动变阻器</li>
+</ol>
+<p><img src="/p/fury/image-20250530132442516.png"
+	width="1594"
+	height="309"
+	
+	loading="lazy"
+	
+		alt="加速的控制"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="515"
+		data-flex-basis="1238px"
+	
+></p>
+<p>​	先通过滑动变阻器的模拟信号（连续的电路的信号）</p>
+<ol start="2">
+<li>刹车：线位移传感器</li>
+</ol>
+<blockquote>
+<p>为什么油门和刹车的传感器不一样</p>
+<p>油门有着两路滑动变组器，是一个冗余的设计（为了防止一个出现问题），<strong>油门是纯电子的控制</strong></p>
+<p>但是<strong>刹车是完全机械的控制</strong>，没有刹车的传感器，依旧能够刹车</p>
+<p><img src="/p/fury/image-20250530133155814.png"
+	width="1424"
+	height="310"
+	
+	loading="lazy"
+	
+		alt="伪代码的说明"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="459"
+		data-flex-basis="1102px"
+	
+></p>
+</blockquote>
+<blockquote>
+<p>但是油门的深浅不能完全代替电机的工作状态</p>
+<p>刹车上也是同样的问题</p>
+<p>也有可能是电机卡住了这样的问题</p>
+</blockquote>
+<p><img src="/p/fury/image-20250530133733827.png"
+	width="1761"
+	height="834"
+	
+	loading="lazy"
+	
+		alt="所示的改进"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="506px"
+	
+></p>
+<p><img src="/p/fury/image-20250530143719969.png"
+	width="1753"
+	height="847"
+	
+	loading="lazy"
+	
+		alt="替代的图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="206"
+		data-flex-basis="496px"
+	
+></p>
+<blockquote>
+<p>将电机的功率直接使用<strong>电流的大小</strong>来代替</p>
+<p>将刹车力度的大小直接使用<strong>制动液的压力大</strong>小来展现</p>
+<p><strong>这种形式比较直接</strong></p>
+<p>所以，在电流大小很大；压力大小也很大的时候就要实现断开的效果</p>
+</blockquote>
+<p>所以做的事是让电机不在转动，所以电机卡在全功率的状态，应该将电机的高压电断开。</p>
+<p>BSPD</p>
+<h2 id="bms">BMS
+</h2><p><img src="/p/fury/image-20250530144008217.png"
+	width="1893"
+	height="705"
+	
+	loading="lazy"
+	
+		alt="单体的电压采集图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="268"
+		data-flex-basis="644px"
+	
+></p>
+<ul>
+<li>改进：
+<ul>
+<li>引入pcb的单体电压采集板</li>
+<li>减少拆装的难度</li>
+</ul>
+</li>
+</ul>
+<p>但是还是有实体的线</p>
+<ol start="3">
+<li>
+<p>自制的BMS</p>
+<p>封装吗，尽量无线</p>
+</li>
+</ol>
+<p><img src="/p/fury/image-20250530150644010.png"
+	width="1078"
+	height="539"
+	
+	loading="lazy"
+	
+		alt="这是外国车队的电池箱的样子"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="200"
+		data-flex-basis="480px"
+	
+></p>
+<h4 id="控制功能">控制功能
+</h4><p>控制air，高压继电器线圈的GND信号，什么时候接到gnd上</p>
+<p><img src="/p/fury/image-20250530150857055.png"
+	width="293"
+	height="285"
+	
+	loading="lazy"
+	
+		alt="控制三种继电器的通电的顺序"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="102"
+		data-flex-basis="246px"
+	
+></p>
+<h4 id="输出故障的信号">输出故障的信号
+</h4><p>电路中的<strong>AMS指示灯</strong></p>
+<p>若电池管理系统断开了安全回路，那么需要点亮座舱中AMS的指示灯，且必须是<strong>自锁的，直到错误状态被手动重置</strong></p>
+<p>BMS的信号必须是系统的关键信号</p>
+<blockquote>
+<p>如何控制信号灯呢——出现故障后，切断继电器，闭合K5输出低电平，对地导通。</p>
+<p>没有故障的时候k5是悬空的</p>
+</blockquote>
+<h4 id="系统关键信号">系统关键信号
+</h4><p>又叫scs</p>
+<p><strong>对于k5信号的scs信号保护</strong></p>
+<p><img src="/p/fury/image-20250530151609150.png"
+	width="1169"
+	height="353"
+	
+	loading="lazy"
+	
+		alt="示意图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="331"
+		data-flex-basis="794px"
+	
+></p>
+<p>前者是没有故障的时候，signal为低电平，后者是有故障的时候，为高电平</p>
+<p>开关下面的电阻为下拉电阻</p>
+<p>二极管正极的电阻为下拉电阻，是线路断开的时候</p>
+<h4 id="辅助触点信号的scs保护">辅助触点信号的scs保护
+</h4><p>任何的scs信号的单点故障</p>
+<h3 id="均衡的功能">均衡的功能
+</h3><p><img src="/p/fury/image-20250530153154718.png"
+	width="1188"
+	height="418"
+	
+	loading="lazy"
+	
+		alt="主动均衡和被动均衡"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="284"
+		data-flex-basis="682px"
+	
+></p>
+<p>主要使用左边的被动均衡</p>
+<h3 id="soc预测">soc预测
+</h3><p>电池还有多少的电</p>
+<p>电动车上的电量显示</p>
+<blockquote>
+<p>电池的开路电压</p>
+<p>开路电压和soc之间的关系曲线</p>
+<p>必须是开路电压的时候，电压才能真是反应剩余的电量，但是由于内阻的分压，会导致不准</p>
+<p><img src="/p/fury/image-20250530153748789.png"
+	width="783"
+	height="403"
+	
+	loading="lazy"
+	
+		alt="这是电压和电量一一对应的曲线"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="194"
+		data-flex-basis="466px"
+	
+></p>
+<p><strong>这个曲线实际上是电池的能斯特方程反应</strong></p>
+<p>但是会存在以下的问题：</p>
+<ol>
+<li>首先适用于电路，电池在稳定的情况下</li>
+<li>还要确认材料体系，温度</li>
+</ol>
+<p><strong>所以实际使用电压计算soc时，soc会不断震荡，因为电流消失后，又变为开路的电压</strong></p>
+</blockquote>
+<blockquote class="alert alert-note">
+    <p>所以真正的准确计算方式</p>
+<p>使用按时积分法，但是会产生电流积分不准的情况</p></blockquote>
+<p>所以会将两种东西配合起来使用，双管齐下</p>
+<blockquote>
+<p>所以来说，没有仪器能准确估计剩余的电量大小</p>
+</blockquote>
+<h2 id="安全回路原理图中不需要逻辑的部分">安全回路原理图中不需要逻辑的部分
+</h2><h3 id="lvms和tsms">LVMS和TSMS
+</h3><p>为低压系统的主开关和高压（驱动系统）系统的主开关</p>
+<p>是一种旋转式的总开关，非常难以无出发</p>
+<p><strong>位置：</strong></p>
+<p><img src="/p/fury/image-20250530155552062.png"
+	width="872"
+	height="478"
+	
+	loading="lazy"
+	
+		alt="所处的位置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="182"
+		data-flex-basis="437px"
+	
+></p>
+<p>LVMS是最开始的开关，不开时，都不能通电</p>
+<p>TSMS是上高压的最后的开关</p>
+<h3 id="惯性开关">惯性开关
+</h3><p>惯性开关是用来解决装车之后来断电的</p>
+<h3 id="制动超行程开关">制动超行程开关
+</h3><p>如果油管破损导致没有刹车油时，会使刹车的力很低</p>
+<p>当刹车踩到了不该到达的问题，就会碰到急停的开关</p>
+<h3 id="安全回路的组成">安全回路的组成
+</h3><ul>
+<li>有逻辑电路的
+<ul>
+<li>BMS</li>
+<li>IMD</li>
+<li>BPSD</li>
+</ul>
+</li>
+<li>没有逻辑电路的
+<ul>
+<li>惯性开关</li>
+<li>所有所需的互锁电路</li>
+<li>两个主开关（LVMS,TSMS）</li>
+<li>三个急停开关</li>
+<li>制动超行程开关(BOTS)</li>
+</ul>
+</li>
+</ul>
+<h2 id="整车控制器vcu">整车控制器VCU
+</h2><p>是车上最重要的软件控制</p>
+<h3 id="vcu是做什么的">VCU是做什么的
+</h3><p>在加速踏板的时候提到过VCU，接收电压等模拟量，将转换为数字量，给到电机控制器。<strong>起到模数转换的功能</strong></p>
+<h3 id="io口">io口
+</h3><p>一个读，一个法，实现一个的点位控制另一个的电位。实现开关控制灯亮之类的。</p>
+<h3 id="ad转换">AD转换
+</h3><p><img src="/p/fury/image-20250530160912738.png"
+	width="1174"
+	height="547"
+	
+	loading="lazy"
+	
+		alt="实现功能"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="214"
+		data-flex-basis="515px"
+	
+></p>
+<p>将连续的模拟信号转换成为离散的数字信号</p>
+<p>当滑动变阻器调节，实现电压超过某个值时，就灯亮</p>
+<h3 id="关于pwm">关于PWM
+</h3><p>如何使<strong>一辆车保持匀速行驶？</strong></p>
+<p>就是高频切换的io，将电压用想要的输出</p>
+<p>长长短短的开关开关，得到想要的亮度或者是电压</p>
+<h3 id="can通信">CAN通信
+</h3><p><img src="/p/fury/image-20250530161630241.png"
+	width="488"
+	height="134"
+	
+	loading="lazy"
+	
+		alt="通信"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="364"
+		data-flex-basis="874px"
+	
+></p>
+<p>就是四个单位通信，这里的线是很少的</p>
+<p>使用总线的原理？并联？（加一个通信单位的时候，只需要加上两根线）</p>
+<blockquote>
+<p>串口一次会传输8个字节(一个字节8位二进制，2为16进制)的数据，一个字节最大的值为255</p>
+<p>例如：FF FF FF FF FF FF FF FF</p>
+</blockquote>
+<h3 id="dbc矩阵的解析">DBC矩阵的解析
+</h3><p>通过一次8字节的数据，每个字节传输不同的电压值，最后需要进行解析，解析到对应的电压值等等</p>
+<h2 id="华海的vcu编程">华海的VCU编程
+</h2><p>写程序，总的整车控制器，但是是不需要一行行敲代码的，可以实现单片机的一些功能</p>
+<h3 id="simulink">simulink
+</h3><p>我们是在simulink中进行编写</p>
+<p>打开matlab中的simulink进行建模</p>
+<p>simulink可以进行电路仿真</p>
+<blockquote>
+<ol>
+<li>在上面的库浏览器中找到想要的电路元件</li>
+<li>voltage——电源；resistor——电阻；</li>
+<li>必须是同一个库里面的device才能相互连接</li>
+<li>我们现在仿真所用的库是Simscape</li>
+</ol>
+<p><img src="/p/fury/image-20250531140703634.png"
+	width="906"
+	height="506"
+	
+	loading="lazy"
+	
+		alt="图形"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="429px"
+	
+></p>
+<p><img src="/p/fury/image-20250531140216829.png"
+	width="846"
+	height="736"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="114"
+		data-flex-basis="275px"
+	
+></p>
+<ol start="5">
+<li>点击scope（示波器），进行测量</li>
+</ol>
+</blockquote>
+<h4 id="实例实现预充电电路的仿真">实例：实现预充电电路的仿真
+</h4><p>在上面的库中</p>
+<h2 id="dbc">DBC
+</h2><p><strong>学会DBC解析</strong>，非常重要的</p>
+<h3 id="一帧can报文的组成">一帧can报文的组成
+</h3><ul>
+<li>标准帧</li>
+<li>扩展帧</li>
+</ul>
+<p>一帧中会包含由8个字节，但是每个字节代表的含义是人为规定的</p>
+<p>所以需要将数据解码为人能看懂的东西，或者将人看懂的东西转变为数据</p>
+<h3 id="dbc的解析">DBC的解析
+</h3><p>byte（字节）</p>
+<p>bit（二进制位数，是最小的单位）</p>
+<p>一个字节由8位二进制组成</p>
+<p><strong>一般使用矩阵的形式进行解析</strong></p>
+<h4 id="练习">练习
+</h4><p>答题抢车号的方式进行<strong>车号的抢夺</strong></p>
+<p><img src="/p/fury/image-20250530164420302.png"
+	width="682"
+	height="407"
+	
+	loading="lazy"
+	
+		alt="题目"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="167"
+		data-flex-basis="402px"
+	
+></p>
+<p>ID和can报文数据</p>
+<p><strong>ID的内容是0x277</strong>，can报文的内容是5Y C4 60 86 AF 11 9X</p>
+<p>先收到的数字是排在左边的，符合正常的认知的。</p>
+<ol>
+<li>先做表格：（下面的这张表格为对照的表格）图中的数字为对应的（相当于一个标识）<img src="/p/fury/image-20250530164738099.png"
+	width="531"
+	height="404"
+	
+	loading="lazy"
+	
+		alt="如图所示的"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="131"
+		data-flex-basis="315px"
+	
+></li>
+</ol>
+<p>​	bit从右往左，byte从上往下</p>
+<ol start="2">
+<li>
+<p>intel的格式是往下数的，信号的高位放在高字节的高位，信号的低位放在低字节的低位上（也就是从右上往左下越来越大，越是高位），就是按照表中的数就行</p>
+</li>
+<li>
+<p>motorola模式</p>
+</li>
+<li>
+<p>从数据的高位连到数据的低位</p>
+<p>100 1ABC D000</p>
+<p>100 1111 1000</p>
+<p>可以看出，同一行是从左往右的，最开始的为低位，最后的为高位</p>
+</li>
+</ol>
+<blockquote>
+<p>名词的解释：</p>
+<ol>
+<li>start bit:开始起始的位置，在上面黄色的表中</li>
+<li>length bit：持续的长度</li>
+<li>factor：相当于比例尺，将二进制得到的数字乘以factor</li>
+<li>offset：将乘以后得数字加上这个数字，为实际的物理参数</li>
+</ol>
+</blockquote>
+<ol start="5">
+<li>有些数据还是得自己算的，但是有的数据可以由软件来求解的，不过最后还是要自己来从中获取的（DBC）</li>
+</ol>
 <h2 id="电气组培训">电气组培训
 </h2><p>参考资料：大学生方程式，当年赛季的规则，技术手册</p>
+<p>现在要进行的就是我们现在的新的</p>
 <h3 id="规则">规则
 </h3><p><strong>电车规则</strong></p>
+<p>我们现在</p>
 
 </section>
 

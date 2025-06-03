@@ -160,6 +160,83 @@ $N(t+h)-N(t)$的分布仅依赖于时间间隔$h$ ,与起始时刻$t$无关 )
 &lt;p&gt;设${N(t)}$是强度为$\lambda$的泊松过程,若每个事件独立地以概率$p$为类型1,以$1-p$为类型2,令${N_{1}(t)}$和${N_{2}(t)}$分别表示到$t$为止类型1和类型2发生的个数,则${N_{1}(t)}$和${N_{2}(t)}$分别是强度为$\lambda p$和$\lambda(1-p)$的泊松过程,且&lt;strong&gt;相互独立&lt;/strong&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;两个窗口接收服务&lt;/p&gt;
+&lt;h4 id=&#34;非齐次的泊松过程&#34;&gt;非齐次的泊松过程
+&lt;/h4&gt;&lt;p&gt;计数过程$\left{N(t)\right}$称作强度为$\lambda(t)$的非齐次泊松过程，如果&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$N(0)=0$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$\textbf{ 独 立 增 量 }$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P\left { N( t+ h) - N( t) = 1\right } = \overbrace{\lambda ( t) }h+ o( h)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$P{N(t+h)-N(t)\geq2}=o(h)$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上述是非齐次的泊松过程的定义&lt;/p&gt;
+$$
+\text{对任意的}t&gt;s\geq0,N(t)-N(s)\sim\pi(\int_s^t\lambda(u)du)
+$$&lt;p&gt;
+服从的&lt;strong&gt;强度是积分的形式&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;布朗运动&#34;&gt;布朗运动
+&lt;/h3&gt;$$
+X(t)\sim N(0,\sigma^2t)
+$$$$
+0\leq s&lt;t,X(t)-X(s)\sim N(0,\sigma^2(t-s))
+$$&lt;p&gt;
+这说明了是&lt;strong&gt;平稳独立增量过程&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;后续只讨论$\sigma$=1的标准的布朗运动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;性质：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$X(0)=0$&lt;/li&gt;
+&lt;li&gt;独立增量&lt;/li&gt;
+&lt;li&gt;对$\forall t&amp;gt;s\geq0$,
+$X(t)-X(s)\sim N(0,\sigma^{2}(t-s))$&lt;/li&gt;
+&lt;li&gt;样本轨道连续&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;alert alert-tip&#34;&gt;
+    &lt;p&gt;解读：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;是齐次的独立增量过程&lt;/li&gt;
+&lt;li&gt;是正太过程，完全由均值函数和自协方差函数确定&lt;/li&gt;
+&lt;li&gt;数字特征：&lt;img src=&#34;https://Brent050830.site/p/%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/image-20250529223829533.png&#34;
+	width=&#34;952&#34;
+	height=&#34;379&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数字特征&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;251&#34;
+		data-flex-basis=&#34;602px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;其他的性质&#34;&gt;其他的性质
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;样本轨道连续的随机过程是布朗运动当且仅当它是正态过程$E(B(t))=0且E[B(t)B(s)]=t\wedge s.$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;有markov性&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自相似性：$\textbf{固 定 }a\neq 0, { \frac 1aB( a^2t) ; t\geq 0}$是布朗运动&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+$$
+   \text{令}\tilde{B}(t)=\begin{cases}tB(1/t),&amp;t&gt;0\\\quad0,&amp;t=0&amp;&amp;\end{cases},\text{则}\{\tilde{B}(t);t\geq0\}\text{是布朗过程}
+   $$&lt;/li&gt;
+&lt;/ol&gt;
 </description>
         </item>
         

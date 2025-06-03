@@ -509,6 +509,12 @@
         <li><a href="#泊松过程">泊松过程</a>
           <ol>
             <li><a href="#合成与分解">合成与分解</a></li>
+            <li><a href="#非齐次的泊松过程">非齐次的泊松过程</a></li>
+          </ol>
+        </li>
+        <li><a href="#布朗运动">布朗运动</a>
+          <ol>
+            <li><a href="#其他的性质">其他的性质</a></li>
           </ol>
         </li>
       </ol>
@@ -751,6 +757,83 @@ $N(t+h)-N(t)$的分布仅依赖于时间间隔$h$ ,与起始时刻$t$无关 )
 <p>设${N(t)}$是强度为$\lambda$的泊松过程,若每个事件独立地以概率$p$为类型1,以$1-p$为类型2,令${N_{1}(t)}$和${N_{2}(t)}$分别表示到$t$为止类型1和类型2发生的个数,则${N_{1}(t)}$和${N_{2}(t)}$分别是强度为$\lambda p$和$\lambda(1-p)$的泊松过程,且<strong>相互独立</strong>.</p>
 </blockquote>
 <p>两个窗口接收服务</p>
+<h4 id="非齐次的泊松过程">非齐次的泊松过程
+</h4><p>计数过程$\left{N(t)\right}$称作强度为$\lambda(t)$的非齐次泊松过程，如果</p>
+<blockquote>
+<ol>
+<li>
+<p>$N(0)=0$</p>
+</li>
+<li>
+<p>$\textbf{ 独 立 增 量 }$</p>
+</li>
+<li>
+<p>$P\left { N( t+ h) - N( t) = 1\right } = \overbrace{\lambda ( t) }h+ o( h)$</p>
+</li>
+<li>
+<p>$P{N(t+h)-N(t)\geq2}=o(h)$</p>
+</li>
+</ol>
+</blockquote>
+<p>上述是非齐次的泊松过程的定义</p>
+$$
+\text{对任意的}t>s\geq0,N(t)-N(s)\sim\pi(\int_s^t\lambda(u)du)
+$$<p>
+服从的<strong>强度是积分的形式</strong></p>
+<h3 id="布朗运动">布朗运动
+</h3>$$
+X(t)\sim N(0,\sigma^2t)
+$$$$
+0\leq s<t,X(t)-X(s)\sim N(0,\sigma^2(t-s))
+$$<p>
+这说明了是<strong>平稳独立增量过程</strong></p>
+<p>后续只讨论$\sigma$=1的标准的布朗运动</p>
+<blockquote>
+<p><strong>性质：</strong></p>
+<ol>
+<li>$X(0)=0$</li>
+<li>独立增量</li>
+<li>对$\forall t&gt;s\geq0$,
+$X(t)-X(s)\sim N(0,\sigma^{2}(t-s))$</li>
+<li>样本轨道连续</li>
+</ol>
+</blockquote>
+<blockquote class="alert alert-tip">
+    <p>解读：</p>
+<ol>
+<li>是齐次的独立增量过程</li>
+<li>是正太过程，完全由均值函数和自协方差函数确定</li>
+<li>数字特征：<img src="/p/%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/image-20250529223829533.png"
+	width="952"
+	height="379"
+	
+	loading="lazy"
+	
+		alt="数字特征"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="251"
+		data-flex-basis="602px"
+	
+></li>
+</ol></blockquote>
+<h4 id="其他的性质">其他的性质
+</h4><ol>
+<li>
+<p>样本轨道连续的随机过程是布朗运动当且仅当它是正态过程$E(B(t))=0且E[B(t)B(s)]=t\wedge s.$</p>
+</li>
+<li>
+<p>有markov性</p>
+</li>
+<li>
+<p>自相似性：$\textbf{固 定 }a\neq 0, { \frac 1aB( a^2t) ; t\geq 0}$是布朗运动</p>
+</li>
+<li>
+$$
+   \text{令}\tilde{B}(t)=\begin{cases}tB(1/t),&t>0\\\quad0,&t=0&&\end{cases},\text{则}\{\tilde{B}(t);t\geq0\}\text{是布朗过程}
+   $$</li>
+</ol>
 
 </section>
 

@@ -666,6 +666,63 @@
         <li><a href="#多级压缩与中间冷却">多级压缩与中间冷却</a></li>
       </ol>
     </li>
+    <li><a href="#蒸气动力循环">蒸气动力循环</a>
+      <ol>
+        <li><a href="#概述">概述</a></li>
+        <li><a href="#基础知识">基础知识</a>
+          <ol>
+            <li><a href="#热力学第一定律">热力学第一定律</a></li>
+          </ol>
+        </li>
+        <li><a href="#蒸气卡诺循环">蒸气卡诺循环</a></li>
+        <li><a href="#朗肯循环">朗肯循环</a>
+          <ol>
+            <li><a href="#朗肯循环的优缺点">朗肯循环的优缺点</a></li>
+          </ol>
+        </li>
+        <li><a href="#蒸气参数的影响">蒸气参数的影响</a></li>
+        <li><a href="#蒸气的再热循环">蒸气的再热循环</a>
+          <ol>
+            <li><a href="#再热循环的分析">再热循环的分析</a></li>
+          </ol>
+        </li>
+        <li><a href="#回热循环">回热循环</a>
+          <ol>
+            <li><a href="#分级抽气回热循环">分级抽气回热循环</a></li>
+            <li><a href="#回热循环的计算">回热循环的计算</a></li>
+            <li><a href="#循环计算">循环计算：</a></li>
+          </ol>
+        </li>
+        <li><a href="#做题">做题：</a></li>
+      </ol>
+    </li>
+    <li><a href="#气体动力循环">气体动力循环</a>
+      <ol>
+        <li><a href="#勃莱顿循环">勃莱顿循环</a></li>
+        <li><a href="#不可逆损失时的分析">不可逆损失时的分析</a></li>
+        <li><a href="#具有回热的循环">具有回热的循环</a></li>
+        <li><a href="#内燃机的理想循环">内燃机的理想循环</a>
+          <ol>
+            <li><a href="#循环形式">循环形式</a></li>
+            <li><a href="#循环特性的参数">循环特性的参数：</a></li>
+            <li><a href="#总结比较">总结比较</a></li>
+          </ol>
+        </li>
+        <li><a href="#喷气式发动机">喷气式发动机</a></li>
+        <li><a href="#做题-1">做题：</a></li>
+      </ol>
+    </li>
+    <li><a href="#制冷循环">制冷循环</a>
+      <ol>
+        <li><a href="#制冷机与热泵">制冷机与热泵</a></li>
+        <li><a href="#空气制冷循环">空气制冷循环</a></li>
+        <li><a href="#蒸气压缩制冷循环">蒸气压缩制冷循环</a></li>
+        <li><a href="#蒸汽喷射制冷循环">蒸汽喷射制冷循环</a></li>
+        <li><a href="#吸收式制冷">吸收式制冷</a></li>
+        <li><a href="#热泵供热循环">热泵供热循环</a></li>
+        <li><a href="#做题-2">做题：</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -738,7 +795,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 20 分钟
+                    阅读时长: 31 分钟
                 </time>
             </div>
         
@@ -2384,6 +2441,1085 @@ $$$$
 W_{1,s}=\frac{\gamma}{\gamma-1}p_1V_1[2-\left(\frac{p_2}{p_1}\right)^{\frac{\gamma-1}{\gamma}}-\left(\frac{p_4}{p_2}\right)^{\frac{\gamma-1}{\gamma}}]
 $$<p>
 求导得出的最佳的压强就是上述的式子$P_2$</p>
+<h2 id="蒸气动力循环">蒸气动力循环
+</h2><h3 id="概述">概述
+</h3><h3 id="基础知识">基础知识
+</h3><h4 id="热力学第一定律">热力学第一定律
+</h4><p>$q=w$</p>
+<p>其中  $q=\oint\boldsymbol{\delta}\boldsymbol{q}=\boldsymbol{q}_1-\boldsymbol{q}_2,\boldsymbol{w}=\oint\boldsymbol{\delta}\boldsymbol{w}=\boldsymbol{w}_T-\boldsymbol{w}_P$</p>
+$$
+\eta_t=\frac w{q_1}=\frac{q_1-q_2}{q_1}=1-\frac{q_2}{q_1}
+$$<p>
+<strong>卡诺循环效率</strong>为   $\eta_t=1-\frac{T_2}{T_1}$</p>
+<blockquote>
+<p>其中的q和w分别是循环的净热量和净功量</p>
+<p>$q_1,q_2$为循环吸热和放热的绝对值；</p>
+<p>$w_T,w_p$为循环的做功量和耗功量的绝对值</p>
+</blockquote>
+<h3 id="蒸气卡诺循环">蒸气卡诺循环
+</h3><p>在一定的温度范围内，卡诺循环的热效率最高</p>
+<p>采用湿蒸气作为卡诺循环的工质，由于水蒸气在湿蒸气的范围内压强不变时，温度不会发生变化，但是在包围的曲线外会发生变化<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527213054373.png"
+	width="1189"
+	height="360"
+	
+	loading="lazy"
+	
+		alt="卡诺循环"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="330"
+		data-flex-basis="792px"
+	
+></p>
+<ul>
+<li>汽水混合物的压缩需要很大的压缩功，对压缩机的工作不利</li>
+<li>水的临界温度低，循环的热效率不高</li>
+</ul>
+<p><strong>所以将卡诺循环改良称为朗肯循环</strong></p>
+<h3 id="朗肯循环">朗肯循环
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527213311810.png"
+	width="699"
+	height="594"
+	
+	loading="lazy"
+	
+		alt="朗肯循环"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="117"
+		data-flex-basis="282px"
+	
+></p>
+<p><strong>最简单的蒸气动力循环</strong></p>
+<p>从1开始：</p>
+<p><strong>绝热膨胀——定压放热——绝热压缩——定压吸热</strong></p>
+<blockquote>
+<p>1.热效率</p>
+</blockquote>
+$$
+\eta_t=\frac{w}{q_1}=\frac{w_T-w_P}{q_1}=\frac{(h_1-h_2)-(h_4-h_3)}{h_1-h_4}
+$$$$
+w_P=\begin{vmatrix}\int vdp\end{vmatrix}\approx v\Delta p=v_3(p_4-p_3)
+$$<p>
+将泵功简化（使用水的不可压缩性）</p>
+$$
+\eta_t\approx\frac{h_1-h_2}{h_1-h_4}
+$$<ol start="2">
+<li>
+$$
+   r_w=\frac{w}{w_T}=\frac{w_T-w_P}{w_T}=\frac{(h_1-h_2)-(h_4-h_3)}{h_1-h_2}
+   $$</li>
+<li>
+$$
+   d=\frac{3600}{w}\quad kg/(kW\cdot h)
+   $$</li>
+<li>
+<p>相对内效率：考虑汽轮机内的摩擦，会产生熵增</p>
+</li>
+</ol>
+$$
+\eta_T=\frac{w_T^{\prime}}{w_T}=\frac{h_1-h_{2^{\prime}}}{h_1-h_2}
+$$<h4 id="朗肯循环的优缺点">朗肯循环的优缺点
+</h4><ul>
+<li>结构简单，但是热效率低</li>
+<li>但是，都是在其基础上改进的</li>
+</ul>
+<h3 id="蒸气参数的影响">蒸气参数的影响
+</h3><blockquote>
+<ol>
+<li>提高平均的吸热温度，降低平均的放热温度</li>
+<li>提高初始温度有利于提高循环热效率</li>
+<li>提高初始压强也有利于</li>
+<li>降低终压有利于提高循环热效率</li>
+</ol>
+</blockquote>
+<h3 id="蒸气的再热循环">蒸气的再热循环
+</h3><p>改变循环参数存在矛盾的现象，所以有蒸气的中间再热</p>
+<p>实际上就是1~2过程中间进行再热，定压的加热，使T-s图中的曲线整体右移</p>
+<p>再热循环的压力的选择</p>
+<p>再热压力、再热次数的选择</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527220921630.png"
+	width="1218"
+	height="494"
+	
+	loading="lazy"
+	
+		alt="再热"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="246"
+		data-flex-basis="591px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527221003030.png"
+	width="887"
+	height="65"
+	
+	loading="lazy"
+	
+		alt="流程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1364"
+		data-flex-basis="3275px"
+	
+></p>
+<p>但是热效率真的提高了吗</p>
+$$
+\eta_{t,1}=\frac{w}{q_1}=\frac{(h_1-h_B)+(h_A-h_2)}{(h_1-h_4)+(h_A-h_B)}
+$$<p>
+<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527221126403.png"
+	width="1036"
+	height="556"
+	
+	loading="lazy"
+	
+		alt="循环图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="447px"
+	
+></p>
+<p>再热的循环热效率不一定提高，除非再热的压力选择合适$p_A$，此时温度差$T_{B-A}&gt;T_{4-1}$</p>
+<p>选择合适的<strong>再热压力</strong>（图中的右侧的曲线为等压线）使得沿着B-A的线升到同样的温度时，温度的差值大</p>
+<h4 id="再热循环的分析">再热循环的分析
+</h4><ul>
+<li>再热压力的选择：
+<ul>
+<li>不能过高，使得吸热量减小，减弱热效率的提升</li>
+<li>最佳的中间再热压力能同时提高泛汽干度和循环热效率</li>
+<li>一般$p_A=20% - 30% p_1$（蒸气的初始压力）</li>
+</ul>
+</li>
+</ul>
+<h3 id="回热循环">回热循环
+</h3><p>改进朗肯循环——从4-5段入手，提高平均的吸热温度</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250527235615458.png"
+	width="1269"
+	height="360"
+	
+	loading="lazy"
+	
+		alt="如图所示朗肯循环"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="352"
+		data-flex-basis="846px"
+	
+></p>
+<p>回热就是利用在汽轮机中做过功的蒸气来加热锅炉给水，减少工质在低温液态段从锅炉的吸热，从而提高平均的吸热温度，使整个循环的热效率提高。</p>
+<blockquote>
+<p>简而言之就是，将<strong>定压放热的和定压吸热的</strong>结合</p>
+<p>使用高温的1给低温的4加热？</p>
+</blockquote>
+<h4 id="分级抽气回热循环">分级抽气回热循环
+</h4><ul>
+<li>抽气回热循环：分级（不同的压力），从汽轮机中抽出部分<strong>已作过一些功的蒸汽</strong>，在回热加热器中<strong>加热给水</strong>，从而减少了低温水从热源的吸热。</li>
+<li>回热加热器：是一种换热器，用抽汽来加热给水。可以视为抽气的定压放热和给水的定压吸热过程
+<ul>
+<li>
+<p>表面式<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602165012109.png"
+	width="354"
+	height="378"
+	
+	loading="lazy"
+	
+		alt="有如下的计算公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="93"
+		data-flex-basis="224px"
+	
+></p>
+</li>
+<li>
+<p>混合式</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602165043752.png"
+	width="412"
+	height="367"
+	
+	loading="lazy"
+	
+		alt="计算公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="112"
+		data-flex-basis="269px"
+	
+></p>
+</li>
+<li>
+<p>流量系数</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="回热循环的计算">回热循环的计算
+</h4><ul>
+<li>
+<p>两级抽气回热循环的过程：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250601174351300.png"
+	width="856"
+	height="380"
+	
+	loading="lazy"
+	
+		alt="图示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="225"
+		data-flex-basis="540px"
+	
+></p>
+<ul>
+<li>1状态下的蒸汽进入汽轮机中进行做功</li>
+<li>压力降至A点时，抽出部分的蒸气引入一级的回热</li>
+<li>其余的蒸气继续做功，至压力为B时再次引出蒸气进入第二级回热器</li>
+<li>剩余的蒸气继续膨胀至冷凝器中2</li>
+<li>冷凝器中变为3，经过水泵升压至二级回热器中与之前的一部分混合加热，升压至6之后与后与一级回热器混合加热</li>
+<li>经过水泵升压后到达8送进锅炉中，从外部吸热变为蒸气</li>
+</ul>
+</li>
+<li>
+<p>给水温度，图中<strong>7点的温度</strong></p>
+<ul>
+<li>是回热循环中的重要参数，与循环参数、回热级数等有关</li>
+<li>采取等温升原则（将7点（回热的最高点的温度）和3点（回热的最低温度）作差，均分即可）</li>
+</ul>
+</li>
+<li>
+<p>热效率分析：<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250601181051976.png"
+	width="1238"
+	height="687"
+	
+	loading="lazy"
+	
+		alt="分析"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="180"
+		data-flex-basis="432px"
+	
+></p>
+</li>
+</ul>
+<h4 id="循环计算">循环计算：
+</h4><ul>
+<li>计算步骤
+<ul>
+<li>确定循环的级数和给水温度</li>
+<li>各级的回热器给水温升的分配和抽气的参数</li>
+<li>利用各级回热器之间的质量平衡和能量平衡求出各级抽气参数</li>
+</ul>
+</li>
+</ul>
+<h3 id="做题">做题：
+</h3><p>是前几章内容的一个总和</p>
+<p>很多的东西都要靠着查表来看（水蒸气的表）</p>
+<p>注意<strong>公式的适用性</strong>，非理想气体很多的公式是不能用的，会用到理想气体混合物和湿空气里面的知识。</p>
+<blockquote>
+<ul>
+<li>
+<p>求解<strong>朗肯循环</strong>：</p>
+<ul>
+<li>
+<p>循环中有两个等熵过程，两个等压的过程。1：过饱和蒸气；2：湿蒸气；3：饱和水；4：水</p>
+</li>
+<li>
+<p>所以，在求解的过程中，1,2,3,可以使用湿蒸气的那章计算，查表</p>
+</li>
+<li>
+<p>而4为水，可以3-4看做是等熵和等体积的过程，但是不能使用理想气体进行计算</p>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>水泵是对水做功，温度变高，压强变高。汽轮机是对外做功（主要的作用）</li>
+<li>但是水部分的温度还是不会算！</li>
+</ol>
+<ul>
+<li>
+<p>但是最后的回热的循环哪里还是不太会</p>
+<ul>
+<li>
+<p>现在会了</p>
+</li>
+<li>
+<p>首先计算每级回热的温度（即在回热器中的温度）</p>
+</li>
+<li>
+<p>再使用能量守恒的方程，确定每一级的回热器离开的能量等于进入的能量，建立n个方程（n级回热），解出来答案即可</p>
+</li>
+<li>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602172349481.png"
+	width="656"
+	height="275"
+	
+	loading="lazy"
+	
+		alt="图示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="238"
+		data-flex-basis="572px"
+	
+></p>
+</li>
+<li>
+<p>例如以上的图中，流入二级(B)的能量为右侧高温的B点的B，和左边低温的3，流出的为两者混合之后的气体，所以能量守恒的式子为</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602172557046.png"
+	width="673"
+	height="137"
+	
+	loading="lazy"
+	
+		alt="式子"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="491"
+		data-flex-basis="1178px"
+	
+></p>
+</li>
+<li>
+<p>循环的功量为，基本上只看右边，分一下过程即可（看做多个循环之和）</p>
+<ul>
+<li>
+<p>1-A全部在做工，焓的差值为功</p>
+</li>
+<li>
+<p>A-B，只有剩下的在做工，焓的差值乘以系数为功</p>
+</li>
+<li>
+<p>B-2剩下的做功，同样</p>
+</li>
+<li>
+$$
+>       \omega_{net}=h_1-h_A+(1-\alpha_A)(h_A-h_B)+(1-\alpha_A-\alpha_B)(h_B-h_2)
+>       $$</li>
+<li>
+<p>只有7-1在吸热，焓差为吸热量</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote class="alert alert-tip">
+    <p><strong>公式的适用性</strong>：</p>
+<p><strong>适用于理想气体的：</strong></p>
+<ol>
+<li>理想气体状态方程
+$pV = nRT$，其中$p$为压强，$V$为体积，$n$为物质的量，$T$为热力学温度，$R$为摩尔气体常数。
+该方程描述理想气体在平衡态时，压强、体积、物质的量和温度间的关系。
+变形公式如$p = \frac{nRT}{V}$、$V = \frac{nRT}{p}$等。在一些特殊过程中还有不同形式：</li>
+</ol>
+<ul>
+<li>等容过程：$\frac{p_1}{T_1} = \frac{p_2}{T_2}$（比容$v$为常数，即$V$不变）。</li>
+<li>等压过程：$\frac{V_1}{T_1} = \frac{V_2}{T_2}$（压强$p$为常数）。</li>
+<li>等温过程：$p_1V_1 = p_2V_2$（温度$T$为常数）。</li>
+</ul>
+<ol start="2">
+<li>
+<p>理想气体内能公式：$U = nC_{V,m}T$（$C_{V,m}$为摩尔定容热容），理想气体内能只与温度和物质的量有关。</p>
+</li>
+<li>
+<p>理想气体焓公式：$H = nC_{p,m}T$（$C_{p,m}$为摩尔定压热容）。</p>
+</li>
+<li>
+<p>理想气体比热容关系：$C_{p,m} - C_{V,m} = R$。</p>
+</li>
+<li>
+<p>气体分压定律：$p = p_1 + p_2 + \cdots + p_n$（混合气体总压等于各组分气体分压之和，且$p_i = \frac{n_i}{n}p$，$p_i$为组分$i$的分压，$n_i$为组分$i$的物质的量，$n$为总物质的量）。</p>
+</li>
+</ol>
+<p><strong>适用性更强的：</strong></p>
+<ol>
+<li>
+<p>热力学第一定律：$\Delta U = Q - W$，其中 $\Delta U$ 是系统内能变化，$Q$ 是系统吸收的热量，$W$ 是系统对外做的功。适用于任何热力学系统的能量转换关系。</p>
+</li>
+<li>
+<p>焓的定义式：$H = U + pV$，适用于任何处于平衡态的物质体系，用于描述体系的焓与内能、压强和体积的关系。</p>
+</li>
+<li>
+<p>熵变定义式（克劳修斯不等式）：$dS \geq \frac{\delta Q}{T}$（等号适用于可逆过程），$S$ 为熵，$\delta Q$ 为微小热量变化，$T$ 为热力学温度，描述任何系统的熵变与热量传递的关系。</p>
+</li>
+<li>
+<p>物质的量相关基本换算公式
+○ $n = \frac{m}{M}$（$n$ 为物质的量，$m$ 为质量，$M$ 为摩尔质量）。
+○ $n = \frac{N}{N_A}$（$N$ 为微粒数，$N_A$ 为阿伏伽德罗常数），适用于各种物质的量计算。</p>
+</li>
+<li>
+<p>反应热与键能关系：$\Delta H = \sum E_{\text{反应物键能}} - \sum E_{\text{生成物键能}}$，用于计算化学反应的焓变，适用于各种化学反应体系。</p>
+</li>
+</ol></blockquote>
+<h2 id="气体动力循环">气体动力循环
+</h2><h3 id="勃莱顿循环">勃莱顿循环
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530084213501.png"
+	width="503"
+	height="283"
+	
+	loading="lazy"
+	
+		alt="过程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<p>从1开始：</p>
+<p>定熵压缩——定压加热——定熵膨胀——定压放热</p>
+<ul>
+<li>引入循环增压比：
+$$
+  \pi=\frac{p_2}{p_1}
+  $$</li>
+</ul>
+$$
+\eta_t=1-\frac{1}{\pi^{\frac{\gamma-1}{\gamma}}}
+$$<p>
+循环热效率完全取决于循环增压比，因为循环增压比确定了循环吸热与放热的平均温度之比</p>
+<p><strong>循环的净功量</strong></p>
+$$
+w_T=h_3-h_4=c_pT_3(1-\frac{T_4}{T_3})=c_pT_3(1-\frac{1}{\pi^{\frac{\gamma-1}{\gamma}}})\\w_C=h_2-h_1=c_pT_1(\frac{T_2}{T_1}-1)=c_pT_1(\pi^{\frac{\gamma-1}{\gamma}}-1)
+$$<blockquote>
+<p>最后得到的循环的净功量为：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530084920859.png"
+	width="1248"
+	height="165"
+	
+	loading="lazy"
+	
+		alt="净功量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="756"
+		data-flex-basis="1815px"
+	
+></p>
+<p>完全取决于循环的增压比，且存在最佳的增压比使其达到最大值</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530085209345.png"
+	width="423"
+	height="159"
+	
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="266"
+		data-flex-basis="638px"
+	
+></p>
+</blockquote>
+<ul>
+<li>引入循环的增温比：$\tau=\frac{T_3}{T_1}$，则上述的最佳增压比可以由增温比得出</li>
+<li>T3上限收到材料的影响，T1下限受温度的影响</li>
+</ul>
+<h3 id="不可逆损失时的分析">不可逆损失时的分析
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530085842191.png"
+	width="525"
+	height="472"
+	
+	loading="lazy"
+	
+		alt="不可逆"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="111"
+		data-flex-basis="266px"
+	
+></p>
+<ul>
+<li>
+<p>燃气轮机和压气机中存在摩擦损失；循环与热源和环境之间温差传热</p>
+<ul>
+<li>
+$$
+    \eta_T=\frac{h_3-h_4}{h_3-h_{4_t}}=\frac{T_3-T_4}{T_3-T_{4_t}}
+    $$</li>
+<li>
+$$
+    \eta_{\mathrm{C,s}}=\frac{h_{2_t}-h_1}{h_2-h_1}=\frac{T_{2_t}-T_1}{T_2-T_1}
+    $$</li>
+<li>
+$$
+    h_2=h_1+\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
+    $$</li>
+<li>
+$$
+    q_1=h_3-h_2=h_3-h_1-\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
+    $$</li>
+<li>
+<p>循环的净功量：</p>
+</li>
+</ul>
+$$
+  w=(h_3-h_4)-(h_2-h_1)=(h_3-h_{4_t})\eta_T-\frac{(h_2-h_1)}{\eta_{C,s}}
+  $$<p><strong>总的循环效率：</strong></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530090237055.png"
+	width="481"
+	height="243"
+	
+	loading="lazy"
+	
+		alt="循环热效率"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="197"
+		data-flex-basis="475px"
+	
+></p>
+</li>
+<li>
+<p>燃气轮机的摩擦损失使循环的功量减少，热效率降低</p>
+</li>
+<li>
+<p>压气机的摩擦哦使循环功量和吸热量减少相同的数量，总的效果也使循环的热效率降低。</p>
+</li>
+</ul>
+<h3 id="具有回热的循环">具有回热的循环
+</h3><ul>
+<li>同时提高循环吸热的平均温度和降低放热的平均温度，提高循环的热效率</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530090650269.png"
+	width="1113"
+	height="508"
+	
+	loading="lazy"
+	
+		alt="加入回热"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="219"
+		data-flex-basis="525px"
+	
+></p>
+<ul>
+<li>
+<p>极限回热：回热器的燃气被冷却到的最低的温度T2，压缩空气被预热的最高的温度T4</p>
+</li>
+<li>
+$$
+  \sigma=\frac{h_7-h_2}{h_5-h_2}=\frac{T_7-T_2}{T_5-T_2}
+  $$<p>
+<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530091227688.png"
+	width="460"
+	height="416"
+	
+	loading="lazy"
+	
+		alt="回热度的衡量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="110"
+		data-flex-basis="265px"
+	
+></p>
+</li>
+<li>
+<p>多级压缩（绝热压缩），中间冷却（等压冷却）；多级膨胀，中间<strong>再热</strong></p>
+</li>
+<li>
+<p>当上述的分级趋向于无穷大时，循环与相同温度范围内的卡诺循环有相同的热效率，称为<strong>埃尔逊循环</strong></p>
+</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530091841154.png"
+	width="385"
+	height="337"
+	
+	loading="lazy"
+	
+		alt="如图，多级的"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="114"
+		data-flex-basis="274px"
+	
+></p>
+<p>上下的锯齿状的就是多级的，每一个齿代表一级，无穷多时，将变成平行S轴的</p>
+<h3 id="内燃机的理想循环">内燃机的理想循环
+</h3><ul>
+<li>工作循环组成：吸气、压缩、膨胀、排气</li>
+</ul>
+<p>四冲程发动机</p>
+<h4 id="循环形式">循环形式
+</h4><ul>
+<li><strong>压燃式内燃机</strong>：为混合加热循环</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530092827251.png"
+	width="1177"
+	height="421"
+	
+	loading="lazy"
+	
+		alt="过程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="279"
+		data-flex-basis="670px"
+	
+></p>
+<ul>
+<li>**点燃式内燃机：**定容加热循环</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530093100697.png"
+	width="1180"
+	height="392"
+	
+	loading="lazy"
+	
+		alt="点燃"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="301"
+		data-flex-basis="722px"
+	
+></p>
+<ul>
+<li>定压加热循环：</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530093137959.png"
+	width="1178"
+	height="633"
+	
+	loading="lazy"
+	
+		alt="如图所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="446px"
+	
+></p>
+<h4 id="循环特性的参数">循环特性的参数：
+</h4><p>压缩比：$\varepsilon = \frac {\nu _1}{\nu _2}$      定容升压比：$\lambda = \frac {p_3}{p_2}$       定压预胀比：$\rho=\frac{v_4}{v_3}$</p>
+$$
+\begin{aligned}\boldsymbol{\eta}_{t}&=1-\frac{T_1(\lambda\rho^\gamma-1)}{T_1\varepsilon^{\gamma-1}(\lambda-1)+\gamma T_1\lambda\varepsilon^{\gamma-1}(\rho-1)}\\&=1-\frac{\lambda\rho^\gamma-1}{\varepsilon^{\gamma-1}[(\lambda-1)+\gamma\lambda(\rho-1)]}\end{aligned}
+$$<p>
+<strong>由上式可知：混合加热循环的热效率随ε、λ的增大而增大，随 ρ
+的减小而增大</strong></p>
+<ul>
+<li>
+$$
+  \eta_t=1-\frac{1}{\pi^{\frac{\gamma-1}{\gamma}}}\Longleftrightarrow\eta_{t,V}=1-\frac{1}{\varepsilon^{\gamma-1}}
+  $$</li>
+<li>
+$$
+  \eta_{t,p}=1-\frac{1}{\varepsilon^{\gamma-1}}\frac{\rho^\gamma-1}{\gamma(\rho-1)}
+  $$</li>
+</ul>
+<blockquote>
+<p>三者的比较：</p>
+<ol>
+<li><strong>压缩比和吸热量相同时</strong>的</li>
+</ol>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530095950721.png"
+	width="1111"
+	height="638"
+	
+	loading="lazy"
+	
+		alt="比较"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="417px"
+	
+></p>
+<p>得到的效率的比较：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530100033309.png"
+	width="400"
+	height="103"
+	
+	loading="lazy"
+	
+		alt="比较"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="388"
+		data-flex-basis="932px"
+	
+></p>
+<ol start="2">
+<li><strong>循环的最高压力和最高的温度相同</strong>时</li>
+</ol>
+<p><strong>效率的大小正好相反</strong></p>
+</blockquote>
+<h4 id="总结比较">总结比较
+</h4><blockquote class="alert alert-tip">
+    <ul>
+<li>在压缩比相等时，定容加热具有较高的热效率</li>
+<li>在其余所有情况下，当定压加热循环的压缩比大于定容加热循环时，定压加热循环具有较高的热效率</li>
+<li>混合加热循环的热效率介于两者之间</li>
+</ul></blockquote>
+<h3 id="喷气式发动机">喷气式发动机
+</h3><h3 id="做题-1">做题：
+</h3><ul>
+<li>
+<p>这时候就是理想气体了，可以使用理想气体的公式进行计算</p>
+</li>
+<li>
+<p>使用理想气体的公式进行计算时，注意不同类型的过程所使用的n的值是不同的</p>
+</li>
+<li>
+<p>分清楚哪些是吸热、放热的过程；哪些是做功、对外做功的过程。吸放热的差值就是净功</p>
+</li>
+</ul>
+<blockquote>
+</blockquote>
+<h2 id="制冷循环">制冷循环
+</h2><p>相当于<strong>空调的循环</strong>，需要消耗有用功，将热从低温的物体移动到高温的物体</p>
+<h3 id="制冷机与热泵">制冷机与热泵
+</h3><ul>
+<li>以前学的各种热力循环都是为了获得对外做功</li>
+<li><strong>制冷循环的目的</strong>：将物体冷却，维持此低温状态</li>
+<li><strong>热机循环</strong>称为正循环，<strong>制冷循环</strong>称为逆循环</li>
+</ul>
+<blockquote>
+<p>制冷系数：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602113514144.png"
+	width="132"
+	height="90"
+	
+	loading="lazy"
+	
+		alt="制冷系数的计算"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="146"
+		data-flex-basis="352px"
+	
+></p>
+<p>其中的$q_1$为向外界放出的热量，其中的$q_2$为从低温处吸收的热量，满足$q_1=q_2+w$</p>
+</blockquote>
+<blockquote>
+<p>对于热泵：向热源输出热量与耗功之比，称为供暖系数ε’</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602113744680.png"
+	width="472"
+	height="96"
+	
+	loading="lazy"
+	
+		alt="系数"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="491"
+		data-flex-basis="1180px"
+	
+></p>
+</blockquote>
+$$
+COP = \frac{得到的收益}{付出的代价}
+$$<p>
+对于制冷的装置，得到的收益为从低温的地方吸收的热量；对于制热的，得到的收益是对外界放出的热量</p>
+$$
+\begin{aligned}&\varepsilon=\frac{q_{2}}{w}&&\varepsilon^{\prime}=\varepsilon+1\\\varepsilon^{\prime}=\frac{q_{1}}{w}=\frac{q_{2}+w}{w}=\frac{q_{2}}{w}+1&&COP_{HP}=COP_{R}+1\end{aligned}
+$$<blockquote>
+<p>说明：</p>
+<ul>
+<li>$COP_{HP}$&gt;1，这种情况下得到的好处比付出的代价高，说明热泵取暖比直接燃烧和电能经济性高。</li>
+<li>制冷装置每小时从<strong>冷源吸取的热量</strong>叫做制冷装置的<strong>制冷量</strong>(kJ/h) 。每kg制冷剂每小时吸收热量叫做制冷剂的<strong>单位制冷率</strong>[kJ/(kg·h)]</li>
+</ul>
+</blockquote>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602115343106.png"
+	width="342"
+	height="290"
+	
+	loading="lazy"
+	
+		alt="逆卡诺循环"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="117"
+		data-flex-basis="283px"
+	
+></p>
+<ul>
+<li>从一开始：</li>
+</ul>
+<p>定熵膨胀——定温吸热——定熵压缩——定温放热</p>
+<p>结果是将热从低温热源移向高温热源，称为逆卡诺循环（与卡诺热机的循环相反）</p>
+<ul>
+<li>逆卡诺循环制冷系数：
+$$
+  \varepsilon_{C}=\frac{q_{2}}{w}=\frac{T_{2}(s_{3}-s_{2})}{(T_{1}-T_{2})(s_{3}-s_{2})}=\frac{T_{2}}{T_{1}-T_{2}}
+  $$</li>
+</ul>
+<blockquote>
+<p>说明：</p>
+<ol>
+<li>逆卡诺循环是在相同温度范围内工作的最有效的循环，即<strong>逆卡诺循环的制冷系数最大。</strong></li>
+<li>因为T1&gt;T2，<strong>制冷系数$ε_C$恒为正值</strong>，且可以<strong>大于1</strong>， T1-T2愈小,ε愈大 。</li>
+</ol>
+</blockquote>
+<h3 id="空气制冷循环">空气制冷循环
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602120131763.png"
+	width="308"
+	height="635"
+	
+	loading="lazy"
+	
+		alt="循环的图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="48"
+		data-flex-basis="116px"
+	
+></p>
+<blockquote>
+<p>从1开始：</p>
+<p>​	1-2：空气在膨胀机中<strong>定熵膨胀作功</strong>；
+2-3：空气在冷藏室中<strong>定压吸热</strong>；
+3-4：空气在压缩机中<strong>耗功定熵压缩</strong>；
+4-1：空气在冷却器中定压放热。</p>
+<p>实际上就是气体动力循环给逆过来了</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>
+<p>循环消耗的净功量为：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602120551776.png"
+	width="716"
+	height="67"
+	
+	loading="lazy"
+	
+		alt="净功"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1068"
+		data-flex-basis="2564px"
+	
+></p>
+</li>
+<li>
+<p>空气制冷理想循环的制冷系数：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602120628938.png"
+	width="460"
+	height="263"
+	
+	loading="lazy"
+	
+		alt="系数"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="419px"
+	
+></p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>最后得到的制冷系数：</li>
+</ul>
+$$
+\varepsilon=\frac{1}{\frac{T_4-T_1}{T_3-T_2}-1}=\frac{1}{\frac{T_1}{T_2}-1}=\frac{T_2}{T_1-T_2}
+$$<ul>
+<li>这个制冷系数看似与卡诺循环一致，但是，空气制冷循环中冷藏室所能达到的低温TⅡ = T3，而环境温度TI =T1，故在此温度范围内逆卡诺循环(如图中的1-6-3-5-1) 的制冷系数为：</li>
+</ul>
+$$
+\varepsilon_c=\frac{T_{II}}{T_I-T_{II}}
+$$<ul>
+<li>将空气制冷循环的效率使用增压比表示：</li>
+</ul>
+$$
+\varepsilon=\frac{1}{\left(\frac{p_1}{p_2}\right)^{\frac{\gamma-1}{1}}-1}
+$$<blockquote>
+<p>可见，与增压比有关，增压比越小，制冷系数越大</p>
+<p>但是，增压比小时，制冷能力小</p>
+</blockquote>
+<blockquote>
+<p>空气制冷循环的缺点：</p>
+<ul>
+<li>在定压的条件下进行，导致偏离卡诺循环，降低了经济性</li>
+<li>空气的定压比热较小，制冷量也小</li>
+</ul>
+</blockquote>
+<h3 id="蒸气压缩制冷循环">蒸气压缩制冷循环
+</h3><p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602124756445.png"
+	width="284"
+	height="255"
+	
+	loading="lazy"
+	
+		alt="流程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="111"
+		data-flex-basis="267px"
+	
+></p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602124742417.png"
+	width="483"
+	height="226"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="213"
+		data-flex-basis="512px"
+	
+></p>
+<blockquote>
+<p>1-2：饱和液体（1）节流减压
+<strong>熵增焓不变</strong>
+2-3：定压吸热气化
+干度增加
+3-4：<strong>绝热升压压缩</strong>
+干度增加 温度上升
+4-1：<strong>冷却凝结成饱和液体</strong></p>
+<p>这里的1-2与蒸气动力循环不一致，剩下的还是非常一致的</p>
+<p>实际能产生制冷的环节是2-3</p>
+</blockquote>
+<p>4出口的可能是湿蒸汽、干饱和蒸汽或过热蒸汽</p>
+<p>但是在实际的工程中往往采用干压缩：<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602125043063.png"
+	width="433"
+	height="486"
+	
+	loading="lazy"
+	
+		alt="干压缩"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="89"
+		data-flex-basis="213px"
+	
+></p>
+<ul>
+<li>制冷系数：
+$$
+  \varepsilon=\frac{q_2}{w}=\frac{h_3-h_2}{h_4-h_1}
+  $$</li>
+</ul>
+<blockquote>
+<p>优点说明：</p>
+<ul>
+<li>蒸汽制冷循环与对应的拟卡诺循环更加接近,效率远高于空气制冷循环</li>
+<li>可以满足较大单位的制冷需求</li>
+<li>在0~-120°C范围内均可以采用蒸汽压缩制冷循环</li>
+<li>上限温度T1取决与环境温度,下限温度T2取决于制冷对象（这里的上下限是吸放热过程的上下限，与压缩，膨胀之后的温度无关）</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>为实现蒸气压缩的制冷循环，对理想的制冷剂要求具有下列特性：</p>
+<ul>
+<li>临界点温度必须高于制冷循环的上限温度T1，这样可使制冷剂被压缩后的状态离开两相共存区不远，而放热过程大部分可在两相区以定温过程进行。</li>
+<li>三相点温度要低于制冷循环的下限温度T2。</li>
+<li>对应于T2的饱和压力不宜太低，最好略高于大气压力，以免采用高真空的设备系统，防止空气渗入蒸发器，从而降低制冷能力。</li>
+</ul>
+</blockquote>
+<h3 id="蒸汽喷射制冷循环">蒸汽喷射制冷循环
+</h3><ul>
+<li>用引射器来代替压缩机实现蒸汽的压缩，利用工作蒸汽进行加热，消耗热量来制冷。</li>
+<li>蒸汽分为2路：制冷蒸汽，工作蒸汽</li>
+<li>在引射器内高温高压的工作蒸汽首先经过喷管加速，压力下降后将制冷蒸汽吸入混合室，混合后进入扩压管，增压升温，然后进入冷凝器对环境放热，部分蒸汽经过节流阀进入<strong>制冷循环</strong>，部分经<strong>水泵压缩后进入锅炉重新吸热</strong>。</li>
+</ul>
+<blockquote>
+<p>实际上是两个循环过程的嵌套</p>
+<p>一个是相当于蒸气动力循环的过程，只不过定熵膨胀之后的气体与另一个气体混合又压缩（扩压管），再定压放热</p>
+<p>一个是制冷循环，定压吸热后与另一个混合，再进行压缩和放热</p>
+</blockquote>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602130730214.png"
+	width="923"
+	height="503"
+	
+	loading="lazy"
+	
+		alt="具体说明"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="183"
+		data-flex-basis="440px"
+	
+></p>
+<p>使用热能利用系数进行表示效率：</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602130948347.png"
+	width="207"
+	height="69"
+	
+	loading="lazy"
+	
+		alt="公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="300"
+		data-flex-basis="720px"
+	
+></p>
+<h3 id="吸收式制冷">吸收式制冷
+</h3><ul>
+<li>以<strong>高沸点物质</strong>作溶剂(吸收剂)、<strong>低沸点物质</strong>作溶质(制冷剂)组成的二元溶液，溶质的溶解度与温度有关。温度较低时，溶解度较大；温度较高时，溶解度较小。在制冷装置中利用溶液的这种特性，来取代对蒸汽的压缩过程，这样的制冷装置叫作吸收式制冷装置。</li>
+</ul>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250602131115840.png"
+	width="413"
+	height="462"
+	
+	loading="lazy"
+	
+		alt="图示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="89"
+		data-flex-basis="214px"
+	
+></p>
+$$
+\xi=\frac{Q_2}{Q_{Vg}}
+$$<p>
+从冷藏室中取出的热量比送入氨蒸气发生器中的热量</p>
+<h3 id="热泵供热循环">热泵供热循环
+</h3><ul>
+<li>热泵就其实质来看，和制冷装置完全一样，只是两者工作的温度范围不同，目的不同。</li>
+</ul>
+$$
+\mathrm{\varepsilon^{\prime}=q1~/w+(q2+w)~/w=\varepsilon+1}
+$$<p>
+同样的原理</p>
+<h3 id="做题-2">做题：
+</h3><p>计算方式与之前没有什么大的差别，主要是计算效率的时候要分清楚计算的效率是什么</p>
 
 </section>
 
