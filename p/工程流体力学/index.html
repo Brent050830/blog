@@ -560,6 +560,13 @@
         <li><a href="#喷管中的等熵流动">喷管中的等熵流动</a>
           <ol>
             <li><a href="#喷管">喷管</a></li>
+            <li><a href="#计算过程">计算过程</a></li>
+          </ol>
+        </li>
+        <li><a href="#有摩擦的等截面管内的绝热流动">有摩擦的等截面管内的绝热流动</a></li>
+        <li><a href="#激波的形成">激波的形成</a>
+          <ol>
+            <li><a href="#马赫波">马赫波</a></li>
           </ol>
         </li>
       </ol>
@@ -636,7 +643,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 6 分钟
+                    阅读时长: 7 分钟
                 </time>
             </div>
         
@@ -1137,9 +1144,10 @@ $$<h3 id="定常流动的基本特性">定常流动的基本特性
 </blockquote>
 $$
 \begin{gathered}h_{0}=h+\frac{v^{2}}{2}\\C_{p}T_{0}=C_{p}T+\frac{v^{2}}{2}\\\frac{k}{k-1}\frac{p_{0}}{\rho_{0}}=\frac{k}{k-1}\frac{p}{\rho}+\frac{v^{2}}{2}\\\frac{k}{k-1}RT_{0}=\frac{kRT}{k-1}+\frac{v^{2}}{2}\\\frac{c_{0}^{2}}{k-1}=\frac{c^{2}}{k-1}+\frac{v^{2}}{2}\end{gathered}
-$$<h4 id="临界状态">临界状态
+$$<p>注意区分这里的c和v：c是代表此点的温度下对应的声速，v是代表气体的流速，是有区别的</p>
+<h4 id="临界状态">临界状态
 </h4><blockquote>
-<p>断面上的速度为<strong>当地的音速</strong>时为临界状态，使用角标*表示</p>
+<p>断面上的速度为<strong>此点对应的的音速</strong>时为临界状态，使用角标*表示</p>
 </blockquote>
 $$
 \frac{T^{*}}{T_{0}}=\left(1+\frac{k-1}{2}\right)^{-1}=\left(\frac{2}{k+1}\right)\\\frac{\rho^{*}}{\rho_{0}}=\left(1+\frac{k-1}{2}\right)^{\frac{-1}{k-1}}=\left(\frac{2}{k+1}\right)^{\frac{1}{k-1}}\\\frac{p^{*}}{p_{0}}=\left(1+\frac{k-1}{2}\right)^{\frac{-k}{k-1}}=\left(\frac{2}{k+1}\right)^{\frac{k}{k-1}}
@@ -1158,14 +1166,88 @@ $$<p>
 \frac{\mathrm{d}A}{A}=-\frac{1-Ma^{2}}{kMa^{2}}\frac{\mathrm{d}p}{p}
 $$<blockquote>
 <ol>
-<li>亚音速时，只有截面缩小才能使气流加速，截面增大使气流减速</li>
+<li>亚音速时，只有截面缩小才能使压强降低、温度降低，焓降低，<strong>气流加速</strong>，截面增大使气流减速</li>
 <li>超音速时，与上面的相反</li>
 <li>音速流动时，处于临界的状态</li>
 </ol>
 </blockquote>
 <h4 id="喷管">喷管
 </h4><h5 id="渐缩喷管">渐缩喷管
-</h5>
+</h5><blockquote>
+<p>需要求渐缩喷管的出口的流速和流量</p>
+</blockquote>
+<ul>
+<li>在已知滞止时的压力和出口的压力的情况下（出口的压强小），<strong>出口的流速为</strong></li>
+</ul>
+$$
+V_2=\sqrt{\frac{2k}{k-1}\frac{p_0}{\rho_0}\left[1-\left(\frac{p_2}{p_0}\right)^{\frac{k-1}{k}}\right]}
+$$<ul>
+<li>流量为
+$$
+  \begin{aligned}\mathrm{G}&=\rho_{2}A_{2}V_{2}\\&=\rho_{0}A_{2}\sqrt{\frac{2k}{k-1}\frac{p_{0}}{\rho_{0}}\left[\left(\frac{p_{2}}{p_{0}}\right)^{\frac{2}{k}}-\left(\frac{p_{2}}{p_{0}}\right)^{\frac{k+1}{k}}\right]}\\&=\rho_{0}\left(\frac{p_{0}}{p_{2}}\right)^{\frac{1}{k}}A_{2}\sqrt{\frac{2k}{k-1}\frac{p_{0}}{\rho_{0}}\left[1-\left(\frac{p_{2}}{p_{0}}\right)^{\frac{k-1}{k}}\right]}\end{aligned}
+  $$</li>
+</ul>
+<blockquote>
+<p>观察公式可以看出：</p>
+<ol>
+<li>对于流速，出口的压强越小时，出口的流速越大，当出口的压强为0时，达到最大的流速，但是这个<strong>流速好像达不到</strong>，因为达到临界压强之后，随着面积的减小，压强会变大。</li>
+<li>对于出口的流量，最大时的压强取值为$p_2=p_0\left(\frac{2}{k+1}\right)^{\frac{k}{k-1}}=p^*$，此时的压强为临界压强，流量达到最大值，出口的速度为音速<img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250604101312354.png"
+	width="470"
+	height="243"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="193"
+		data-flex-basis="464px"
+	
+></li>
+<li>此时的最大流量为<img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250604101539859.png"
+	width="1362"
+	height="418"
+	
+	loading="lazy"
+	
+		alt="最大的流量"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="325"
+		data-flex-basis="782px"
+	
+></li>
+</ol>
+</blockquote>
+<blockquote>
+<p>所以，出口的压力达到临界压力之后，出口压力再降低，流量也保持到最大值不会变化</p>
+</blockquote>
+<h4 id="计算过程">计算过程
+</h4><ol>
+<li>计算出口处的压强和滞止压强的比，与临界压强比较，确定是使用渐缩喷管还是缩放喷管</li>
+<li>计算各状态下的状态参数（带入等熵的公式），利用状态参数的值计算各状态下的流速</li>
+<li>利用流量和流速计算截面积</li>
+</ol>
+<blockquote>
+<p>一些想法：</p>
+<ol>
+<li>知道某点的流速和声速的比值，就能知道温度和滞止温度的比值（利用能量方程和声速与温度的关系）</li>
+<li>然后就能算出状态参数</li>
+<li>速度和进出口的压强比也有直接的联系</li>
+</ol>
+</blockquote>
+<h3 id="有摩擦的等截面管内的绝热流动">有摩擦的等截面管内的绝热流动
+</h3>$$
+\lambda\frac{L}{D}=\lambda\frac{L_{1}^{*}}{D}-\lambda\frac{L_{2}^{*}}{D}=\frac{Ma_{2}^{2}-Ma_{1}^{2}}{kMa_{1}^{2}Ma_{2}^{2}}+\frac{k+1}{2k}\ln\frac{Ma_{1}^{2}}{Ma_{2}^{2}}\frac{1+\frac{k-1}{2}Ma_{2}^{2}}{1+\frac{k-1}{2}Ma_{1}^{2}}
+$$<p>
+上述为临界管长的计算公式（即管子在有摩擦的情况下，能够到达1Ma所需的最短的管子长度）</p>
+<h3 id="激波的形成">激波的形成
+</h3><p>流动钟流体参数突变的薄层叫做激波</p>
+<h4 id="马赫波">马赫波
+</h4><p>超音速流动时，气流的速度大于扰动的传播速度</p>
+
 </section>
 
 
