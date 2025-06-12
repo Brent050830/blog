@@ -742,6 +742,16 @@
         <li><a href="#做题-3">做题</a></li>
       </ol>
     </li>
+    <li><a href="#复习">复习</a>
+      <ol>
+        <li><a href="#todo-1">todo</a></li>
+        <li><a href="#热力学第一定理-1">热力学第一定理</a>
+          <ol>
+            <li><a href="#公式的适用性">公式的适用性</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -814,7 +824,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 34 分钟
+                    阅读时长: 37 分钟
                 </time>
             </div>
         
@@ -1071,8 +1081,8 @@ $$<ul>
 <p>反过来对热力学第二定律的理解</p>
 <p>实际上就是熵增定律（<strong>孤立系统的熵永不减少</strong>，在可逆过程中熵不变，在不可逆过程中熵增加。）</p>
 <p>比较原始的一种说法是总是向着混乱程度增加的方向进行（揭示了宇宙、时间发展的一种规律，非常本质），熵就是反应混乱程度的一种直接的物理量</p>
-<p>什么是混乱呢？气体均匀分布比几种分布在某一区域混乱，气体的运动比固体的运动混乱，微观的气体运动又比宏观物体运动混乱。</p>
-<p><strong>熵有两个基本的公式：</strong>$S=k_B\ln\Omega$和$S=\frac{\delta Q}{T}$，前者是最为基本的，反映了熵是衡量系统的混乱程度，后者只有在可逆过程才是可以使用的</p>
+<p>什么是混乱呢？气体均匀分布比集中分布在某一区域混乱，气体的运动比固体的运动混乱，微观的气体运动又比宏观物体运动混乱。</p>
+<p><strong>熵有两个基本的公式：</strong>$S=k_B\ln\Omega$和$S=\frac{\delta Q}{T}$，前者是最为基本的，反映了熵是衡量系统的混乱程度，后者只有在可逆过程才是可以使用的（这里的可以过程是指缓慢的变化，之后学的一般认为是可逆的过程，比如热源缓慢地放热）</p>
 <ul>
 <li>第一个公式，气体的混乱程度受到温度（影响气体分子的动能，或者说是内能），压力（影响气体分子的所占的容积）的影响，能量分配。</li>
 <li>第二个公式，我们可以看出热力学第二定理的几种表述是怎么来的
@@ -1179,17 +1189,19 @@ $$<p>以上为<strong>热机</strong>（正向循环，吸收热量，对外做�
 $$
 \oint \frac{\delta Q}{T} \leq 0
 > $$</blockquote>
-<p>上述为循环的一般属性</p>
+<p>上述为循环的一般属性（）</p>
 <ul>
 <li>注意：
 <ol>
-<li>对所讨论的热力系而言，T表示**热源(外界）**的温度</li>
+<li>对所讨论的热力系而言，T表示**热源(外界）**的温度（为可逆过程时，看做系统和外界的温度一样，吸热的过程是缓慢的。当不可逆时，使用外界的温度）</li>
 <li>未对系统的热力过程提出任何限制，适用于任意循环</li>
 <li><strong>一切可逆循环的克劳修斯积分等于零</strong></li>
 <li>一切不可逆循环的克劳修斯积分小于零</li>
 </ol>
 </li>
 </ul>
+<blockquote class="alert alert-warn">
+    <p>这节的这些都是针对循环的过程而言的，对于单个的吸放热过程直接使用熵的基本计算公式就行</p></blockquote>
 <h3 id="状态参数熵">状态参数熵
 </h3><ul>
 <li>
@@ -1526,7 +1538,10 @@ $$<ul>
 $$
 \mu_{j} \text { 是在焓值不变时 }(d h=0) \text { 温度对压力的偏微商：}\\
 \mu_{j}=\left(\frac{\partial T}{\partial p}\right)_{h}=\frac{1}{c_{p}}\left[T\left(\frac{\partial v}{\partial T}\right)_{p}-v\right]=\frac{v}{c_{p}}\left(T \alpha_{V}-1\right)
-$$<h2 id="气体的热力性质">气体的热力性质
+$$<blockquote>
+<p>这节一些公式（比如求熵、焓、热力学能的变化是针对所有的热力学系统的），所以要和之后几章的<strong>针对理想气体</strong>的公式区别开，后面的实际上是一种近似的处理。</p>
+</blockquote>
+<h2 id="气体的热力性质">气体的热力性质
 </h2><p>气体、液体、固体</p>
 <p>可以看做是气体的：</p>
 <ul>
@@ -2114,7 +2129,7 @@ Pv=R_gT
 $$<p>
 其中的$R_g$为气体的气体常数</p>
 <blockquote class="alert alert-tip">
-    <p>对于理想气体，有（u和h为温度的单值函数）</p></blockquote>
+    <p>对于理想气体，有（u和h为温度的单值函数），所以对于理想气体，温度不变时，两者是不变的</p></blockquote>
 $$
 du=c_vdT\\
 dh=c_pdT\\
@@ -2144,6 +2159,10 @@ w=\int pd\nu\quad w_t=-\int\nu dp\quad q=\int Tds\\
 ds=\frac{dQ}{T}
 $$$$
 Cp-Cv=RgCp/Cv=rCp=rRg/(r-1)Cv=Rg/(r-1)
+$$$$
+c_p-c_v=R_g
+$$$$
+\gamma=\frac{c_p}{c_v}
 $$<blockquote>
 <p><strong>说明</strong></p>
 <ol>
@@ -2325,8 +2344,11 @@ $$
 \frac{p_{\mathrm{cr}}}{p^{*}}=\nu_{\mathrm{cr}}=\left(\frac{2}{\gamma+1}\right)^{\frac{\gamma}{\gamma-1}}
 $$$$
 c_{\mathrm{f,cr}}=\sqrt{2\frac{\gamma}{\gamma+1}p^{*}v^{*}}=\sqrt{2\frac{\gamma}{\gamma+1}R_{\mathrm{g}}T^{*}}
-$$<p>
-由滞止的参数唯一确定</p>
+$$$$
+\rho_{1}A_{1}v_{1}=\rho_{2}A_{2}v_{2}
+$$<ul>
+<li>使用这个公式来计算截面积：计算密度，流速，带入，换算一下（密度和比体积相乘为）</li>
+</ul>
 <h3 id="水蒸气在流管中的定熵流动">水蒸气在流管中的定熵流动
 </h3><p>之前的公式适用于水蒸气，不过不能使用理想气体的公式</p>
 <p>焓变不能使用$c_p$计算</p>
@@ -2540,21 +2562,34 @@ $$$$
 w_P=\begin{vmatrix}\int vdp\end{vmatrix}\approx v\Delta p=v_3(p_4-p_3)
 $$<p>
 将泵功简化（使用水的不可压缩性）</p>
-$$
+$$wom,$$$$
 \eta_t\approx\frac{h_1-h_2}{h_1-h_4}
-$$<ol start="2">
-<li>
+$$<ul>
+<li>功比</li>
+</ul>
 $$
-   r_w=\frac{w}{w_T}=\frac{w_T-w_P}{w_T}=\frac{(h_1-h_2)-(h_4-h_3)}{h_1-h_2}
-   $$</li>
-<li>
+r_w=\frac{w}{w_T}=\frac{w_T-w_P}{w_T}=\frac{(h_1-h_2)-(h_4-h_3)}{h_1-h_2}
+$$<ul>
+<li>汽耗率：装置每输出1Kw·h的功所需要的蒸汽量</li>
+</ul>
 $$
-   d=\frac{3600}{w}\quad kg/(kW\cdot h)
-   $$</li>
-<li>
-<p>相对内效率：考虑汽轮机内的摩擦，会产生熵增</p>
-</li>
-</ol>
+d=\frac{3600}{w}\quad kg/(kW\cdot h)
+$$<ul>
+<li>相对内效率：考虑汽轮机内的摩擦，会产生熵增<img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250612213639030.png"
+	width="1190"
+	height="296"
+	
+	loading="lazy"
+	
+		alt="如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="402"
+		data-flex-basis="964px"
+	
+></li>
+</ul>
 $$
 \eta_T=\frac{w_T^{\prime}}{w_T}=\frac{h_1-h_{2^{\prime}}}{h_1-h_2}
 $$<h4 id="朗肯循环的优缺点">朗肯循环的优缺点
@@ -2984,33 +3019,33 @@ $$<blockquote>
 		data-flex-basis="266px"
 	
 ></p>
-<ul>
-<li>
 <p>燃气轮机和压气机中存在摩擦损失；循环与热源和环境之间温差传热</p>
 <ul>
-<li>
+<li>燃气轮机的效率：</li>
+</ul>
 $$
-    \eta_T=\frac{h_3-h_4}{h_3-h_{4_t}}=\frac{T_3-T_4}{T_3-T_{4_t}}
-    $$</li>
-<li>
+\eta_T=\frac{h_3-h_4}{h_3-h_{4_t}}=\frac{T_3-T_4}{T_3-T_{4_t}}
+$$<ul>
+<li>压气机的：</li>
+</ul>
 $$
-    \eta_{\mathrm{C,s}}=\frac{h_{2_t}-h_1}{h_2-h_1}=\frac{T_{2_t}-T_1}{T_2-T_1}
-    $$</li>
-<li>
+\eta_{\mathrm{C,s}}=\frac{h_{2_t}-h_1}{h_2-h_1}=\frac{T_{2_t}-T_1}{T_2-T_1}
+$$<ul>
+<li>压气机出口的实际焓值：</li>
+</ul>
 $$
-    h_2=h_1+\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
-    $$</li>
-<li>
+h_2=h_1+\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
+$$<ul>
+<li>循环的吸热量：</li>
+</ul>
 $$
-    q_1=h_3-h_2=h_3-h_1-\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
-    $$</li>
-<li>
-<p>循环的净功量：</p>
-</li>
+q_1=h_3-h_2=h_3-h_1-\frac{h_{2_t}-h_1}{\eta_{\mathrm{C,s}}}
+$$<ul>
+<li>循环的净功量：</li>
 </ul>
 $$
   w=(h_3-h_4)-(h_2-h_1)=(h_3-h_{4_t})\eta_T-\frac{(h_2-h_1)}{\eta_{C,s}}
-  $$<p><strong>总的循环效率：</strong></p>
+$$<p><strong>总的循环效率：</strong></p>
 <p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530090237055.png"
 	width="481"
 	height="243"
@@ -3025,13 +3060,9 @@ $$
 		data-flex-basis="475px"
 	
 ></p>
-</li>
-<li>
-<p>燃气轮机的摩擦损失使循环的功量减少，热效率降低</p>
-</li>
-<li>
-<p>压气机的摩擦哦使循环功量和吸热量减少相同的数量，总的效果也使循环的热效率降低。</p>
-</li>
+<ul>
+<li>燃气轮机的摩擦损失使循环的功量减少，热效率降低</li>
+<li>压气机的摩擦哦使循环功量和吸热量减少相同的数量，总的效果也使循环的热效率降低。</li>
 </ul>
 <h3 id="具有回热的循环">具有回热的循环
 </h3><ul>
@@ -3052,13 +3083,12 @@ $$
 	
 ></p>
 <ul>
-<li>
-<p>极限回热：回热器的燃气被冷却到的最低的温度T2，压缩空气被预热的最高的温度T4</p>
-</li>
-<li>
+<li>极限回热：回热器的燃气被冷却到的最低的温度T2，压缩空气被预热的最高的温度T4</li>
+<li>回热度：</li>
+</ul>
 $$
-  \sigma=\frac{h_7-h_2}{h_5-h_2}=\frac{T_7-T_2}{T_5-T_2}
-  $$<p>
+\sigma=\frac{h_7-h_2}{h_5-h_2}=\frac{T_7-T_2}{T_5-T_2}
+$$<p>
 <img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530091227688.png"
 	width="460"
 	height="416"
@@ -3073,13 +3103,9 @@ $$
 		data-flex-basis="265px"
 	
 ></p>
-</li>
-<li>
-<p>多级压缩（绝热压缩），中间冷却（等压冷却）；多级膨胀，中间<strong>再热</strong></p>
-</li>
-<li>
-<p>当上述的分级趋向于无穷大时，循环与相同温度范围内的卡诺循环有相同的热效率，称为<strong>埃尔逊循环</strong></p>
-</li>
+<ul>
+<li>多级压缩（绝热压缩），中间冷却（等压冷却）；多级膨胀，中间<strong>再热</strong></li>
+<li>当上述的分级趋向于无穷大时，循环与相同温度范围内的卡诺循环有相同的热效率，称为<strong>埃尔逊循环</strong></li>
 </ul>
 <p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250530091841154.png"
 	width="385"
@@ -3155,6 +3181,7 @@ $$
 ></p>
 <h4 id="循环特性的参数">循环特性的参数：
 </h4><p>压缩比：$\varepsilon = \frac {\nu _1}{\nu _2}$      定容升压比：$\lambda = \frac {p_3}{p_2}$       定压预胀比：$\rho=\frac{v_4}{v_3}$</p>
+<p>对于上述的<strong>混合加热循环</strong></p>
 $$
 \begin{aligned}\boldsymbol{\eta}_{t}&=1-\frac{T_1(\lambda\rho^\gamma-1)}{T_1\varepsilon^{\gamma-1}(\lambda-1)+\gamma T_1\lambda\varepsilon^{\gamma-1}(\rho-1)}\\&=1-\frac{\lambda\rho^\gamma-1}{\varepsilon^{\gamma-1}[(\lambda-1)+\gamma\lambda(\rho-1)]}\end{aligned}
 $$<p>
@@ -3162,10 +3189,12 @@ $$<p>
 的减小而增大</strong></p>
 <ul>
 <li>
+<p>定压预胀比为1时，为定容加热循环，其热效率为</p>
 $$
   \eta_t=1-\frac{1}{\pi^{\frac{\gamma-1}{\gamma}}}\Longleftrightarrow\eta_{t,V}=1-\frac{1}{\varepsilon^{\gamma-1}}
   $$</li>
 <li>
+<p>当定容升压比λ＝1，即为定压加热循环，其热效率为：</p>
 $$
   \eta_{t,p}=1-\frac{1}{\varepsilon^{\gamma-1}}\frac{\rho^\gamma-1}{\gamma(\rho-1)}
   $$</li>
@@ -3278,6 +3307,7 @@ $$
 COP = \frac{得到的收益}{付出的代价}
 $$<p>
 对于制冷的装置，得到的收益为从低温的地方吸收的热量；对于制热的，得到的收益是对外界放出的热量</p>
+<p><strong>有如下的关系：</strong></p>
 $$
 \begin{aligned}&\varepsilon=\frac{q_{2}}{w}&&\varepsilon^{\prime}=\varepsilon+1\\\varepsilon^{\prime}=\frac{q_{1}}{w}=\frac{q_{2}+w}{w}=\frac{q_{2}}{w}+1&&COP_{HP}=COP_{R}+1\end{aligned}
 $$<blockquote>
@@ -3307,7 +3337,8 @@ $$<blockquote>
 <p>定熵膨胀——定温吸热——定熵压缩——定温放热</p>
 <p>结果是将热从低温热源移向高温热源，称为逆卡诺循环（与卡诺热机的循环相反）</p>
 <ul>
-<li>逆卡诺循环制冷系数：
+<li>
+<p>逆卡诺循环制冷系数：</p>
 $$
   \varepsilon_{C}=\frac{q_{2}}{w}=\frac{T_{2}(s_{3}-s_{2})}{(T_{1}-T_{2})(s_{3}-s_{2})}=\frac{T_{2}}{T_{1}-T_{2}}
   $$</li>
@@ -3462,7 +3493,8 @@ $$<blockquote>
 	
 ></p>
 <ul>
-<li>制冷系数：
+<li>
+<p>制冷系数：</p>
 $$
   \varepsilon=\frac{q_2}{w}=\frac{h_3-h_2}{h_4-h_1}
   $$</li>
@@ -3550,6 +3582,7 @@ $$<p>
 </h3><ul>
 <li>热泵就其实质来看，和制冷装置完全一样，只是两者工作的温度范围不同，目的不同。</li>
 </ul>
+<p>使用供热系数来衡量</p>
 $$
 \mathrm{\varepsilon^{\prime}=q1~/w+(q2+w)~/w=\varepsilon+1}
 $$<p>
@@ -3559,8 +3592,12 @@ $$<p>
 <h2 id="化学反应">化学反应
 </h2><h3 id="概述-1">概述
 </h3><ul>
-<li>特点：非循环的过程</li>
-<li>状态的确定多于两个参数</li>
+<li>
+<p>特点：非循环的过程</p>
+</li>
+<li>
+<p>状态的确定多于两个参数</p>
+</li>
 </ul>
 $$
 \begin{array}{rcl}U&=&f(T,p,n_1,n_2,\cdots,n_k)\\\\H&=&\phi(T,p,n_1,n_2,\cdots,n_k)\end{array}
@@ -3571,14 +3608,17 @@ $$<ul>
 </li>
 </ul>
 <h3 id="热力学第一定理的应用">热力学第一定理的应用
-</h3>$$
+</h3><p>由于化学反应，与外界交换的功有体积功和非体积功</p>
+$$
 \begin{aligned}&\delta Q=dU+(\delta W+\delta W_{_U})\\&\mathcal{Q}=\Delta U+(W+W_{_u})\end{aligned}
 $$<ul>
 <li>
+<p>定容的反应：</p>
 $$
   \begin{aligned}&\delta W=pdV=d(pV)=0\\&-dU=\delta W_{u,V}-\delta Q\\&U_1-U_2=W_{u,V}-Q\end{aligned}
   $$</li>
 <li>
+<p>定压反应：</p>
 $$
   \begin{aligned}&\delta W=pdV=d(pV)\\&W=p(V_{2}-V_{1})\\&-dH=\delta W_{u,p}-\delta Q\\&H_{1}-H_{2}=W_{u,p}-Q\end{aligned}
   $$</li>
@@ -3605,14 +3645,17 @@ $$
 </ul>
 </li>
 <li>
+<p>定容热效应：</p>
 $$
   Q_v=U_2-U_1
   $$</li>
 <li>
+<p>定压热效应：</p>
 $$
   Q_{_p}=H_{_2}-H_{_1}
   $$</li>
 <li>
+<p>上述两个热效应的关系：</p>
 $$
   \begin{aligned}&Q_P-Q_V=(H_2-H_1)-(U_2-U_1)=p(V_2-V_1)\\&Q_P=Q_V+pV_m\Delta n=Q_V+RT\Delta n\end{aligned}
   $$</li>
@@ -3624,11 +3667,15 @@ $$
 <p>所以，利用热效应是状态量，可以间接测量一些难以直接测量的反应的热效应</p>
 <h3 id="基尔霍夫定律">基尔霍夫定律
 </h3><p>温度对热效应的影响显著，压力只有在很高的时候才表现出来</p>
+<p>反应在任意的T温度下进行，热效应为</p>
 $$
 \int_{Q^{0}}^{Q_{*}}\mathrm{d}Q_{*}=\int_{T_{0}}^{T}\left(\sum_{j}n_{j}C_{m,j}\right)\mathrm{d}T-\int_{T_{0}}^{T}\left(\sum_{i}n_{i}C_{m,i}\right)\mathrm{d}T
-$$$$
+$$<p>或者是</p>
+$$
 Q_{*}=Q^{0}+\int_{T_{0}}^{T}\left(\sum_{j}n_{j}C_{m,j}\right)\mathrm{d}T-\int_{T_{0}}^{T}\left(\sum_{i}n_{i}C_{m,i}\right)\mathrm{d}T
-$$$$
+$$<p>
+所以，根据基尔霍夫定理。反应在某个温度下的反应热</p>
+$$
 \Delta H=\Delta H^{0}+\Delta H_{re}+\Delta H_{pr}
 $$<p>
 其中的第一项为某一特定温度下的热效应</p>
@@ -3657,10 +3704,12 @@ $$<p>
 <h3 id="理论燃烧温度">理论燃烧温度
 </h3><ul>
 <li>
+<p>对于定压的过程</p>
 $$
   -\Delta H_{\mathrm{b}}^{0}=\Delta H_{\mathrm{pr}}=\int_{T_{0}}^{T_{1}}C_{p,m,\mathrm{pr}}\mathrm{d}T=\int_{T_{0}}^{T_{1}}\sum_{j,pr}n_{j}C_{p,m,j}\mathrm{d}T
   $$</li>
 <li>
+<p>定容的过程</p>
 $$
   -\Delta U_{\mathrm{b}}^{0}=\Delta U_{\mathrm{pr}}=\int_{T_{0}}^{T_{,}}C_{V,\mathrm{m.pr}}\mathrm{d}T=\int_{T_{0}}^{T_{,}}\sum_{j,\mathrm{pr}}n_{j}C_{V,m,j}\mathrm{d}T
   $$</li>
@@ -3670,32 +3719,44 @@ $$
 <h3 id="反应的最大功">反应的最大功
 </h3>$$
 W_{u.V.max}=F_{1}-F_{2}
-$$$$
+$$<p>写为概括性的公式为</p>
+$$
 W_{\mathrm{u,max}}=-Q_{x}+T\left(\frac{\partial W_{\mathrm{u,max}}}{\partial T}\right)
 $$<blockquote>
 <p>规定在1大气压、25摄氏度时的由稳定的单质生成1mol的化合物时自由焓的变化为该化合物的标准自由生成焓。（稳定的单质会元素的标准自由生成焓为0）</p>
 </blockquote>
+<p><strong>公式</strong></p>
 $$
 \Delta G^{0}=\sum_{i}\left(n_{j}\Delta G_{i,j}^{0}\right)_{\mathrm{pr}}-\sum_{i}\left(n_{i}\Delta G_{i,i}^{0}\right)_{\mathrm{re}}
 $$<p>
 任何反应的自由焓的变化量可以由反应物和生成物的标准自由生成焓计算：</p>
 <h3 id="反应的平衡">反应的平衡
-</h3>$$
+</h3><p>反应的关系式子有</p>
+$$
 \Delta G=\Delta G^{0}+RT\mathrm{ln}\frac{P_{\mathrm{C}}^{c}P_{\mathrm{E}}^{e}}{p_{\mathrm{A}}^{a}p_{\mathrm{B}}^{b}}
-$$$$
+$$<p>
+对于定温定压的反应，在平衡时有：（这里的压强是分压）</p>
+$$
 \begin{aligned}&\Delta G=0\\&p_{\mathrm{A}}=p_{\mathrm{A,e}}\\&p_{\mathrm{B}}=p_{\mathrm{B,e}}\\&p_{\mathrm{C}}=p_{\mathrm{C,e}}\\&\mathrm{PE}=p_{\mathbf{E},\mathbf{e}}\end{aligned}
-$$$$
+$$<p>
+所以带入上述的式子可以得到</p>
+$$
 \Delta G^{0}=-RT\mathrm{ln}\frac{P_{\mathrm{C,e}}^{c}P_{\mathrm{E,e}}^{c}}{p_{\mathrm{A,e}}^{a}P_{\mathrm{B,e}}^{b}}
 $$$$
 K_{p}=\frac{p_{\mathrm{C,e}}^{c}P_{\mathrm{E,e}}^{e}}{p_{\mathrm{A,e}}^{a}P_{\mathrm{B,e}}^{b}}
 $$<p>
 这个式子就是反应的<strong>化学平衡常数</strong></p>
 <hr>
+<p>若是使用反应物或是生成物的浓度表示平衡常数</p>
 $$
 \begin{aligned}K_{p}&=\frac{(\left[\mathbf{C}_{\mathrm{e}}\right]RT)^{c}(\left[\mathbf{E}_{\mathrm{e}}\right]RT)^{c}}{(\left[\mathbf{A}_{\mathrm{e}}\right]RT)^{a}(\left[\mathbf{B}_{\mathrm{e}}\right]RT)^{b}}\\&=\frac{[\mathbf{C_{e}}]^{c}[\mathbf{E_{e}}]^{c}}{[\mathbf{A_{e}}]^{a}[\mathbf{B_{e}}]^{b}}(RT)^{[(c+\epsilon)-(a+b)]}\\&=\frac{[\mathbf{C_{e}}]^{c}[\mathbf{E_{e}}]^{c}}{[\mathbf{A_{e}}]^{a}[\mathbf{B_{e}}]^{b}}(RT)^{\Delta n}\end{aligned}
-$$$$
+$$<p>
+<strong>所以，得到的浓度表示的平衡常数为</strong></p>
+$$
 K_{\mathrm{c}}=\frac{[\mathrm{C}_{\mathrm{e}}]^{c}[\mathrm{E}_{\mathrm{e}}]^{c}}{[\mathrm{A}_{\mathrm{e}}]^{a}[\mathrm{B}_{\mathrm{e}}]^{b}}
-$$$$
+$$<p>
+<strong>两者之间的关系是：</strong>（n为反应前后的物质的量之差）</p>
+$$
 K_{_p}=K_{_c}(RT)^{\Delta n}
 $$<h4 id="与最大的有用功之间的关系">与最大的有用功之间的关系
 </h4>$$
@@ -3740,6 +3801,92 @@ $$<blockquote>
 </li>
 </ol>
 </blockquote>
+<h2 id="复习">复习
+</h2><h3 id="todo-1">todo
+</h3><ul>
+<li><input disabled="" type="checkbox"> 看一下所有的作业题</li>
+<li><input disabled="" type="checkbox"> 做一下所有的历年卷子</li>
+<li><input disabled="" type="checkbox"> 熵增的那一部分</li>
+<li><input disabled="" type="checkbox"> 还有之前的那个温度的那个4状态</li>
+<li><input disabled="" type="checkbox"> 还有就是使用Rg的那个公式是哪个来着</li>
+<li><input disabled="" type="checkbox"> 湿空气的计算、图像这些</li>
+</ul>
+<h3 id="热力学第一定理-1">热力学第一定理
+</h3><p>理想气体的<strong>内能只与温度、物质的量以及气体的种类</strong>有关</p>
+<p>在我们考虑的过程中，一般只考虑理想<strong>气体的温度</strong></p>
+<p>所以，热力学能等于从外界吸收的热量和外界对物体做的功的总和（实际上就是能量守恒的含义）</p>
+<blockquote>
+<p>重要的是热力学能对应的是体积功</p>
+<p>焓对应的是技术功</p>
+</blockquote>
+<blockquote>
+<p>好像是除了pv=nRT（还有通过这个衍生出来的公式）是只适用于气体，其他的所有都是适用于所有的吧</p>
+</blockquote>
+<blockquote>
+<p>记住u，h的全微分的方程式子就可以推导出一阶的关系式（将参数使用微分比值的形式表示）</p>
+<p>二阶的里面记住含有s的式子</p>
+</blockquote>
+<blockquote>
+<p>注意，在湿蒸气的部分，当是左边的液态水的状态时，不能使用理想气体的公式</p>
+</blockquote>
+<blockquote>
+<p>注意<strong>相变过程的特殊性</strong>：温度不变、压强不变，但是热力学能还有焓值是会变化的。（这个过程是不能使用针对理想气体的公式的，只能查表）</p>
+</blockquote>
+<blockquote>
+<p>所以，<strong>热量只有在体积或者是压强不变的情况下，才可以只写成比热乘以温度变化的形式</strong>，而焓值和热力学能对于理想气体<strong>都可以那么写</strong></p>
+</blockquote>
+<p>理想气体的功也能使用温度的变化表示，则最后的热量也可以使用温度×比热表示，只不过这个比热是会变化的比热。</p>
+<blockquote>
+<p>在定熵的流动过程中，要记得速度有两个，一个是对应温度下的声速，一个是气体的流速。声速与温度有直接的换算，流速与焓有能量守恒的关系</p>
+</blockquote>
+<h4 id="公式的适用性">公式的适用性
+</h4><ol>
+<li>
+<p>适用于理想的气体的：</p>
+<ol>
+<li>焓、热力学能、熵=固定的比热×温度变化的公式（熵可能还带上了压强）</li>
+<li>pv=nRT</li>
+</ol>
+</li>
+<li>
+<p>使用与所有的热力学系统的（是能用在下面3中的特殊情况的）</p>
+<ol>
+<li>
+<p>热力学第一定律，就是热量、功、焓、热力学能这些关系等式</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250612203547536.png"
+	width="603"
+	height="343"
+	
+	loading="lazy"
+	
+		alt="这里面的一些"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="421px"
+	
+></p>
+</li>
+<li>
+<p>与功有关的那些——$W=pdv$</p>
+</li>
+<li>
+<p>$S=\frac{Q}{T}$也就是热力学第二定律</p>
+</li>
+<li>
+<p>还有在热力学基本关系中学习的那些非常复杂的公式</p>
+</li>
+</ol>
+</li>
+<li>
+<p>还有一些特殊的：</p>
+<ol>
+<li>热量=固定（等容、等压）比热×温度变化（只有在等压、等容的条件下适用，实际上也就是热量、功、能的关系的推导），但是可以使用非固定的（多变比热$Cn$）乘以温度变化</li>
+<li>对于液态的、相变过程的h、u这些，只能查表进行计算</li>
+</ol>
+</li>
+</ol>
 
 </section>
 
