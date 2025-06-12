@@ -557,6 +557,37 @@
         </li>
       </ol>
     </li>
+    <li><a href="#齿轮">齿轮</a>
+      <ol>
+        <li><a href="#齿廓啮合的基本定理">齿廓啮合的基本定理</a></li>
+        <li><a href="#渐开线及渐开线齿廓">渐开线及渐开线齿廓</a></li>
+        <li><a href="#主要参数">主要参数</a>
+          <ol>
+            <li><a href="#1-模数m">1. <strong>模数（m）</strong></a></li>
+            <li><a href="#2-齿数z">2. <strong>齿数（z）</strong></a></li>
+            <li><a href="#3-分度圆直径d">3. <strong>分度圆直径（d）</strong></a></li>
+            <li><a href="#4-齿距p">4. <strong>齿距（p）</strong></a></li>
+            <li><a href="#5-齿厚s与齿槽宽e">5. <strong>齿厚（s）与齿槽宽（e）</strong></a></li>
+          </ol>
+        </li>
+        <li><a href="#渐开线直齿圆柱齿轮传动">渐开线直齿圆柱齿轮传动</a>
+          <ol>
+            <li><a href="#正确啮合的条件">正确啮合的条件</a></li>
+            <li><a href="#无隙啮合标准安装与非标准安装">无隙啮合、标准安装与非标准安装</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#轮系">轮系</a>
+      <ol>
+        <li><a href="#轮系分类及其应用">轮系分类及其应用</a></li>
+        <li><a href="#定轴轮系的速比计算">定轴轮系的速比计算</a></li>
+        <li><a href="#周转轮系的速比的计算">周转轮系的速比的计算</a></li>
+        <li><a href="#复合轮系的速比的计算">复合轮系的速比的计算</a></li>
+        <li><a href="#行星轮系的啮合效率">行星轮系的啮合效率</a></li>
+        <li><a href="#行星轮系的设计">行星轮系的设计</a></li>
+      </ol>
+    </li>
     <li><a href="#习题课">习题课</a>
       <ol>
         <li><a href="#结构分析">结构分析</a></li>
@@ -640,7 +671,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 11 分钟
+                    阅读时长: 15 分钟
                 </time>
             </div>
         
@@ -1342,6 +1373,431 @@ $$
 	
 ></p>
 <p>避免刚性冲击：当速度发生突变时，加速度会趋于∞</p>
+<h2 id="齿轮">齿轮
+</h2><h3 id="齿廓啮合的基本定理">齿廓啮合的基本定理
+</h3><p><strong>齿廓啮合基本定律：<strong>相互啮合的一对齿廓，在任一位置的传动比，都等于其连心线被过啮合点的</strong>公法线所分两线段的反比。</strong></p>
+$$
+i_{12}=\frac{\omega_1}{\omega_2}=\frac{|O_2P|}{|O_1P|}
+$$<p>
+因为所示的P点为两个杆件（齿轮）的速度瞬心</p>
+<p>**定传动比条件：**过啮合点的公法线与两齿轮的连心线交于定点。</p>
+<h3 id="渐开线及渐开线齿廓">渐开线及渐开线齿廓
+</h3><p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610205430300.png"
+	width="313"
+	height="362"
+	
+	loading="lazy"
+	
+		alt="渐开线"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="86"
+		data-flex-basis="207px"
+	
+></p>
+<ul>
+<li>
+<p>渐开线的性质</p>
+<ul>
+<li>
+<p>想象一根紧绷的绳子缠绕在一个固定的圆柱（称为<strong>基圆</strong>）上，绳子一端系一支笔。当绳子从基圆上<strong>无滑动地匀速展开</strong>时，笔尖在平面上画出的轨迹即为<strong>渐开线</strong>。</p>
+</li>
+<li>
+<p>性质：</p>
+<ul>
+<li>KB=AB</li>
+<li>KB与基圆相切</li>
+<li>B为K点的曲率中心（相当于瞬时转动的圆心）</li>
+<li>形状完全由基圆确定</li>
+<li>基圆内无渐开线</li>
+</ul>
+</li>
+<li>
+<p>其中的$\alpha$为压力角</p>
+</li>
+<li>
+<p>其中的$\theta$为展角</p>
+</li>
+<li>
+$$
+    \begin{cases}r_k=r_b/\cos\alpha_k\\\theta_k=\mathrm{tg}\alpha_k-\alpha_k=\mathrm{inv}\alpha_k&\end{cases}
+    $$</li>
+</ul>
+</li>
+</ul>
+<h3 id="主要参数">主要参数
+</h3><p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610210217825.png"
+	width="886"
+	height="391"
+	
+	loading="lazy"
+	
+		alt="参数"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="226"
+		data-flex-basis="543px"
+	
+></p>
+<ul>
+<li>齿数z：有多少个齿</li>
+<li>齿宽B：横向的宽度</li>
+<li>基圆半径：最开始，画渐开线的基本的圆的半径</li>
+<li>分度圆半径：分度圆上的齿厚（齿的圆周方向厚度）与齿槽宽相等，即$s = e = \frac{\pi m}{2}$（s 为齿厚，e 为齿槽宽）。</li>
+<li>压力角：</li>
+<li>齿顶圆（根）：最高和最低的圆的半径</li>
+<li>全齿高：整个齿从齿顶到齿底的高度</li>
+<li>齿顶高：齿顶到分度圆的</li>
+<li>齿距p：两个齿之间的距离</li>
+<li>齿厚p：齿距是指齿轮上<strong>相邻两齿同侧齿廓在分度圆上的弧长</strong>。通俗来说，它表示分度圆上相邻两齿对应点之间的圆周距离。</li>
+<li>齿厚s:圆截取的齿的长度</li>
+<li>齿槽宽e：圆截取的齿之间的长度</li>
+</ul>
+<blockquote>
+<p>角标</p>
+<p>任意的圆上的参数使用相同的下标k表示</p>
+<p>节圆上的参数使用上标表示`</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>任意圆上的齿厚：</li>
+</ul>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610211436881.png"
+	width="576"
+	height="543"
+	
+	loading="lazy"
+	
+		alt="公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="106"
+		data-flex-basis="254px"
+	
+></p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610211450899.png"
+	width="219"
+	height="342"
+	
+	loading="lazy"
+	
+		alt="图像"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="64"
+		data-flex-basis="153px"
+	
+></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>标准齿条的特点：</li>
+</ul>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610211515758.png"
+	width="383"
+	height="299"
+	
+	loading="lazy"
+	
+		alt="标准齿条"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="307px"
+	
+></p>
+</blockquote>
+<blockquote>
+<p>什么都没有的是分度圆</p>
+<p>有个b的是基圆</p>
+</blockquote>
+<h4 id="1-模数m">1. <strong>模数（m）</strong>
+</h4><ul>
+<li><strong>定义</strong>：齿距 p 与圆周率 \(\pi\) 的比值，即 \($m = \frac{p}{\pi}$\)，单位为毫米（mm）。</li>
+<li><strong>意义</strong>：模数是齿轮尺寸计算的核心参数，模数越大，轮齿尺寸越大，承载能力越强。</li>
+</ul>
+<h4 id="2-齿数z">2. <strong>齿数（z）</strong>
+</h4><ul>
+<li><strong>定义</strong>：齿轮轮缘上的轮齿总数。</li>
+<li><strong>意义</strong>：齿数影响齿轮的传动比（如一对齿轮传动比 \($i = \frac{z_2}{z_1}$\)）和分度圆直径。</li>
+</ul>
+<h4 id="3-分度圆直径d">3. <strong>分度圆直径（d）</strong>
+</h4><ul>
+<li><strong>定义</strong>：齿轮上用于尺寸计算的基准圆直径，标准齿轮的分度圆上齿厚等于齿槽宽。</li>
+<li><strong>公式</strong>：\($d = m \cdot z$\)。</li>
+</ul>
+<h4 id="4-齿距p">4. <strong>齿距（p）</strong>
+</h4><ul>
+<li><strong>定义</strong>：分度圆上相邻两齿同侧齿廓的弧长，\($p = \pi \cdot m$\)。</li>
+</ul>
+<h4 id="5-齿厚s与齿槽宽e">5. <strong>齿厚（s）与齿槽宽（e）</strong>
+</h4><ul>
+<li><strong>定义</strong>：分度圆上单个轮齿的弧长（s）和齿槽的弧长（e）。</li>
+<li><strong>标准齿轮关系</strong>：$s = e = \frac{p}{2} = \frac{\pi \cdot m}{2}$</li>
+</ul>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>$(\cos\alpha_k = \frac{r_b}{r_k})$</th>
+          <th></th>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>参数</td>
+          <td>基圆$(r_b）$</td>
+          <td>分度圆（r）</td>
+          <td>任意圆$(r_k）$</td>
+      </tr>
+      <tr>
+          <td>齿距（p）</td>
+          <td>$p_b = \pi m \cos\alpha$</td>
+          <td>\(p = \pi m\)</td>
+          <td>$p_k = p \cdot \frac{r_k}{r} = \frac{p_b}{\cos\alpha_k}$</td>
+      </tr>
+      <tr>
+          <td>齿厚（s）</td>
+          <td>$s_b = \frac{\pi m}{2} \cos\alpha（标准齿轮）$</td>
+          <td>\(s = \frac{\pi m}{2}\)</td>
+          <td>$s_k = r_k \left( \frac{s}{r} + 2(\tan\alpha_k - \tan\alpha) \right)$</td>
+      </tr>
+      <tr>
+          <td>压力角（\(\alpha\)）</td>
+          <td>$\alpha_b = 0^\circ$</td>
+          <td>$\alpha = 20^\circ$（标准）</td>
+          <td>$\cos\alpha_k = \frac{r_b}{r_k}$</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="渐开线直齿圆柱齿轮传动">渐开线直齿圆柱齿轮传动
+</h3><h4 id="正确啮合的条件">正确啮合的条件
+</h4><p>一对齿轮的正确啮合条件是：<strong>模数与压力角分别相等</strong>。</p>
+<h4 id="无隙啮合标准安装与非标准安装">无隙啮合、标准安装与非标准安装
+</h4><p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250610211628382.png"
+	width="589"
+	height="374"
+	
+	loading="lazy"
+	
+		alt="啮合"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="157"
+		data-flex-basis="377px"
+	
+></p>
+<h2 id="轮系">轮系
+</h2><h3 id="轮系分类及其应用">轮系分类及其应用
+</h3><p>分为定轴轮系、周转轮系（齿轮的集合轴线有着公转运动）、复合轮系</p>
+<h3 id="定轴轮系的速比计算">定轴轮系的速比计算
+</h3>$$
+i_{\mathrm{AB}}=\omega_{\mathrm{A}}/\omega_{\mathrm{B}}
+$$$$
+i_{AB}=\frac{\omega_A}{\omega_B}=\frac{\omega_\text{主}}{\omega_\text{从}}=(-1)^m\frac{\text{从动齿轮齿数积}}{\text{主动齿轮齿数积}}
+$$<p>其中的m表示内啮合次数（对于轴线平行的，可以选择一个正方向，此时的速比的定义就是一个可正可负的数）</p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611163120584.png"
+	width="355"
+	height="249"
+	
+	loading="lazy"
+	
+		alt="图示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="142"
+		data-flex-basis="342px"
+	
+></p>
+<p>图中的1,2为内啮合，图中的2`,3为外啮合</p>
+<h3 id="周转轮系的速比的计算">周转轮系的速比的计算
+</h3><ul>
+<li>
+<p>组成：太阳轮（中心轮），行星架或系杆（转臂H）,行星轮</p>
+</li>
+<li>
+<p>特征：转换轮系是定轴轮系</p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611163940488.png"
+	width="317"
+	height="207"
+	
+	loading="lazy"
+	
+		alt="如图所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="367px"
+	
+></p>
+</li>
+</ul>
+<p>其中的H为行星架，支出的部分使得以它为轴的齿轮的轴是会转动的</p>
+<blockquote>
+<p>转换轮系（周转轮系的速比）</p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611164124904.png"
+	width="809"
+	height="253"
+	
+	loading="lazy"
+	
+		alt="所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="319"
+		data-flex-basis="767px"
+	
+></p>
+<p>也就是将行星架的速度变为0</p>
+<p><strong>所以，有着如下的计算公式：</strong></p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611164506804.png"
+	width="695"
+	height="238"
+	
+	loading="lazy"
+	
+		alt="计算公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="292"
+		data-flex-basis="700px"
+	
+></p>
+<ul>
+<li>
+<p>可以写为速度和齿比的关系，因为转换为了定轴轮系，所以可以使用角速度和齿比计算（任何情况下都可以使用速度的比值列式子，因为是速比）</p>
+</li>
+<li>
+<p>对于太阳轮的角速度为0时，有如下的原来轮系和转换轮系的速比关系：</p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611165200079.png"
+	width="532"
+	height="69"
+	
+	loading="lazy"
+	
+		alt="公式"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="771"
+		data-flex-basis="1850px"
+	
+></p>
+<p>上面的角标表示该机构的转速是0的情况下（其中的B为速度为0的太阳轮）</p>
+<ul>
+<li>实际上就是将所求的<strong>转换为上面带着H角标的</strong>（因为带着H角标的是定轴的轮系，可以使用齿数进行计算）</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>小结论：</p>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611165629207.png"
+	width="693"
+	height="428"
+	
+	loading="lazy"
+	
+		alt="结论"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="161"
+		data-flex-basis="388px"
+	
+></p>
+<p>因为有几何关系可以看出：分度圆的半径是相等的，并且由于能够啮合，所以模数是相等的，所以最后就可以推出齿数是相等的。（这是隐含的几何条件）</p>
+</blockquote>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611172024263.png"
+	width="727"
+	height="465"
+	
+	loading="lazy"
+	
+		alt="速度的合成"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="156"
+		data-flex-basis="375px"
+	
+></p>
+<blockquote>
+<p>速比之间有着如下的换算：</p>
+</blockquote>
+<ul>
+<li>
+$$
+  i_{14}=\frac{i_{1H}}{i_{4H}}=-588
+  $$</li>
+<li>
+<p>角标相反的速比互为导数</p>
+</li>
+</ul>
+<p>一般选择不转的太阳轮作为换算的依据</p>
+<h3 id="复合轮系的速比的计算">复合轮系的速比的计算
+</h3><blockquote>
+<p>步骤：</p>
+<ol>
+<li>找出定轴轮系，列出相应的速比方程</li>
+<li>找出所有的行星架，对于每个行星架，找出其转换轮系中的定轴轮系，列出速比方程（实际上就是找出周转的轮系）</li>
+<li>分析轮系之间的关系，找出公用的构件，建立方程</li>
+<li>联立求解</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>采用乘积的形式列式子，最后转变为都带着行星架的</p>
+</blockquote>
+<h3 id="行星轮系的啮合效率">行星轮系的啮合效率
+</h3><h3 id="行星轮系的设计">行星轮系的设计
+</h3><ol>
+<li>
+$$
+   \boldsymbol{i}_{1H}=\boldsymbol{1}-\boldsymbol{i}_{13}^{H}=\boldsymbol{1}+\frac{z_{3}}{z_{1}}\quad z_{3}=(\boldsymbol{i}_{1H}-\boldsymbol{1})z_{1}
+   $$</li>
+<li>
+$$
+   \frac{m}{2}(z_1+z_2)=\frac{m}{2}(z_3-z_2)\quad z_2=\frac{z_1}{2}(i_{1H}-2)
+   $$</li>
+<li>
+$$
+   \begin{aligned}&\frac{2\pi}{k}i_{1H}=\gamma\frac{2\pi}{z_1}\\&\gamma=\frac{z_1}{k}i_{1H}\end{aligned}
+   $$</li>
+</ol>
+<p><img src="/p/%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%88%B6%E9%80%A0/image-20250611182437906.png"
+	width="296"
+	height="251"
+	
+	loading="lazy"
+	
+		alt="image-20250611182437906"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="117"
+		data-flex-basis="283px"
+	
+></p>
+<ul>
+<li>
+$$
+  2(r_1+r_2)\sin\frac{\pi}{k}>2(r_2+h_a)
+  $$$$
+  z_2<\frac{z_1\sin\frac{\pi}{k}-2h_a^*}{1-\sin\frac{\pi}{k}}
+  $$</li>
+</ul>
+<p>如图所示的图</p>
 <h2 id="习题课">习题课
 </h2><h3 id="结构分析">结构分析
 </h3><blockquote class="alert alert-note">
@@ -1362,6 +1818,10 @@ $$
 <p>轮系中首先要分出周转轮系和定轴轮系</p>
 <p>周转轮系的组成是行星轮、太阳轮、架子。要分析清楚哪些的轴是会动的，这些动的轴是在哪个轮上，这个轮就是架子。而动的轮系啮合的不动的轮就是恒星轮</p>
 <p>还要注意图中的一些几何关系，（主要是等高的原则）——比如两个齿轮是定轴的，而且齿轮的边缘是对齐的，可以得到一些关系；还有恒星轮是定轴的，上面的行星轮是定轴的，也可以得到一些关系</p>
+</blockquote>
+<blockquote>
+<p>周转轮系是从太阳轮开始到太阳轮＋行星架，不能反向，只能朝着一个固定的方向走,只有那种短横杆相接的才可以延续下去（还有直接使用实线相连的意味着转速完全相同）</p>
+<p>还有就是非平行轴的正负怎么确定</p>
 </blockquote>
 
 </section>

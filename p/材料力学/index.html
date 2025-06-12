@@ -621,8 +621,14 @@
           <ol>
             <li><a href="#静矩面积矩的定义">静矩（面积矩的定义）</a></li>
             <li><a href="#形心">形心</a></li>
+          </ol>
+        </li>
+        <li><a href="#惯性矩">惯性矩</a>
+          <ol>
+            <li><a href="#惯性矩的性质">惯性矩的性质</a></li>
             <li><a href="#转轴定理">转轴定理：</a></li>
             <li><a href="#形心主轴主矩">形心主轴，主矩</a></li>
+            <li><a href="#平行移轴定理">平行移轴定理</a></li>
           </ol>
         </li>
       </ol>
@@ -920,7 +926,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 46 分钟
+                    阅读时长: 47 分钟
                 </time>
             </div>
         
@@ -2340,8 +2346,40 @@ $$<p>
 <li>计算简单图形对轴的静矩</li>
 <li><strong>代数和相加</strong>即为组合截面对轴的<strong>静矩</strong></li>
 <li>计算截面<strong>形心</strong></li>
+<li><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250610104811517.png"
+	width="835"
+	height="117"
+	
+	loading="lazy"
+	
+		alt="如图所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="713"
+		data-flex-basis="1712px"
+	
+></li>
+<li>形心和静距的角标是不一样的，主要是因为绕着Z轴的静距是对于y积分</li>
 </ul>
 </li>
+</ul>
+<h3 id="惯性矩">惯性矩
+</h3>$$
+I_z=\int_Ay^2dA
+$$$$
+I_{yz}=\int_AyzdA
+$$$$
+I_P=\int_A\rho^2dA
+$$$$
+i_y=\sqrt{\frac{I_y}{A}}
+$$<p>
+对y轴的<strong>惯性半径</strong></p>
+<h4 id="惯性矩的性质">惯性矩的性质
+</h4><ul>
+<li>惯性矩和惯性积是对一定轴而定义的，而极惯性矩，是对点定义的。</li>
+<li>任何平面图形对于通过<strong>其形心的对称轴和与此对称轴垂直的轴的惯性积</strong>为零。</li>
+<li>对于面积相等的截面，截面相对于坐标轴分布的越远，其惯性矩越大。</li>
 </ul>
 <hr>
 <blockquote>
@@ -2380,14 +2418,37 @@ $$<p>
 </li>
 <li>
 <p>常见的形心主轴</p>
-$$
-   I_z=\frac{bh^3}{12}\quad I_z=\frac{hb^3}{12}
-   $$</li>
+</li>
 </ol>
-<p>​	圆形：</p>
+<p>​	矩形：（其中的三次方的垂直于轴的边长）</p>
+$$
+I_z=\frac{bh^3}{12}\quad I_z=\frac{hb^3}{12}
+$$<p>
+​	圆形：</p>
 $$
 I_z=I_y=\frac{\pi D^4}{64}
-$$<h2 id="弯曲应力">弯曲应力
+$$<h4 id="平行移轴定理">平行移轴定理
+</h4><p>其中的$I_{yc}$必须是对于通过形心的y轴的惯性矩</p>
+<blockquote>
+<p>两平行轴中，必须有一轴为<strong>形心轴</strong>，截面对任意两平行轴的惯性矩间的关系，应通过平行的<strong>形心轴惯性矩</strong>来换算。</p>
+</blockquote>
+$$
+\begin{aligned}&I_y=I_{yc}+b^2A\\&I_{zy}=I_{zcyc}+abA\end{aligned}
+$$<p><img src="/p/%E6%9D%90%E6%96%99%E5%8A%9B%E5%AD%A6/image-20250610105818808.png"
+	width="462"
+	height="399"
+	
+	loading="lazy"
+	
+		alt="如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="115"
+		data-flex-basis="277px"
+	
+></p>
+<h2 id="弯曲应力">弯曲应力
 </h2><h3 id="纯弯曲">纯弯曲
 </h3><p>之前拉伸与扭转时的内力与应力都有，但是弯曲还没有相应的应力的计算公式，有<strong>切应力与正应力</strong>，之后主要学习如何计算这两个应力</p>
 <blockquote>
@@ -2432,7 +2493,7 @@ $$
 <li>对于纯弯曲来说：拉压力和为0，沿着y轴的力矩和为0（因为不会沿着y轴弯曲，外力矩的方向是沿着z轴的），沿着z轴的力矩和为M</li>
 <li>由上述得到的正应力的公式可以得到的性质是：
 <ol>
-<li>中性轴过截面的形心</li>
+<li><strong>中性轴过截面的形心</strong></li>
 <li>为形心主轴</li>
 <li>$\frac{1}{\rho}=\frac{M}{EI_z}$</li>
 </ol>
@@ -2446,7 +2507,7 @@ $$
 <p>1/ρ为梁弯曲后的曲率</p>
 <p>M为梁横截面上的弯矩
 y为梁横截面上任意一点到中性轴的距离
-$I_z$为梁横截面对中性轴的惯性矩（<strong>实际上也是形心主矩</strong>）</p>
+$I_z$为梁横截面对<strong>中性轴的惯性矩</strong>（<strong>实际上也是形心主矩</strong>）</p>
 $$
 \sigma=\frac{My}{I_z}
 $$<ul>
@@ -4320,9 +4381,9 @@ $$<p>上述为力法正则方程的基本表达式</p>
 <ul>
 <li>对称截面上的<strong>反对称内力为零</strong>。</li>
 </ul>
-<p><strong>对称结构+反对称载荷</strong></p>
+<p><strong>反对称结构+反对称载荷</strong></p>
 <ul>
-<li>对称截面上的<strong>对称内力为零。</strong></li>
+<li>反对称对称截面上的<strong>对称内力为零。</strong></li>
 </ul>
 <blockquote>
 <p>如何产生对称、非对称载荷：</p>
@@ -4395,7 +4456,7 @@ $$
 <p>解题步骤</p>
 <ol>
 <li>
-<p>先求出静位移</p>
+<p>先求出<strong>静位移</strong></p>
 </li>
 <li>
 <p>求出冲击动荷因数</p>
@@ -4707,17 +4768,37 @@ $$
 <p>TODO</p>
 <p>那些图像的记忆（$\sigma$）</p>
 <p>老师讲的历年卷（第五题、）</p>
-<p>公式的记忆</p>
-<p>还有就是老师说的那个非常难的题目（就在期末的复习里面）</p>
-<p>超静定问题中将杆件截断的问题</p>
-<p>非对称的截面的弯矩的计算</p>
-<p>强度理论计算</p>
-<p>动载荷问题的求解</p>
+<ul>
+<li>
+<p><input disabled="" type="checkbox"> 公式的记忆（惯性矩的公式、强度理论的公式、剪力的计算公式）</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 还有就是老师说的那个非常难的题目（就在期末的复习里面）</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 超静定问题中将杆件截断的问题</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 非对称的截面的弯矩的计算，将翼缘（比较宽的那一侧置于受拉侧）</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 强度理论计算</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 动载荷问题的求解</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> 几何问题，惯性矩这些</p>
+</li>
+</ul>
 </blockquote>
 <blockquote class="alert alert-note">
     <p><strong>先求支反力！！！</strong></p>
 <p>画弯矩图像的时候记得先画出来剪力的图像，正负注意~！</p>
-<p>弯矩方程在分段时，一定要确保分段处的相等！</p></blockquote>
+<p>弯矩方程在分段时，一定要确保分段处的相等！</p>
+<p>平面桁架的超静定次数的计算公式：n=m+r-2j（m：桁架杆件数,r：支座约束数，支座提供的约束的总数,j：节点数）（设计与制造？）</p>
+<p>在将杆件截断的时候，要将两边的力都进行分析（都加上作为单位力）</p>
+<p>对圆环的内力的求解，可以截取，可以截取之后将一端看做是墙（因为不能动）</p></blockquote>
 
 </section>
 

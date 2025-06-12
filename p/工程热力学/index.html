@@ -730,6 +730,16 @@
         <li><a href="#化学反应的功和热">化学反应的功和热</a></li>
         <li><a href="#赫斯定律">赫斯定律</a></li>
         <li><a href="#基尔霍夫定律">基尔霍夫定律</a></li>
+        <li><a href="#理论燃烧温度">理论燃烧温度</a></li>
+        <li><a href="#化学反应方向的判据">化学反应方向的判据</a></li>
+        <li><a href="#反应的最大功">反应的最大功</a></li>
+        <li><a href="#反应的平衡">反应的平衡</a>
+          <ol>
+            <li><a href="#与最大的有用功之间的关系">与最大的有用功之间的关系</a></li>
+          </ol>
+        </li>
+        <li><a href="#热力学第三定律">热力学第三定律</a></li>
+        <li><a href="#做题-3">做题</a></li>
       </ol>
     </li>
   </ol>
@@ -804,7 +814,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 33 分钟
+                    阅读时长: 34 分钟
                 </time>
             </div>
         
@@ -3614,6 +3624,122 @@ $$
 <p>所以，利用热效应是状态量，可以间接测量一些难以直接测量的反应的热效应</p>
 <h3 id="基尔霍夫定律">基尔霍夫定律
 </h3><p>温度对热效应的影响显著，压力只有在很高的时候才表现出来</p>
+$$
+\int_{Q^{0}}^{Q_{*}}\mathrm{d}Q_{*}=\int_{T_{0}}^{T}\left(\sum_{j}n_{j}C_{m,j}\right)\mathrm{d}T-\int_{T_{0}}^{T}\left(\sum_{i}n_{i}C_{m,i}\right)\mathrm{d}T
+$$$$
+Q_{*}=Q^{0}+\int_{T_{0}}^{T}\left(\sum_{j}n_{j}C_{m,j}\right)\mathrm{d}T-\int_{T_{0}}^{T}\left(\sum_{i}n_{i}C_{m,i}\right)\mathrm{d}T
+$$$$
+\Delta H=\Delta H^{0}+\Delta H_{re}+\Delta H_{pr}
+$$<p>
+其中的第一项为某一特定温度下的热效应</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250611232504743.png"
+	width="317"
+	height="165"
+	
+	loading="lazy"
+	
+		alt="图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="192"
+		data-flex-basis="461px"
+	
+></p>
+<blockquote>
+<p>如图所示的变化过程</p>
+<ol>
+<li>反应物变为特定温度下的反应物</li>
+<li>特定温度下的反应物生成生成物</li>
+<li>生成物再变回那一温度下的生成物</li>
+</ol>
+</blockquote>
+<h3 id="理论燃烧温度">理论燃烧温度
+</h3><ul>
+<li>
+$$
+  -\Delta H_{\mathrm{b}}^{0}=\Delta H_{\mathrm{pr}}=\int_{T_{0}}^{T_{1}}C_{p,m,\mathrm{pr}}\mathrm{d}T=\int_{T_{0}}^{T_{1}}\sum_{j,pr}n_{j}C_{p,m,j}\mathrm{d}T
+  $$</li>
+<li>
+$$
+  -\Delta U_{\mathrm{b}}^{0}=\Delta U_{\mathrm{pr}}=\int_{T_{0}}^{T_{,}}C_{V,\mathrm{m.pr}}\mathrm{d}T=\int_{T_{0}}^{T_{,}}\sum_{j,\mathrm{pr}}n_{j}C_{V,m,j}\mathrm{d}T
+  $$</li>
+</ul>
+<h3 id="化学反应方向的判据">化学反应方向的判据
+</h3><p>使用$\Delta G$来判断，小于0时可以自发进行（正向进行）</p>
+<h3 id="反应的最大功">反应的最大功
+</h3>$$
+W_{u.V.max}=F_{1}-F_{2}
+$$$$
+W_{\mathrm{u,max}}=-Q_{x}+T\left(\frac{\partial W_{\mathrm{u,max}}}{\partial T}\right)
+$$<blockquote>
+<p>规定在1大气压、25摄氏度时的由稳定的单质生成1mol的化合物时自由焓的变化为该化合物的标准自由生成焓。（稳定的单质会元素的标准自由生成焓为0）</p>
+</blockquote>
+$$
+\Delta G^{0}=\sum_{i}\left(n_{j}\Delta G_{i,j}^{0}\right)_{\mathrm{pr}}-\sum_{i}\left(n_{i}\Delta G_{i,i}^{0}\right)_{\mathrm{re}}
+$$<p>
+任何反应的自由焓的变化量可以由反应物和生成物的标准自由生成焓计算：</p>
+<h3 id="反应的平衡">反应的平衡
+</h3>$$
+\Delta G=\Delta G^{0}+RT\mathrm{ln}\frac{P_{\mathrm{C}}^{c}P_{\mathrm{E}}^{e}}{p_{\mathrm{A}}^{a}p_{\mathrm{B}}^{b}}
+$$$$
+\begin{aligned}&\Delta G=0\\&p_{\mathrm{A}}=p_{\mathrm{A,e}}\\&p_{\mathrm{B}}=p_{\mathrm{B,e}}\\&p_{\mathrm{C}}=p_{\mathrm{C,e}}\\&\mathrm{PE}=p_{\mathbf{E},\mathbf{e}}\end{aligned}
+$$$$
+\Delta G^{0}=-RT\mathrm{ln}\frac{P_{\mathrm{C,e}}^{c}P_{\mathrm{E,e}}^{c}}{p_{\mathrm{A,e}}^{a}P_{\mathrm{B,e}}^{b}}
+$$$$
+K_{p}=\frac{p_{\mathrm{C,e}}^{c}P_{\mathrm{E,e}}^{e}}{p_{\mathrm{A,e}}^{a}P_{\mathrm{B,e}}^{b}}
+$$<p>
+这个式子就是反应的<strong>化学平衡常数</strong></p>
+<hr>
+$$
+\begin{aligned}K_{p}&=\frac{(\left[\mathbf{C}_{\mathrm{e}}\right]RT)^{c}(\left[\mathbf{E}_{\mathrm{e}}\right]RT)^{c}}{(\left[\mathbf{A}_{\mathrm{e}}\right]RT)^{a}(\left[\mathbf{B}_{\mathrm{e}}\right]RT)^{b}}\\&=\frac{[\mathbf{C_{e}}]^{c}[\mathbf{E_{e}}]^{c}}{[\mathbf{A_{e}}]^{a}[\mathbf{B_{e}}]^{b}}(RT)^{[(c+\epsilon)-(a+b)]}\\&=\frac{[\mathbf{C_{e}}]^{c}[\mathbf{E_{e}}]^{c}}{[\mathbf{A_{e}}]^{a}[\mathbf{B_{e}}]^{b}}(RT)^{\Delta n}\end{aligned}
+$$$$
+K_{\mathrm{c}}=\frac{[\mathrm{C}_{\mathrm{e}}]^{c}[\mathrm{E}_{\mathrm{e}}]^{c}}{[\mathrm{A}_{\mathrm{e}}]^{a}[\mathrm{B}_{\mathrm{e}}]^{b}}
+$$$$
+K_{_p}=K_{_c}(RT)^{\Delta n}
+$$<h4 id="与最大的有用功之间的关系">与最大的有用功之间的关系
+</h4>$$
+W_{_{u,max}}=RT\left(\ln K_{_p}-\ln\frac{p_{_C}^{c}p_{_E}^{\epsilon}}{p_{_A}^{a}p_{_B}^{b}}\right)
+$$$$
+W_{_{u,max}}=RT\left(\ln K_{_{c}}-\ln\frac{\left[\mathbf{C}\right]^{c}\left[\mathbf{E}\right]^{c}}{\left[\mathbf{A}\right]^{a}\left[\mathbf{B}\right]^{b}}\right)
+$$<h3 id="热力学第三定律">热力学第三定律
+</h3>$$
+S_{1}=\int_{T=0}^{T}\frac{C_{1}}{T}\mathrm{d}T+S_{1.0}\\S_{2}=\int_{T=0}^{T}\frac{C_{2}}{T}\mathrm{d}T+S_{2,0}
+$$<blockquote>
+<p>有如下的结论：</p>
+<ul>
+<li>在绝对零度的条件下凝聚态物体的熵为0</li>
+<li>在绝对零度的条件下凝聚物体的热容为0</li>
+</ul>
+</blockquote>
+<h3 id="做题-3">做题
+</h3><blockquote>
+<ol>
+<li>
+<p>计算热效应的时候，在等温等压的条件下就使用焓变（使用生成焓作差）</p>
+</li>
+<li>
+<p>计算最大的功的时候，使用自由焓变</p>
+</li>
+<li>
+<p>在计算分压的时候用的压强为1,2atm（即相对于大气压强的次数）</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E7%83%AD%E5%8A%9B%E5%AD%A6/image-20250612152531509.png"
+	width="372"
+	height="239"
+	
+	loading="lazy"
+	
+		alt="如图，后面加的是大气压，要除以一个大气压"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="155"
+		data-flex-basis="373px"
+	
+></p>
+</li>
+</ol>
+</blockquote>
 
 </section>
 
