@@ -503,7 +503,7 @@
         </li>
       </ol>
     </li>
-    <li><a href="#可压缩流体的一维流动">可压缩流体的一维流动</a>
+    <li><a href="#不可压缩流体的外部流动">不可压缩流体的外部流动</a>
       <ol>
         <li><a href="#边界层的基本概念">边界层的基本概念</a>
           <ol>
@@ -535,7 +535,7 @@
         <li><a href="#做题的感悟">做题的感悟：</a></li>
       </ol>
     </li>
-    <li><a href="#可压缩流体的一维流动-1">可压缩流体的一维流动</a>
+    <li><a href="#可压缩流体的一维流动">可压缩流体的一维流动</a>
       <ol>
         <li><a href="#音速和马赫数">音速和马赫数</a>
           <ol>
@@ -569,6 +569,58 @@
             <li><a href="#马赫波">马赫波</a></li>
           </ol>
         </li>
+      </ol>
+    </li>
+    <li><a href="#复习">复习</a>
+      <ol>
+        <li><a href="#层流流动的剪应力">层流流动的剪应力</a>
+          <ol>
+            <li><a href="#非牛顿流体">非牛顿流体</a></li>
+          </ol>
+        </li>
+        <li><a href="#流体静力学-1">流体静力学</a>
+          <ol>
+            <li><a href="#特性">特性</a></li>
+            <li><a href="#有加速度情况下的">有加速度情况下的</a></li>
+            <li><a href="#浸没平壁的受力分析">浸没平壁的受力分析</a></li>
+          </ol>
+        </li>
+        <li><a href="#流体动力学">流体动力学</a>
+          <ol>
+            <li><a href="#流线">流线</a></li>
+          </ol>
+        </li>
+        <li><a href="#微分形式的质量守恒方程连续方程">微分形式的质量守恒方程（连续方程）</a>
+          <ol>
+            <li><a href="#流体的动力学">流体的动力学</a></li>
+          </ol>
+        </li>
+        <li><a href="#系统和控制体">系统和控制体</a>
+          <ol>
+            <li><a href="#欧拉方程">欧拉方程</a></li>
+          </ol>
+        </li>
+        <li><a href="#流函数">流函数</a>
+          <ol>
+            <li><a href="#速度势">速度势</a></li>
+            <li><a href="#流函数与势函数的性质">流函数与势函数的性质</a></li>
+          </ol>
+        </li>
+        <li><a href="#伯努利方程">伯努利方程</a></li>
+        <li><a href="#量纲分析-1">量纲分析</a>
+          <ol>
+            <li><a href="#瑞利法">瑞利法</a></li>
+            <li><a href="#白金汉定理">白金汉定理</a></li>
+          </ol>
+        </li>
+        <li><a href="#不可压缩流体的内部流动">不可压缩流体的内部流动</a>
+          <ol>
+            <li><a href="#圆管中的层流">圆管中的层流</a></li>
+            <li><a href="#充分发展">充分发展</a></li>
+            <li><a href="#圆管湍流运动">圆管湍流运动</a></li>
+          </ol>
+        </li>
+        <li><a href="#todo">todo</a></li>
       </ol>
     </li>
   </ol>
@@ -643,7 +695,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 7 分钟
+                    阅读时长: 10 分钟
                 </time>
             </div>
         
@@ -674,6 +726,7 @@
 <li>各向等值——点性质，与方向无关</li>
 <li>作用垂向性——总是作用于物体表面法向</li>
 </ol></blockquote>
+<p><strong>欧拉平衡方程</strong>：</p>
 $$
 f_x = \frac{1}{\rho} \frac{\partial p}{\partial x} = 0\\[6pt]
 f_y - \frac{1}{\rho} \frac{\partial p}{\partial y} = 0\\[6pt]
@@ -699,6 +752,7 @@ $$
 <li>等压面平行于自由面</li>
 </ul>
 </blockquote>
+<p>对于一般的情况：</p>
 $$
 dp=\rho(-adx-gdz)，两端积分\\
 p=\rho g(-\frac{a}{g}x-z)+c\\
@@ -726,6 +780,7 @@ $$<blockquote>
 </li>
 <li>
 <p>相似判据：</p>
+<p>取各种力与惯性力的比值，得到<strong>雷诺数</strong>，如下：</p>
 $$
    Re=\frac{F_1}{F_\tau}=\frac{uL}{v}
    $$<p>
@@ -772,7 +827,7 @@ $$
 <li></li>
 </ol>
 </blockquote>
-<h2 id="可压缩流体的一维流动">可压缩流体的一维流动
+<h2 id="不可压缩流体的外部流动">不可压缩流体的外部流动
 </h2><h3 id="边界层的基本概念">边界层的基本概念
 </h3><h4 id="基本概念">基本概念
 </h4><p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250603133643911.png"
@@ -831,7 +886,7 @@ $$
 <blockquote>
 <ul>
 <li>对于小雷诺数的情况，边界层较厚，且向前延伸</li>
-<li>对于大雷诺数的情况，边界层很薄，边界层内的速度梯度很大，粘性切应力很大；外部的速度梯度很小，粘性切应力很小</li>
+<li>对于大雷诺数的情况，边界层很薄，边界层内的速度梯度很大，粘性切应力很大；外部的速度梯度很小，<strong>粘性切应力很</strong>小</li>
 </ul>
 </blockquote>
 <blockquote>
@@ -1092,7 +1147,7 @@ $$<h3 id="做题的感悟">做题的感悟：
 </ol>
 $$
 \tau_{0}=\mu\left(\frac{\mathrm{d}u_{x}}{\mathrm{d}y}\right)_{y=0}
-$$<h2 id="可压缩流体的一维流动-1">可压缩流体的一维流动
+$$<h2 id="可压缩流体的一维流动">可压缩流体的一维流动
 </h2><h3 id="音速和马赫数">音速和马赫数
 </h3><h4 id="音速">音速
 </h4>$$
@@ -1247,6 +1302,364 @@ $$<p>
 </h3><p>流动钟流体参数突变的薄层叫做激波</p>
 <h4 id="马赫波">马赫波
 </h4><p>超音速流动时，气流的速度大于扰动的传播速度</p>
+<h2 id="复习">复习
+</h2><h3 id="层流流动的剪应力">层流流动的剪应力
+</h3>$$
+\tau=\mu\frac{du}{dy}
+$$<blockquote>
+<p>其中的$\mu$为粘度</p>
+</blockquote>
+$$
+\nu=\frac{\mu}{\rho}
+$$<p>运动粘度和粘度之间的关系，差个密度的倍数</p>
+<h4 id="非牛顿流体">非牛顿流体
+</h4><h3 id="流体静力学-1">流体静力学
+</h3><h4 id="特性">特性
+</h4><blockquote>
+<p>各向等值性 —点性质(point property)，与方向无关</p>
+<p>作用垂向性—总是作用于物体表面法向</p>
+<p>压强变化最大的方向沿着重力方向</p>
+<p>压强等值面垂直于重力方向</p>
+</blockquote>
+<p>相邻的截面上的等高处的压强相等</p>
+<p>取几个截面（一般以不同的液面为分界)</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614134336698.png"
+	width="809"
+	height="312"
+	
+	loading="lazy"
+	
+		alt="做法"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="259"
+		data-flex-basis="622px"
+	
+></p>
+<h4 id="有加速度情况下的">有加速度情况下的
+</h4><p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614134430641.png"
+	width="473"
+	height="271"
+	
+	loading="lazy"
+	
+		alt="如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="174"
+		data-flex-basis="418px"
+	
+></p>
+<ul>
+<li>压强的增加率大于无加速度的情况</li>
+<li>与容器的大小和形状无关</li>
+</ul>
+$$
+\theta=\tan^{-1}\frac{a_x}{g+a_z}
+$$$$
+\frac{dp}{ds}=\rho G\quad\mathrm{where}G=[a_x^2+(g+a_z)^2]^{1/2}
+$$<h4 id="浸没平壁的受力分析">浸没平壁的受力分析
+</h4><ul>
+<li>
+<p>作用于平壁面的总压力等于其形心压强乘以面积</p>
+</li>
+<li>
+<p>作用点位于</p>
+<ul>
+<li>
+<p>积分法</p>
+</li>
+<li>
+$$
+    y_{\mathrm{CP}}=-\gamma\sin\theta\frac{I_{xx}}{P_{\mathrm{CG}}A}
+    $$</li>
+<li>
+<p>其中的$gamma$为$\rho g$</p>
+</li>
+<li>
+<p>式子中的压强为形心位置的压强</p>
+</li>
+<li>
+<p>$\theta$是和水平面的夹角</p>
+</li>
+<li>
+<p>Ixx为关于形心x轴的二阶惯性矩</p>
+</li>
+<li>
+$$
+    x_{\mathrm{CP}}=-\gamma\sin\theta\frac{I_{xy}}{p_{\mathrm{CG}}A}|
+    $$</li>
+<li>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614135139473.png"
+	width="667"
+	height="454"
+	
+	loading="lazy"
+	
+		alt="常见的"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="146"
+		data-flex-basis="352px"
+	
+></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="流体动力学">流体动力学
+</h3><h4 id="流线">流线
+</h4><ul>
+<li>流线是流场中任一时刻的一条几何曲线，其上各点的速度矢量均与此曲线相切。因此，<strong>流线是同一时刻，不同流体质点所组成的曲线</strong>。由欧拉法引出。</li>
+</ul>
+<p>是不同的流体质点，相当于波形图（固定时刻，但是不固定是哪个点）</p>
+<blockquote>
+<p><strong>特点</strong></p>
+<ul>
+<li>在定常流中，速度场不随时间改变，即    <em>v t</em> / 0 , 流线簇也不随时间改变 ，用一幅流线图就可以表示出流场的全貌</li>
+<li>流线密集的地方，表示流场中该处的流速较大，稀疏的地方，表示该处的流速较小</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>方程</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614135724298.png"
+	width="374"
+	height="100"
+	
+	loading="lazy"
+	
+		alt="方程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="374"
+		data-flex-basis="897px"
+	
+></p>
+<p>可以由速度求解流线方程</p>
+</blockquote>
+<h3 id="微分形式的质量守恒方程连续方程">微分形式的质量守恒方程（连续方程）
+</h3><ul>
+<li>不可压缩的连续性方程</li>
+</ul>
+$$
+\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0
+$$$$
+\mathrm{div}\vec{F}=\frac{\partial F_x}{\partial x}+\frac{\partial F_y}{\partial y}+\frac{\partial F_z}{\partial z}
+$$<p>上述为散度的定义</p>
+<ul>
+<li>线应变的速率</li>
+</ul>
+$$
+\varepsilon_{xx}=\frac{\partial u}{\partial x}\quad\varepsilon_{yy}=\frac{\partial v}{\partial y}\quad\varepsilon_{zz}=\frac{\partial w}{\partial z}
+$$<ul>
+<li>体积应变的速率</li>
+</ul>
+$$
+\nabla\cdot V=divV=\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=\varepsilon_{xx}+\varepsilon_{yy}+\varepsilon_{zz}
+$$<ul>
+<li>角应变速率</li>
+</ul>
+$$
+\begin{aligned}&\varepsilon_{xy}=\frac{1}{2}(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x})=\varepsilon_{yx}\quad\varepsilon_{yz}=\frac{1}{2}(\frac{\partial v}{\partial z}+\frac{\partial w}{\partial y})=\varepsilon_{zy}\\&\varepsilon_{zx}=\frac{1}{2}(\frac{\partial w}{\partial x}+\frac{\partial u}{\partial z})=\varepsilon_{xz}\end{aligned}
+$$<ul>
+<li>旋转角速度</li>
+</ul>
+$$
+\omega_{x}=\frac{1}{2}(\frac{\partial w}{\partial y}-\frac{\partial v}{\partial z})\quad\omega_{y}=\frac{1}{2}(\frac{\partial u}{\partial z}-\frac{\partial w}{\partial x})\quad\omega_{z}=\frac{1}{2}(\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y})
+$$<p>判断流动时有旋的还是无旋的</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614141810234.png"
+	width="696"
+	height="374"
+	
+	loading="lazy"
+	
+		alt="解题"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="446px"
+	
+></p>
+<ul>
+<li>判断不可压缩（连续性）</li>
+<li>判断有旋</li>
+<li>判断有无角变形</li>
+</ul>
+<h4 id="流体的动力学">流体的动力学
+</h4><ul>
+<li><strong>三维不可压缩牛顿流体的应力分量</strong></li>
+</ul>
+$$
+\begin{gathered}\tau_{xx}=2\mu\frac{\partial u}{\partial x}\quad\tau_{yy}=2\mu\frac{\partial v}{\partial y}\quad\tau_{zz}=2\mu\frac{\partial w}{\partial z}\\\tau_{xy}=\tau_{yx}=\mu\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\tau_{xz}=\tau_{zx}=\mu\left(\frac{\partial w}{\partial x}+\frac{\partial u}{\partial z}\right)\\\tau_{yz}=\tau_{zy}=\mu\left(\frac{\partial\boldsymbol{\upsilon}}{\partial z}+\frac{\partial\boldsymbol{w}}{\partial\boldsymbol{v}}\right)\end{gathered}
+$$<h3 id="系统和控制体">系统和控制体
+</h3><ul>
+<li>受力的控制体分析</li>
+</ul>
+$$
+\sum\mathbf{F}=\frac{d}{dt}\left(\int_{\mathbf{CV}}\mathbf{V}\rho dV\right)+\sum(m_i\mathbf{V}_i)_{\mathrm{out}}-\sum(m_i\mathbf{V}_i)_{\mathrm{in}}
+$$<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614142247920.png"
+	width="654"
+	height="72"
+	
+	loading="lazy"
+	
+		alt="式子"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="908"
+		data-flex-basis="2180px"
+	
+></p>
+<h4 id="欧拉方程">欧拉方程
+</h4>$$
+\rho g_x-\frac{\partial p}{\partial x}=\rho\frac{du}{dt}\\\rho g_y-\frac{\partial p}{\partial y}=\rho\frac{d\upsilon}{dt}\\\rho g_z-\frac{\partial p}{\partial z}=\rho\frac{dw}{dt}
+$$<p>为无粘的情况下的ns方程的简化</p>
+<h3 id="流函数">流函数
+</h3>$$
+u=\frac{\partial\psi}{\partial y}\quad v=-\frac{\partial\psi}{\partial x}
+$$<blockquote>
+<p>求解：</p>
+<ul>
+<li>是否满足连续性</li>
+<li><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614142733478.png"
+	width="635"
+	height="400"
+	
+	loading="lazy"
+	
+		alt="过程"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="381px"
+	
+></li>
+</ul>
+</blockquote>
+<h4 id="速度势">速度势
+</h4><p>如果一个矢量的旋度为零，那么这个矢量可表达为一个标量的梯度</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614142831673.png"
+	width="709"
+	height="150"
+	
+	loading="lazy"
+	
+		alt="函数"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="472"
+		data-flex-basis="1134px"
+	
+></p>
+<p>满足无旋流动的条件即可</p>
+<p>速度势对某个方向进行微分，等于这个方向的速度分量（求解的方式）</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614143218611.png"
+	width="679"
+	height="144"
+	
+	loading="lazy"
+	
+		alt="解答"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="471"
+		data-flex-basis="1131px"
+	
+></p>
+<h4 id="流函数与势函数的性质">流函数与势函数的性质
+</h4><ul>
+<li>流函数
+<ul>
+<li>二维稳态<strong>不可压缩流动</strong>，<strong>有黏无黏都存在流函数</strong></li>
+<li>流函数满足连续性方程</li>
+<li>对无旋稳态不可压缩流动，流函数满足拉普拉斯方程</li>
+</ul>
+</li>
+<li>速度势
+<ul>
+<li>只要流动<strong>无旋</strong>，就存在速度势</li>
+<li>速度势的梯度是速度</li>
+<li>对稳态不可压缩流动，<strong>速度势和流函数正交</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="伯努利方程">伯努利方程
+</h3>$$
+\frac{p_1}{\rho}+\frac{1}{2}V_1^2+gz_1=\frac{p_2}{\rho}+\frac{1}{2}V_2^2+gz_2=\mathrm{const}
+$$<p>使用的条件：（使用过的条件还是比较苛刻的）</p>
+<ol>
+<li>定常</li>
+<li>不可压缩</li>
+<li>无粘</li>
+<li>沿着一条流线</li>
+</ol>
+<h3 id="量纲分析-1">量纲分析
+</h3><h4 id="瑞利法">瑞利法
+</h4><blockquote>
+<ul>
+<li>
+<p>影响因素</p>
+</li>
+<li>
+<p>其中的一个可以表示为其他的乘积的形式</p>
+</li>
+<li>
+<p>由量纲分析的原理</p>
+</li>
+<li>
+<p>分析求出系数</p>
+<p>适合比较简单的问题</p>
+</li>
+</ul>
+<p>实际上就是使等式左右的量纲齐次</p>
+<p><img src="/p/%E5%B7%A5%E7%A8%8B%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/image-20250614205140842.png"
+	width="621"
+	height="246"
+	
+	loading="lazy"
+	
+		alt="如图所示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="252"
+		data-flex-basis="605px"
+	
+></p>
+</blockquote>
+<h4 id="白金汉定理">白金汉定理
+</h4><p>选择含有所有的基本量纲的参数（等于基本量纲的数目）</p>
+<p>将其余的参数使用这些参数进行表示（实际上就是选择基底进行表示）</p>
+<h3 id="不可压缩流体的内部流动">不可压缩流体的内部流动
+</h3><h4 id="圆管中的层流">圆管中的层流
+</h4><ul>
+<li>速度的分布</li>
+<li>最大的速度</li>
+<li>流量的大小</li>
+<li>流速的分布</li>
+<li>切应力</li>
+<li>阻力系数</li>
+</ul>
+<p>上述的这些对于Re&lt;2300的圆管层流都成立</p>
+<h4 id="充分发展">充分发展
+</h4><p>在起始的部分，由于粘性的作用，会存在边界层，随着距离的发展，边界层不断加厚，之后，边界层重合，此时是充分发展的截断（之后的速度分布就不变了，二次曲线的形状）</p>
+<p>有着从起始到达充分发展的长度L</p>
+<h4 id="圆管湍流运动">圆管湍流运动
+</h4><p>水头损失，沿程损失系数</p>
+<p>管路的总的水头损失系数为沿程损失系数和局部损失系数的和</p>
+<h3 id="todo">todo
+</h3><ul>
+<li><input disabled="" type="checkbox"> 动量平衡方程那里</li>
+</ul>
 
 </section>
 
